@@ -12,14 +12,15 @@ const FancyBannerTwo = () => {
                 <h2>Want to chat? Feel free to contact our team.</h2>
               </div>
               <p className="text-lg mt-40 lg-mt-30 mb-30">
-                Contact our friendly team for quick and helpful answers.
+              We'd love to hear how we can match you with a solution that meets your needs.
               </p>
               <div className="d-inline-flex flex-wrap justify-content-center">
-                <Link href="/contact" className="btn-four mt-10 me-2">
-                  Get a Quote
-                </Link>
-                <Link href="/contact" className="btn-six mt-10 ms-2">
-                  Contact
+                <Link
+                  href="/contact"
+                  className="btn-seventeen d-inline-flex align-items-center tran3s"
+                >
+                  <span className="text">Get Started</span>
+                  <i className="bi bi-arrow-right"></i>
                 </Link>
               </div>
             </div>

@@ -38,8 +38,8 @@ const HeaderTwo = () => {
               <div className="right-widget ms-auto ms-lg-0 me-3 me-lg-0 order-lg-3">
                 <ul className="d-flex align-items-center style-none">
                   <li className="d-none d-md-block">
-                    <Link href="/contact" className="btn-one tran3s">
-                      Contact Us
+                    <Link href="/contact" className="btn-two tran3s">
+                      Book a Demo
                     </Link>
                   </li>
                   {/* <li className="d-flex align-items-center login-btn-two">

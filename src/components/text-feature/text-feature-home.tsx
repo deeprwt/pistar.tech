@@ -2,6 +2,15 @@ import React from "react";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import CounterUp from "../common/counter-up";
+import bg_image from "@/assets/images/background/counter_dark_pattern.png";
+
+const backImg = {
+  backgroundImage: `url('${bg_image.src}')`,
+  backgroundSize: "cover,auto",
+  backgroundPosition: "center",
+  backgroundAttachment: "fixed",
+  backgroundColor: "#292e31",
+};
 
 // counter block
 function CounterBlock({
@@ -21,16 +30,16 @@ function CounterBlock({
 }) {
   return (
     <div
-      className="counter-block-two text-center mt-35 mb-35 wow fadeInUp"
+      className="counter-block-two mt-35 mb-35 wow fadeInUp"
       data-wow-delay={`0.${delay}s`}
     >
-      <div className="main-count fw-500 text-dark d-flex justify-content-center">
+      <div className="main-count fw-500 d-flex" style={{ color: "#62c087" }}>
         {prev_text && prev_text}
         <span className="counter">
           <CounterUp number={num} text={text} decimal={decimal} />
         </span>
       </div>
-      <p className="m0 text-md">{title}</p>
+      <p className="m0 text-md text-white">{title}</p>
     </div>
   );
 }
@@ -48,8 +57,9 @@ const TextFeatureHome = ({ style_2 = false }: { style_2?: boolean }) => {
                   <h3>Where Technology Meets Excellence</h3>
                 </div>
                 <p className="text-lg">
-                Experience the extraordinary with CGB Solutions. We innovate relentlessly, 
-                transforming challenges into seamless solutions for unparalleled client excellence. 
+                  Experience the extraordinary with CGB Solutions. We innovate
+                  relentlessly, transforming challenges into seamless solutions
+                  for unparalleled client excellence.
                 </p>
                 <div className="d-inline-flex flex-wrap align-items-center">
                   <Link href="/about-us" className="btn-four mt-15 me-4">
@@ -76,13 +86,18 @@ const TextFeatureHome = ({ style_2 = false }: { style_2?: boolean }) => {
         </div>
       )}
       {style_2 && (
+        <div style={backImg}>
           <div className="container">
-            <div className="counter-wrapper lg-mt-20 lg-mb-20">
+            <div className="counter-wrapper pt-100 pb-100 lg-mt-20 lg-mb-20">
               <div className="row">
-                <div className="col-md-3 col-6">
+                <div className="title-one details-meta pb-60">
+                  {/* <div className="upper-title">About Us</div> */}
+                  <h2 style={{ color: "#62c087" }}>By the Numbers</h2>
+                </div>
+                <div className="col-md-4 col-6">
                   <CounterBlock num={160} text="+" title="Clients" />
                 </div>
-                <div className="col-md-3 col-6">
+                <div className="col-md-4 col-6">
                   <CounterBlock
                     num={750}
                     text="+"
@@ -92,7 +107,7 @@ const TextFeatureHome = ({ style_2 = false }: { style_2?: boolean }) => {
                     // decimal={true}
                   />
                 </div>
-                <div className="col-md-3 col-6">
+                <div className="col-md-4 col-6">
                   <CounterBlock
                     num={250}
                     text="+"
@@ -100,20 +115,18 @@ const TextFeatureHome = ({ style_2 = false }: { style_2?: boolean }) => {
                     delay="2"
                   />
                 </div>
-                <div className="col-md-3 col-6">
+                {/* <div className="col-md-3 col-6">
                   <CounterBlock
                     num={6}
                     text="+"
                     title="Global Delivery Center"
-                    // prev_text="$"
                     delay="3"
-                    // decimal={true}
                   />
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
-
+        </div>
       )}
     </>
   );

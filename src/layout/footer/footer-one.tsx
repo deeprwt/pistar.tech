@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 // internal
-import logo from "@/assets/images/logo/logome.png";
+import logo from "@/assets/images/logo/logo-white.png";
 import FooterSocial from "./footer-social";
 import MapWithCountries from "@/components/map/maps";
 import icon_1 from '@/assets/images/icon/icon_49.svg';

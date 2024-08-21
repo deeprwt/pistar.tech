@@ -1,7 +1,3 @@
-import BlockFeatureAbout from "@/components/block-feature/block-feature-about";
-import BlockFeatureOne from "@/components/block-feature/block-feature-one";
-import BlockFeatureThree from "@/components/block-feature/block-feature-three";
-import BlockFeatureTwo from "@/components/block-feature/block-feature-two";
 import HomeTwoBlogs from "@/components/blogs/home-2-blogs";
 import ClintLogo from "@/components/clint-logo/logo";
 import FancyBannerOne from "@/components/fancy-banner/fancy-banner-one";
@@ -24,18 +20,28 @@ import Header from "@/layout/header/Header";
 import Wrapper from "@/layout/wrapper";
 import type { Metadata } from "next";
 import Image from "next/image";
-import clogo from "@/assets/images/cgbhome/testlogo.png"
-import HeroBannerOne from "@/components/hero-banner/hero-banner-one";
-import HeroBannerThree from "@/components/hero-banner/hero-banner-three";
-import HeroBannerFour from "@/components/hero-banner/hero-banner-four";
-import HeroBannerFive from "@/components/hero-banner/hero-banner-five";
-import HeroBannerSix from "@/components/hero-banner/hero-banner-six";
+import logo from "@/assets/images/logo/logo.png"
+import HeroVideoOne from "@/components/hero-banner/hero-video-one";
+import FancyBannerThree from "@/components/fancy-banner/fancy-banner-three";
+import FancyBannerFive from "@/components/fancy-banner/fancy-banner-five";
+import FancyBannerFour from "@/components/fancy-banner/fancy-banner-four";
+import FancyBannerSix from "@/components/fancy-banner/fancy-banner-six";
 
-export const metadata: Metadata = {
-  title: "CGB Solutions",
-  description: "Empower your business with CGB Solutions' IT expertise. Strategic consulting & managed services for peak performance. Contact us.",
-  keywords: "IT services, consulting, managed services, peak performance",  
-};
+export const metadata = {
+  title: 'Pistar',
+  openGraph: {
+    title: 'Pistar',
+    description: 'Pistar is a...',
+    images: [
+      {
+        url: "@/assets/images/logo/logo.png",  // URL of the image
+        width: 1200,                          // Optional: specify the width of the image
+        height: 630,                          // Optional: specify the height of the image
+        alt: 'Pistar logo Image',                    // Optional: alternative text for the image
+      },
+    ],
+  },
+}
 
 export default function HomePage() {
   return (
@@ -46,12 +52,8 @@ export default function HomePage() {
         {/* header end */}
         <main>
           {/* hero banner start */}
-          <HeroBannerTwo />
-          <HeroBannerOne />
-          <HeroBannerThree />
-          <HeroBannerFour />
-          <HeroBannerFive />
-          <HeroBannerSix />
+          <HeroVideoOne />
+
           {/* hero banner end */}
 
           {/* number counter start  */}
@@ -59,7 +61,7 @@ export default function HomePage() {
           {/* number counter end */}
 
           {/* whatsnew section start */}
-          {/* <WhatsNew /> */}
+          <WhatsNew />
           {/* whatsnew section end */}
 
           {/* about us content start  */}
@@ -107,7 +109,7 @@ export default function HomePage() {
           {/* block feature three end */}
 
           {/* feedback one start */}
-          {/* <FeedbackOne /> */}
+          <FeedbackOne />
           {/* feedback one end */}
 
           {/* team section one start */}

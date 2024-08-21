@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 // internal
 import logo from "@/assets/images/logo/logo_02.svg";
-import logo_2 from "@/assets/images/logo/logo.png";
+import logo_2 from "@/assets/images/logo/logo-white.png";
 import icon_1 from "@/assets/images/icon/icon_14.svg";
 import icon_2 from "@/assets/images/icon/icon_15.svg";
 import menu_data from "@/data/menu-data";
@@ -146,7 +146,7 @@ const Navbar = ({ logo_white = false }: { logo_white?: boolean }) => {
                             <li key={j}>
                               <Link
                                 href={aa.link}
-                                style={{padding:"0px 15px"}}
+                                style={{ padding: "0px 15px" }}
                                 className={`dropdown-item ${
                                   pathname === aa.link ? "active" : ""
                                 }`}
@@ -180,7 +180,7 @@ const Navbar = ({ logo_white = false }: { logo_white?: boolean }) => {
           )}
         </li>
       ))}
-      <li className="d-md-none ps-2 pe-2">
+      <li className="d-md-none ps-2 pe-2 text-center">
         {/* <a
           href="#"
           data-bs-toggle="modal"
@@ -193,7 +193,13 @@ const Navbar = ({ logo_white = false }: { logo_white?: boolean }) => {
           </div>
         </a> */}
         <ul className="style-none contact-info m0 pt-30">
-          <li className="d-flex align-items-center p0 mt-15">
+          <li className="d-md-block">
+            <Link href="/contact" className="btn-two tran3s w-100">
+              Book a Demo
+            </Link>
+          </li>
+
+          {/* <li className="d-flex align-items-center p0 mt-15">
             <Image src={icon_1} alt="icon" className="lazy-img icon me-2" />
             <Link href="mailto:info@cgbindia.com" className="fw-500 text-white">
               info@cgbindia.com
@@ -204,7 +210,7 @@ const Navbar = ({ logo_white = false }: { logo_white?: boolean }) => {
             <Link href="tel:9888912909" className="fw-500 text-white">
               9888912909
             </Link>
-          </li>
+          </li> */}
         </ul>
       </li>
     </ul>
