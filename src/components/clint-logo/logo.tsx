@@ -28,11 +28,6 @@ import img20 from "@/assets/images/logo/clints/pwc.png"
 import img21 from "@/assets/images/logo/clints/Quicken.png"
 import img22 from "@/assets/images/logo/clints/Samsung.png"
 import img23 from "@/assets/images/logo/clints/sbm_bank.png"
-import logo_1 from "@/assets/images/logo/media_01.png";
-import logo_2 from "@/assets/images/logo/media_02.png";
-import logo_3 from "@/assets/images/logo/media_03.png";
-import logo_4 from "@/assets/images/logo/media_04.png";
-import logo_5 from "@/assets/images/logo/media_05.png";
 
 
 // slider setting

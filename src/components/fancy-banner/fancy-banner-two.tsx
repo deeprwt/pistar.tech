@@ -12,7 +12,7 @@ const FancyBannerTwo = () => {
                 <h2>Want to chat? Feel free to contact our team.</h2>
               </div>
               <p className="text-lg mt-40 lg-mt-30 mb-30">
-              We'd love to hear how we can match you with a solution that meets your needs.
+              We&lsquo;d love to hear how we can match you with a solution that meets your needs.
               </p>
               <div className="d-inline-flex flex-wrap justify-content-center">
                 <Link

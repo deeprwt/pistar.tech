@@ -3,12 +3,20 @@ import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import CounterUp from "../common/counter-up";
 import bg_image from "@/assets/images/background/counter_dark_pattern.png";
+import bg_image2 from "@/assets/images/background/background-explore.jpg";
 
 const backImg = {
   backgroundImage: `url('${bg_image.src}')`,
   backgroundSize: "cover,auto",
   backgroundPosition: "center",
   backgroundAttachment: "fixed",
+  backgroundColor: "#292e31",
+};
+const backImg2 = {
+  backgroundImage: `url('${bg_image2.src}')`,
+  backgroundSize: "cover,auto",
+  backgroundPosition: "center",
+  backgroundAttachment: "local",
   backgroundColor: "#292e31",
 };
 
@@ -48,7 +56,7 @@ const TextFeatureHome = ({ style_2 = false }: { style_2?: boolean }) => {
   return (
     <>
       {!style_2 && (
-        <div className="text-feature-one service-details mt-150 lg-mt-100">
+        <div className="text-feature-one service-details pt-150 lg-pt-100 pb-150 lg-pb-100" style={backImg2}>
           <div className="container">
             <div className="row align-items-center">
               <div className="col-xl-5 col-lg-6 wow fadeInLeft">
