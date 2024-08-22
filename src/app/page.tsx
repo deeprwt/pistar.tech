@@ -26,6 +26,9 @@ import FancyBannerThree from "@/components/fancy-banner/fancy-banner-three";
 import FancyBannerFive from "@/components/fancy-banner/fancy-banner-five";
 import FancyBannerFour from "@/components/fancy-banner/fancy-banner-four";
 import FancyBannerSix from "@/components/fancy-banner/fancy-banner-six";
+import BlockFeatureSeven from "@/components/block-feature/block-feature-seven";
+import BlockFeatureThree from "@/components/block-feature/block-feature-three";
+import FancyVideo from "@/components/fancy-banner/fancy-video";
 
 export const metadata = {
   title: 'Pistar',
@@ -68,13 +71,14 @@ export default function HomePage() {
           <TextFeatureHome />
           {/* about us content start  */}
 
-          <TextFeatureNine />
+          {/* <TextFeatureNine /> */}
 
           {/* tabs are for solutions start */}
-          <TabsData />
+          {/* <TabsData /> */}
+          <BlockFeatureSeven />
           {/* tabs are for solutions start */}
    
-          <StaffingSolutions />
+          {/* <StaffingSolutions /> */}
 
           {/* clints logo start  */}
           <ClintLogo />
@@ -106,6 +110,7 @@ export default function HomePage() {
 
           {/* block feature three start */}
           {/* <BlockFeatureThree /> */}
+          <BlockFeatureThree />
           {/* block feature three end */}
 
           {/* feedback one start */}
@@ -127,6 +132,7 @@ export default function HomePage() {
           {/* fancy banner two start */}
           <FancyBannerTwo />
           {/* fancy banner two end */}
+          <FancyVideo />
         </main>
 
         {/* footer start */}

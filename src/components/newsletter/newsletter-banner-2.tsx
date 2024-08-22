@@ -7,7 +7,7 @@ const NewsletterBannerTwo = () => {
     <div className="newsletter-banner white-vr" style={{background: "#292e31"}}>
       <div className="container">
         <div className="main-wrapper bottom-border">
-          <div className="row footer-one">
+          <div className="row footer-one" style={{padding: "0px"}}>
             <div className="col-lg-6">
               <h2 className="text-white fw-bold">Newsletter.</h2>
               <p className="text-lg text-white opacity-75 md-pb-20">

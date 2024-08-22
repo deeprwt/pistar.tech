@@ -65,7 +65,7 @@
                 background: $color-one;
                 color: $color-two;
                 position: absolute;
-                right: 0;
+                right: 5px;
                 top:2px;
                 @include transition(0.2s);
                 &:hover {

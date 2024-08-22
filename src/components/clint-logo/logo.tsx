@@ -16,18 +16,6 @@ import img8 from "@/assets/images/logo/clints/virtusa.png"
 import img9 from "@/assets/images/logo/clints/Accenture.png"
 import img10 from "@/assets/images/logo/clints/Capgemini.png"
 import img11 from "@/assets/images/logo/clints/Crestron.png"
-import img12 from "@/assets/images/logo/clints/DXC.png"
-import img13 from "@/assets/images/logo/clints/grant_thronton.png"
-import img14 from "@/assets/images/logo/clints/hcl_tech.png"
-import img15 from "@/assets/images/logo/clints/hdfc.png"
-import img16 from "@/assets/images/logo/clints/Intuit.png"
-import img17 from "@/assets/images/logo/clints/Jio.png"
-import img18 from "@/assets/images/logo/clints/lt_Infotech.png"
-import img19 from "@/assets/images/logo/clints/Mphasis.png"
-import img20 from "@/assets/images/logo/clints/pwc.png"
-import img21 from "@/assets/images/logo/clints/Quicken.png"
-import img22 from "@/assets/images/logo/clints/Samsung.png"
-import img23 from "@/assets/images/logo/clints/sbm_bank.png"
 
 
 // slider setting
@@ -127,7 +115,7 @@ const slider_setting2 = {
 
 // slider logos
 const slider_logos:StaticImageData[] = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11,];
-const slider_logos2:StaticImageData[] = [img12, img13, img14, img15, img16, img17, img18, img19, img20, img21, img22, img23,];
+// const slider_logos2:StaticImageData[] = [img12, img13, img14, img15, img16, img17, img18, img19, img20, img21, img22, img23,];
 
 const ClintLogo = () => {
   return (
@@ -147,7 +135,7 @@ const ClintLogo = () => {
                     </div>
                 ))}
                 </Slider>
-                <Slider {...slider_setting2} className="partner-slider-one">
+                {/* <Slider {...slider_setting2} className="partner-slider-one">
                 {slider_logos2.map((logo, i) => (
                     <div key={i} className="item">
                     <div className="p-3">
@@ -155,7 +143,7 @@ const ClintLogo = () => {
                     </div>
                     </div>
                 ))}
-                </Slider>
+                </Slider> */}
             </div>
         </div>
     </>
