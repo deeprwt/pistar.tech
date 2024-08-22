@@ -29,6 +29,7 @@ import FancyBannerSix from "@/components/fancy-banner/fancy-banner-six";
 import BlockFeatureSeven from "@/components/block-feature/block-feature-seven";
 import BlockFeatureThree from "@/components/block-feature/block-feature-three";
 import FancyVideo from "@/components/fancy-banner/fancy-video";
+import PortfolioTwo from "@/components/portfolio/portfolio-two";
 
 export const metadata = {
   title: 'Pistar',
@@ -126,7 +127,8 @@ export default function HomePage() {
           {/* faq section end */}
 
           {/* blog item start */}
-          <HomeTwoBlogs />
+          {/* <HomeTwoBlogs /> */}
+          <PortfolioTwo />
           {/* blog item end */}
 
           {/* fancy banner two start */}
