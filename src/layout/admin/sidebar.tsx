@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from 'next/navigation';
+import { usePathname } from "next/navigation";
 // internal
 import Navbar from "../header/navbar";
 import NavbarAdmin from "../header/navbar-admin";
@@ -16,15 +16,18 @@ import { db, auth } from "@/database/firebase"; // Adjust the path as necessary
 
 const Sidebar = () => {
   const { sticky } = useSticky();
-     // Access the current page URL
+  // Access the current page URL
   const pathrouter = usePathname();
   const router = useRouter();
 
   const handleLogout = async () => {
     try {
       await signOut(auth);
-      router.push("/login"); // Redirect to login after successful logout
       notifySuccess("Successfully logged out");
+      console.log("logout");
+      setTimeout(() => {
+        router.push("/"); // Redirect to login after a short delay
+      }, 500); // Adjust the delay as necessary
     } catch (error) {
       console.error("Error logging out:", error);
       notifyError("Failed to log out");
@@ -33,7 +36,9 @@ const Sidebar = () => {
   return (
     <>
       <header
-        className={`${pathrouter === "/dashboard" ? "header-change " : "" } theme-main-menu menu-style-one white-vr sticky-menu header-change ${
+        className={`${
+          pathrouter === "/dashboard" ? "header-change " : ""
+        } theme-main-menu menu-style-one white-vr sticky-menu header-change ${
           sticky ? "fixed" : ""
         }`}
       >
@@ -53,7 +58,13 @@ const Sidebar = () => {
                 <ul className="d-flex align-items-center style-none">
                   {/* logout button  */}
                   <li>
-                  <button onClick={handleLogout} className="btn-fourteen tran3s">  <i className="bi bi-box-arrow-right"></i></button>
+                    <button
+                      onClick={handleLogout}
+                      className="btn-fourteen tran3s"
+                    >
+                      {" "}
+                      <i className="bi bi-box-arrow-right"></i>
+                    </button>
                     {/* <Link href="/contact" className="btn-fourteen tran3s">
                     <i className="bi bi-box-arrow-right"></i>
                     </Link> */}

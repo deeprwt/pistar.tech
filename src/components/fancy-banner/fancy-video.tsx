@@ -17,7 +17,7 @@ const FancyVideo = () => {
     <>
       <div
         className="fancy-banner-five position-relative mt-150 lg-mt-80 pt-80 md-pt-60 pb-80 md-pb-60"
-        style={{ height: "60vh" }}
+        // style={{ height: "60vh" }}
       >
         {/* Background video */}
         <video
@@ -28,7 +28,7 @@ const FancyVideo = () => {
           className="position-absolute top-0 left-0 w-100 h-100"
           style={{ objectFit: "cover", zIndex: -1 }}
         >
-          <source src="/assets/videos/wave.mp4" type="video/mp4" />
+          <source src="/assets/videos/glob.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 

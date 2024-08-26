@@ -64,6 +64,7 @@ const AuthLogin = () => {
       // Type assertion for Firebase error
       const error = e as { message: string };
       console.error("Firebase Error:", error.message);
+      reset();
       notifyError(error.message);
     }
   };
