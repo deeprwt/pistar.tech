@@ -45,20 +45,19 @@ const FooterOne = () => {
                   href="mailto:info@pistar.tech"
                   className="d-flex align-items-center"
                 >
-                  <Image
+                  {/* <Image
                     src={icon_1}
                     alt="icon"
                     className="lazy-img icon me-3"
-                  />
+                  /> */}
                   info@pistar.tech 
                 </Link> <br />
                 <Link href="tel:+919888912909" className="d-flex">
-                    {" "}
-                    <Image
+                    {/* <Image
                       src={icon_2}
                       alt="icon"
                       className="lazy-img icon me-3"
-                    />
+                    /> */}
                     +91 9888912909
                   </Link>
               </p>

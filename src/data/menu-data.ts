@@ -11,6 +11,28 @@ const menu_data: IMenu[] = [
     link: "/about-us",
     title: "About Us",
   },
+  {
+    id: 3,
+    link: "/about-us",
+    title: "Products",
+  },
+  {
+    id: 4,
+    link: "/Company",
+    title: "Company",
+  },
+  {
+    id: 5,
+    link: "/blog",
+    title: "Blogs",
+    // dropdown:true,
+    // dropdown_menus:[
+    // {link:'/blog',title:'Blogs'},
+    // {link:'/news-media',title:'News & Media'},
+    // {link:'/blog-grid',title:'Blog Grid'},
+    // {link:'/blog-details',title:'Blog Details'},
+    // ]
+  },
   // {
   //   id:3,
   //   link:'/',
@@ -95,25 +117,25 @@ const menu_data: IMenu[] = [
   //     { link: "/solutions/digital-marketing", title: "Digital Services" },
   //   ],
   // },
-  {
-    id: 3,
-    link: "#",
-    title: "Services",
-    sub_dropdown: true,
-    dropdown_submenus: [
-      { link: "/solutions/oracle", title: "Oracle" },
-      { link: "/solutions/finacle", title: "Finacle Core Banking" },
-      { link: "/solutions/servicenow", title: "Service Now" },
-      // { link: "/solutions/infrastructure-management", title: "Infrastructure Management" },
-      // { link: "/solutions/automation-anywhere", title: "Automation Anywhere" },
-      {
-        link: "/solutions/digital-process-automation",
-        title: "Digital Process Automation",
-      },
-      { link: "/contract-staffing", title: "Workforce Solutions" },
-      { link: "https://studios.cgbsolution.com", title: "Digital Services" },
-    ],
-  },
+  // {
+  //   id: 3,
+  //   link: "#",
+  //   title: "Services",
+  //   sub_dropdown: true,
+  //   dropdown_submenus: [
+  //     { link: "/solutions/oracle", title: "Oracle" },
+  //     { link: "/solutions/finacle", title: "Finacle Core Banking" },
+  //     { link: "/solutions/servicenow", title: "Service Now" },
+  //     { link: "/solutions/infrastructure-management", title: "Infrastructure Management" },
+  //     { link: "/solutions/automation-anywhere", title: "Automation Anywhere" },
+  //     {
+  //       link: "/solutions/digital-process-automation",
+  //       title: "Digital Process Automation",
+  //     },
+  //     { link: "/contract-staffing", title: "Workforce Solutions" },
+  //     { link: "https://studios.cgbsolution.com", title: "Digital Services" },
+  //   ],
+  // },
   // {
   //   id: 3,
   //   link: "#",
@@ -168,45 +190,33 @@ const menu_data: IMenu[] = [
   //         {link:'/coming-soon',title:'Online Courses'},
   //   ]
   // },
-  {
-    id: 6,
-    link: "#",
-    title: "Company ",
-    dropdown: true,
-    dropdown_menus: [
-      { link: "/our-company", title: "Our Company" },
-      // {link:'/our-story',title:'Our Story'},
-      // {link:'/vision',title:'Vision'},
-      // {link:'/mission',title:'Mission'},
-      // {link:'/awards',title:'Awards'},
-      // {link:'/recognition',title:'Recognition'},
-      // { link: "/our-culture", title: "Our Culture" },
-      { link: "/leadership", title: "Leadership" },
-      { link: "/partners", title: "Partners" },
-    ],
-  },
-  {
-    id: 7,
-    link: "/blog",
-    title: "Insights",
-    dropdown: true,
-    dropdown_menus: [
-      { link: "/blog", title: "Blogs" },
-      { link: "/article", title: "Articles" },
-    ],
-  },
-  {
-    id: 8,
-    link: "/news-media",
-    title: "News & Media",
-    // dropdown:true,
-    // dropdown_menus:[
-    // {link:'/blog',title:'Blogs'},
-    // {link:'/news-media',title:'News & Media'},
-    // {link:'/blog-grid',title:'Blog Grid'},
-    // {link:'/blog-details',title:'Blog Details'},
-    // ]
-  },
+  // {
+  //   id: 6,
+  //   link: "#",
+  //   title: "Company",
+  //   dropdown: true,
+  //   dropdown_menus: [
+  //     { link: "/our-company", title: "Our Company" },
+  //     {link:'/our-story',title:'Our Story'},
+  //     {link:'/vision',title:'Vision'},
+  //     {link:'/mission',title:'Mission'},
+  //     {link:'/awards',title:'Awards'},
+  //     {link:'/recognition',title:'Recognition'},
+  //     { link: "/our-culture", title: "Our Culture" },
+  //     { link: "/leadership", title: "Leadership" },
+  //     { link: "/partners", title: "Partners" },
+  //   ],
+  // },
+  // {
+  //   id: 7,
+  //   link: "/blog",
+  //   title: "Insights",
+  //   dropdown: true,
+  //   dropdown_menus: [
+  //     { link: "/blog", title: "Blogs" },
+  //     { link: "/article", title: "Articles" },
+  //   ],
+  // },
 ];
 
 export default menu_data;
