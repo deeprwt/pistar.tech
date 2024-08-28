@@ -214,8 +214,8 @@ hr {opacity: 0.09; margin: 5px 0;}
 .btn-four {
   font-weight: 700;
   font-size: 18px;
-  line-height: 50px;
-  padding: 0 38px;
+  line-height: 55px;
+  padding: 4px 38px;
   text-align: center;
   border-radius: 50px;
   color: #fff;
@@ -224,6 +224,7 @@ hr {opacity: 0.09; margin: 5px 0;}
   &:hover {
     background-color: $color-one;
     color: $text-dark;
+    transform: translateY(-4px);
   }
 }
 .btn-five {
