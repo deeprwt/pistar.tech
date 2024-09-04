@@ -22,6 +22,7 @@ import BlockFeatureAbout from "@/components/block-feature/block-feature-about";
 import DottedMap from "@/components/map/maps";
 import HowWeDo from "@/components/home-data/how-we-do";
 import logo_2 from "@/assets/images/logo/logome.png";
+import HeroVideoTwo from "@/components/hero-banner/hero-video-two";
 
 export const metadata: Metadata = {
   title: "About Us",
@@ -38,14 +39,14 @@ const AboutUsPage = () => {
         {/* header end */}
         <main>
           {/* breadcrumb start */}
-          <BreadcrumbOne
+            <HeroVideoTwo />
+          {/* <BreadcrumbOne
             title="About Us"
             subtitle="Navigating Your Financial Growth With Experience & Insightful Solutions."
             page="About Us"
             bg_img={about_bg}
-            // // shape={shape}
             style_2={true}
-          />
+          /> */}
           {/* breadcrumb end */}
 
           {/* text feature one area start */}

@@ -34,7 +34,7 @@ const slider_setting = {
   dots: false,
   arrows: false,
   centerPadding: "0px",
-  slidesToShow: 3,
+  slidesToShow: 4,
   slidesToScroll: 1,
   centerMode: true,
   autoplay: true,
@@ -90,7 +90,7 @@ const PortfolioTwo = () => {
   });
 
   // Limit to 3 articles
-  const limitedArticles = sortedArticles.slice(0, 6);
+  const limitedArticles = sortedArticles.slice(0, 4);
 
 
   const portfolio_items = portfolio_data.filter(
@@ -134,10 +134,10 @@ const PortfolioTwo = () => {
           className="project-slider-one"
         >
            {loading ? (
-              Array.from({ length: 3 }).map((_, index) => (
+              Array.from({ length: 4 }).map((_, index) => (
                 <div key={index} className="col-md-4 mb-5">
                   <Skeleton height={250} />
-                  <Skeleton count={3} />
+                  <Skeleton count={4} />
                 </div>
               ))
             ) : (

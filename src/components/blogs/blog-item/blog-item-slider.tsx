@@ -29,16 +29,16 @@ const BlogItemSlider: React.FC<ArticleCardProps> = ({ article }) => {
         <div className="portfolio-block-two">
           <div className="img-wrapper">
             <Link href={`/article/${article.link}`}>
-            <Image
+            {/* <Image
               src={imageUrl}
               alt="image"
               className="w-100"
-              width={500} // Adjust width and height as needed
-              height={300} // Adjust width and height as needed
+              width={500} 
+              height={300}
               style={imgStyle}
-            />
+            /> */}
+            <img src={article.imageUrl || article.image} alt="Images" />
             </Link>
-            {/* <img src={article.imageUrl || article.image} alt="Images" /> */}
           </div>
           <div className="caption d-flex align-items-center justify-content-between flex-wrap">
             <div>

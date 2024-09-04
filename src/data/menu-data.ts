@@ -8,17 +8,17 @@ const menu_data: IMenu[] = [
   },
   {
     id: 2,
-    link: "/about-us",
+    link: "/",
     title: "About Us",
   },
   {
     id: 3,
-    link: "/about-us",
+    link: "/",
     title: "Products",
   },
   {
     id: 4,
-    link: "/Company",
+    link: "/",
     title: "Company",
   },
   {
