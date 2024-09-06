@@ -14,7 +14,7 @@ import { addDoc, collection } from "firebase/firestore"; // Import Firestore fun
 type FormData = {
   name: string;
   email: string;
-  websiteurl: string;
+  // websiteurl: string;
   companyname: string;
   message: string;
 };
@@ -22,7 +22,7 @@ type FormData = {
 const schema = yup.object().shape({
   name: yup.string().required().label("Name"),
   email: yup.string().required().email().label("Email"),
-  websiteurl: yup.string().required().label("Website Url"),
+  // websiteurl: yup.string().required().label("Website Url"),
   companyname: yup.string().required().label("Company Name"),
   message: yup.string().required().min(10).label("Message"),
 });
@@ -94,7 +94,7 @@ const ContactForm = () => {
               </div>
             </div>
           </div>
-          <div className="col-12">
+          {/* <div className="col-12">
             <div className="input-group-meta form-group mb-30">
               <label htmlFor="">Website Url*</label>
               <input
@@ -108,7 +108,7 @@ const ContactForm = () => {
                 <ErrorMsg msg={errors.websiteurl?.message!} />
               </div>
             </div>
-          </div>
+          </div> */}
           <div className="col-12">
             <div className="input-group-meta form-group mb-40">
               <label htmlFor="">Company Name*</label>

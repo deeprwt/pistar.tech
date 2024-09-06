@@ -36,7 +36,7 @@ const ContactArea = () => {
         <div className="position-relative">
           <div className="row">
             {/* Location data import */}
-            <LocationTabsData />
+            {/* <LocationTabsData /> */}
             {/* Location data import */}
           </div>
 
@@ -54,7 +54,12 @@ const ContactArea = () => {
                     </div>
                   </div>
                   <div className="title-one text-center text-lg-start md-mt-20 mb-70 md-mb-30">
-                    <h2>Have inquiry? Reach to out us via message...</h2>
+                    <h2>Let's Connect</h2>
+                    <p className="text-lg md-pb-20">
+                      Please complete the form for all inquiries. Should you
+                      encounter any issues with our products, feel free to
+                      contact us <a href="mailto:info@pistar.tech" style={{color:"#62c087"}}>info@pistar.tech</a>
+                    </p>
                   </div>
                 </div>
               </div>

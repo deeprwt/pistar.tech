@@ -9,6 +9,7 @@ import logo from "@/assets/images/logo/logo-white.png";
 import icon from "@/assets/images/icon/icon_94.svg";
 import useSticky from "@/hooks/use-sticky";
 import LoginModal from "@/components/common/login-modal";
+import BookADemo from "@/components/forms/book-a-demo";
 
 const HeaderTwo = () => {
   const { sticky } = useSticky();
@@ -38,9 +39,15 @@ const HeaderTwo = () => {
               <div className="right-widget ms-auto ms-lg-0 me-3 me-lg-0 order-lg-3">
                 <ul className="d-flex align-items-center style-none">
                   <li className="d-none d-md-block">
-                    <Link href="/contact" className="btn-two tran3s">
+                    <a
+                      href="#"
+                      data-bs-toggle="modal"
+                      data-bs-target="#BookDemo"
+                      //  className="signup-btn-one icon-link w-100 mt-20"
+                      className="btn-two tran3s w-100"
+                    >
                       Book a Demo
-                    </Link>
+                    </a>
                   </li>
                   {/* <li className="d-flex align-items-center login-btn-two">
                     <a
@@ -80,6 +87,7 @@ const HeaderTwo = () => {
       {/* login modal start */}
       <LoginModal />
       {/* login modal end */}
+      <BookADemo />
     </>
   );
 };

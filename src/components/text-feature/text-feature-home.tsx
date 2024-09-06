@@ -56,18 +56,27 @@ const TextFeatureHome = ({ style_2 = false }: { style_2?: boolean }) => {
   return (
     <>
       {!style_2 && (
-        <div className="text-feature-one service-details pt-150 lg-pt-100 pb-150 lg-pb-100" style={backImg2}>
+        <div
+          className="text-feature-one service-details pt-150 lg-pt-100 pb-150 lg-pb-100"
+          style={backImg2}
+        >
           <div className="container">
             <div className="row align-items-center">
               <div className="col-xl-5 col-lg-6 wow fadeInLeft">
                 <div className="title-one details-meta">
                   <div className="upper-title">About Us</div>
-                  <h3>Where Technology Meets Excellence</h3>
+                  <h3>
+                    Transforming Foot Care with Cutting-Edge Pressure Analysis
+                    Technology
+                  </h3>
                 </div>
                 <p className="text-lg">
-                  Experience the extraordinary with CGB Solutions. We innovate
-                  relentlessly, transforming challenges into seamless solutions
-                  for unparalleled client excellence.
+                  PiStarTech Private Limited develops innovative solutions like
+                  the Diabetic PodiaScan Mat (DiaPS Mat), providing precise
+                  plantar pressure analysis for improved foot health
+                  diagnostics. Our technology offers a reliable, cost-effective
+                  tool to support medical professionals and enhance patient care
+                  through accurate, real-time data.
                 </p>
                 <div className="d-inline-flex flex-wrap align-items-center">
                   <Link href="/about-us" className="btn-four mt-15 me-4">
