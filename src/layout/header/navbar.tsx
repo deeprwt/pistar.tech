@@ -194,9 +194,15 @@ const Navbar = ({ logo_white = false }: { logo_white?: boolean }) => {
         </a> */}
         <ul className="style-none contact-info m0 pt-30">
           <li className="d-md-block">
-            <Link href="/contact" className="btn-two tran3s w-100">
+            <a
+              href="#"
+              data-bs-toggle="modal"
+              data-bs-target="#BookDemo"
+              //  className="signup-btn-one icon-link w-100 mt-20"
+              className="btn-two tran3s w-100"
+            >
               Book a Demo
-            </Link>
+            </a>
           </li>
 
           {/* <li className="d-flex align-items-center p0 mt-15">
