@@ -59,7 +59,7 @@ const PartnerLogo = () => {
               <div className="col-5 col-sm-4 d-flex justify-content-center col-lg-3 wow fadeInLeft">
                 <div className="title-one">
                   {/* <div className="upper-title ">Trusted Global Brands</div> */}
-                  <h3 className="m-0 text-center text-white">Partners</h3>
+                  <h3 className="m-0 text-center text-white">Supported By</h3>
                 </div>
               </div>
               <div className="col-7 col-sm-8 col-lg-9 wow fadeInRight">
