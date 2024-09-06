@@ -33,6 +33,11 @@ const menu_data: IMenu[] = [
     // {link:'/blog-details',title:'Blog Details'},
     // ]
   },
+  {
+    id: 6,
+    link: "/contact",
+    title: "Contact Us",
+  },
   // {
   //   id:3,
   //   link:'/',

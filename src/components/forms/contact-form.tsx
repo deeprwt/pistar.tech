@@ -66,7 +66,7 @@ const ContactForm = () => {
         <div className="row controls">
           <div className="col-12">
             <div className="input-group-meta form-group mb-30">
-              <label htmlFor="">Name*</label>
+              <label className="text-white" htmlFor="">Name*</label>
               <input
                 type="text"
                 placeholder="Your Name*"
@@ -81,7 +81,7 @@ const ContactForm = () => {
           </div>
           <div className="col-12">
             <div className="input-group-meta form-group mb-30">
-              <label htmlFor="">Email*</label>
+              <label className="text-white" htmlFor="">Email*</label>
               <input
                 type="email"
                 placeholder="Email Address*"
@@ -96,7 +96,7 @@ const ContactForm = () => {
           </div>
           {/* <div className="col-12">
             <div className="input-group-meta form-group mb-30">
-              <label htmlFor="">Website Url*</label>
+              <label className="text-white" htmlFor="">Website Url*</label>
               <input
                 type="text"
                 placeholder="Website Url*"
@@ -111,7 +111,7 @@ const ContactForm = () => {
           </div> */}
           <div className="col-12">
             <div className="input-group-meta form-group mb-40">
-              <label htmlFor="">Company Name*</label>
+              <label className="text-white" htmlFor="">Company Name*</label>
               <input
                 type="text"
                 placeholder="Company Name*"
@@ -138,7 +138,7 @@ const ContactForm = () => {
             </div>
           </div>
           <div className="col-12">
-            <button type="submit" className="btn-four tran3s w-100 d-block">
+            <button type="submit" className="btn-four tran3s w-100 d-block" style={{background:"#62c087"}}>
               Send Message
             </button>
           </div>
