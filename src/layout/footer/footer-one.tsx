@@ -16,7 +16,7 @@ const FooterOne = () => {
   return (
   <>
   <NewsletterBannerTwo />
-    <div className="footer-one">
+    <div className="footer-one" style={{background: "linear-gradient(#313638,#313638)"}}>
       <div className="container">
         <div className="inner-wrapper">
           <div className="row justify-content-between">
