@@ -69,7 +69,7 @@ const BookDemoForm = () => {
           <div className="input-group-meta position-relative mb-25">
             <label>Phone Number*</label>
             <input
-              type="text"
+              type="number"
               {...register("number")}
               id="number"
               placeholder="Enter Your Phone Number"

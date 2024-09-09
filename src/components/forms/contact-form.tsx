@@ -107,7 +107,7 @@ const ContactForm = () => {
                 Phone Number*
               </label>
               <input
-                type="text"
+                type="number"
                 {...register("number")}
                 id="number"
                 placeholder="Enter Your Phone Number"
