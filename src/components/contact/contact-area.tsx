@@ -65,7 +65,7 @@ const ContactArea = () => {
                     </div>
                   </div>
                   <div className="title-one text-center text-lg-start md-mt-20 mb-70 md-mb-30">
-                    <h2 className="text-white">Let's Connect</h2>
+                    <h2 className="text-white">Let&nbsp;s Connect</h2>
                     <p className="text-lg md-pb-20 text-white">
                       Please complete the form for all inquiries. Should you
                       encounter any issues with our products, feel free to
