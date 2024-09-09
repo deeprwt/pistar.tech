@@ -5,6 +5,8 @@ import Link from "next/link";
 import awardsimg from "@/assets/images/company/awards/talentlinkedin.svg";
 import awardsimg2 from "@/assets/images/company/awards/grat-work.jpg";
 import awardsimg3 from "@/assets/images/company/awards/indian-achive-logo.png";
+import cert1 from "@/assets/pdf/certificate_img1.jpg";
+// import pdf from "@/assets/pdf/certificate.pdf";
 import icon_10 from "@/assets/images/icon/icon_81.svg";
 import icon_11 from "@/assets/images/icon/icon_82.svg";
 import icon_12 from "@/assets/images/icon/icon_83.svg";
@@ -15,17 +17,21 @@ import SideBar from "./side-bar";
 // CardItem
 function CardItem({
   icon,
+  link,
   title,
   subtitle,
 }: {
   icon: StaticImageData;
+  link:string;
   title: string;
   subtitle: string;
 }) {
   return (
     <div className="card-style-sixteen text-center mt-40">
       <div className=" m-auto  d-flex align-items-center justify-content-center">
-        <Image src={icon} alt="icon" className="lazy-img" />
+        <Link href="@/assets/pdf/certificate.pdf" className="w-50"> 
+          <Image src={icon} alt="icon" layout="responsive" className="lazy-img" />
+        </Link>
       </div>
       <h4 className="fw-bold mt-35 lg-mt-30 mb-15">{title}</h4>
       <p className="m0">{subtitle}</p>
@@ -41,7 +47,7 @@ const AwardsSection = () => {
     <div className="service-details mt-150 lg-mt-80 mb-100 lg-mb-80">
       <div className="container">
         <div className="row">
-          <div className="col-xxl-9 col-lg-9">
+          <div className="col-xxl-12 col-lg-12">
             <div className="details-meta ps-xxl-5 ps-xl-3">
               <h2>Our Awards</h2>
               <p>
@@ -54,21 +60,24 @@ const AwardsSection = () => {
                 <div className="row">
                   <div className="col-md-4 wow fadeInUp">
                     <CardItem
-                      icon={awardsimg}
+                      link={"@/assets/pdf/certificate.pdf"}
+                      icon={cert1}
                       title="Collect Doc"
                       subtitle="We collect require documents & send for check"
                     />
                   </div>
                   <div className="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
                     <CardItem
-                      icon={awardsimg2}
+                    link={"@/assets/pdf/certificate.pdf"}
+                      icon={cert1}
                       title="Check & Finalize"
                       subtitle="We check the documents & send for final approval"
                     />
                   </div>
                   <div className="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
                     <CardItem
-                      icon={awardsimg3}
+                    link={"@/assets/pdf/certificate.pdf"}
+                      icon={cert1}
                       title="Approved"
                       subtitle="After approve you ready to use your accounts"
                     />
@@ -80,22 +89,6 @@ const AwardsSection = () => {
                 style={imgStyle}/>
               </div> */}
             </div>
-          </div>
-          <div className="col-xxl-3 col-lg-3">
-            <aside className="md-mt-40">
-              <div className="service-nav-item ">
-                <SideBar
-                  active_data={false}
-                  active_data1={false}
-                  active_data2={false}
-                  active_data3={true}
-                  active_data4={false}
-                  active_data5={false}
-                  active_data6={false}
-                  active_data7={false}
-                />
-              </div>
-            </aside>
           </div>
         </div>
       </div>

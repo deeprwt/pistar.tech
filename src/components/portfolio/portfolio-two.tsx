@@ -34,7 +34,7 @@ const slider_setting = {
   dots: false,
   arrows: false,
   centerPadding: "0px",
-  slidesToShow: 4,
+  slidesToShow: 3,
   slidesToScroll: 1,
   centerMode: true,
   autoplay: true,

@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 // internal
 import Navbar from "../header/navbar";
 import NavbarAdmin from "../header/navbar-admin";
-import logo from "@/assets/images/logo/logome.png";
+import logo from "@/assets/images/logo/logo-white.png";
 import useSticky from "@/hooks/use-sticky";
 import LoginModal from "@/components/common/login-modal";
 import { signOut } from "firebase/auth"; // Import signOut function

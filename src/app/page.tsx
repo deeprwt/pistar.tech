@@ -38,6 +38,7 @@ import icon_3 from "@/assets/images/icon/icon_92.svg";
 import Link from "next/link";
 import bg_image2 from "@/assets/images/background/counter_dark_pattern.png";
 import img4 from "@/assets/images/media/doctor.jpg";
+import AwardsSection from "@/components/company/awards-section";
 
 const backImg2 = {
   backgroundImage: `url('${bg_image2.src}')`,
@@ -147,6 +148,8 @@ export default function HomePage() {
           <PortfolioTwo />
           {/* blog item end */}
 
+          <AwardsSection />
+
           {/* fancy banner two start */}
           <FancyBannerTwo />
           {/* fancy banner two end */}
@@ -163,65 +166,6 @@ export default function HomePage() {
                         layout="responsive"
                         className="lazy-img me-auto ms-auto rounded"
                       />
-                      <div className="d-flex flex-column flex-lg-column-reverse justify-content-center">
-                        <div className="row">
-                          <div className="col-md-8 col-6 me-auto ms-auto">
-                            {/* <Image
-                              src={img4}
-                              alt="icon"
-                              layout="responsive"
-                              className="lazy-img me-auto ms-auto"
-                            /> */}
-                          </div>
-                        </div>
-                        {/* <div className="title-one text-center text-lg-start md-mt-20 mb-70 md-mb-30">
-                          <h2 className="text-white">Let&nbsp;s Connect</h2>
-                          <p className="text-lg md-pb-20 text-white">
-                            Please complete the form for all inquiries. Should
-                            you encounter any issues with our products, feel
-                            free to contact us{" "}
-                            <a
-                              href="mailto:info@pistar.tech"
-                              style={{ color: "#62c087" }}
-                            >
-                              info@pistar.tech
-                            </a>
-                          </p>
-                          <p className="text-white lh-sm mb-35 ">
-                            <Link
-                              href="mailto:info@pistar.tech"
-                              className="d-flex align-items-center"
-                            >
-                              <Image
-                                src={icon_3}
-                                alt="icon"
-                                className="lazy-img icon me-3"
-                              />
-                              info@pistar.tech
-                            </Link>{" "}
-                            <br />
-                            <Link href="tel:+919888912909" className="d-flex">
-                              <Image
-                                src={icon_2}
-                                alt="icon"
-                                className="lazy-img icon me-3"
-                              />
-                              +91 9888912909
-                            </Link>{" "}
-                            <br />
-                            <Link href="tel:+919888912909" className="d-flex">
-                              <Image
-                                src={icon_1}
-                                alt="icon"
-                                className="lazy-img icon me-3"
-                              />
-                              46/1, NH 44, Near Krishan Reddy Industrial Area,
-                              Kudlu Gate, Hosapalaya, Garvebhavi Palya
-                              Bengaluru, Karnataka, 560068
-                            </Link>
-                          </p>
-                        </div> */}
-                      </div>
                     </div>
                     <div className="col-lg-7">
                       <div className="form-style-one ps-xl-5">

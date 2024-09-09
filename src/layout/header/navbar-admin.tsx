@@ -3,7 +3,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 // internal
-import logo from "@/assets/images/logo/logo_02.svg";
+import logo from "@/assets/images/logo/logo-white.png";
 import logo_2 from "@/assets/images/logo/logome.png";
 import icon_1 from "@/assets/images/icon/icon_14.svg";
 import icon_2 from "@/assets/images/icon/icon_15.svg";
@@ -193,7 +193,7 @@ const NavbarAdmin = ({ logo_white = false }: { logo_white?: boolean }) => {
             <i className="bi bi-arrow-right"></i>
           </div>
         </a> */}
-        <ul className="style-none contact-info m0 pt-30">
+        {/* <ul className="style-none contact-info m0 pt-30">
           <li className="d-flex align-items-center p0 mt-15">
             <Image src={icon_1} alt="icon" className="lazy-img icon me-2" />
             <Link href="mailto:info@cgbindia.com" className="fw-500 text-white">
@@ -206,7 +206,7 @@ const NavbarAdmin = ({ logo_white = false }: { logo_white?: boolean }) => {
               9888912909
             </Link>
           </li>
-        </ul>
+        </ul> */}
       </li>
     </ul>
   );

@@ -14,7 +14,7 @@ import { addDoc, collection } from "firebase/firestore"; // Import Firestore fun
 type FormData = {
   name: string;
   email: string;
-  // websiteurl: string;
+  number: string;
   companyname: string;
   message: string;
 };
@@ -22,7 +22,10 @@ type FormData = {
 const schema = yup.object().shape({
   name: yup.string().required().label("Name"),
   email: yup.string().required().email().label("Email"),
-  // websiteurl: yup.string().required().label("Website Url"),
+  number: yup
+    .string()
+    .required("Phone Number is required")
+    .matches(/^[0-9]{10}$/, "Phone number must be exactly 10 digits"),
   companyname: yup.string().required().label("Company Name"),
   message: yup.string().required().min(10).label("Message"),
 });
@@ -66,7 +69,9 @@ const ContactForm = () => {
         <div className="row controls">
           <div className="col-12">
             <div className="input-group-meta form-group mb-30">
-              <label className="text-white" htmlFor="">Name*</label>
+              <label className="text-white" htmlFor="">
+                Name*
+              </label>
               <input
                 type="text"
                 placeholder="Your Name*"
@@ -81,7 +86,9 @@ const ContactForm = () => {
           </div>
           <div className="col-12">
             <div className="input-group-meta form-group mb-30">
-              <label className="text-white" htmlFor="">Email*</label>
+              <label className="text-white" htmlFor="">
+                Email*
+              </label>
               <input
                 type="email"
                 placeholder="Email Address*"
@@ -94,24 +101,34 @@ const ContactForm = () => {
               </div>
             </div>
           </div>
-          {/* <div className="col-12">
+          <div className="col-12">
             <div className="input-group-meta form-group mb-30">
-              <label className="text-white" htmlFor="">Website Url*</label>
+              <label className="text-white" htmlFor="">
+                Phone Number*
+              </label>
               <input
                 type="text"
-                placeholder="Website Url*"
-                {...register("websiteurl")}
-                id="websiteurl"
-                name="websiteurl"
+                {...register("number")}
+                id="number"
+                placeholder="Enter Your Phone Number"
+                maxLength={10}
+                pattern="\d{10}"
+                onInput={(e) => {
+                  if (e.currentTarget.value.length > 10) {
+                    e.currentTarget.value = e.currentTarget.value.slice(0, 10); // Restrict input to 10 digits
+                  }
+                }}
               />
               <div className="help-block with-errors">
-                <ErrorMsg msg={errors.websiteurl?.message!} />
+                <ErrorMsg msg={errors.number?.message!} />
               </div>
             </div>
-          </div> */}
+          </div>
           <div className="col-12">
             <div className="input-group-meta form-group mb-40">
-              <label className="text-white" htmlFor="">Company Name*</label>
+              <label className="text-white" htmlFor="">
+                Company Name*
+              </label>
               <input
                 type="text"
                 placeholder="Company Name*"
@@ -138,7 +155,11 @@ const ContactForm = () => {
             </div>
           </div>
           <div className="col-12">
-            <button type="submit" className="btn-four tran3s w-100 d-block" style={{background:"#62c087"}}>
+            <button
+              type="submit"
+              className="btn-four tran3s w-100 d-block"
+              style={{ background: "#62c087" }}
+            >
               Send Message
             </button>
           </div>

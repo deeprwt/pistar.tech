@@ -19,7 +19,7 @@ type FormData = {
 
 const schema = yup.object().shape({
   name: yup.string().required("Name is required"),
-  number: yup.string().required("Phone Number is required"),
+  number: yup.string().required("Phone Number is required").matches(/^[0-9]{10}$/, "Phone number must be exactly 10 digits"),
   email: yup.string().required("Email is required").email("Invalid email format"),
   date: yup.string().required("Date is required"),
   timingSlot: yup.string().required("Timing Slot is required"),
@@ -73,6 +73,13 @@ const BookDemoForm = () => {
               {...register("number")}
               id="number"
               placeholder="Enter Your Phone Number"
+              maxLength={10}
+              pattern="\d{10}"
+              onInput={(e) => {
+                if (e.currentTarget.value.length > 10) {
+                  e.currentTarget.value = e.currentTarget.value.slice(0, 10); // Restrict input to 10 digits
+                }
+              }}
             />
             <ErrorMsg msg={errors.number?.message!} />
           </div>
