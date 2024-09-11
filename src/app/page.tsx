@@ -160,12 +160,25 @@ export default function HomePage() {
                 <div className="bg-wrapper lg-mt-40">
                   <div className="row">
                     <div className="col-lg-5 d-flex">
-                      <Image
+                      {/* <Image
                         src={img4}
                         alt="icon"
                         layout="responsive"
-                        className="lazy-img me-auto ms-auto rounded"
-                      />
+                        className=""
+                      /> */}
+                      <div className="ms-auto pe-xxl-5 ps-xxl-5 pb-35 md-mt-60 d-flex align-items-end">
+                        <Image
+                          src={img4}
+                          alt="cgb aboutus"
+                          className="shap-animate rounded"
+                          style={{ height: "auto" }}
+                        ></Image>
+                        {/* <ul className="style-none">
+                        <li>Mobile app easy management & access</li>
+                        <li>Ton’s of features for handle the card easily</li>
+                        <li>Strong security system.</li>
+                    </ul> */}
+                      </div>
                     </div>
                     <div className="col-lg-7">
                       <div className="form-style-one ps-xl-5">
