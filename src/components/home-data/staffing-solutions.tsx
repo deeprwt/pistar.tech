@@ -50,7 +50,7 @@ const StaffingSolutions = () => {
             </div>
             <p className="text-lg mt-40 lg-mt-30 mb-50">
               PiStarTech Private Limited ensures that the DiaPS Mat integrates
-              smoothly into the medical professional's existing knowledge and
+              smoothly into the medical professional&apos;s existing knowledge and
               workflow. Much like familiar diagnostic tools, the DiaPS Mat
               builds on well-known foot assessment methods while providing
               advanced digital insights. Its user-friendly interface allows
