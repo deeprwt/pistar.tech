@@ -45,32 +45,48 @@ const staffing_data:IStaffing[] = [
   {
     id:1,
     icon:icon_22,
-    title:'Contract Staffing',
-    desc:'CGB Solutions offers flexible workforce solutions with our contract staffing services. Access skilled professionals on a temporary basis to meet project demands and scale your team as needed.',
+    title:'Plantar Fasciitis',
+    desc:' Identifies pressure points and gait abnormalities that contribute to heel pain and inflammation.',
     page:'staffing-1',
     link: '/contract-staffing'
   },
   {
     id:2,
     icon:icon_23,
-    title:'Permanent Staffing',
-    desc:'Find the right talent for long-term success with CGB Solutions permanent staffing solutions. Our recruiters specialize in identifying top-tier candidates who align with your company culture and values.',
+    title:'Flat Feet',
+    desc:'Detects improper foot arch and distribution of pressure that can lead to discomfort and functional problems.',
     page:'staffing-1',
     link: '/permanent-staffing'
   },
   {
     id:3,
     icon:icon_19,
-    title:'Hire-Train-Deploy',
-    desc:'Empower your workforce with our customized training programs and strategic deployment support. Bridge skill gaps and enhance productivity with CGB Solutions Hire-Train-Deploy solutions.',
+    title:'High Arches',
+    desc:'Analyzes pressure patterns that indicate excessive pressure on specific foot areas, causing pain and instability.',
     page:'staffing-1',
     link: '/hire-train-deploy'
   },
   {
     id:4,
     icon:icon_24,
-    title:'RPO',
-    desc:'Optimize your talent acquisition strategy with CGB Solutions RPO services. Our dedicated team manages the entire recruitment lifecycle, reducing time-to-hire and cost-per-hire while maintaining quality standards.',
+    title:'Diabetic Foot Ulcers',
+    desc:'Monitors high-pressure zones that can lead to ulcer formation in diabetic patients, aiding in prevention and treatment.',
+    page:'staffing-1',
+    link: '/rpo'
+  },
+  {
+    id:5,
+    icon:icon_24,
+    title:'Metatarsalgia',
+    desc:' Identifies abnormal pressure distribution that causes pain in the ball of the foot.',
+    page:'staffing-1',
+    link: '/rpo'
+  },
+  {
+    id:6,
+    icon:icon_24,
+    title:'Bunions',
+    desc:' Detects pressure and gait changes associated with bunions, helping in early intervention and management.',
     page:'staffing-1',
     link: '/rpo'
   },

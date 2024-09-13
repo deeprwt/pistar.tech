@@ -39,6 +39,9 @@ import Link from "next/link";
 import bg_image2 from "@/assets/images/background/counter_dark_pattern.png";
 import img4 from "@/assets/images/media/doctor.jpg";
 import AwardsSection from "@/components/company/awards-section";
+import TeamTwoArea from "@/components/team/team-v2-area";
+import TeamOneArea from "@/components/team/team-v1-area";
+import TeamThreeArea from "@/components/team/team-v3-area";
 
 const backImg2 = {
   backgroundImage: `url('${bg_image2.src}')`,
@@ -77,6 +80,39 @@ export default function HomePage() {
 
           {/* hero banner end */}
 
+          <div className="fancy-banner-two mt-80 lg-mt-80 mb-80 lg-mb-60 service-details">
+            <div className="container">
+              <div className="text-center wow fadeInUp">
+                <div className="row">
+                  <div className="col-lg-10 m-auto">
+                    <div className="title-one details-meta">
+                      <h3>Why is the DiaPS Mat so easy to adopt?</h3>
+                    </div>
+                    <p className="text-lg mt-40 lg-mt-30 mb-30">
+                      The DiaPS Mat from PiStarTech Private Limited is designed
+                      for easy adoption into any clinical setting. Its portable,
+                      flexible design allows it to seamlessly integrate into
+                      existing medical workflows without the need for extensive
+                      training or changes to the current setup. The device is
+                      user-friendly and highly adaptable, making it suitable for
+                      clinics and hospitals of any size.
+                    </p>
+                    <p className="text-lg mt-40 lg-mt-30 mb-30">
+                      Since it provides instant, digital plantar pressure
+                      analysis in just 5 seconds, healthcare professionals can
+                      easily incorporate the DiaPS Mat into their patient
+                      evaluation process, streamlining diagnosis and enhancing
+                      accuracy without interrupting day-to-day operations. Its
+                      affordability and ease of use make it accessible to a wide
+                      range of practitioners, ensuring they can upgrade to
+                      modern foot analysis technology with minimal effort.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
           {/* number counter start  */}
           <TextFeatureHome style_2={true} />
           {/* number counter end */}
@@ -96,7 +132,7 @@ export default function HomePage() {
           <BlockFeatureSeven />
           {/* tabs are for solutions start */}
 
-          {/* <StaffingSolutions /> */}
+          <StaffingSolutions />
 
           {/* clints logo start  */}
           <ClintLogo />
@@ -149,6 +185,8 @@ export default function HomePage() {
           {/* blog item end */}
 
           <AwardsSection />
+
+          <TeamThreeArea />
 
           {/* fancy banner two start */}
           <FancyBannerTwo />

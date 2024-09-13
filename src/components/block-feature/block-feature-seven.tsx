@@ -42,15 +42,15 @@ function CardItem({ icon, title, desc, bg_img }: IProps) {
 
 const BlockFeatureSeven = () => {
   return (
-    <div className="block-feature-seven position-relative mt-170 lg-mt-80">
+    <div className="block-feature-seven position-relative mt-170 lg-mt-80 service-details ">
       <div className="container">
         <div className="position-relative">
           <div className="row">
             <div className="col-xl-11 wow fadeInLeft">
-              <div className="title-one pe-xxl-5 mb-50 lg-mb-30">
-                <h2 className="text-dark">
+              <div className="title-one pe-xxl-5 mb-50 lg-mb-30 details-meta">
+                <h3 className="text-dark">
                   We are here to help you build, manage & protect your wealth.
-                </h2>
+                </h3>
               </div>
             </div>
           </div>

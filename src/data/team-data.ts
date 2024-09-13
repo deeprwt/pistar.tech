@@ -30,10 +30,17 @@ import team_14 from "@/assets/images/media/img_39.jpg";
 import team_15 from "@/assets/images/media/img_40.jpg";
 import team_16 from "@/assets/images/media/img_41.jpg";
 
+
+import doc1 from "@/assets/images/team/cmr-surgeon-mario-nosotti.jpg";
+import doc2 from "@/assets/images/team/cmr-surgeon-nidhi-singh.jpg";
+import doc3 from "@/assets/images/team/cmr-surgeon-pradeep-chowbey.jpg";
+import doc4 from "@/assets/images/team/cmr-surgeon-vanash-patel.jpg";
+
+
 const team_data: ITeam[] = [
   {
     id: 1,
-    img: team_1,
+    img: doc1,
     name: "John Smith",
     designation: "Manager",
     page: "home",
@@ -41,7 +48,7 @@ const team_data: ITeam[] = [
   },
   {
     id: 2,
-    img: team_2,
+    img: doc2,
     name: "Rylan Blackthorn",
     designation: "Marketing Expert",
     page: "home",
@@ -49,7 +56,7 @@ const team_data: ITeam[] = [
   },
   {
     id: 3,
-    img: team_3,
+    img: doc3,
     name: "Mark Smith",
     designation: "Analysis",
     page: "home",
@@ -57,7 +64,7 @@ const team_data: ITeam[] = [
   },
   {
     id: 4,
-    img: team_4,
+    img: doc4,
     name: "Maria Escolova",
     designation: "Senior Officer",
     page: "home",
@@ -113,22 +120,22 @@ const team_data: ITeam[] = [
   //   page: "team-three",
   //   gif: gif3,
   // },
-  {
-    id: 11,
-    img: Shobha,
-    name: "Shobha M",
-    designation: "Account Manager",
-    page: "home",
-    gif: gif1,
-  },
-  {
-    id: 12,
-    img: Kushangi,
-    name: "Kushangi Shrithika",
-    designation: "Social Media ",
-    page: "home",
-    gif: gif4,
-  },
+  // {
+  //   id: 11,
+  //   img: Shobha,
+  //   name: "Shobha M",
+  //   designation: "Account Manager",
+  //   page: "home",
+  //   gif: gif1,
+  // },
+  // {
+  //   id: 12,
+  //   img: Kushangi,
+  //   name: "Kushangi Shrithika",
+  //   designation: "Social Media ",
+  //   page: "home",
+  //   gif: gif4,
+  // },
   // team page
   // {
   //   id: 13,
