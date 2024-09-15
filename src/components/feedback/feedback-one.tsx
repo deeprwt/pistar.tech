@@ -1,7 +1,8 @@
-'use client'
+"use client";
 import React from "react";
 import Slider from "react-slick";
 import Image from "next/image";
+import CounterUp from "../common/counter-up";
 // internal
 import { feedback_one } from "@/data/feedback-data";
 import icon from "@/assets/images/icon/icon_12.svg";
@@ -18,15 +19,21 @@ const slider_setting = {
   autoplaySpeed: 3000,
 };
 
-const FeedbackOne = ({cls}:{cls?:string}) => {
+const FeedbackOne = ({ cls }: { cls?: string }) => {
   return (
-    <div className={`feedback-section-one ${cls?cls:'mt-150 lg-mt-80 pb-80'}`}>
+    <div
+      className={`feedback-section-one ${cls ? cls : "mt-150 lg-mt-80 pb-80"}`}
+    >
       <div className="container">
         <div className="position-relative">
           <div className="title-one sm-mb-40">
             <h2>
-              Words From <br /> Clients.
+              <CounterUp number={1000} text="+" />
             </h2>
+            <p>
+              procedues perforyned by <br />
+              Verius globally
+            </p>
           </div>
           <Slider {...slider_setting} className="feedback-slider-one">
             {feedback_one.map((item, i) => (
@@ -56,7 +63,7 @@ const FeedbackOne = ({cls}:{cls?:string}) => {
                           <span className="text-dark">
                             {item.id < 10 ? `0${item.id}` : item.id}
                           </span>{" "}
-                          / {" "}
+                          /{" "}
                           {feedback_one.length < 10
                             ? `0${feedback_one.length}`
                             : feedback_one.length}

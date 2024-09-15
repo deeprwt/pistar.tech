@@ -6,7 +6,7 @@ import Link from "next/link";
 // internal
 import staffing_data from "@/data/staffing-data";
 import shape from "@/assets/images/shape/shape_44.svg";
-import img from "@/assets/images/media/Aboutbanner.png";
+import img from "@/assets/images/media/carousel-small-modular.jpg";
 
 // slider settings
 const slider_setting = {
@@ -38,10 +38,15 @@ const StaffingSolutions = () => {
     .filter((s) => s.page === "staffing-1")
     .slice(0, 4);
 
-  const [currentSlide, setCurrentSlide] = useState(0);
+  const [currentSlide, setCurrentSlide] = useState<number>(0); // Declare currentSlide and setCurrentSlide
+
+  // Function to handle slide change with type declaration
+  const handleBeforeChange = (oldIndex: number, newIndex: number) => {
+    setCurrentSlide(newIndex); // Update current slide state
+  };
 
   return (
-    <div className="block-feature-eleven service-details overflow-hidden position-relative mt-150 lg-mt-100 pb-80 lg-pb-100 md-pb-80">
+    <div className="block-feature-eleven service-details overflow-hidden position-relative mt-80 lg-mt-80 pb-80 lg-pb-100 md-pb-80">
       <div className="container">
         <div className="row gx-lg-5 align-items-center">
           <div className="col-lg-12 m-auto">
@@ -61,8 +66,8 @@ const StaffingSolutions = () => {
               established expertise in foot care.
             </p>
           </div>
-          <div className="col-lg-5 wow fadeInLeft">
-            <div className="title-one card-style-nine" style={{backgroundColor:"none",padding:"0px"}}>
+          <div className="col-lg-4 wow fadeInLeft">
+            <div className="title-one card-style-nine" style={{ background: "none", padding: "0px" }}>
               <h3 className="fw-bold mt-30 lg-mt-20 text-dark">{service_items[currentSlide]?.title}</h3>{" "}
               {/* Dynamic Title */}
             </div>
@@ -76,37 +81,24 @@ const StaffingSolutions = () => {
               Explore All
             </Link>
           </div>
-          <div className="col-lg-7">
+          <div className="col-lg-8">
             <div className="slider-wrapper md-mt-50">
               <Slider
                 {...slider_setting}
+                beforeChange={handleBeforeChange} // Call handleBeforeChange
                 className="service-slider-one"
-                beforeChange={(oldIndex, newIndex) => setCurrentSlide(newIndex)} // Update currentSlide on slide change
               >
                 {service_items.map((s, index) => (
                   <div key={s.id} className="item">
-                    {/* <div className="card-style-seventeen tran3s w-100">
-                      <div className="tran3s rounded-circle d-flex justify-content-center">
-                        <Image src={s.icon} alt="icon" width={70} height={70} />
-                      </div>
-                      <div className="text">
-                        <h4 className="fw-bold mb-25 md-mb-20">
-                          {s.title}
-                        </h4>
-                        <p className="mb-25">
-                          {s.desc}
-                        </p>
-                        <Link href={s.link} className="btn-three">
-                          <span>Learn More</span>{" "}
-                          <i className="bi bi-chevron-right"></i>
-                        </Link>
-                      </div>
-                    </div> */}
                     <Image
                       src={img}
                       alt="icon"
                       layout="responsive"
                       className="service-img rounded"
+                      style={{
+                        opacity: index === currentSlide ? 1 : 0.3, // Apply opacity based on active slide
+                        transition: "opacity 0.5s ease-in-out", // Smooth transition for opacity
+                      }}
                     />
                   </div>
                 ))}

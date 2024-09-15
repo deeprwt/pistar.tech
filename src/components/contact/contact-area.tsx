@@ -8,6 +8,7 @@ import icon_3 from "@/assets/images/icon/icon_92.svg";
 import icon_4 from "@/assets/images/assets/screen_19.png";
 import ContactForm from "../forms/contact-form";
 import LocationTabsData from "../tabs/location-taps";
+import shape from "@/assets/images/background/circle.jpg";
 import bg_image2 from "@/assets/images/background/contactbanner.jpg";
 
 const backImg2 = {
@@ -41,7 +42,8 @@ function AddressBlock({
 
 const ContactArea = () => {
   return (
-    <div className="contact-us-section pt-80 lg-pt-80" style={backImg2}>
+    <>
+    <div className="block-feature-eleven position-relative contact-us-section pt-80 lg-pt-80 pb-80 lg-pb-80" style={backImg2}>
       <div className="container">
         <div className="position-relative">
           <div className="row">
@@ -114,7 +116,10 @@ const ContactArea = () => {
           </div>
         </div>
       </div>
-      <div className="map-banner mt-120 lg-mt-80">
+      {/* <Image src={shape} alt="shape" layout="responsive" className="lazy-img shapes shape_01" /> */}
+    </div>
+    <div className="block-feature-eleven contact-us-section">
+      <div className="map-banner">
         <div className="gmap_canvas h-100 w-100">
           {/* <iframe
             className="gmap_iframe h-100 w-100"
@@ -132,6 +137,7 @@ const ContactArea = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

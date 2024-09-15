@@ -105,9 +105,9 @@ const TextFeatureHome = ({ style_2 = false }: { style_2?: boolean }) => {
       {style_2 && (
         <div style={backImg}>
           <div className="container">
-            <div className="counter-wrapper pt-100 pb-100 lg-mt-20 lg-mb-20">
+            <div className="counter-wrapper pt-80 pb-80 lg-mt-20 lg-mb-20">
               <div className="row">
-                <div className="title-one details-meta pb-60">
+                <div className="title-one details-meta">
                   {/* <div className="upper-title">About Us</div> */}
                   <h2 style={{ color: "#62c087" }}>By the Numbers</h2>
                 </div>

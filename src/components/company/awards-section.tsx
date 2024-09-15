@@ -29,7 +29,7 @@ function CardItem({
   return (
     <div className="card-style-sixteen text-center mt-40">
       <div className=" m-auto  d-flex align-items-center justify-content-center">
-        <Link href="@/assets/pdf/certificate.pdf" className="w-50"> 
+        <Link href="/assets/pdf/certificate.pdf" className="w-50"> 
           <Image src={icon} alt="icon" layout="responsive" className="lazy-img" />
         </Link>
       </div>
@@ -44,7 +44,7 @@ const imgStyle = {
 };
 const AwardsSection = () => {
   return (
-    <div className="service-details mt-150 lg-mt-80 mb-100 lg-mb-80">
+    <div className="service-details mt-80 lg-mt-80">
       <div className="container">
         <div className="row">
           <div className="col-xxl-12 col-lg-12">

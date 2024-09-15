@@ -86,23 +86,23 @@ const FooterOne = () => {
               <h5 className="footer-title">Tech Solutions</h5>
               <ul className="footer-nav-link style-none">
                 <li>
-                  <Link href="/solutions/oracle">Oracle</Link>
+                  <Link href="/">Demo</Link>
                 </li>
                 <li>
-                  <Link href="/solutions/finacle">Finacle</Link>
+                  <Link href="/">Demo</Link>
                 </li>
                 <li>
-                  <Link href="/solutions/outsystems">Outsystems</Link>
+                  <Link href="/">Demo</Link>
                 </li>
                 <li>
-                  <Link href="/solutions/mendix">Mendix</Link>
+                  <Link href="/">Demo</Link>
                 </li>
                 <li>
-                  <Link href="/solutions/servicenow">ServiceNow</Link>
+                  <Link href="/">Demo</Link>
                 </li>
                 <li>
-                  <Link href="/solutions/automation-anywhere">
-                    Automation Anywhere
+                  <Link href="/">
+                  Demo
                   </Link>
                 </li>
               </ul>

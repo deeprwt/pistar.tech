@@ -67,7 +67,7 @@ const ContactForm = () => {
       <form id="contact-form" onSubmit={handleSubmit(onSubmit)}>
         <div className="messages"></div>
         <div className="row controls">
-          <div className="col-12">
+          <div className="col-12 col-md-6">
             <div className="input-group-meta form-group mb-30">
               <label className="text-white" htmlFor="">
                 Name*
@@ -84,7 +84,7 @@ const ContactForm = () => {
               </div>
             </div>
           </div>
-          <div className="col-12">
+          <div className="col-12 col-md-6">
             <div className="input-group-meta form-group mb-30">
               <label className="text-white" htmlFor="">
                 Email*
@@ -101,7 +101,7 @@ const ContactForm = () => {
               </div>
             </div>
           </div>
-          <div className="col-12">
+          <div className="col-12 col-md-6">
             <div className="input-group-meta form-group mb-30">
               <label className="text-white" htmlFor="">
                 Phone Number*
@@ -124,7 +124,7 @@ const ContactForm = () => {
               </div>
             </div>
           </div>
-          <div className="col-12">
+          <div className="col-12 col-md-6">
             <div className="input-group-meta form-group mb-40">
               <label className="text-white" htmlFor="">
                 Company Name*

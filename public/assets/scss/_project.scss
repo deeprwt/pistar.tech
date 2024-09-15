@@ -110,15 +110,16 @@
             width: 60px;
             height: 60px;
             border-radius: 50%;
-            color: $color-eight;
+            color: $color-one;
+            background: $color-eight;
             text-align: center;
             line-height: 57px;
             font-size: 24px;
             margin: 0 2px;
             @include transition(0.2s);
             &:hover {
-                background: $color-eight;
-                color: #fff;
+                background: $color-one;
+                color: $color-eight;
             }
         }
     }
@@ -129,7 +130,7 @@
     overflow: hidden;
   }
   .caption {
-    padding: 40px 0 30px;
+    padding: 15px 0 20px;
     border-bottom: 1px solid #044F3B;
     span {
       display: block;
@@ -139,7 +140,7 @@
       color: rgba($color: #000000, $alpha: 0.3);
     }
     h3 a {
-      font-size: 30px;
+      font-size: 23px;
       letter-spacing: -1px;
       color: $color-eight;
       &:hover {

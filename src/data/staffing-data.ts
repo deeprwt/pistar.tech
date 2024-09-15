@@ -48,7 +48,7 @@ const staffing_data:IStaffing[] = [
     title:'Plantar Fasciitis',
     desc:' Identifies pressure points and gait abnormalities that contribute to heel pain and inflammation.',
     page:'staffing-1',
-    link: '/contract-staffing'
+    link: '/'
   },
   {
     id:2,
@@ -56,7 +56,7 @@ const staffing_data:IStaffing[] = [
     title:'Flat Feet',
     desc:'Detects improper foot arch and distribution of pressure that can lead to discomfort and functional problems.',
     page:'staffing-1',
-    link: '/permanent-staffing'
+    link: '/'
   },
   {
     id:3,
@@ -64,7 +64,7 @@ const staffing_data:IStaffing[] = [
     title:'High Arches',
     desc:'Analyzes pressure patterns that indicate excessive pressure on specific foot areas, causing pain and instability.',
     page:'staffing-1',
-    link: '/hire-train-deploy'
+    link: '/'
   },
   {
     id:4,
@@ -72,7 +72,7 @@ const staffing_data:IStaffing[] = [
     title:'Diabetic Foot Ulcers',
     desc:'Monitors high-pressure zones that can lead to ulcer formation in diabetic patients, aiding in prevention and treatment.',
     page:'staffing-1',
-    link: '/rpo'
+    link: '/'
   },
   {
     id:5,
@@ -80,7 +80,7 @@ const staffing_data:IStaffing[] = [
     title:'Metatarsalgia',
     desc:' Identifies abnormal pressure distribution that causes pain in the ball of the foot.',
     page:'staffing-1',
-    link: '/rpo'
+    link: '/'
   },
   {
     id:6,
@@ -88,7 +88,7 @@ const staffing_data:IStaffing[] = [
     title:'Bunions',
     desc:' Detects pressure and gait changes associated with bunions, helping in early intervention and management.',
     page:'staffing-1',
-    link: '/rpo'
+    link: '/'
   },
 ]
 

@@ -37,11 +37,23 @@ import icon_2 from "@/assets/images/icon/icon_91.svg";
 import icon_3 from "@/assets/images/icon/icon_92.svg";
 import Link from "next/link";
 import bg_image2 from "@/assets/images/background/counter_dark_pattern.png";
+import bg_image1 from "@/assets/images/background/background-explore.jpg";
 import img4 from "@/assets/images/media/doctor.jpg";
 import AwardsSection from "@/components/company/awards-section";
 import TeamTwoArea from "@/components/team/team-v2-area";
 import TeamOneArea from "@/components/team/team-v1-area";
 import TeamThreeArea from "@/components/team/team-v3-area";
+import TextFeatureSeven from "@/components/text-feature/text-feature-seven";
+import TextFeatureEight from "@/components/text-feature/text-feature-eight";
+import TextFeatureTen from "@/components/text-feature/text-freature-ten";
+
+const backImg1 = {
+  backgroundImage: `url('${bg_image1.src}')`,
+  backgroundSize: "cover,auto",
+  backgroundPosition: "center",
+  backgroundAttachment: "local",
+  backgroundColor: "#292e31",
+};
 
 const backImg2 = {
   backgroundImage: `url('${bg_image2.src}')`,
@@ -80,7 +92,10 @@ export default function HomePage() {
 
           {/* hero banner end */}
 
-          <div className="fancy-banner-two mt-80 lg-mt-80 mb-80 lg-mb-60 service-details">
+          <div
+            className="fancy-banner-two pt-80 lg-pt-80 pb-80 lg-pb-60 service-details"
+            style={backImg1}
+          >
             <div className="container">
               <div className="text-center wow fadeInUp">
                 <div className="row">
@@ -88,7 +103,10 @@ export default function HomePage() {
                     <div className="title-one details-meta">
                       <h3>Why is the DiaPS Mat so easy to adopt?</h3>
                     </div>
-                    <p className="text-lg mt-40 lg-mt-30 mb-30">
+                    <p
+                      className="text-lg mt-40 lg-mt-30 mb-30"
+                      style={{ color: "#9799a3" }}
+                    >
                       The DiaPS Mat from PiStarTech Private Limited is designed
                       for easy adoption into any clinical setting. Its portable,
                       flexible design allows it to seamlessly integrate into
@@ -97,7 +115,10 @@ export default function HomePage() {
                       user-friendly and highly adaptable, making it suitable for
                       clinics and hospitals of any size.
                     </p>
-                    <p className="text-lg mt-40 lg-mt-30 mb-30">
+                    <p
+                      className="text-lg mt-40 lg-mt-30 mb-30"
+                      style={{ color: "#9799a3" }}
+                    >
                       Since it provides instant, digital plantar pressure
                       analysis in just 5 seconds, healthcare professionals can
                       easily incorporate the DiaPS Mat into their patient
@@ -113,85 +134,33 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* number counter start  */}
-          <TextFeatureHome style_2={true} />
-          {/* number counter end */}
-
-          {/* whatsnew section start */}
-          {/* <WhatsNew /> */}
-          {/* whatsnew section end */}
-
-          {/* about us content start  */}
-          <TextFeatureHome />
-          {/* about us content start  */}
-
-          {/* <TextFeatureNine /> */}
-
-          {/* tabs are for solutions start */}
-          {/* <TabsData /> */}
-          <BlockFeatureSeven />
-          {/* tabs are for solutions start */}
-
           <StaffingSolutions />
-
-          {/* clints logo start  */}
-          <ClintLogo />
-          {/* clints logo start  */}
-
-          {/* Ceo Profile logo start  */}
-          {/* <CeoData /> */}
-          {/* CEO Profile logo end  */}
-
-          {/* partner logos start  */}
-          <PartnersLogos />
-          {/* partner logos end  */}
-
-          {/* fancy banner one start */}
-          {/* <FancyBannerOne /> */}
-          {/* fancy banner one end */}
-
-          {/* block feature one start */}
-          {/* <BlockFeatureOne /> */}
-          {/* block feature one end */}
-
-          {/* text feature one start */}
-          {/* <TextFeatureOne /> */}
-          {/* text feature one end */}
-
-          {/* block feature two start */}
-          {/* <BlockFeatureTwo /> */}
-          {/* block feature two end */}
-
-          {/* block feature three start */}
-          {/* <BlockFeatureThree /> */}
-          <BlockFeatureThree />
-          {/* block feature three end */}
+          <TeamThreeArea />
 
           {/* feedback one start */}
           <FeedbackOne />
           {/* feedback one end */}
 
-          {/* team section one start */}
-          {/* <TeamSectionOne /> */}
-          {/* team section one end */}
+          <TextFeatureSeven />
 
-          {/* faq section start */}
-          {/* <FaqSectionOne /> */}
-          {/* faq section end */}
+          {/* number counter start  */}
+          <TextFeatureHome style_2={true} />
+          {/* number counter end */}
 
-          {/* blog item start */}
-          {/* <HomeTwoBlogs /> */}
+          {/* clints logo start  */}
+          <ClintLogo />
+          {/* clints logo start  */}
+
+          {/* partner logos start  */}
+          <PartnersLogos />
+          {/* partner logos end  */}
+
+          <TextFeatureTen />
+
+          <BlockFeatureSeven />
           <PortfolioTwo />
           {/* blog item end */}
-
           <AwardsSection />
-
-          <TeamThreeArea />
-
-          {/* fancy banner two start */}
-          <FancyBannerTwo />
-          {/* fancy banner two end */}
-          {/* <FancyVideo /> */}
           <div className="contact-us-section pt-80 lg-pt-80" style={backImg2}>
             <div className="container">
               <div className="position-relative">
@@ -230,6 +199,59 @@ export default function HomePage() {
               </div>
             </div>
           </div>
+          {/* fancy banner two start */}
+          {/* <FancyBannerTwo /> */}
+          {/* fancy banner two end */}
+          {/* <FancyVideo /> */}
+          {/* whatsnew section start */}
+          {/* <WhatsNew /> */}
+          {/* whatsnew section end */}
+          {/* <TextFeatureEight /> */}
+          {/* about us content start  */}
+          {/* <TextFeatureHome /> */}
+          {/* about us content start  */}
+
+          {/* <TextFeatureNine /> */}
+          {/* Ceo Profile logo start  */}
+          {/* <CeoData /> */}
+          {/* CEO Profile logo end  */}
+
+          {/* tabs are for solutions start */}
+          {/* <TabsData /> */}
+
+          {/* tabs are for solutions start */}
+          {/* fancy banner one start */}
+          {/* <FancyBannerOne /> */}
+          {/* fancy banner one end */}
+
+          {/* block feature one start */}
+          {/* <BlockFeatureOne /> */}
+          {/* block feature one end */}
+
+          {/* text feature one start */}
+          {/* <TextFeatureOne /> */}
+          {/* text feature one end */}
+
+          {/* block feature two start */}
+          {/* <BlockFeatureTwo /> */}
+          {/* block feature two end */}
+
+          {/* block feature three start */}
+
+          {/* team section one start */}
+          {/* <TeamSectionOne /> */}
+          {/* team section one end */}
+
+          {/* faq section start */}
+          {/* <FaqSectionOne /> */}
+          {/* faq section end */}
+
+          {/* blog item start */}
+
+          {/* <BlockFeatureThree /> */}
+          {/* <BlockFeatureThree /> */}
+          {/* block feature three end */}
+          {/* <HomeTwoBlogs /> */}
         </main>
 
         {/* footer start */}

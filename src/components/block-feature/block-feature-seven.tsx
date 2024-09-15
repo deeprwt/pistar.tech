@@ -9,8 +9,7 @@ import screen_2 from "@/assets/images/assets/screen_09.svg";
 import screen_3 from "@/assets/images/assets/screen_10.svg";
 import shape from "@/assets/images/shape/shape_13.svg";
 
-// image style 
-
+// image style
 
 // card item
 type IProps = {
@@ -28,7 +27,12 @@ function CardItem({ icon, title, desc, bg_img }: IProps) {
         >
           <Image src={icon} alt="icon" className="lazy-img" />
         </div>
-        <h3 className="fw-bold m0 text-dark order-first">{title}</h3>
+        <h3
+          className="fw-bold m0 text-dark order-first"
+          style={{ width: "86%" }}
+        >
+          {title}
+        </h3>
       </div>
       <p className="mt-35 lg-mt-30 mb-60 lg-mb-40">{desc}</p>
       <Image
@@ -42,33 +46,31 @@ function CardItem({ icon, title, desc, bg_img }: IProps) {
 
 const BlockFeatureSeven = () => {
   return (
-    <div className="block-feature-seven position-relative mt-170 lg-mt-80 service-details ">
+    <div className="block-feature-seven position-relative mt-80 lg-mt-80 service-details ">
       <div className="container">
         <div className="position-relative">
           <div className="row">
             <div className="col-xl-11 wow fadeInLeft">
               <div className="title-one pe-xxl-5 mb-50 lg-mb-30 details-meta">
-                <h3 className="text-dark">
-                  We are here to help you build, manage & protect your wealth.
-                </h3>
+                <h3 className="text-dark">Executive Summary</h3>
               </div>
             </div>
           </div>
 
           <div className="row">
-            <div className="col-lg-5 d-flex wow fadeInUp">
+            <div className="col-lg-6 d-flex wow fadeInUp">
               <CardItem
                 icon={icon_1}
-                title="Mutual Funds."
-                desc="Mutual funds enable collective investment, managed by professionals for potential growth."
+                title="Support for Healthcare Providers"
+                desc="The DiaPS Mat provides valuable assistance to healthcare professionals at various stages of clinical assessment and treatment. It identifies both normal and abnormal foot postures, delivering data that improves diagnostic accuracy. By capturing static podiatric pressure patterns (SPPP) when standing and dynamic podiatric pressure patterns (DPPP) while walking, it helps to substantiate clinical findings with statistical evidence and supports patient recovery monitoring after injuries or surgeries."
                 bg_img={screen_1}
               />
             </div>
-            <div className="col-lg-7 d-flex wow fadeInUp" data-wow-delay="0.1s">
+            <div className="col-lg-6 d-flex wow fadeInUp" data-wow-delay="0.1s">
               <CardItem
                 icon={icon_2}
-                title="Pension Scheme."
-                desc="Pension schemes ensure financial security during retirement years for eligible individuals. Retirement pensions provide financial security for qualifying individuals."
+                title="Meeting the Need for Precise Foot Pain Diagnosis"
+                desc="Foot and ankle pain is a widespread issue, with studies showing that one in three people experience such pain at some point. Traditional diagnostic methods depend significantly on the doctor's experience and often use outdated tools like ink-based harris mats, which lack reliability. Expensive digital foot scanning systems are available to only a small fraction of doctors. The DiaPS Mat offers an affordable, automated solution that provides thorough plantar pressure analysis in just five seconds, enabling precise diagnoses and tailored treatment plans."
                 bg_img={screen_2}
               />
             </div>
@@ -76,16 +78,35 @@ const BlockFeatureSeven = () => {
               <div className="card-style-nine vstack tran3s w-100 mt-30">
                 <div className="row align-items-end">
                   <div className="col-lg-6">
-                    <div className="icon tran3s rounded-circle d-flex align-items-center justify-content-center">
+                    {/* <div className="icon tran3s rounded-circle d-flex align-items-center justify-content-center">
                       <Image src={icon_3} alt="" className="lazy-img" />
                     </div>
                     <h3 className="fw-bold mt-30 lg-mt-20 text-dark">
-                      International Multi-Currency Visa & Master Card.
-                    </h3>
+                      Detailed Plantar Pressure Analysis
+                    </h3> */}
+                    <div className="d-flex justify-content-between align-items-center flex-wrap">
+                      <div
+                        className={`icon tran3s rounded-circle d-flex align-items-center justify-content-center order-last`}
+                      >
+                        <Image src={icon_3} alt="icon" className="lazy-img" />
+                      </div>
+                      <h3
+                        className="fw-bold m0 text-dark order-first"
+                        style={{ width: "86%" }}
+                      >
+                        Detailed Plantar Pressure Analysis
+                      </h3>
+                    </div>
                     <p className="mt-35 lg-mt-30 mb-40">
-                      International banking provides global financial services,
-                      including cross-border transactions, currency exchange,
-                      and offshore investments.
+                      Our solution provides extensive plantar pressure analysis,
+                      or pedobarography, to aid in diagnosing and treating foot
+                      conditions. By assessing pressure distribution during both
+                      static and dynamic activities, the DiaPS Mat helps to
+                      identify foot types, high-pressure zones, and potential
+                      problems such as calluses or ulcers. This evidence-based
+                      approach not only informs doctors but also educates
+                      patients about their conditions and supports personalized
+                      treatment strategies.
                     </p>
                   </div>
                   <div className="col-lg-5 ms-auto">
