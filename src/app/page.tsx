@@ -39,6 +39,7 @@ import Link from "next/link";
 import bg_image2 from "@/assets/images/background/counter_dark_pattern.png";
 import bg_image1 from "@/assets/images/background/background-explore.jpg";
 import img4 from "@/assets/images/media/doctor.jpg";
+import mat from "@/assets/images/pistar/mat.png";
 import AwardsSection from "@/components/company/awards-section";
 import TeamTwoArea from "@/components/team/team-v2-area";
 import TeamOneArea from "@/components/team/team-v1-area";
@@ -46,6 +47,7 @@ import TeamThreeArea from "@/components/team/team-v3-area";
 import TextFeatureSeven from "@/components/text-feature/text-feature-seven";
 import TextFeatureEight from "@/components/text-feature/text-feature-eight";
 import TextFeatureTen from "@/components/text-feature/text-freature-ten";
+
 
 const backImg1 = {
   backgroundImage: `url('${bg_image1.src}')`,
@@ -94,18 +96,59 @@ export default function HomePage() {
 
           <div
             className="fancy-banner-two pt-80 lg-pt-80 pb-80 lg-pb-60 service-details"
-            style={backImg1}
+            // style={backImg1}
+            style={{ background: "#292e31" }}
           >
             <div className="container">
-              <div className="text-center wow fadeInUp">
+              <div className="wow fadeInUp">
                 <div className="row">
-                  <div className="col-lg-10 m-auto">
+                  <div className="col-lg-6 wow fadeInRight">
+                  <div className="title-three mb-35 md-mb-20 details-meta">
+                        {/* <div className="upper-title">management</div> */}
+                        <h3 style={{ color: "white" }}>
+                        Why is the DiaPS Mat so easy to adopt?
+                        </h3>
+                      </div>
+                      <p
+                      className="text-lg mt-40 lg-mt-30 mb-30"
+                      style={{ color: "#fff9" }}
+                    >
+                      The DiaPS Mat from PiStarTech Private Limited is designed
+                      for easy adoption into any clinical setting. Its portable,
+                      flexible design allows it to seamlessly integrate into
+                      existing medical workflows without the need for extensive
+                      training or changes to the current setup. The device is
+                      user-friendly and highly adaptable, making it suitable for
+                      clinics and hospitals of any size. <br /> <br />
+                      Since it provides instant, digital plantar pressure
+                      analysis in just 5 seconds, healthcare professionals can
+                      easily incorporate the DiaPS Mat into their patient
+                      evaluation process, streamlining diagnosis and enhancing
+                      accuracy without interrupting day-to-day operations. Its
+                      affordability and ease of use make it accessible to a wide
+                      range of practitioners, ensuring they can upgrade to
+                      modern foot analysis technology with minimal effort.
+                    </p>
+                  </div>
+                  <div className="col-lg-6 col-md-8 m-auto wow fadeInLeft">
+                    <div className="media-wrapper md-mt-60">
+                      <Image
+                        src={mat}
+                        alt="screen"
+                        className="lazy-img"
+                        layout="responsive"
+                      />
+                    </div>
+                  </div>
+                  {/* <div className="col-lg-10 m-auto">
                     <div className="title-one details-meta">
-                      <h3>Why is the DiaPS Mat so easy to adopt?</h3>
+                      <h3 style={{ color: "white" }}>
+                        Why is the DiaPS Mat so easy to adopt?
+                      </h3>
                     </div>
                     <p
                       className="text-lg mt-40 lg-mt-30 mb-30"
-                      style={{ color: "#9799a3" }}
+                      style={{ color: "#fff9" }}
                     >
                       The DiaPS Mat from PiStarTech Private Limited is designed
                       for easy adoption into any clinical setting. Its portable,
@@ -117,7 +160,7 @@ export default function HomePage() {
                     </p>
                     <p
                       className="text-lg mt-40 lg-mt-30 mb-30"
-                      style={{ color: "#9799a3" }}
+                      style={{ color: "#fff9" }}
                     >
                       Since it provides instant, digital plantar pressure
                       analysis in just 5 seconds, healthcare professionals can
@@ -128,7 +171,7 @@ export default function HomePage() {
                       range of practitioners, ensuring they can upgrade to
                       modern foot analysis technology with minimal effort.
                     </p>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>

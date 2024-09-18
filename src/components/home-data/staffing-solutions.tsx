@@ -45,7 +45,7 @@ const StaffingSolutions = () => {
   };
 
   return (
-    <div className="block-feature-eleven service-details overflow-hidden position-relative mt-80 lg-mt-80 pb-80 lg-pb-100 md-pb-80">
+    <div className="block-feature-eleven service-details overflow-hidden position-relative pt-80 lg-pt-80 pb-80 lg-pb-100 md-pb-80" style={{background:"#f5f5f5"}}>
       <div className="container">
         <div className="row gx-lg-5 align-items-center">
           <div className="col-lg-12 m-auto">
