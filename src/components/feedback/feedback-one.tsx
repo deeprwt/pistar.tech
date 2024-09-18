@@ -6,6 +6,15 @@ import CounterUp from "../common/counter-up";
 // internal
 import { feedback_one } from "@/data/feedback-data";
 import icon from "@/assets/images/icon/icon_12.svg";
+import bg_image1 from "@/assets/images/background/contactbanner.jpg";
+
+const backImg1 = {
+  backgroundImage: `url('${bg_image1.src}')`,
+  backgroundSize: "cover,auto",
+  backgroundPosition: "center",
+  backgroundAttachment: "local",
+  backgroundColor: "#292e31",
+};
 
 // slider setting
 const slider_setting = {
@@ -22,15 +31,17 @@ const slider_setting = {
 const FeedbackOne = ({ cls }: { cls?: string }) => {
   return (
     <div
-      className={`feedback-section-one ${cls ? cls : "mt-150 lg-mt-80 pb-80"}`}
+      className={`feedback-section-one ${cls ? cls : "pt-150 lg-pt-80 lg-pb-150 pb-150"}`}
+      // style={{background:"#292e31"}}
+      style={backImg1}
     >
       <div className="container">
         <div className="position-relative">
           <div className="title-one sm-mb-40">
-            <h2>
+            <h2 className="fontcolor">
               <CounterUp number={1000} text="+" />
             </h2>
-            <p>
+            <p className="paracolor">
               procedues perforyned by <br />
               Verius globally
             </p>
@@ -41,7 +52,7 @@ const FeedbackOne = ({ cls }: { cls?: string }) => {
                 <div className="feedback-block-one">
                   <div className="row align-items-end">
                     <div className="col-md-7 ms-auto order-md-last">
-                      <blockquote>{item.desc}</blockquote>
+                      <blockquote className="text-white">{item.desc}</blockquote>
                       <div className="d-flex align-items-center">
                         <Image
                           src={item.user}
@@ -49,18 +60,18 @@ const FeedbackOne = ({ cls }: { cls?: string }) => {
                           className="avatar rounded-circle"
                         />
                         <div className="ps-4">
-                          <div className="name fw-bold text-dark">
+                          <div className="name fw-bold paracolor">
                             {item.name}
                           </div>
-                          <p className="fs-6 m0">{item.location}</p>
+                          <p className="fs-6 m0 paracolor">{item.location}</p>
                         </div>
                       </div>
                     </div>
                     <div className="col-md-4 order-md-first">
                       <div className="d-flex align-items-center justify-content-between sm-mt-40">
-                        <div className="line"></div>
+                        <div className="line fontcolor"></div>
                         <div className="count fw-500">
-                          <span className="text-dark">
+                          <span className="fontcolor">
                             {item.id < 10 ? `0${item.id}` : item.id}
                           </span>{" "}
                           /{" "}

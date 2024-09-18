@@ -20,7 +20,7 @@ type IProps = {
 };
 function CardItem({ icon, title, desc, bg_img }: IProps) {
   return (
-    <div className="card-style-nine vstack tran3s w-100 mt-30">
+    <div className="card-style-nine vstack tran3s w-100 mt-30 bgcolor2">
       <div className="d-flex justify-content-between align-items-center flex-wrap">
         <div
           className={`icon tran3s rounded-circle d-flex align-items-center justify-content-center order-last`}
@@ -28,13 +28,13 @@ function CardItem({ icon, title, desc, bg_img }: IProps) {
           <Image src={icon} alt="icon" className="lazy-img" />
         </div>
         <h3
-          className="fw-bold m0 text-dark order-first"
+          className="fw-bold m0 text-dark order-first text-white"
           style={{ width: "86%" }}
         >
           {title}
         </h3>
       </div>
-      <p className="mt-35 lg-mt-30 mb-60 lg-mb-40">{desc}</p>
+      <p className="mt-35 lg-mt-30 mb-60 lg-mb-40 paracolor">{desc}</p>
       <Image
         src={bg_img}
         alt="bg-img"
@@ -46,7 +46,7 @@ function CardItem({ icon, title, desc, bg_img }: IProps) {
 
 const BlockFeatureSeven = () => {
   return (
-    <div className="block-feature-seven position-relative mt-80 lg-mt-80 service-details ">
+    <div className="block-feature-seven position-relative pt-150 lg-pt-80 pb-150 lg-pb-80 service-details ">
       <div className="container">
         <div className="position-relative">
           <div className="row">
@@ -75,7 +75,7 @@ const BlockFeatureSeven = () => {
               />
             </div>
             <div className="col-12 d-flex wow fadeInUp" data-wow-delay="0.2s">
-              <div className="card-style-nine vstack tran3s w-100 mt-30">
+              <div className="card-style-nine vstack tran3s w-100 mt-30 bgcolor2">
                 <div className="row align-items-end">
                   <div className="col-lg-6">
                     {/* <div className="icon tran3s rounded-circle d-flex align-items-center justify-content-center">
@@ -91,13 +91,13 @@ const BlockFeatureSeven = () => {
                         <Image src={icon_3} alt="icon" className="lazy-img" />
                       </div>
                       <h3
-                        className="fw-bold m0 text-dark order-first"
+                        className="fw-bold m0 text-white order-first"
                         style={{ width: "86%" }}
                       >
                         Detailed Plantar Pressure Analysis
                       </h3>
                     </div>
-                    <p className="mt-35 lg-mt-30 mb-40">
+                    <p className="mt-35 lg-mt-30 mb-40 paracolor">
                       Our solution provides extensive plantar pressure analysis,
                       or pedobarography, to aid in diagnosing and treating foot
                       conditions. By assessing pressure distribution during both

@@ -5,7 +5,7 @@ import Slider from "react-slick";
 import Link from "next/link";
 // internal
 import staffing_data from "@/data/staffing-data";
-import shape from "@/assets/images/shape/shape_44.svg";
+import shape from "@/assets/images/background/element_half.png";
 import img from "@/assets/images/media/carousel-small-modular.jpg";
 
 // slider settings
@@ -106,7 +106,11 @@ const StaffingSolutions = () => {
           </div>
         </div>
       </div>
-      <Image src={shape} alt="shape" className="lazy-img shapes shape_01" />
+      <Image src={shape} alt="shape" className="lazy-img shapes shape_01" layout="responsitve" style={{
+        maxHeight:"96%",
+        maxWidth:"40%",
+        opacity:"0.1",
+      }} />
     </div>
   );
 };

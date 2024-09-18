@@ -2,7 +2,7 @@ import React from "react";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 // internal
-import screen from "@/assets/images/pistar/fitness.jpeg";
+import screen from "@/assets/images/pistar/fitness.jpg";
 import icon_1 from "@/assets/images/icon/icon_43.svg";
 import icon_2 from "@/assets/images/icon/icon_44.svg";
 import icon_3 from "@/assets/images/icon/icon_45.svg";
@@ -24,22 +24,24 @@ function CardItem({
   icon: StaticImageData;
   title: string;
   subtitle?: string;
-  li1?:string;
-  li2?:string;
-  li3?:string;
+  li1?: string;
+  li2?: string;
+  li3?: string;
 }) {
   return (
-    <div className="card-style-twelve w-100 text-center mt-30">
-      <div className="icon m-auto tran3s d-flex align-items-center justify-content-center rounded-circle">
-        <Image src={icon} alt="icon" className="lazy-img" />
+    <div className="card-style-twelve w-100 mt-30">
+      <div className="d-flex">
+        <div className="icon tran3s d-flex align-items-center justify-content-center rounded-circle" style={{marginRight:"2rem"}}>
+          <Image src={icon} alt="icon" className="lazy-img" />
+        </div>
+        <h4 className="fw-bold mt-15 mb-15">{title}</h4>
       </div>
-      <h4 className="fw-bold mt-20 mb-15">{title}</h4>
       <p className="ps-xl-4 pe-xl-4">{subtitle}</p>
       <ul className="style-none">
-                <li>{li1}</li>
-                <li>{li1}</li>
-                <li>{li1}</li>
-              </ul>
+        <li>{li1}</li>
+        <li>{li1}</li>
+        <li>{li1}</li>
+      </ul>
     </div>
   );
 }

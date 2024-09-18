@@ -119,8 +119,8 @@ const ClintLogo = () => {
             <div className="container">
                     <div className="title-one text-center mb-60 details-meta">
                         {/* <div className="upper-title"></div> */}
-                        <h3>In Collaboration With
-                        </h3>
+                        <h2>In Collaboration With
+                        </h2>
                     </div>
                 <Slider {...slider_setting} className="partner-slider-one">
                 {slider_logos.map((logo, i) => (

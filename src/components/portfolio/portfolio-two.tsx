@@ -90,7 +90,7 @@ const PortfolioTwo = () => {
   });
 
   // Limit to 3 articles
-  const limitedArticles = sortedArticles.slice(0, 4);
+  const limitedArticles = sortedArticles.slice(0, 6);
 
 
   const portfolio_items = portfolio_data.filter(
@@ -106,7 +106,7 @@ const PortfolioTwo = () => {
     sliderRef.current?.slickNext();
   };
   return (
-    <div className="portfolio-two service-details position-relative mt-80 lg-mt-80">
+    <div className="portfolio-two service-details position-relative pt-150 lg-pt-80 pb-150 lg-pb-80" style={{background:"#f5f5f5"}}>
       <div className="container">
         <div className="position-relative mb-80 lg-mb-40 details-meta">
           {/* ---------------------------------Section staring-------------------------------*/}
