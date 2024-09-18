@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 // internal
 import screen from "@/assets/images/assets/screen_16.png";
+import img from "@/assets/images/pistar/why.jpg";
 // import { IFaq2 } from "@/data/faq_data_edit";
 // import { IFaq2 } from "@/data/faq-data_edit";
 import FaqItem from "../faq/faq-item";
@@ -66,18 +67,21 @@ const imgStyle = {
 
 const TextFeatureTen = () => {
   return (
-    <div className="text-feature-eight mt-80 mb-80 lg-mt-80">
+    <div className="text-feature-eight mt-80 mb-80 lg-mt-80 service-details">
       <div className="container">
         <div className="row">
           <div className="col-xl-5 col-lg-6 wow fadeInLeft">
+            <Image
+              src={img}
+              alt="screen"
+              className="lazy-img w-full h-auto rounded"
+            />
+          </div>
+          <div className="col-lg-6 ms-auto wow fadeInRight details-meta">
             <div className="title-one mt-20">
               {/* <div className="upper-title">Why Choose Us</div> */}
-              <h2 className="color-deep">
-              Why Choose the DiaPS Mat?
-              </h2>
+              <h3 className="color-deep">Why Choose the DiaPS Mat?</h3>
             </div>
-          </div>
-          <div className="col-lg-6 ms-auto wow fadeInRight">
             <div
               className="accordion accordion-style-three md-mt-40"
               id="accordionOne"

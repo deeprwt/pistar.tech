@@ -36,7 +36,6 @@ const slider_setting = {
 const StaffingSolutions = () => {
   const service_items = staffing_data
     .filter((s) => s.page === "staffing-1")
-    .slice(0, 4);
 
   const [currentSlide, setCurrentSlide] = useState<number>(0); // Declare currentSlide and setCurrentSlide
 
@@ -91,7 +90,7 @@ const StaffingSolutions = () => {
                 {service_items.map((s, index) => (
                   <div key={s.id} className="item">
                     <Image
-                      src={img}
+                      src={s.img}
                       alt="icon"
                       layout="responsive"
                       className="service-img rounded"

@@ -2,7 +2,7 @@ import React from "react";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 // internal
-import screen from "@/assets/images/assets/screen_15.png";
+import screen from "@/assets/images/pistar/fitness.jpeg";
 import icon_1 from "@/assets/images/icon/icon_43.svg";
 import icon_2 from "@/assets/images/icon/icon_44.svg";
 import icon_3 from "@/assets/images/icon/icon_45.svg";
