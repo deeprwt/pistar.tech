@@ -47,7 +47,7 @@ function CounterBlock({
           <CounterUp number={num} text={text} decimal={decimal} />
         </span>
       </div>
-      <p className="m0 text-md text-white">{title}</p>
+      <p className="m0 text-md text-white" style={{width:"80%"}}>{title}</p>
     </div>
   );
 }
@@ -104,8 +104,8 @@ const TextFeatureHome = ({ style_2 = false }: { style_2?: boolean }) => {
       )}
       {style_2 && (
         <div 
-        // style={backImg}
-        style={{background:"#292e31"}}
+        style={backImg}
+        // style={{background:"#292e31"}}
         >
           <div className="container">
             <div className="counter-wrapper pt-80 pb-80 lg-mt-20 lg-mb-20">
@@ -115,23 +115,24 @@ const TextFeatureHome = ({ style_2 = false }: { style_2?: boolean }) => {
                   <h2 style={{ color: "#62c087" }}>By the Numbers</h2>
                 </div>
                 <div className="col-md-4 col-6">
-                  <CounterBlock num={160} text="+" title="Clients" />
+                  <CounterBlock num={28} text="M+" title="Annual number of people in the India who develop pressure ulcers." />
                 </div>
                 <div className="col-md-4 col-6">
                   <CounterBlock
-                    num={750}
-                    text="+"
-                    title="Contractor Pool"
+                    num={1.8}
+                    text="M"
+                    title="Number of Hospital Acquired Pressure Injuries (HAPIs) related patient deaths in the India per year."
                     // prev_text="$"
                     delay="1"
-                    // decimal={true}
+                    decimal={true}
                   />
                 </div>
                 <div className="col-md-4 col-6">
                   <CounterBlock
-                    num={250}
-                    text="+"
-                    title="Staffing Team"
+                    num={20}
+                    text="%"
+                    title="Of HAPIs are attributed to the operating room."
+                    prev_text="~"
                     delay="2"
                   />
                 </div>

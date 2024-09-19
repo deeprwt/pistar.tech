@@ -29,7 +29,7 @@ function CardItem({
   return (
     <div className="card-style-sixteen text-center mt-40">
       <div className=" m-auto  d-flex align-items-center justify-content-center">
-        <Link href="/assets/pdf/certificate.pdf" className="w-50"> 
+        <Link href={'/pdf/certificate.pdf'} className="w-50" target="_blank"  rel="noopener noreferrer" locale={false}> 
           <Image src={icon} alt="icon" layout="responsive" className="lazy-img" />
         </Link>
       </div>
@@ -60,7 +60,7 @@ const AwardsSection = () => {
                 <div className="row">
                   <div className="col-md-4 wow fadeInUp">
                     <CardItem
-                      link={"@/assets/pdf/certificate.pdf"}
+                      link={'/pdf/certificate.pdf'}
                       icon={cert1}
                       title="Collect Doc"
                       subtitle="We collect require documents & send for check"
@@ -68,7 +68,7 @@ const AwardsSection = () => {
                   </div>
                   <div className="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
                     <CardItem
-                    link={"@/assets/pdf/certificate.pdf"}
+                    link={'/pdf/certificate.pdf'}
                       icon={cert1}
                       title="Check & Finalize"
                       subtitle="We check the documents & send for final approval"
@@ -76,7 +76,7 @@ const AwardsSection = () => {
                   </div>
                   <div className="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
                     <CardItem
-                    link={"@/assets/pdf/certificate.pdf"}
+                    link={'/pdf/certificate.pdf'}
                       icon={cert1}
                       title="Approved"
                       subtitle="After approve you ready to use your accounts"
