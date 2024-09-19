@@ -103,7 +103,10 @@ const TextFeatureHome = ({ style_2 = false }: { style_2?: boolean }) => {
         </div>
       )}
       {style_2 && (
-        <div style={backImg}>
+        <div 
+        // style={backImg}
+        style={{background:"#292e31"}}
+        >
           <div className="container">
             <div className="counter-wrapper pt-80 pb-80 lg-mt-20 lg-mb-20">
               <div className="row">

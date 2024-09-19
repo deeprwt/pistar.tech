@@ -32,8 +32,8 @@ const FeedbackOne = ({ cls }: { cls?: string }) => {
   return (
     <div
       className={`feedback-section-one ${cls ? cls : "pt-150 lg-pt-80 lg-pb-150 pb-150"}`}
-      // style={{background:"#292e31"}}
-      style={backImg1}
+      style={{background:"#292e31"}}
+      // style={backImg1}
     >
       <div className="container">
         <div className="position-relative">

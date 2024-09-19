@@ -10,17 +10,17 @@ const UseSocialShare = () => {
         <ul className="d-flex share-icon align-items-center style-none pt-20">
         <li>Share:</li>
         <li>
-          <Link href={`https://www.facebook.com/sharer/sharer.php?u=https://www.cgbindia.com${share}`}>
+          <Link href={`https://www.facebook.com/sharer/sharer.php?u=https://www.pistar.tech${share}`}>
             <i className="bi bi-facebook"></i>
           </Link>
         </li>
         <li>
-          <Link href={`https://twitter.com/intent/tweet?url=https://www.cgbindia.com${share}`}>
+          <Link href={`https://twitter.com/intent/tweet?url=https://www.pistar.tech${share}`}>
             <i className="bi bi-twitter"></i>
           </Link>
         </li>
         <li>
-          <Link href={`https://www.instagram.com/?https://www.cgbindia.com${share}`}>
+          <Link href={`https://www.instagram.com/?https://www.pistar.tech${share}`}>
             <i className="bi bi-instagram"></i>
           </Link>
         </li>

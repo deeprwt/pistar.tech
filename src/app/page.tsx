@@ -204,7 +204,10 @@ export default function HomePage() {
           <PortfolioTwo />
           {/* blog item end */}
           <AwardsSection />
-          <div className="contact-us-section pt-80 lg-pt-80" style={backImg2}>
+          <div className="contact-us-section pt-80 lg-pt-80" 
+          // style={backImg2}
+          style={{background:"#292e31"}}
+          >
             <div className="container">
               <div className="position-relative">
                 <div className="bg-wrapper lg-mt-40">

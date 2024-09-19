@@ -23,8 +23,8 @@ const menu_data: IMenu[] = [
   },
   {
     id: 5,
-    link: "/blog",
-    title: "Blogs",
+    link: "/article",
+    title: "Articles",
     // dropdown:true,
     // dropdown_menus:[
     // {link:'/blog',title:'Blogs'},

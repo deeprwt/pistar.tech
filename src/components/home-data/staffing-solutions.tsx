@@ -106,11 +106,11 @@ const StaffingSolutions = () => {
           </div>
         </div>
       </div>
-      <Image src={shape} alt="shape" className="lazy-img shapes shape_01" layout="responsitve" style={{
+      {/* <Image src={shape} alt="shape" className="lazy-img shapes shape_01" layout="responsitve" style={{
         maxHeight:"96%",
         maxWidth:"40%",
         opacity:"0.1",
-      }} />
+      }} /> */}
     </div>
   );
 };
