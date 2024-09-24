@@ -18,7 +18,7 @@ const menu_data: IMenu[] = [
   },
   {
     id: 4,
-    link: "/",
+    link: "/our-company",
     title: "Company",
   },
   {

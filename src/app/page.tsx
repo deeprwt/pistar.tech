@@ -248,7 +248,7 @@ export default function HomePage() {
           {/* fancy banner two start */}
           {/* <FancyBannerTwo /> */}
           {/* fancy banner two end */}
-          {/* <FancyVideo /> */}
+          {/* <FancyVideo />   */}
           {/* whatsnew section start */}
           {/* <WhatsNew /> */}
           {/* whatsnew section end */}

@@ -142,10 +142,10 @@ const BlockFeatureAbout = ({ style_2 = false }: { style_2?: boolean }) => {
                         to ensure that customer needs are understood and
                         fulfilled in a timely manner.
                       </p>
-                      <Link
+                      {/* <Link
                         href="/service-details"
                         className="stretched-link"
-                      ></Link>
+                      ></Link> */}
                     </div>
                   </div>
                   <div

@@ -1,24 +1,17 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 // internal
 import service_img from "@/assets/images/media/vision.jpg";
-import icon_1 from "@/assets/images/icon/icon_72.svg";
-import icon_2 from "@/assets/images/icon/icon_73.svg";
-import icon_3 from "@/assets/images/icon/icon_74.svg";
-import icon_4 from "@/assets/images/icon/icon_75.svg";
-import icon_5 from "@/assets/images/icon/icon_76.svg";
-import icon_6 from "@/assets/images/icon/icon_77.svg";
-import icon_7 from "@/assets/images/icon/icon_78.svg";
-import icon_8 from "@/assets/images/icon/icon_79.svg";
-import icon_9 from "@/assets/images/icon/icon_80.svg";
-import icon_10 from "@/assets/images/icon/icon_81.svg";
-import icon_11 from "@/assets/images/icon/icon_82.svg";
-import icon_12 from "@/assets/images/icon/icon_83.svg";
-import icon_13 from "@/assets/images/icon/icon_84.svg";
-import ils_icon from "@/assets/images/assets/ils_03.svg";
+import ramarao from "@/assets/images/thumbnail/ramarao.png";
 import SideBar from "./side-bar";
 import ImgGallery from "../gallery/img-gallery";
+
+// internal
+import sticker from "@/assets/images/assets/sticker_02.png";
+import VideoPopup from "../common/video-popup";
+import VideoPopupLocal from "../common/video-popup-local";
 
 // CardItem
 function CardItem({
@@ -45,12 +38,13 @@ const imgStyle = {
   height: "auto",
 };
 const OurCompanySection = () => {
+  const [isVideoOpen, setIsVideoOpen] = useState<boolean>(false);
   return (
     <>
       <div className="service-details mt-150 lg-mt-80 mb-100 lg-mb-80">
         <div className="container">
           <div className="row">
-            <div className="col-xxl-9 col-lg-9 order-lg-1">
+            <div className="col-xxl-12 col-lg-12 order-lg-1">
               <div className="details-meta ps-xxl-5 ps-xl-3 pb-30">
                 <h2>Our Story</h2>
                 <p>
@@ -96,7 +90,11 @@ const OurCompanySection = () => {
                 {/* <div className="upper-title"></div> */}
                 <h2>Our Mission</h2>
                 <p>
-                We are on a relentless mission to shatter the ordinary, empowering businesses with extraordinary staffing and technology solutions. At CGB Solutions, we don&apos;t just adapt to change; we sculpt it, ensuring our clients lead the way in innovation and triumph.
+                  We are on a relentless mission to shatter the ordinary,
+                  empowering businesses with extraordinary staffing and
+                  technology solutions. At CGB Solutions, we don&apos;t just
+                  adapt to change; we sculpt it, ensuring our clients lead the
+                  way in innovation and triumph.
                 </p>
 
                 {/* <div className="img-meta mb-60 lg-mb-40">
@@ -105,7 +103,9 @@ const OurCompanySection = () => {
               </div> */}
               </div>
               <div className="details-meta ps-xxl-5 ps-xl-3">
-                <div className="upper-title">Morales and Values That Make Legacies</div>
+                <div className="upper-title">
+                  Morales and Values That Make Legacies
+                </div>
                 <h2>Our Culture</h2>
                 <p>
                   Corporate culture is defined by practices and values that
@@ -123,38 +123,67 @@ const OurCompanySection = () => {
                   as a team, we strive to keep up with our values and aim for
                   excellence.
                 </p>
-
-                {/* <div className="img-meta mb-60 lg-mb-40">
-                  <Image
-                    src={service_img}
-                    alt="service_img"
-                    className="lazy-img w-100 rounded-4"
-                    style={imgStyle}
-                  />
-                </div> */}
               </div>
             </div>
-            <div className="col-xxl-3 col-lg-3 order-last order-lg-2">
-              <aside className="md-mt-40">
-                <div className="service-nav-item">
-                  <SideBar
-                    active_data={true}
-                    active_data1={false}
-                    active_data2={false}
-                    active_data3={false}
-                    active_data4={false}
-                    active_data5={false}
-                    active_data6={false}
-                    active_data7={false}
-                  />
-                </div>
-              </aside>
-            </div>
-            {/* <div className="col-xxl-9 col-lg-9 order-lg-3"></div>
-            <div className="col-xxl-9 col-lg-9 order-lg-4"></div> */}
           </div>
         </div>
       </div>
+      <div className="fancy-banner-five position-relative mt-150 lg-mt-80 pt-80 md-pt-60 pb-80 md-pb-60">
+  {/* Dark overlay */}
+  <div
+    className="position-absolute top-0 left-0 w-100 h-100"
+  />
+
+  <div className="container position-relative h-100 d-flex align-items-center justify-content-center">
+    <div className="position-relative">
+      {/* <p className="text-white text-xl pt-30 md-pt-10 pb-45 lg-pb-30">
+        Watch our intro video to get the idea about our services & many more
+      </p> */}
+      
+      {/* Main image */}
+      <Image
+        src={ramarao}
+        alt="service_img"
+        className="lazy-img w-100 rounded-4"
+        style={imgStyle}
+      />
+
+      {/* Video play button */}
+      <a
+        className="fancybox rounded-circle video-icon tran5s text-center d-flex align-items-center justify-content-center cursor-pointer"
+        onClick={() => setIsVideoOpen(true)}
+        style={{
+          position: "absolute",
+          top: "50%",
+          left: "50%",
+          transform: "translate(-50%, -50%)",
+          zIndex: 1, // Ensure it is above the image
+        }}
+      >
+        <Image
+          src={sticker}
+          alt="sticker"
+          className="lazy-img"
+          style={imgStyle}
+        />
+      </a>
+    </div>
+  </div>
+</div>
+
+
+      {/* Video modal start */}
+      {/* <VideoPopup
+        isVideoOpen={isVideoOpen}
+        setIsVideoOpen={setIsVideoOpen}
+        videoId={"aXFSJTjVjw0"}
+      /> */}
+      <VideoPopupLocal
+      isVideoOpen={isVideoOpen}
+      setIsVideoOpen={setIsVideoOpen}
+      url={"/assets/videos/file.mp4"}
+      />
+      {/* Video modal end */}
       <ImgGallery />
     </>
   );
