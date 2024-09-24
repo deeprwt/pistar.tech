@@ -34,7 +34,7 @@ const BreadcrumbTwo = ({
   style_4,
 }: IProps) => {
   return (
-    <div className="inner-banner-two light-bg text-center pt-200 md-pt-150 pb-85 lg-pb-50 position-relative">
+    <div className="inner-banner-two light-bg text-center pt-200 md-pt-150 pb-85 lg-pb-50 position-relative" style={{background:"#292e31"}}>
       <div className="container position-relative">
         <div className="row">
           {!style_2 && !style_3 && !style_4 && (

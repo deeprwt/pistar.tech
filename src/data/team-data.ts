@@ -13,7 +13,8 @@ import Rahul  from "@/assets/images/media/6.jpg"
 import Moumita  from "@/assets/images/media/2.jpg"
 import Kushangi  from "@/assets/images/media/1.jpg"
 import Shobha  from "@/assets/images/media/3.jpg"
-import Anurag from "@/assets/images/media/7.png"
+import anisfatema from "@/assets/images/team/anisfatema.jpg";
+import aftab from "@/assets/images/team/aftab.jpg";
 import Rawan from "@/assets/images/media/8.png"
 import gif1 from "@/assets/images/media/gif.gif"
 import gif2 from "@/assets/images/media/gif2.gif"
@@ -89,17 +90,17 @@ const team_data: ITeam[] = [
   },
   {
     id: 7,
-    img: Anurag,
-    name: "Anurag Gupta",
-    designation: "Marketing",
+    img: anisfatema,
+    name: "Anis Fatema",
+    designation: "Chief Executive Officer",
     page: "team-three",
     gif: gif1,
   },
   {
     id: 8,
-    img: Rawan,
-    name: "Rawan Abu Hamdam",
-    designation: "Business Development",
+    img: aftab,
+    name: "Prof. Aftab Hussain",
+    designation: "Technical Advisor ",
     page: "team-three",
     gif: gif1,
   },
@@ -109,7 +110,7 @@ const team_data: ITeam[] = [
     img: Rahul,
     name: "Rahul Sharma",
     designation: "Finance",
-    page: "team-three",
+    page: "team-thr",
     gif: gif2,
   },
   // {

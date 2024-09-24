@@ -9,6 +9,15 @@ import shape from "@/assets/images/shape/shape_05.svg";
 import about from "@/assets/images/assets/about_us.jpg";
 import mission from "@/assets/images/icon/mission.svg";
 import vision from "@/assets/images/icon/vision.svg";
+import bg_image1 from "@/assets/images/background/contactbanner.jpg";
+
+const backImg1 = {
+  backgroundImage: `url('${bg_image1.src}')`,
+  backgroundSize: "cover,auto",
+  backgroundPosition: "center",
+  backgroundAttachment: "local",
+  backgroundColor: "#292e31",
+};
 
 // card item
 function CardItem({
@@ -24,11 +33,14 @@ function CardItem({
 }) {
   return (
     <div className="card-style-three d-flex pt-75 lg-pt-40 pb-45 lg-pb-20">
-      <Image src={icon} alt="icon" className="lazy-img icon" />
+      {/* <Image src={icon} alt="icon" className="lazy-img icon" /> */}
       <div className="ps-4">
-        <h4 className="fw-bold mb-20">{title}</h4>
-        <p> {desc} </p>
-        <Link href={link} className="btn-three icon-link mt-15 md-mb-40">
+        {/* <h4 className="fw-bold mb-20 text-white">{title}</h4> */}
+        <p className="paracolor"> {desc} </p>
+        <Link
+          href={link}
+          className="btn-three icon-link mt-15 md-mb-40 fontcolor"
+        >
           <span>Read More</span>
           <Image src={icons} alt="icon" className="lazy-img icon ms-1" />
         </Link>
@@ -41,7 +53,10 @@ const TextFeatureAbout = ({ style_2 = false }: { style_2?: boolean }) => {
   return (
     <>
       {!style_2 && (
-        <div className="text-feature-one mt-150 lg-mt-100 service-details">
+        <div
+          className="text-feature-one pt-150 lg-pt-100 pb-150 lg-pb-100  service-details"
+          style={backImg1}
+        >
           <div className="container">
             <div className="row align-items-center details-meta">
               <div className="col-xl-5 col-lg-6 order-2 order-lg-1 wow fadeInRight">
@@ -62,26 +77,28 @@ const TextFeatureAbout = ({ style_2 = false }: { style_2?: boolean }) => {
               <div className="col-xl-7 col-lg-6 order-1 order-lg-2 wow fadeInLeft">
                 <div className="title-one details-meta">
                   {/* <div className="upper-title">About Us</div> */}
-                  <h3>Why Choose Us</h3>
+                  <h2 className="text-white">About Us</h2>
                 </div>
-                <p className="text-lg mt-45 lg-mt-30 mb-35 lg-mb-20">
-                  At the heart of CGB Solutions ethos lies an unwavering
-                  commitment to innovation, a commitment that transcends the
-                  ordinary and propels us into the realm of groundbreaking
-                  service delivery. <br />
-                  Our approach goes beyond meeting expectations; it anticipates
-                  and exceeds them through a guiding principle of constant
-                  innovation. From streamlining processes to embracing emerging
-                  technologies, we aim to provide clients with a transformative
-                  journey marked by unparalleled convenience. <br />
-                  We&lsquo;ve started as a people solution service provider and
-                  moved into technology solutions for companies and businesses
-                  which include IT services, solution integrated services and
-                  consulting.
+                <p className="text-lg mt-45 lg-mt-30 mb-35 lg-mb-20 paracolor">
+                  PiStarTech Private Limited is a cutting-edge healthtech
+                  startup, founded on 4th May 2021 by Anis Fatema, and is rooted
+                  in her research project. We are proud to be India&lsquo;s
+                  first startup with the complete in-house design and
+                  manufacturing of the Podiascanner Mat. Our patented pressure
+                  sensing technology provides comprehensive plantar pressure
+                  analysis, offering valuable insights that support doctors in
+                  their diagnosis.
+                  <br />
+                  Operating from the CIE IIIT Hyderabad incubation center,
+                  PiStarTech is committed to innovation in foot pressure
+                  analysis. In addition to our flagship product, we offer
+                  customized pressure sensing systems tailored to meet the
+                  specific needs of our customers, helping them achieve precise
+                  and reliable diagnostic outcomes.
                 </p>
               </div>
-              <div className="col-12 wow fadeInUp order-3">
-                <p className="text-lg mt-45 lg-mt-30 mb-35 lg-mb-20">
+              {/* <div className="col-12 wow fadeInUp order-3">
+                <p className="text-lg mt-45 lg-mt-30 mb-35 lg-mb-20 paracolor">
                   Innovation, within our framework, transcends being a mere
                   catchphrase; rather, it stands as a guiding principle that
                   intricately represents every aspect of our operations. We
@@ -91,51 +108,56 @@ const TextFeatureAbout = ({ style_2 = false }: { style_2?: boolean }) => {
                   solutions that effectively address their needs.
                 </p>
                 <div className="d-inline-flex flex-wrap align-items-center">
-                  {/* <Link href="/contact" className="btn-four mt-15 me-4">
+                  <Link href="/contact" className="btn-four mt-15 me-4">
                     Contact us
-                  </Link> */}
-                  {/* <Link href="/contact" className="btn-three icon-link mt-15">
+                  </Link>
+                  <Link href="/contact" className="btn-three icon-link mt-15">
                         <span>Request a Callback</span>
-                        <Image src={icon} alt="icon" className="lazy-img icon ms-1"/>
-                    </Link> */}
+                    </Link>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
       )}
       {style_2 && (
-        <div className="text-feature-one mt-80 lg-mt-80 service-details">
+        <div className="text-feature-one service-details">
           <div className="container">
             <div className="line-wrapper position-relative">
               <div className="row align-items-center">
                 <div className="col-lg-6 wow fadeInLeft">
                   <div className="title-one details-meta">
                     {/* <div className="upper-title">About us</div> */}
-                    <h3>Our Story</h3>
+                    <h3 className="text-white">
+                      From Vision to Reality: The Founding Story of PiStarTech
+                    </h3>
                   </div>
-                  <p className="text-lg mt-45 lg-mt-30 mb-35 lg-mb-30">
-                    As we forge ahead, the spirit of innovation is not confined
-                    to our internal processes alone. We strive to create an
-                    ecosystem where our clients experience the tangible benefits
-                    of technological advancements, making their interaction with
-                    us not just a service but a seamless, convenient experience.{" "}
-                    <br />
-                    At CGB India, innovation is not just a commitment;
-                    it&lsquo;s a way of life. We are driven by the belief that
-                    convenience is the cornerstone of exceptional service
-                    delivery, and we tirelessly work towards ensuring that our
-                    clients not only receive solutions but experience the
-                    unparalleled convenience that comes with partnering with a
-                    forward-thinking, innovative organization.
+                  <p className="text-lg mt-45 lg-mt-30 mb-35 lg-mb-30 paracolor">
+                    PiStarTech was founded by Dr. Anis Fatema and Dr. Aftab M.
+                    Hussain, two visionary leaders in the field of electronics
+                    and communication engineering. Dr. Anis Fatema earned her
+                    Ph.D. in Electronics and Communication Engineering with a
+                    specialization in Flexible Electronics from the
+                    International Institute of Information Technology Hyderabad
+                    (IIITH), graduating in June 2024. Dr. Fatema under the
+                    guidance Ph.D. advisor Dr. Aftab M. Hussain spent four years
+                    on the research and development and developed the complete
+                    make in India solution-DiaPS mat.
                   </p>
-                  {/* <Link href="/contact" className="btn-three icon-link mt-15 md-mb-40">
-                    <span>Request a Callback</span>
-                    <Image src={icon} alt="icon" className="lazy-img icon ms-1"/>
-                  </Link> */}
+                  <Link
+                  href="/our-company"
+                  className="btn-three icon-link mt-15 md-mb-40 fontcolor"
+                >
+                  <span>Read More</span>
+                  <Image
+                    src={icons}
+                    alt="icon"
+                    className="lazy-img icon ms-1"
+                  />
+                </Link>
                 </div>
                 <div className="col-lg-6 ms-auto wow fadeInRight">
-                <CardItem
+                  <CardItem
                     icon={vision}
                     link="/our-company"
                     title="Our Vision"

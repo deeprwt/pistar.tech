@@ -17,14 +17,14 @@ const TeamSectionThree = ({ style_2 = false }: { style_2?: boolean }) => {
   return (
     <>
       {!style_2 && (
-        <div className="team-section-three service-details light-bg position-relative pt-120 lg-pt-60 pb-130 lg-pb-60 mt-90 lg-mt-40">
+        <div className="team-section-three service-details light-bg position-relative pt-120 lg-pt-60 pb-130 lg-pb-60" style={{background:"#f5f5f5"}}>
           <div className="container">
             <div className="position-relative">
               <div className="title-one details-meta mb-40 lg-mb-10 wow fadeInUp">
-                <h3>Meet Our Team</h3>
+                <h3>Founders </h3>
               </div>
               <p className="text-xl text-dark mb-30 p-20 lg-mb-10">
-              Our team is constantly committed to innovation and pushing the boundaries while delivering workplaces.
+              Our founder is committed to innovation and creating products that make life easier.
                 </p>
 
               <div className="row justify-content-center">
@@ -41,7 +41,7 @@ const TeamSectionThree = ({ style_2 = false }: { style_2?: boolean }) => {
 
               <div className="section-btn sm-mt-40">
                 <Link href="/leadership" className="btn-five icon-link">
-                  <span className="text">Meet with all</span>
+                  <span className="text">Read more details </span>
                   <div className="icon tran3s rounded-circle d-flex align-items-center justify-content-center">
                     <i className="bi bi-arrow-up-right"></i>
                   </div>

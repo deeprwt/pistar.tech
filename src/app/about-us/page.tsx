@@ -37,7 +37,7 @@ const AboutUsPage = () => {
         {/* header start */}
         <HeaderTwo />
         {/* header end */}
-        <main>
+        <main className="bgcolor2">
           {/* breadcrumb start */}
             <HeroVideoTwo />
           {/* <BreadcrumbOne
@@ -57,7 +57,7 @@ const AboutUsPage = () => {
           <TextFeatureAbout style_2={true} />
           {/* text feature one area end */}
 
-          {/* <BlockFeatureAbout style_2={true}  /> */}
+          <BlockFeatureAbout style_2={true}  />
 
           {/* block feature one area start */}
           {/* <BlockFeatureOne style_2={true} /> */}
@@ -67,12 +67,12 @@ const AboutUsPage = () => {
           {/* <TextFeatureThree style_2={true} /> */}
           {/* text feature one area end */}
 
-          <BlockFeatureAbout style_2={true} />
+          {/* <BlockFeatureAbout style_2={true} /> */}
 
-          <HowWeDo />
+          {/* <HowWeDo /> */}
 
           {/* feedback one start */}
-          <FeedbackOne cls="top-border pt-80 pb-80" />
+          {/* <FeedbackOne cls="top-border pt-80 pb-80" /> */}
           {/* feedback one end */}
 
           {/* partner logo start */}
