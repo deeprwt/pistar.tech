@@ -36,8 +36,8 @@ const FooterOne = () => {
               <h4 className="text-white lh-sm mb-35">
                 Head office <br /> <br />
                 <span className="opacity-50 mt-2">
-                  46/1, NH 44, Near Krishan Reddy Industrial Area, Kudlu Gate,
-                  Hosapalaya, Garvebhavi Palya Bengaluru, Karnataka, 560068
+                  IIIT-H Foundation, Desk B70, Vindhya C5, IIIT-Hyd Campus, Survey#25,
+                  Gachibowli, Hyderabad, Rangareddi, Telangana, India, 500032
                 </span>
               </h4>
               <p className="text-white lh-sm mb-35 ">
