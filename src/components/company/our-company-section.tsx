@@ -184,7 +184,7 @@ const OurCompanySection = () => {
       url={"/assets/videos/file.mp4"}
       />
       {/* Video modal end */}
-      <ImgGallery />
+      {/* <ImgGallery /> */}
     </>
   );
 };
