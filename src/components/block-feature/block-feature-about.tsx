@@ -7,6 +7,13 @@ import shape_1 from "@/assets/images/shape/shape_11.svg";
 // import shape_2 from "@/assets/images/shape/shape_05.svg";
 import shape_2 from "@/assets/images/shape/shape_05.svg";
 import service_data from "@/data/service-data";
+import icon1 from "@/assets/images/icon/customer-satisfaction.png";
+import icon2 from "@/assets/images/icon/financial-sustainability.png";
+import icon3 from "@/assets/images/icon/health-Safety-environment.png";
+import icon4 from "@/assets/images/icon/human-resources-development.png";
+import icon5 from "@/assets/images/icon/lean-manufacturing.png";
+import icon6 from "@/assets/images/icon/management-excellence.png";
+import icon7 from "@/assets/images/icon/sales-client-relations.png";
 
 const BlockFeatureAbout = ({ style_2 = false }: { style_2?: boolean }) => {
   const service_items = service_data.filter((s) => s.page === "home-3");
@@ -29,8 +36,14 @@ const BlockFeatureAbout = ({ style_2 = false }: { style_2?: boolean }) => {
                   className="btn-eleven d-inline-flex align-items-center"
                 >
                   <span className="text">All Services</span>
-                  <div className="icon tran3s rounded-circle d-flex align-items-center">
-                    <Image src={icon} alt="icon" className="lazy-img" />
+                  <div className=" tran3s rounded-circle d-flex align-items-center">
+                    <Image
+                      src={icon}
+                      alt="icon"
+                      width="100"
+                      height="100"
+                      className="lazy-img"
+                    />
                   </div>
                 </Link>
               </div>
@@ -43,10 +56,12 @@ const BlockFeatureAbout = ({ style_2 = false }: { style_2?: boolean }) => {
                       data-wow-delay={`0.${i}s`}
                     >
                       <div className="card-style-eight position-relative vstack tran3s w-100 mb-30 active">
-                        <div className="icon d-flex align-items-center">
+                        <div className=" d-flex align-items-center">
                           <Image
                             src={item.icon}
                             alt="icon"
+                            width="100"
+                            height="100"
                             className="lazy-img"
                           />
                         </div>
@@ -109,6 +124,8 @@ const BlockFeatureAbout = ({ style_2 = false }: { style_2?: boolean }) => {
                             width={70}
                             height={70}
                             alt="icon"
+width="100"
+height="100"
                             className="lazy-img"
                           />
                         </div>
@@ -122,12 +139,14 @@ const BlockFeatureAbout = ({ style_2 = false }: { style_2?: boolean }) => {
                     data-wow-delay={`0.1s`}
                   >
                     <div className="card-style-eight rounded-5 vstack tran3s w-100 mb-30">
-                      <div className="icon d-flex align-items-center">
-                        {/* <Image
-                            src={item.icon}
-                            alt="icon"
-                            className="lazy-img"
-                          /> */}
+                      <div className=" d-flex align-items-center">
+                        <Image
+                          src={icon1}
+                          alt="icon"
+                          width="100"
+                          height="100"
+                          className="lazy-img"
+                        />
                       </div>
                       <h4 className="fw-bold mt-30 mb-20">
                         Customer Satisfaction:
@@ -153,12 +172,14 @@ const BlockFeatureAbout = ({ style_2 = false }: { style_2?: boolean }) => {
                     data-wow-delay={`0.2s`}
                   >
                     <div className="card-style-eight rounded-5 vstack tran3s w-100 mb-30">
-                      <div className="icon d-flex align-items-center">
-                        {/* <Image
-                            src={item.icon}
-                            alt="icon"
-                            className="lazy-img"
-                          /> */}
+                      <div className=" d-flex align-items-center">
+                        <Image
+                          src={icon3}
+                          alt="icon"
+                          width="100"
+                          height="100"
+                          className="lazy-img"
+                        />
                       </div>
                       <h4 className="fw-bold mt-30 mb-20">
                         Health, Safety & Environment:
@@ -184,12 +205,14 @@ const BlockFeatureAbout = ({ style_2 = false }: { style_2?: boolean }) => {
                     data-wow-delay={`0.3s`}
                   >
                     <div className="card-style-eight rounded-5 vstack tran3s w-100 mb-30">
-                      <div className="icon d-flex align-items-center">
-                        {/* <Image
-                            src={item.icon}
-                            alt="icon"
-                            className="lazy-img"
-                          /> */}
+                      <div className=" d-flex align-items-center">
+                        <Image
+                          src={icon6}
+                          alt="icon"
+                          width="100"
+                          height="100"
+                          className="lazy-img"
+                        />
                       </div>
                       <h4 className="fw-bold mt-30 mb-20">
                         Management Excellence:
@@ -215,12 +238,14 @@ const BlockFeatureAbout = ({ style_2 = false }: { style_2?: boolean }) => {
                     data-wow-delay={`0.4s`}
                   >
                     <div className="card-style-eight rounded-5 vstack tran3s w-100 mb-30">
-                      <div className="icon d-flex align-items-center">
-                        {/* <Image
-                            src={item.icon}
-                            alt="icon"
-                            className="lazy-img"
-                          /> */}
+                      <div className=" d-flex align-items-center">
+                        <Image
+                          src={icon4}
+                          alt="icon"
+                          width="100"
+                          height="100"
+                          className="lazy-img"
+                        />
                       </div>
                       <h4 className="fw-bold mt-30 mb-20">
                         Human Resources Development:
@@ -246,12 +271,14 @@ const BlockFeatureAbout = ({ style_2 = false }: { style_2?: boolean }) => {
                     data-wow-delay={`0.5s`}
                   >
                     <div className="card-style-eight rounded-5 vstack tran3s w-100 mb-30">
-                      <div className="icon d-flex align-items-center">
-                        {/* <Image
-                            src={item.icon}
-                            alt="icon"
-                            className="lazy-img"
-                          /> */}
+                      <div className=" d-flex align-items-center">
+                        <Image
+                          src={icon5}
+                          alt="icon"
+                          width="100"
+                          height="100"
+                          className="lazy-img"
+                        />
                       </div>
                       <h4 className="fw-bold mt-30 mb-20">
                         Lean Manufacturing:
@@ -277,12 +304,14 @@ const BlockFeatureAbout = ({ style_2 = false }: { style_2?: boolean }) => {
                     data-wow-delay={`0.6s`}
                   >
                     <div className="card-style-eight rounded-5 vstack tran3s w-100 mb-30">
-                      <div className="icon d-flex align-items-center">
-                        {/* <Image
-                            src={item.icon}
-                            alt="icon"
-                            className="lazy-img"
-                          /> */}
+                      <div className=" d-flex align-items-center">
+                        <Image
+                          src={icon2}
+                          alt="icon"
+                          width="100"
+                          height="100"
+                          className="lazy-img"
+                        />
                       </div>
                       <h4 className="fw-bold mt-30 mb-20">
                         Sales and Client Relations:
@@ -308,7 +337,7 @@ const BlockFeatureAbout = ({ style_2 = false }: { style_2?: boolean }) => {
                     data-wow-delay={`0.7s`}
                   >
                     <div className="card-style-eight rounded-5 vstack tran3s w-100 mb-30">
-                      <div className="icon d-flex align-items-center">
+                      <div className=" d-flex align-items-center">
                       </div>
                       <h4 className="fw-bold mt-30 mb-20">
                         Financial Sustainability:
