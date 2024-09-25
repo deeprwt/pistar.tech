@@ -194,10 +194,10 @@ height="100"
                         equipping them with the skills and knowledge necessary
                         to maintain a safe and sustainable work environment.
                       </p>
-                      <Link
+                      {/* <Link
                         href="/service-details"
                         className="stretched-link"
-                      ></Link>
+                      ></Link> */}
                     </div>
                   </div>
                   <div
@@ -227,10 +227,10 @@ height="100"
                         our people, technology, and infrastructure to drive
                         future growth and innovation.
                       </p>
-                      <Link
+                      {/* <Link
                         href="/service-details"
                         className="stretched-link"
-                      ></Link>
+                      ></Link> */}
                     </div>
                   </div>
                   <div
@@ -260,10 +260,10 @@ height="100"
                         growth while ensuring full compliance with government
                         regulations and industry standards.
                       </p>
-                      <Link
+                      {/* <Link
                         href="/service-details"
                         className="stretched-link"
-                      ></Link>
+                      ></Link> */}
                     </div>
                   </div>
                   <div
@@ -293,10 +293,10 @@ height="100"
                         production, delivering high-performance solutions that
                         meet the requirements of our clients.
                       </p>
-                      <Link
+                      {/* <Link
                         href="/service-details"
                         className="stretched-link"
-                      ></Link>
+                      ></Link> */}
                     </div>
                   </div>
                   <div
@@ -326,10 +326,10 @@ height="100"
                         transparent, and results-oriented to ensure lasting
                         partnerships.
                       </p>
-                      <Link
+                      {/* <Link
                         href="/service-details"
                         className="stretched-link"
-                      ></Link>
+                      ></Link> */}
                     </div>
                   </div>
                   {/* <div
