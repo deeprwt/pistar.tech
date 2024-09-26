@@ -6,9 +6,6 @@ import * as yup from "yup";
 import ErrorMsg from "../common/error-msg";
 import { db } from "@/database/firebase"; // Import Firestore instance
 import { notifySuccess, notifyError } from "@/utils/toast"; // Import notification functions
-
-// ... existing imports
-
 import { addDoc, collection } from "firebase/firestore"; // Import Firestore functions
 
 type FormData = {
@@ -28,49 +25,45 @@ const Newsletter = () => {
   } = useForm<FormData>({
     resolver: yupResolver(schema),
   });
-  // const onSubmit = handleSubmit((data) => {
-  //   alert(JSON.stringify(data));
-  //   reset();
-  // });
 
-  // Define form submission handler
   const onSubmit = async (data: FormData) => {
     try {
-      // Add data to Firestore collection (conditionally executed only in the client-side)
       if (typeof window !== "undefined") {
-        // Check if window is defined (browser environment)
+        // Firestore instance and reference setup
         const { db } = await import("@/database/firebase");
         const contactRef = collection(db, "newsletter");
+
+        // Add data to the collection
         await addDoc(contactRef, data);
-        notifySuccess("Successfully subscribed to the newsletter!"); // Use notifySuccess
-        reset(); // Clear the form
+
+        // Show success notification and reset form
+        notifySuccess("Successfully subscribed to the newsletter!");
+        reset();
       }
     } catch (error) {
       console.error("Error adding document: ", error);
-      notifyError("Error sending message, please try again."); // Use notifyError
+      notifyError("Error sending message, please try again.");
     }
   };
 
   return (
-    <>
-      <form id="contact-form" onSubmit={handleSubmit(onSubmit)}>
-        <input
-          type="email"
-          placeholder="Enter your email address"
-          {...register("email")}
-          id="email"
-          name="email"
-          style={{padding:"0 30px", height:"60px"}}
-        />
-        <button style={{top:"5px"}}>
-          <i className="bi bi-arrow-right"></i>
-        </button>
-        <div className="help-block with-errors">
-          <ErrorMsg msg={errors.email?.message!} />
-        </div>
-        <div className="messages"></div>
-      </form>
-    </>
+    <form id="contact-form" onSubmit={handleSubmit(onSubmit)}>
+      <input
+        type="email"
+        placeholder="Enter your email address"
+        {...register("email")}
+        id="email"
+        name="email"
+        style={{ padding: "0 30px", height: "60px" }}
+      />
+      <button type="submit" style={{ top: "5px" }}>
+        <i className="bi bi-arrow-right"></i>
+      </button>
+      <div className="help-block with-errors">
+        <ErrorMsg msg={errors.email?.message!} />
+      </div>
+      <div className="messages"></div>
+    </form>
   );
 };
 

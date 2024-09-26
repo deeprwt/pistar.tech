@@ -47,6 +47,7 @@ import TeamThreeArea from "@/components/team/team-v3-area";
 import TextFeatureSeven from "@/components/text-feature/text-feature-seven";
 import TextFeatureEight from "@/components/text-feature/text-feature-eight";
 import TextFeatureTen from "@/components/text-feature/text-freature-ten";
+import PopUpModal from "@/components/common/popup-model";
 
 
 const backImg1 = {
@@ -246,6 +247,7 @@ export default function HomePage() {
               </div>
             </div>
           </div>
+          <PopUpModal />
           {/* fancy banner two start */}
           {/* <FancyBannerTwo /> */}
           {/* fancy banner two end */}

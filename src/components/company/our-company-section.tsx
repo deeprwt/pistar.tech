@@ -46,27 +46,29 @@ const OurCompanySection = () => {
           <div className="row">
             <div className="col-xxl-12 col-lg-12 order-lg-1">
               <div className="details-meta ps-xxl-5 ps-xl-3 pb-30">
-                <h2>Our Story</h2>
+                <h2>Our Foundational Inspiration </h2>
                 <p>
-                  As we forge ahead, the spirit of innovation is not confined to
-                  our internal processes alone. We strive to create an ecosystem
-                  where our clients experience the tangible benefits of
-                  technological advancements, making their interaction with us
-                  not just a service but a seamless, convenient experience.
+                  At PiStarTech, our name itself is a reflection of our core
+                  values. "Pi," often associated with the mathematical constant
+                  (π), symbolizes precision, intelligence, and a data-driven
+                  approach, all critical to the work we do in the field of
+                  diagnostics. "Star" represents excellence, leadership, and
+                  innovation, underscoring our commitment to pushing the
+                  boundaries of healthcare technology.
                 </p>
                 <p>
-                  At CGB Solutions, innovation is not just a commitment;
-                  it&apos;s a way of life. We are driven by the belief that
-                  convenience is the cornerstone of exceptional service
-                  delivery, and we tirelessly work towards ensuring that our
-                  clients not only receive solutions but experience the
-                  unparalleled convenience that comes with partnering with a
-                  forward-thinking, innovative organization.
+                  Together, PiStar encapsulates our mission: to deliver
+                  high-precision, innovative solutions that address real-world
+                  healthcare challenges. This is embodied in our flagship
+                  product, DiaPS Mat, designed specifically for diabetic foot
+                  care and biomechanical analysis. It showcases how we integrate
+                  cutting-edge technology with advanced biomechanics to offer
+                  life-saving diagnostics.
                 </p>
-                {/* <div className="img-meta mb-60 lg-mb-40">
+                <div className="img-meta mb-60 lg-mb-40">
                 <Image src={service_img} alt="service_img" className="lazy-img w-100 rounded-4" 
                 style={imgStyle}/>
-              </div> */}
+              </div>
               </div>
               <div className="details-meta ps-xxl-5 ps-xl-3 pb-30">
                 <h2>Our Vision</h2>
@@ -129,48 +131,45 @@ const OurCompanySection = () => {
         </div>
       </div>
       <div className="fancy-banner-five position-relative mt-150 lg-mt-80 pt-80 md-pt-60 pb-80 md-pb-60">
-  {/* Dark overlay */}
-  <div
-    className="position-absolute top-0 left-0 w-100 h-100"
-  />
+        {/* Dark overlay */}
+        <div className="position-absolute top-0 left-0 w-100 h-100" />
 
-  <div className="container position-relative h-100 d-flex align-items-center justify-content-center">
-    <div className="position-relative">
-      {/* <p className="text-white text-xl pt-30 md-pt-10 pb-45 lg-pb-30">
+        <div className="container position-relative h-100 d-flex align-items-center justify-content-center">
+          <div className="position-relative">
+            {/* <p className="text-white text-xl pt-30 md-pt-10 pb-45 lg-pb-30">
         Watch our intro video to get the idea about our services & many more
       </p> */}
-      
-      {/* Main image */}
-      <Image
-        src={ramarao}
-        alt="service_img"
-        className="lazy-img w-100 rounded-4"
-        style={imgStyle}
-      />
 
-      {/* Video play button */}
-      <a
-        className="fancybox rounded-circle video-icon tran5s text-center d-flex align-items-center justify-content-center cursor-pointer"
-        onClick={() => setIsVideoOpen(true)}
-        style={{
-          position: "absolute",
-          top: "50%",
-          left: "50%",
-          transform: "translate(-50%, -50%)",
-          zIndex: 1, // Ensure it is above the image
-        }}
-      >
-        <Image
-          src={sticker}
-          alt="sticker"
-          className="lazy-img"
-          style={imgStyle}
-        />
-      </a>
-    </div>
-  </div>
-</div>
+            {/* Main image */}
+            <Image
+              src={ramarao}
+              alt="service_img"
+              className="lazy-img w-100 rounded-4"
+              style={imgStyle}
+            />
 
+            {/* Video play button */}
+            <a
+              className="fancybox rounded-circle video-icon tran5s text-center d-flex align-items-center justify-content-center cursor-pointer"
+              onClick={() => setIsVideoOpen(true)}
+              style={{
+                position: "absolute",
+                top: "50%",
+                left: "50%",
+                transform: "translate(-50%, -50%)",
+                zIndex: 1, // Ensure it is above the image
+              }}
+            >
+              <Image
+                src={sticker}
+                alt="sticker"
+                className="lazy-img"
+                style={imgStyle}
+              />
+            </a>
+          </div>
+        </div>
+      </div>
 
       {/* Video modal start */}
       {/* <VideoPopup
@@ -179,9 +178,9 @@ const OurCompanySection = () => {
         videoId={"aXFSJTjVjw0"}
       /> */}
       <VideoPopupLocal
-      isVideoOpen={isVideoOpen}
-      setIsVideoOpen={setIsVideoOpen}
-      url={"/assets/videos/file.mp4"}
+        isVideoOpen={isVideoOpen}
+        setIsVideoOpen={setIsVideoOpen}
+        url={"/assets/videos/file.mp4"}
       />
       {/* Video modal end */}
       {/* <ImgGallery /> */}
