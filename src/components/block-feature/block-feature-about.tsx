@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 // internal
 import icon from "@/assets/images/icon/icon_27.svg";
-import shape_1 from "@/assets/images/shape/shape_11.svg";
+import shape_1 from "@/assets/images/logo/animationlogo.gif";
 // import shape_2 from "@/assets/images/shape/shape_05.svg";
 import shape_2 from "@/assets/images/shape/shape_05.svg";
 import service_data from "@/data/service-data";
@@ -366,6 +366,8 @@ height="100"
             src={shape_1}
             alt="shape"
             className="lazy-img shapes shape_01"
+            width="200"
+            height="200"
           />
           <Image
             src={shape_2}

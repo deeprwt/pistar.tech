@@ -341,6 +341,36 @@ const faq_data: IFaq[] = [
     desc: " Automation Anywhere provides comprehensive support and resources to ensure businesses can successfully implement and optimize their RPA solutions. This includes access to a global network of RPA experts, 24/7 customer support, and a rich online community where users can share insights and best practices. Additionally, Automation Anywhere University offers a wide range of training and certification programs to help businesses build in-house expertise in RPA.",
     page:'automationsfaq'
   },
+  {
+    id: 52,
+    title: "What is PiStarTech?",
+    desc: "PiStarTech is a leading provider of innovative diagnostic solutions focused on improving healthcare through advanced technology. Our flagship product, DiaPS Mat, is designed for diabetic foot care and biomechanical analysis, helping both patients and healthcare professionals achieve better outcomes.",
+    page:'companyfaq'
+  },
+  {
+    id: 53,
+    title: "How does DiaPS Mat work?",
+    desc: "DiaPS Mat utilizes cutting-edge sensors and data analytics to monitor foot pressure distribution and gait patterns. It provides real-time feedback to users and healthcare providers, allowing for early detection of potential issues and personalized treatment plans to prevent complications.",
+    page:'companyfaq'
+  },
+  {
+    id: 54,
+    title: "Who can benefit from using DiaPS Mat?",
+    desc: "DiaPS Mat is particularly beneficial for individuals with diabetes who are at risk of developing foot ulcers or other related complications. It is also useful for healthcare providers who want to enhance their diagnostic capabilities and improve patient care through detailed biomechanical analysis.",
+    page:'companyfaq'
+  },
+  {
+    id: 55,
+    title: "How can I purchase or learn more about PiStarTech products?",
+    desc: "To learn more about our products or make a purchase, visit our website at PiStarTech. You can also contact our sales team through the contact form on our website or by reaching out to us via email at sales@pistar.tech.",
+    page:'companyfaq'
+  },
+  {
+    id: 56,
+    title: "What are the warranty and service options for PiStarTech products?",
+    desc: "PiStarTech products come with a standard warranty that covers manufacturing defects and malfunctions under normal use. For detailed warranty information and terms, please refer to the warranty policy available on our website or contact our customer service team. Additionally, we offer various service plans, including extended warranties and maintenance options, to ensure that your products remain in optimal condition. ",
+    page:'companyfaq'
+  },
 ];
 
 export default faq_data;

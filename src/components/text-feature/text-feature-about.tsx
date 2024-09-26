@@ -6,10 +6,13 @@ import icons from "@/assets/images/icon/icon_09.svg";
 import icon_2 from "@/assets/images/icon/icon_10.svg";
 import icon_3 from "@/assets/images/icon/icon_11.svg";
 import shape from "@/assets/images/shape/shape_05.svg";
-import about from "@/assets/images/assets/about_us.jpg";
+import about from "@/assets/images/assets/about.png";
 import mission from "@/assets/images/icon/mission.svg";
 import vision from "@/assets/images/icon/vision.svg";
 import bg_image1 from "@/assets/images/background/contactbanner.jpg";
+import img1 from "@/assets/images/media/visionary-future-resize.png";
+import img2 from "@/assets/images/media/vision-reality.png";
+import img3 from "@/assets/images/media/relentless-mission-resize.png";
 
 const backImg1 = {
   backgroundImage: `url('${bg_image1.src}')`,
@@ -25,25 +28,33 @@ function CardItem({
   title,
   desc,
   link,
+ bg_img,
 }: {
   icon: StaticImageData;
   title: string;
   desc: string;
   link: string;
+  bg_img: StaticImageData;
 }) {
   return (
-    <div className="card-style-three d-flex pt-75 lg-pt-40 pb-45 lg-pb-20">
+    <div className="card-style-three d-flex pt-75 lg-pt-40 ">
       {/* <Image src={icon} alt="icon" className="lazy-img icon" /> */}
       <div className="ps-4">
         {/* <h4 className="fw-bold mb-20 text-white">{title}</h4> */}
         <p className="paracolor"> {desc} </p>
-        <Link
+        {/* <Link
           href={link}
           className="btn-three icon-link mt-15 md-mb-40 fontcolor"
         >
           <span>Read More</span>
           <Image src={icons} alt="icon" className="lazy-img icon ms-1" />
-        </Link>
+        </Link> */}
+        <Image
+        src={bg_img}
+        alt="bg-img"
+        className="lazy-img mt-auto me-auto ms-auto w-100"
+        layout="responsive"
+      />
       </div>
     </div>
   );
@@ -144,7 +155,7 @@ const TextFeatureAbout = ({ style_2 = false }: { style_2?: boolean }) => {
                     on the research and development and developed the complete
                     make in India solution-DiaPS mat.
                   </p>
-                  <Link
+                  {/* <Link
                   href="/our-company"
                   className="btn-three icon-link mt-15 md-mb-40 fontcolor"
                 >
@@ -154,7 +165,13 @@ const TextFeatureAbout = ({ style_2 = false }: { style_2?: boolean }) => {
                     alt="icon"
                     className="lazy-img icon ms-1"
                   />
-                </Link>
+                </Link> */}
+                <Image
+        src={img2}
+        alt="bg-img"
+        className="lazy-img mt-auto me-auto ms-auto w-100"
+        layout="responsive"
+      />
                 </div>
                 <div className="col-lg-6 ms-auto wow fadeInRight">
                   <CardItem
@@ -162,6 +179,7 @@ const TextFeatureAbout = ({ style_2 = false }: { style_2?: boolean }) => {
                     link="/our-company"
                     title="Our Vision"
                     desc="We aspire to be the visionary of a future where the seamless integration of unparalleled talent and cutting-edge technology not only redefines success for businesses but sets an entirely new standard for global excellence"
+                    bg_img={img1}
                   />
                   <CardItem
                     icon={mission}
@@ -170,6 +188,7 @@ const TextFeatureAbout = ({ style_2 = false }: { style_2?: boolean }) => {
                     desc="
                     We are on a relentless mission to shatter the ordinary, empowering businesses with extraordinary staffing and technology solutions. At CGB Solutions, we don't just adapt to change; we sculpt it, ensuring our clients lead the way in innovation and triumph.
                     "
+                    bg_img={img3}
                   />
                 </div>
               </div>

@@ -12,7 +12,7 @@ type IPropType = {
 
 const FaqItem = ({id,title,isShow,desc,parent,cls}:IPropType) => {
   return (
-    <div className="accordion-item">
+    <div className="accordion-item px-4 rounded">
       <div className="accordion-header" id={`heading-${id}`}>
         <button
           className={`accordion-button ${cls?cls:''} ${isShow?'':'collapsed'}`}

@@ -23,6 +23,7 @@ import DottedMap from "@/components/map/maps";
 import HowWeDo from "@/components/home-data/how-we-do";
 import logo_2 from "@/assets/images/logo/logome.png";
 import HeroVideoTwo from "@/components/hero-banner/hero-video-two";
+import FaqSolutionsThree from "@/components/faq/faq-section-three";
 
 export const metadata: Metadata = {
   title: "About Us",
@@ -82,6 +83,13 @@ const AboutUsPage = () => {
             </div>
           </div>
           {/* partner logo end */}
+
+          <FaqSolutionsThree 
+                      title="Frequently Asked Questions"
+                      para=""
+                      page="companyfaq"
+          />
+          
 
           {/* team three start */}
           <TeamSectionThree />

@@ -90,7 +90,8 @@ export default function HomePage() {
         {/* header end */}
         <main>
           {/* hero banner start */}
-          <HeroVideoOne />
+          {/* <HeroVideoOne /> */}
+          <HeroBannerTwo />
 
           {/* hero banner end */}
 

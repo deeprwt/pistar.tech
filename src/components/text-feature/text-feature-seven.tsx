@@ -100,7 +100,7 @@ const TextFeatureSeven = () => {
             <div className="col-lg-6 d-flex wow fadeInUp">
               <CardItem
                 icon={icon_1}
-                title="Advancing Diagnostic Accuracy"
+                title="Outdated, Disconnected Diagnostic Systems"
                 li1="High Precision: Real-time data allows for detailed foot pressure mapping."
                 li2="Early Detection: Identifies abnormal pressure points to prevent complications."
                 li3="Reduced Errors: Minimizes the risk of misdiagnosis with clear, accurate readings."
@@ -110,7 +110,7 @@ const TextFeatureSeven = () => {
             <div className="col-lg-6 d-flex wow fadeInUp" data-wow-delay="0.1s">
               <CardItem
                 icon={icon_2}
-                title="Google & Apple pay"
+                title="PiStarTech's Next-Gen Integrated Solution"
                 li1="Cost-Effective Solution: Affordable for widespread use in clinics and hospitals."
                 li2="User-Friendly Design: Easy integration into medical practices with minimal training."
                 li3="Better Patient Outcomes: Supports proactive care, reducing risks of severe foot issues."

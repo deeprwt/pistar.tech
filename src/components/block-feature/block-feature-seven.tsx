@@ -7,6 +7,9 @@ import icon_3 from "@/assets/images/icon/icon_38.svg";
 import screen_1 from "@/assets/images/assets/screen_08.svg";
 import screen_2 from "@/assets/images/assets/screen_09.svg";
 import screen_3 from "@/assets/images/assets/screen_10.svg";
+import img1 from "@/assets/images/media/detailed-planatar-pressure.png";
+import img2 from "@/assets/images/media/support-health-care-providers.png";
+import img3 from "@/assets/images/media/precise-footpain-diagnosis.png";
 import shape from "@/assets/images/shape/shape_13.svg";
 
 // image style
@@ -39,6 +42,7 @@ function CardItem({ icon, title, desc, bg_img }: IProps) {
         src={bg_img}
         alt="bg-img"
         className="lazy-img mt-auto me-auto ms-auto w-100"
+        layout="responsive"
       />
     </div>
   );
@@ -63,7 +67,7 @@ const BlockFeatureSeven = () => {
                 icon={icon_1}
                 title="Support for Healthcare Providers"
                 desc="The DiaPS Mat provides valuable assistance to healthcare professionals at various stages of clinical assessment and treatment. It identifies both normal and abnormal foot postures, delivering data that improves diagnostic accuracy. By capturing static podiatric pressure patterns (SPPP) when standing and dynamic podiatric pressure patterns (DPPP) while walking, it helps to substantiate clinical findings with statistical evidence and supports patient recovery monitoring after injuries or surgeries."
-                bg_img={screen_1}
+                bg_img={img2}
               />
             </div>
             <div className="col-lg-6 d-flex wow fadeInUp" data-wow-delay="0.1s">
@@ -71,7 +75,7 @@ const BlockFeatureSeven = () => {
                 icon={icon_2}
                 title="Meeting the Need for Precise Foot Pain Diagnosis"
                 desc="Foot and ankle pain is a widespread issue, with studies showing that one in three people experience such pain at some point. Traditional diagnostic methods depend significantly on the doctor's experience and often use outdated tools like ink-based harris mats, which lack reliability. Expensive digital foot scanning systems are available to only a small fraction of doctors. The DiaPS Mat offers an affordable, automated solution that provides thorough plantar pressure analysis in just five seconds, enabling precise diagnoses and tailored treatment plans."
-                bg_img={screen_2}
+                bg_img={img3}
               />
             </div>
             <div className="col-12 d-flex wow fadeInUp" data-wow-delay="0.2s">
@@ -111,9 +115,10 @@ const BlockFeatureSeven = () => {
                   </div>
                   <div className="col-lg-5 ms-auto">
                     <Image
-                      src={screen_3}
+                      src={img1}
                       alt=""
                       className="lazy-img mt-auto me-auto ms-auto w-100"
+                      layout="responsive"
                     />
                   </div>
                 </div>
