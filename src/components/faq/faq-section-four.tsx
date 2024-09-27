@@ -104,7 +104,7 @@ const FaqSectionFour = () => {
 
             <div className="section-btn sm-mt-40">
               <Link
-                href="/project-v2"
+                href="/about-us"
                 className="btn-nine rounded-circle d-inline-flex align-items-center justify-content-center tran3s"
               >
                 <i className="bi bi-arrow-up-right"></i>
