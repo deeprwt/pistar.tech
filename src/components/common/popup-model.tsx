@@ -1,6 +1,8 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Newsletter from "../forms/newsletter";
+import Image from "next/image";
+import img4 from "@/assets/images/pistar/Newsletter.png";
 
 const PopUpModal = () => {
   const [showModal, setShowModal] = useState(false);
@@ -73,18 +75,15 @@ const PopUpModal = () => {
                     }}
                   >
                     <div className="col-lg-6">
-                      <h3 className="text-center text-white">
-                        {" "}
-                        Stay Ahead in Diabetic Foot Care!
-                      </h3>
-                      <p className="text-center text-white">
-                        Subscribe to our newsletter for the latest insights on
-                        case studies, innovations, webinars, and product updates
-                        in diabetic foot care and biomechanical analysis.
-                      </p>
+                      <Image
+                        src={img4}
+                        alt="cgb aboutus"
+                        className="rounded"
+                        layout="responsive"
+                      ></Image>
                     </div>
-                    <div className="col-lg-6 footer-newsletter">
-                    <h3 className="text-center text-white">
+                    <div className="col-lg-6 footer-newsletter d-flex align-items-center flex-column">
+                      <h3 className="text-center text-white">
                         {" "}
                         Stay Ahead in Diabetic Foot Care!
                       </h3>
@@ -103,12 +102,12 @@ const PopUpModal = () => {
                   aria-label="Close"
                   onClick={handleClose}
                 ></button>
-                <button
-                  className="btn btn-light mt-3"
+                {/* <button
+                  className="mt-3"
                   onClick={handleDontShowAgain}
                 >
                   Don't show this again
-                </button>
+                </button> */}
               </div>
             </div>
           </div>

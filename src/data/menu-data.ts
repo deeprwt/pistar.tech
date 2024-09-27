@@ -15,10 +15,15 @@ const menu_data: IMenu[] = [
     id: 3,
     link: "/",
     title: "Products",
+       dropdown:true,
+    dropdown_menus:[
+    {link:'/product/diaps-mat',title:'DiaPS Mat'},
+    {link:'/product/diapsmat',title:'Chair'},
+    ]
   },
   {
     id: 4,
-    link: "/our-company",
+    link: "/our-co",
     title: "Company",
   },
   {

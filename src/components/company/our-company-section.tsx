@@ -12,6 +12,8 @@ import ImgGallery from "../gallery/img-gallery";
 import sticker from "@/assets/images/assets/sticker_02.png";
 import VideoPopup from "../common/video-popup";
 import VideoPopupLocal from "../common/video-popup-local";
+import FaqSectionOne from "../faq/faq-section-one";
+import FaqSectionTwo from "../faq/faq-section-two";
 
 // CardItem
 function CardItem({
@@ -41,6 +43,9 @@ const OurCompanySection = () => {
   const [isVideoOpen, setIsVideoOpen] = useState<boolean>(false);
   return (
     <>
+
+    <FaqSectionTwo />
+
       <div className="service-details mt-150 lg-mt-80 mb-100 lg-mb-80">
         <div className="container">
           <div className="row">

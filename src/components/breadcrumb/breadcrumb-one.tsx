@@ -10,6 +10,7 @@ type IProps = {
   bg_img?: StaticImageData;
   // shape: StaticImageData;
   page?: string;
+  maincls?:string;
   cls?: string;
   style_2?: boolean;
 };
@@ -19,6 +20,7 @@ const BreadcrumbOne = ({
   subtitle,
   bg_img = bg,
   page,
+  maincls='',
   cls='',
   style_2 = false,
   // shape
@@ -26,7 +28,7 @@ const BreadcrumbOne = ({
   return (
     <>
         <div
-          className="inner-banner-one pt-225 lg-pt-200 md-pt-150 pb-100 md-pb-70 position-relative"
+          className={`inner-banner-one pt-225 lg-pt-200 md-pt-150 pb-100 md-pb-70 position-relative ${maincls}`}
           style={{ backgroundImage: `url(${bg_img.src})` }}
         >
           <div className="container position-relative">

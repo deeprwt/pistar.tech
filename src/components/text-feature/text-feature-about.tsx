@@ -178,7 +178,7 @@ const TextFeatureAbout = ({ style_2 = false }: { style_2?: boolean }) => {
                     icon={vision}
                     link="/our-company"
                     title="Our Vision"
-                    desc="We aspire to be the visionary of a future where the seamless integration of unparalleled talent and cutting-edge technology not only redefines success for businesses but sets an entirely new standard for global excellence"
+                    desc="Since its incorporation in 2021, PiStarTech has been at the forefront of innovation, supported by a range of prestigious government grants. The company received significant funding through initiatives such as MeiTY Tide 2.0, Nidhi Prayas, PRIF, and Nidhi SSS, amassing a total of INR 82 lakhs. These grants have been instrumental in advancing the development of PiStarTech's cutting-edge technologies and reinforcing its commitment to enhancing healthcare solutions."
                     bg_img={img1}
                   />
                   <CardItem
@@ -186,7 +186,7 @@ const TextFeatureAbout = ({ style_2 = false }: { style_2?: boolean }) => {
                     link="/our-company"
                     title="Our Mission"
                     desc="
-                    We are on a relentless mission to shatter the ordinary, empowering businesses with extraordinary staffing and technology solutions. At CGB Solutions, we don't just adapt to change; we sculpt it, ensuring our clients lead the way in innovation and triumph.
+                   At PiStarTech, we are dedicated to leveraging advanced technology to address critical healthcare challenges and improve the quality of life for our users. Our flagship product, DiaPS Mat, exemplifies our mission to combine innovation with practical solutions for better health outcomes.
                     "
                     bg_img={img3}
                   />

@@ -14,6 +14,7 @@ import Company from "@/components/services/company";
 import OurStorySection from "@/components/company/ourstory-section";
 import MissionSection from "@/components/company/mission-section";
 import OurCompanySection from "@/components/company/our-company-section";
+import FaqSolutionsThree from "@/components/faq/faq-section-three";
 
 export const metadata: Metadata = {
   title: "Mission - CGB's",
@@ -42,6 +43,11 @@ export default function OurCompany() {
           {/* service details area start */}
           <OurCompanySection />
           {/* service details area end */}
+          <FaqSolutionsThree 
+                      title="Frequently Asked Questions"
+                      para=""
+                      page="companyfaq"
+          />
         </main>
 
         {/* footer start */}

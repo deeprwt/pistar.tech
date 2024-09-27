@@ -84,11 +84,11 @@ const AboutUsPage = () => {
           </div>
           {/* partner logo end */}
 
-          <FaqSolutionsThree 
+          {/* <FaqSolutionsThree 
                       title="Frequently Asked Questions"
                       para=""
                       page="companyfaq"
-          />
+          /> */}
           
 
           {/* team three start */}

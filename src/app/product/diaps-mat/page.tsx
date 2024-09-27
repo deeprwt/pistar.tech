@@ -1,0 +1,441 @@
+import React from "react";
+import { Metadata } from "next";
+import Wrapper from "@/layout/wrapper";
+import HeaderTwo from "@/layout/header/Header";
+import BreadcrumbOne from "@/components/breadcrumb/breadcrumb-one";
+// import FooterThree from "@/layout/footer/footer-three";
+import FooterOne from "@/layout/footer/footer-one";
+import about_bg from "@/assets/images/banners/diaspmat.jpg";
+import FancyBannerThree from "@/components/fancy-banner/fancy-banner-three";
+import shape from "@/assets/images/shape/shape_25.svg";
+import TextFeatureOne from "@/components/text-feature/text-feature-one";
+import BlockFeatureOne from "@/components/block-feature/block-feature-one";
+import TextFeatureThree from "@/components/text-feature/text-feature-three";
+import FeedbackOne from "@/components/feedback/feedback-one";
+import PartnersSliderOne from "@/components/partners/partners-slider-one";
+import TeamSectionThree from "@/components/team/team-section-three";
+import HomeFourBlogs from "@/components/blogs/home-4-blogs";
+import NewsletterBanner from "@/components/newsletter/newsletter-banner";
+import TextFeatureHome from "@/components/text-feature/text-feature-home";
+import TextFeatureAbout from "@/components/text-feature/text-feature-about";
+import BlockFeatureAbout from "@/components/block-feature/block-feature-about";
+import DottedMap from "@/components/map/maps";
+import HowWeDo from "@/components/home-data/how-we-do";
+import logo_2 from "@/assets/images/logo/logome.png";
+import HeroVideoTwo from "@/components/hero-banner/hero-video-two";
+import FaqSolutionsThree from "@/components/faq/faq-section-three";
+import Image from "next/image";
+import mat from "@/assets/images/pistar/mat.png";
+import ContactForm from "@/components/forms/contact-form";
+import bg_image2 from "@/assets/images/background/counter_dark_pattern.png";
+import img4 from "@/assets/images/media/doctor.jpg";
+
+const backImg2 = {
+  backgroundImage: `url('${bg_image2.src}')`,
+  backgroundSize: "auto",
+  backgroundPosition: "center",
+  backgroundAttachment: "local",
+  backgroundColor: "#292e31",
+};
+
+export const metadata: Metadata = {
+  title: "DiaPs Mat - Pistar Tech",
+  description:
+    "Unlock financial growth with CGB Solutions experienced IT consulting & insightful solutions. Navigate your journey with us!",
+  keywords: "IT consulting, financial growth, insightful solutions",
+};
+
+const DiaspsMat = () => {
+  return (
+    <Wrapper>
+      <div className="main-page-wrapper">
+        {/* header start */}
+        <HeaderTwo />
+        {/* header end */}
+        <main className="bgcolor2">
+          {/* breadcrumb start */}
+          {/* <HeroVideoTwo /> */}
+          <BreadcrumbOne
+            title="DiaPs Mat"
+            subtitle="Navigating Your Financial Growth With Experience & Insightful Solutions."
+            page="DiaPs Mat"
+            maincls="bg-bottom"
+            bg_img={about_bg}
+            style_2={true}
+          />
+          {/* breadcrumb end */}
+
+          <div
+            className="fancy-banner-two pt-80 lg-pt-80 pb-80 lg-pb-60 service-details"
+            // style={backImg1}
+            style={{ background: "#292e31" }}
+          >
+            <div className="container">
+              <div className="wow fadeInUp">
+                <div className="row">
+                  <div className="col-lg-6 wow fadeInRight">
+                    <div className="title-three mb-35 md-mb-20 details-meta">
+                      {/* <div className="upper-title">management</div> */}
+                      <h3 style={{ color: "white" }}>
+                        Why is the DiaPS Mat so easy to adopt?
+                      </h3>
+                    </div>
+                    <p
+                      className="text-lg mt-40 lg-mt-30 mb-30"
+                      style={{ color: "#fff9" }}
+                    >
+                      The DiaPS Mat from PiStarTech Private Limited is designed
+                      for easy adoption into any clinical setting. Its portable,
+                      flexible design allows it to seamlessly integrate into
+                      existing medical workflows without the need for extensive
+                      training or changes to the current setup. The device is
+                      user-friendly and highly adaptable, making it suitable for
+                      clinics and hospitals of any size. <br /> <br />
+                      Since it provides instant, digital plantar pressure
+                      analysis in just 5 seconds, healthcare professionals can
+                      easily incorporate the DiaPS Mat into their patient
+                      evaluation process, streamlining diagnosis and enhancing
+                      accuracy without interrupting day-to-day operations. Its
+                      affordability and ease of use make it accessible to a wide
+                      range of practitioners, ensuring they can upgrade to
+                      modern foot analysis technology with minimal effort.
+                    </p>
+                  </div>
+                  <div className="col-lg-6 col-md-8 m-auto wow fadeInLeft">
+                    <div className="media-wrapper md-mt-60">
+                      <Image
+                        src={mat}
+                        alt="screen"
+                        className="lazy-img"
+                        layout="responsive"
+                      />
+                    </div>
+                  </div>
+                  {/* <div className="col-lg-10 m-auto">
+                    <div className="title-one details-meta">
+                      <h3 style={{ color: "white" }}>
+                        Why is the DiaPS Mat so easy to adopt?
+                      </h3>
+                    </div>
+                    <p
+                      className="text-lg mt-40 lg-mt-30 mb-30"
+                      style={{ color: "#fff9" }}
+                    >
+                      The DiaPS Mat from PiStarTech Private Limited is designed
+                      for easy adoption into any clinical setting. Its portable,
+                      flexible design allows it to seamlessly integrate into
+                      existing medical workflows without the need for extensive
+                      training or changes to the current setup. The device is
+                      user-friendly and highly adaptable, making it suitable for
+                      clinics and hospitals of any size.
+                    </p>
+                    <p
+                      className="text-lg mt-40 lg-mt-30 mb-30"
+                      style={{ color: "#fff9" }}
+                    >
+                      Since it provides instant, digital plantar pressure
+                      analysis in just 5 seconds, healthcare professionals can
+                      easily incorporate the DiaPS Mat into their patient
+                      evaluation process, streamlining diagnosis and enhancing
+                      accuracy without interrupting day-to-day operations. Its
+                      affordability and ease of use make it accessible to a wide
+                      range of practitioners, ensuring they can upgrade to
+                      modern foot analysis technology with minimal effort.
+                    </p>
+                  </div> */}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            className="fancy-banner-two pt-80 lg-pt-80 pb-80 lg-pb-60 service-details"
+            style={{ background: "#f5f5f5" }}
+          >
+            <div className="container details-meta">
+              <div className="wow fadeInUp">
+                <h3 className="pb-4">Overview</h3>
+                <div className="row">
+                  <div className="col-lg-6 wow fadeInRight order-last order-md-first">
+                    <div className="title-three mb-35 md-mb-20">
+                      <div>
+                        <div className="upper-title d-flex align-items-center">
+                          <div className="line-2"></div> SMART TECHNOLOGY
+                        </div>
+                      </div>
+                      <h3>Intelligent Insoles | Pro</h3>
+                    </div>
+                    <p
+                      className="text-lg mt-40 lg-mt-30 mb-30"
+                      // style={{ color: "#fff9" }}
+                    >
+                      Evaluate gait, plantar pressure, and foot function with
+                      insole sensors that are reliable and durable enough to
+                      accurately capture data wherever activity takes place —
+                      and without compromising natural motion.
+                    </p>
+                    <p
+                      className="text-lg mt-40 lg-mt-30 mb-30"
+                      // style={{ color: "#fff9" }}
+                    >
+                      Evaluate gait, plantar pressure, and foot function with
+                      insole sensors that are reliable and durable enough to
+                      accurately capture data wherever activity takes place —
+                      and without compromising natural motion.
+                    </p>
+                  </div>
+                  <div className="col-lg-6 col-md-8 m-auto wow fadeInLeft order-first order-md-last">
+                    <div className="media-wrapper md-mt-60">
+                      <Image
+                        src={mat}
+                        alt="screen"
+                        className="lazy-img"
+                        layout="responsive"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="fancy-banner-two pt-80 lg-pt-80 pb-80 lg-pb-60 service-details"
+            style={{ background: "#f5f5f5" }}
+          >
+            <div className="container details-meta">
+              <div className="wow fadeInUp">
+                <div className="row">
+                  <div className="col-lg-6 wow fadeInRight order-first order-md-last">
+                    <div className="title-three mb-35 md-mb-20">
+                      <div>
+                        <div className="upper-title d-flex align-items-center">
+                          <div className="line-2"></div> SMART TECHNOLOGY
+                        </div>
+                      </div>
+                      <h3>Intelligent Insoles | Pro</h3>
+                    </div>
+                    <p
+                      className="text-lg mt-40 lg-mt-30 mb-30"
+                      // style={{ color: "#fff9" }}
+                    >
+                      Evaluate gait, plantar pressure, and foot function with
+                      insole sensors that are reliable and durable enough to
+                      accurately capture data wherever activity takes place —
+                      and without compromising natural motion.
+                    </p>
+                    <p
+                      className="text-lg mt-40 lg-mt-30 mb-30"
+                      // style={{ color: "#fff9" }}
+                    >
+                      Evaluate gait, plantar pressure, and foot function with
+                      insole sensors that are reliable and durable enough to
+                      accurately capture data wherever activity takes place —
+                      and without compromising natural motion.
+                    </p>
+                  </div>
+                  <div className="col-lg-6 col-md-8 m-auto wow fadeInLeft order-last order-md-first">
+                    <div className="media-wrapper md-mt-60">
+                      <Image
+                        src={mat}
+                        alt="screen"
+                        className="lazy-img"
+                        layout="responsive"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="fancy-banner-two pt-80 lg-pt-80 pb-80 lg-pb-60 service-details"
+            style={{ background: "#f5f5f5" }}
+          >
+            <div className="container details-meta">
+              <div className="wow fadeInUp">
+                <div className="row">
+                  <div className="col-lg-6 wow fadeInRight order-last order-md-first">
+                    <div className="title-three mb-35 md-mb-20">
+                      <div>
+                        <div className="upper-title d-flex align-items-center">
+                          <div className="line-2"></div> SMART TECHNOLOGY
+                        </div>
+                      </div>
+                      <h3>Intelligent Insoles | Pro</h3>
+                    </div>
+                    <p
+                      className="text-lg mt-40 lg-mt-30 mb-30"
+                      // style={{ color: "#fff9" }}
+                    >
+                      Evaluate gait, plantar pressure, and foot function with
+                      insole sensors that are reliable and durable enough to
+                      accurately capture data wherever activity takes place —
+                      and without compromising natural motion.
+                    </p>
+                    <p
+                      className="text-lg mt-40 lg-mt-30 mb-30"
+                      // style={{ color: "#fff9" }}
+                    >
+                      Evaluate gait, plantar pressure, and foot function with
+                      insole sensors that are reliable and durable enough to
+                      accurately capture data wherever activity takes place —
+                      and without compromising natural motion.
+                    </p>
+                  </div>
+                  <div className="col-lg-6 col-md-8 m-auto wow fadeInLeft order-first order-md-last">
+                    <div className="media-wrapper md-mt-60">
+                      <Image
+                        src={mat}
+                        alt="screen"
+                        className="lazy-img"
+                        layout="responsive"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="fancy-banner-two pt-80 lg-pt-80 pb-80 lg-pb-60 service-details"
+            style={{ background: "#f5f5f5" }}
+          >
+            <div className="container details-meta">
+              <div className="wow fadeInUp">
+                <div className="row">
+                  <div className="col-lg-6 wow fadeInRight order-first order-md-last">
+                    <div className="title-three mb-35 md-mb-20">
+                      <div>
+                        <div className="upper-title d-flex align-items-center">
+                          <div className="line-2"></div> SMART TECHNOLOGY
+                        </div>
+                      </div>
+                      <h3>Intelligent Insoles | Pro</h3>
+                    </div>
+                    <p
+                      className="text-lg mt-40 lg-mt-30 mb-30"
+                      // style={{ color: "#fff9" }}
+                    >
+                      Evaluate gait, plantar pressure, and foot function with
+                      insole sensors that are reliable and durable enough to
+                      accurately capture data wherever activity takes place —
+                      and without compromising natural motion.
+                    </p>
+                    <p
+                      className="text-lg mt-40 lg-mt-30 mb-30"
+                      // style={{ color: "#fff9" }}
+                    >
+                      Evaluate gait, plantar pressure, and foot function with
+                      insole sensors that are reliable and durable enough to
+                      accurately capture data wherever activity takes place —
+                      and without compromising natural motion.
+                    </p>
+                  </div>
+                  <div className="col-lg-6 col-md-8 m-auto wow fadeInLeft order-last order-md-first">
+                    <div className="media-wrapper md-mt-60">
+                      <Image
+                        src={mat}
+                        alt="screen"
+                        className="lazy-img"
+                        layout="responsive"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* block feature one area start */}
+          {/* <BlockFeatureOne style_2={true} /> */}
+          {/* block feature one area end */}
+
+          {/* text feature one area start */}
+          {/* <TextFeatureThree style_2={true} /> */}
+          {/* text feature one area end */}
+
+          {/* <BlockFeatureAbout style_2={true} /> */}
+
+          {/* <HowWeDo /> */}
+
+          {/* feedback one start */}
+          {/* <FeedbackOne cls="top-border pt-80 pb-80" /> */}
+          {/* feedback one end */}
+
+          <FaqSolutionsThree
+            title="Frequently Asked Questions"
+            para=""
+            page="companyfaq"
+          />
+          <div
+            className="contact-us-section pt-80 lg-pt-80"
+            style={backImg2}
+            // style={{background:"#292e31"}}
+          >
+            <div className="container">
+              <div className="position-relative">
+                <div className="bg-wrapper lg-mt-40">
+                  <div className="row">
+                    <div className="col-lg-5 d-flex">
+                      {/* <Image
+                        src={img4}
+                        alt="icon"
+                        layout="responsive"
+                        className=""
+                      /> */}
+                      <div className="ms-auto pe-xxl-5 ps-xxl-5 pb-35 md-mt-60 d-flex align-items-end">
+                        <Image
+                          src={img4}
+                          alt="cgb aboutus"
+                          className="shap-animate rounded"
+                          style={{ height: "auto" }}
+                        ></Image>
+                        {/* <ul className="style-none">
+                        <li>Mobile app easy management & access</li>
+                        <li>Ton’s of features for handle the card easily</li>
+                        <li>Strong security system.</li>
+                    </ul> */}
+                      </div>
+                    </div>
+                    <div className="col-lg-7">
+                      <div className="form-style-one ps-xl-5">
+                        {/* form start */}
+                        <ContactForm />
+                        {/* form end */}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* <div className="partner-logo-one pt-80 lg-pt-40 pb-80 lg-pb-40">
+            <div className="container">
+              <DottedMap />
+            </div>
+          </div> */}
+
+          {/* blogs start */}
+          {/* <HomeFourBlogs cls="mt-180 lg-mt-80 mb-180 lg-mb-80" /> */}
+          {/* blogs end */}
+
+          {/* fancy banner three start */}
+          {/* <FancyBannerThree /> */}
+          {/* fancy banner three end */}
+
+          {/* news letter start */}
+          {/* <NewsletterBanner /> */}
+          {/* news letter end */}
+        </main>
+
+        {/* footer start */}
+        {/* <FooterThree style_2={true} /> */}
+        <FooterOne />
+        {/* footer end */}
+      </div>
+    </Wrapper>
+  );
+};
+
+export default DiaspsMat;
