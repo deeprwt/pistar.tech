@@ -91,7 +91,7 @@ const team_data: ITeam[] = [
   {
     id: 7,
     img: anisfatema,
-    name: "Anis Fatema",
+    name: "Dr. Anis Fatema",
     designation: "Chief Executive Officer",
     page: "team-three",
     gif: gif1,
@@ -99,7 +99,7 @@ const team_data: ITeam[] = [
   {
     id: 8,
     img: aftab,
-    name: "Prof. Aftab Hussain",
+    name: "Dr. Aftab Hussain",
     designation: "Technical Advisor ",
     page: "team-three",
     gif: gif1,
