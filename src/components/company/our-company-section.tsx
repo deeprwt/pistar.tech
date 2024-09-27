@@ -52,7 +52,7 @@ const OurCompanySection = () => {
             <div className="col-xxl-12 col-lg-12 order-lg-1">
               <div className="details-meta ps-xxl-5 ps-xl-3 pb-30">
                 <h2>Our Foundational Inspiration </h2>
-                <p>
+                {/* <p>
                   At PiStarTech, our name itself is a reflection of our core
                   values. "Pi," often associated with the mathematical constant
                   (π), symbolizes precision, intelligence, and a data-driven
@@ -60,7 +60,7 @@ const OurCompanySection = () => {
                   diagnostics. "Star" represents excellence, leadership, and
                   innovation, underscoring our commitment to pushing the
                   boundaries of healthcare technology.
-                </p>
+                </p> */}
                 <p>
                   Together, PiStar encapsulates our mission: to deliver
                   high-precision, innovative solutions that address real-world
