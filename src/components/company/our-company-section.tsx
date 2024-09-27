@@ -14,6 +14,7 @@ import VideoPopup from "../common/video-popup";
 import VideoPopupLocal from "../common/video-popup-local";
 import FaqSectionOne from "../faq/faq-section-one";
 import FaqSectionTwo from "../faq/faq-section-two";
+import FaqSectionFour from "../faq/faq-section-four";
 
 // CardItem
 function CardItem({
@@ -44,98 +45,9 @@ const OurCompanySection = () => {
   return (
     <>
 
-    <FaqSectionTwo />
-
-      <div className="service-details mt-150 lg-mt-80 mb-100 lg-mb-80">
-        <div className="container">
-          <div className="row">
-            <div className="col-xxl-12 col-lg-12 order-lg-1">
-              <div className="details-meta ps-xxl-5 ps-xl-3 pb-30">
-                <h2>Our Foundational Inspiration </h2>
-                {/* <p>
-                  At PiStarTech, our name itself is a reflection of our core
-                  values. "Pi," often associated with the mathematical constant
-                  (π), symbolizes precision, intelligence, and a data-driven
-                  approach, all critical to the work we do in the field of
-                  diagnostics. "Star" represents excellence, leadership, and
-                  innovation, underscoring our commitment to pushing the
-                  boundaries of healthcare technology.
-                </p> */}
-                <p>
-                  Together, PiStar encapsulates our mission: to deliver
-                  high-precision, innovative solutions that address real-world
-                  healthcare challenges. This is embodied in our flagship
-                  product, DiaPS Mat, designed specifically for diabetic foot
-                  care and biomechanical analysis. It showcases how we integrate
-                  cutting-edge technology with advanced biomechanics to offer
-                  life-saving diagnostics.
-                </p>
-                <div className="img-meta mb-60 lg-mb-40">
-                <Image src={service_img} alt="service_img" className="lazy-img w-100 rounded-4" 
-                style={imgStyle}/>
-              </div>
-              </div>
-              <div className="details-meta ps-xxl-5 ps-xl-3 pb-30">
-                <h2>Our Vision</h2>
-                <p>
-                  We aspire to be the visionary of a future where the seamless
-                  integration of unparalleled talent and cutting-edge technology
-                  not only redefines success for businesses but sets an entirely
-                  new standard for global excellence
-                </p>
-                {/* <p>Our dedicated risk and compliance consulting team assists clients in transforming uncertainty into advantageous prospects. We work collaboratively with organizations to identify and leverage the potential within their risk and compliance functions, enabling them to thrive in an ever-changing business landscape.</p> */}
-                <div className="img-meta mb-60 lg-mb-40">
-                  <Image
-                    src={service_img}
-                    alt="service_img"
-                    className="lazy-img w-100 rounded-4"
-                    style={imgStyle}
-                  />
-                </div>
-              </div>
-              <div className="details-meta ps-xxl-5 ps-xl-3 pb-30">
-                {/* <div className="upper-title"></div> */}
-                <h2>Our Mission</h2>
-                <p>
-                  We are on a relentless mission to shatter the ordinary,
-                  empowering businesses with extraordinary staffing and
-                  technology solutions. At CGB Solutions, we don&apos;t just
-                  adapt to change; we sculpt it, ensuring our clients lead the
-                  way in innovation and triumph.
-                </p>
-
-                {/* <div className="img-meta mb-60 lg-mb-40">
-                <Image src={service_img} alt="service_img" className="lazy-img w-100 rounded-4" 
-                style={imgStyle}/>
-              </div> */}
-              </div>
-              <div className="details-meta ps-xxl-5 ps-xl-3">
-                <div className="upper-title">
-                  Morales and Values That Make Legacies
-                </div>
-                <h2>Our Culture</h2>
-                <p>
-                  Corporate culture is defined by practices and values that
-                  reflect the relationship between management and employees. It
-                  determines how the organization conducts its business. Vision,
-                  values, practices, people, and geographies are the building
-                  blocks of any culture. A distinct culture and a thriving
-                  organization need all these elements to come together. <br />
-                  <br />
-                  At CGB, an employee-friendly environment is fostered, and
-                  various recreational team-building activities are regularly
-                  organized. We ensure the workplace is stress-free by indulging
-                  in the celebration of all the major global festivals. We have
-                  people whose personal values match our corporate values, and
-                  as a team, we strive to keep up with our values and aim for
-                  excellence.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="fancy-banner-five position-relative mt-150 lg-mt-80 pt-80 md-pt-60 pb-80 md-pb-60">
+    {/* <FaqSectionTwo /> */}
+    <FaqSectionFour />
+      <div className="fancy-banner-five position-relative pt-80 md-pt-60 pb-80 md-pb-60">
         {/* Dark overlay */}
         <div className="position-absolute top-0 left-0 w-100 h-100" />
 
