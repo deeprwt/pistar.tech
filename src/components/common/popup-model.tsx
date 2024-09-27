@@ -22,7 +22,7 @@ const PopUpModal = () => {
       if (!lastVisit || now.getDate() !== lastVisitDate.getDate()) {
         setTimeout(() => {
           setShowModal(true);
-        }, 6000); // Delay the popup by 6 seconds
+        }, 3000); // Delay the popup by 6 seconds
       }
 
       localStorage.setItem("lastVisit", now.toString());
