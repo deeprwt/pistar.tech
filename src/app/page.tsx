@@ -49,7 +49,6 @@ import TextFeatureEight from "@/components/text-feature/text-feature-eight";
 import TextFeatureTen from "@/components/text-feature/text-freature-ten";
 import PopUpModal from "@/components/common/popup-model";
 
-
 const backImg1 = {
   backgroundImage: `url('${bg_image1.src}')`,
   backgroundSize: "cover,auto",
@@ -105,13 +104,13 @@ export default function HomePage() {
               <div className="wow fadeInUp">
                 <div className="row">
                   <div className="col-lg-6 wow fadeInRight">
-                  <div className="title-three mb-35 md-mb-20 details-meta">
-                        {/* <div className="upper-title">management</div> */}
-                        <h3 style={{ color: "white" }}>
+                    <div className="title-three mb-35 md-mb-20 details-meta">
+                      {/* <div className="upper-title">management</div> */}
+                      <h3 style={{ color: "white" }}>
                         Why is the DiaPS Mat so easy to adopt?
-                        </h3>
-                      </div>
-                      <p
+                      </h3>
+                    </div>
+                    <p
                       className="text-lg mt-40 lg-mt-30 mb-30"
                       style={{ color: "#fff9" }}
                     >
@@ -200,15 +199,77 @@ export default function HomePage() {
           <PartnersLogos />
           {/* partner logos end  */}
 
+          <div
+            className="fancy-banner-two pt-80 lg-pt-80 pb-80 lg-pb-60 service-details"
+            // style={backImg1}
+            // style={{ background: "#292e31" }}
+          >
+            <div className="container">
+              <div className="wow fadeInUp">
+                <div className="row">
+                  <div className="col-lg-12 wow fadeInRight">
+                    <div className="title-three mb-35 md-mb-20 details-meta">
+                      <h3>
+                        Welcome to PiStarTech Private Limited – Innovating
+                        Healthcare Technology
+                      </h3>
+                    </div>
+                    <p
+                      className="text-lg mt-40 lg-mt-30 mb-30"
+                      // style={{ color: "#fff9" }}
+                    >
+                      At PiStarTech, we are committed to enhancing healthcare
+                      with innovative solutions that bridge the gap between
+                      technology and medical practice. Our flagship product, the
+                      Diabetic PodiaScan Mat (DiaPS Mat), is an advanced,
+                      research-backed foot pressure analysis system designed to
+                      support medical professionals in diagnosing and treating
+                      foot-related ailments, particularly for diabetic patients.
+                      <br />
+                      The DiaPS Mat is a portable and flexible pressure-sensing
+                      mat that provides both static and dynamic podiatric
+                      pressure patterns (SPPP and DPPP). These insights help
+                      doctors detect normal and abnormal foot posture, track
+                      patient recovery post-injury or surgery, and authenticate
+                      clinical findings with accurate, quantifiable data. With
+                      just a 5-second scan, healthcare professionals can
+                      prescribe customized treatments, recommend proper
+                      footwear, and monitor progress over time.
+                      <br />
+                      Our mission is to make affordable, precise, and
+                      evidence-based foot scanning technology accessible to a
+                      wider range of medical professionals, empowering them to
+                      provide better care. Whether you're looking to improve
+                      diagnosis accuracy, enhance patient trust through
+                      cutting-edge technology, or monitor patient progress
+                      post-surgery, PiStarTech has you covered.
+                    </p>
+                  </div>
+                  {/* <div className="col-lg-6 col-md-8 m-auto wow fadeInLeft">
+                    <div className="media-wrapper md-mt-60">
+                      <Image
+                        src={mat}
+                        alt="screen"
+                        className="lazy-img"
+                        layout="responsive"
+                      />
+                    </div>
+                  </div> */}
+                </div>
+              </div>
+            </div>
+          </div>
+
           <TextFeatureTen />
 
           <BlockFeatureSeven />
           <PortfolioTwo />
           {/* blog item end */}
           <AwardsSection />
-          <div className="contact-us-section pt-80 lg-pt-80" 
-          style={backImg2}
-          // style={{background:"#292e31"}}
+          <div
+            className="contact-us-section pt-80 lg-pt-80"
+            style={backImg2}
+            // style={{background:"#292e31"}}
           >
             <div className="container">
               <div className="position-relative">

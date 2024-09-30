@@ -48,7 +48,7 @@ const ContactArea = () => {
         <div className="position-relative">
           <div className="row">
             {/* Location data import */}
-            {/* <LocationTabsData /> */}
+            <LocationTabsData />
             {/* Location data import */}
           </div>
 

@@ -18,10 +18,12 @@ function AddressBlock({
   icon,
   title,
   subtitle,
+  para,
 }: {
   icon: StaticImageData;
   title: string;
   subtitle: string;
+  para:string;
 }) {
   return (
     <div className="address-block-one text-center mb-40">
@@ -30,6 +32,7 @@ function AddressBlock({
       </div>
       <h5 className="title">{title}</h5>
       <p dangerouslySetInnerHTML={{ __html: subtitle }}></p>
+      <h5 className="title">{para}</h5>
     </div>
   );
 }
@@ -38,7 +41,7 @@ const LocationTabsData = () => {
   return (
     <>
       {/* starts from here  */}
-      <div className="text-feature-one service-details pt-80 lg-pt-80">
+      {/* <div className="text-feature-one service-details pt-80 lg-pt-80">
         <div className="container">
           <div className="row align-items-center details-meta">
             <div className="title-one">
@@ -49,74 +52,10 @@ const LocationTabsData = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* Ends from here  */}
       <div className="faq-section-three  pb-50 lg-pb-80 ">
         <div className="container">
-          <nav>
-            <div
-              className="nav m-auto nav-tabs justify-content-center light-bg py-2 mw-60"
-              id="nav-tab"
-              role="tablist"
-              style={maxcontent}
-            >
-              <button
-                className="nav-link active"
-                data-bs-toggle="tab"
-                data-bs-target="#nav-oracle"
-                type="button"
-                role="tab"
-                aria-selected="true"
-                tabIndex={-1}
-              >
-                India
-              </button>
-              <button
-                className="nav-link"
-                data-bs-toggle="tab"
-                data-bs-target="#nav-finacle"
-                type="button"
-                role="tab"
-                aria-selected="false"
-                tabIndex={-1}
-              >
-                United Arab Emirates
-              </button>
-              <button
-                className="nav-link"
-                data-bs-toggle="tab"
-                data-bs-target="#nav-servicenow"
-                type="button"
-                role="tab"
-                aria-selected="false"
-                tabIndex={-1}
-              >
-                United States
-              </button>
-              {/* <button
-                className="nav-link"
-                data-bs-toggle="tab"
-                data-bs-target="#nav-lowcode"
-                type="button"
-                role="tab"
-                aria-selected="false"
-                tabIndex={-1}
-              >
-                Japan
-              </button> */}
-              {/* <button
-                className="nav-link"
-                data-bs-toggle="tab"
-                data-bs-target="#nav-salesforce"
-                type="button"
-                role="tab"
-                aria-selected="false"
-                tabIndex={-1}
-              >
-                Europe
-              </button> */}
-            </div>
-          </nav>
           <div className="tab-content mt-20 lg-mt-40">
             {/* tab 1start form her  */}
             <div
@@ -132,23 +71,26 @@ const LocationTabsData = () => {
                   <div className="col-md-4 pt-30 wow fadeInUp">
                     <AddressBlock
                       icon={icon_1}
-                      title="Bengaluru"
-                      subtitle="46/1, NH 44, Near Krishan Reddy Industrial Area, Kudlu Gate, Hosapalaya, Garvebhavi Palya Bengaluru, Karnataka, 560068"
+                      title="Visit Us"
+                      subtitle="IIIT-H Foundation, Desk B70, Vindhya C5, IIIT-Hyd Campus, Survey#25, Gachibowli, Hyderabad, Rangareddi, Telangana, India, 500032"
+                      para="Hyderabad"
                     />
                   </div>
                   <div className="col-md-4 pt-30 wow fadeInUp">
                     <AddressBlock
-                      icon={icon_1}
-                      title="Mumbai"
-                      subtitle="Goregaon, Building 4, North Wing, NESCO IT Park, Western Express Highway, Goregaon East, Mumbai, MH 400063"
+                      icon={icon_2}
+                      title="Call Us"
+                      subtitle="Something important? We are just a call away! "
+                      para="+91 9888912909"
                     />
                   </div>
                   <div className="col-md-4 pt-30 wow fadeInUp">
                     <AddressBlock
-                      icon={icon_1}
-                      title="New Delhi"
+                      icon={icon_3}
+                      title="Contact Us "
                       subtitle="
-                          GF-28 TDI Center, Jasola, New Delhi-110025"
+                          If there is anything we can help you with just drop a mail at "
+                          para="info@pistar.tech"
                     />
                   </div>
 
