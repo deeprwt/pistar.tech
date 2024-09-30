@@ -31,8 +31,8 @@ import bg_image2 from "@/assets/images/background/counter_dark_pattern.png";
 import img4 from "@/assets/images/media/doctor.jpg";
 import mat1 from "@/assets/images/pistar/mat.jpg";
 import mat2 from "@/assets/images/pistar/mat1.jpg";
-import mat3 from "@/assets/images/pistar/mat1.jpg";
-import mat4 from "@/assets/images/pistar/mat3.jpg";
+import mat3 from "@/assets/images/pistar/mat2.jpg";
+import data from "@/assets/images/pistar/data.png";
 
 const backImg2 = {
   backgroundImage: `url('${bg_image2.src}')`,
@@ -106,11 +106,11 @@ const DiaspsMat = () => {
                     </p>
                   </div>
                   <div className="col-lg-6 col-md-8 m-auto wow fadeInLeft">
-                    <div className="media-wrapper md-mt-60">
+                    <div className="media-wrapper md-mt-60 pe-xxl-5 pe-4 ps-xxl-5">
                       <Image
                         src={mat}
                         alt="screen"
-                        className="lazy-img"
+                        className="lazy-img rounded"
                         layout="responsive"
                       />
                     </div>
@@ -183,11 +183,11 @@ const DiaspsMat = () => {
                     </p>
                   </div>
                   <div className="col-lg-6 col-md-8 m-auto wow fadeInLeft order-first order-md-last">
-                    <div className="media-wrapper md-mt-60">
+                    <div className="media-wrapper md-mt-60 pe-xxl-5 pe-4 ps-xxl-5">
                       <Image
                         src={mat1}
                         alt="screen"
-                        className="lazy-img"
+                        className="lazy-img rounded"
                         layout="responsive"
                       />
                     </div>
@@ -233,11 +233,11 @@ const DiaspsMat = () => {
                     </p>
                   </div>
                   <div className="col-lg-6 col-md-8 m-auto wow fadeInLeft order-last order-md-first">
-                    <div className="media-wrapper md-mt-60">
+                    <div className="media-wrapper md-mt-60 pe-xxl-5 pe-4 ps-xxl-5">
                       <Image
                         src={mat2}
                         alt="screen"
-                        className="lazy-img"
+                        className="lazy-img rounded"
                         layout="responsive"
                       />
                     </div>
@@ -282,11 +282,11 @@ const DiaspsMat = () => {
                     </p>
                   </div>
                   <div className="col-lg-6 col-md-8 m-auto wow fadeInLeft order-first order-md-last">
-                    <div className="media-wrapper md-mt-60">
+                    <div className="media-wrapper md-mt-60 pe-xxl-5 pe-4 ps-xxl-5">
                       <Image
                         src={mat3}
                         alt="screen"
-                        className="lazy-img"
+                        className="lazy-img rounded"
                         layout="responsive"
                       />
                     </div>
@@ -333,11 +333,11 @@ const DiaspsMat = () => {
                     </p> */}
                   </div>
                   <div className="col-lg-6 col-md-8 m-auto wow fadeInLeft order-last order-md-first">
-                    <div className="media-wrapper md-mt-60">
+                    <div className="media-wrapper md-mt-60 pe-xxl-5 pe-4 ps-xxl-5">
                       <Image
-                        src={mat4}
+                        src={data}
                         alt="screen"
-                        className="lazy-img"
+                        className="lazy-img rounded"
                         layout="responsive"
                       />
                     </div>

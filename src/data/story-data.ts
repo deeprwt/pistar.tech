@@ -1,6 +1,6 @@
 import bg_img_1 from '@/assets/images/pistar/logo-part.png';
-import bg_img_2 from '@/assets/images/media/img_02.jpg';
-import bg_img_3 from '@/assets/images/media/img_16.jpg';
+import bg_img_2 from '@/assets/images/pistar/core-solutions.png';
+import bg_img_3 from '@/assets/images/pistar/value.png';
 import { IStory } from '@/types/story-d-t';
 
 const story_data:IStory[] = [
