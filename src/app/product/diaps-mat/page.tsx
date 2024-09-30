@@ -31,7 +31,7 @@ import bg_image2 from "@/assets/images/background/counter_dark_pattern.png";
 import img4 from "@/assets/images/media/doctor.jpg";
 import mat1 from "@/assets/images/pistar/mat.jpg";
 import mat2 from "@/assets/images/pistar/mat1.jpg";
-import mat3 from "@/assets/images/pistar/mat2.jpg";
+import mat3 from "@/assets/images/pistar/mat1.jpg";
 import mat4 from "@/assets/images/pistar/mat3.jpg";
 
 const backImg2 = {
