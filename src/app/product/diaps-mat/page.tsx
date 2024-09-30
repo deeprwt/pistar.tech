@@ -29,6 +29,10 @@ import mat from "@/assets/images/pistar/mat.png";
 import ContactForm from "@/components/forms/contact-form";
 import bg_image2 from "@/assets/images/background/counter_dark_pattern.png";
 import img4 from "@/assets/images/media/doctor.jpg";
+import mat1 from "@/assets/images/pistar/mat.jpg";
+import mat2 from "@/assets/images/pistar/mat1.jpg";
+import mat3 from "@/assets/images/pistar/mat2.jpg";
+import mat4 from "@/assets/images/pistar/mat3.jpg";
 
 const backImg2 = {
   backgroundImage: `url('${bg_image2.src}')`,
@@ -163,31 +167,23 @@ const DiaspsMat = () => {
                           <div className="line-2"></div> SMART TECHNOLOGY
                         </div>
                       </div>
-                      <h3>Intelligent Insoles | Pro</h3>
+                      <h3>PiStarTech FlePS Mat</h3>
                     </div>
                     <p
                       className="text-lg mt-40 lg-mt-30 mb-30"
-                      // style={{ color: "#fff9" }}
                     >
-                      Evaluate gait, plantar pressure, and foot function with
-                      insole sensors that are reliable and durable enough to
-                      accurately capture data wherever activity takes place —
-                      and without compromising natural motion.
+                      Evaluate plantar pressure, foot function, and gait with PiStarTech's FlePS Mat. This advanced mat is portable, flexible, and lightweight, designed to capture accurate data on foot pressure without compromising natural movement.
                     </p>
                     <p
                       className="text-lg mt-40 lg-mt-30 mb-30"
-                      // style={{ color: "#fff9" }}
                     >
-                      Evaluate gait, plantar pressure, and foot function with
-                      insole sensors that are reliable and durable enough to
-                      accurately capture data wherever activity takes place —
-                      and without compromising natural motion.
+                      Avoid lengthy setup and recalibration processes, ensuring smooth and reliable testing, whether in a clinical setting or in the field.
                     </p>
                   </div>
                   <div className="col-lg-6 col-md-8 m-auto wow fadeInLeft order-first order-md-last">
                     <div className="media-wrapper md-mt-60">
                       <Image
-                        src={mat}
+                        src={mat1}
                         alt="screen"
                         className="lazy-img"
                         layout="responsive"
@@ -209,34 +205,28 @@ const DiaspsMat = () => {
                     <div className="title-three mb-35 md-mb-20">
                       <div>
                         <div className="upper-title d-flex align-items-center">
-                          <div className="line-2"></div> SMART TECHNOLOGY
+                          <div className="line-2"></div> SPORTS PERFORMANCE
                         </div>
                       </div>
-                      <h3>Intelligent Insoles | Pro</h3>
+                      <h3>Enhance Foot Health & Performance</h3>
                     </div>
                     <p
                       className="text-lg mt-40 lg-mt-30 mb-30"
                       // style={{ color: "#fff9" }}
                     >
-                      Evaluate gait, plantar pressure, and foot function with
-                      insole sensors that are reliable and durable enough to
-                      accurately capture data wherever activity takes place —
-                      and without compromising natural motion.
+                      The FlePS Mat enables in-depth plantar pressure analysis, helping to identify pressure points that could lead to ulcers, calluses, or other foot issues. It also identifies asymmetries between the left and right foot for more accurate diagnoses.
                     </p>
                     <p
                       className="text-lg mt-40 lg-mt-30 mb-30"
                       // style={{ color: "#fff9" }}
                     >
-                      Evaluate gait, plantar pressure, and foot function with
-                      insole sensors that are reliable and durable enough to
-                      accurately capture data wherever activity takes place —
-                      and without compromising natural motion.
+                      Use the high-resolution sensor mat to analyze dynamic foot movement and reduce the risk of injury during athletic performance, helping athletes to improve through data-driven insights.
                     </p>
                   </div>
                   <div className="col-lg-6 col-md-8 m-auto wow fadeInLeft order-last order-md-first">
                     <div className="media-wrapper md-mt-60">
                       <Image
-                        src={mat}
+                        src={mat2}
                         alt="screen"
                         className="lazy-img"
                         layout="responsive"
@@ -258,34 +248,28 @@ const DiaspsMat = () => {
                     <div className="title-three mb-35 md-mb-20">
                       <div>
                         <div className="upper-title d-flex align-items-center">
-                          <div className="line-2"></div> SMART TECHNOLOGY
+                          <div className="line-2"></div> Durable Hardware
                         </div>
                       </div>
-                      <h3>Intelligent Insoles | Pro</h3>
+                      <h3>Designed for Long-Term Use</h3>
                     </div>
                     <p
                       className="text-lg mt-40 lg-mt-30 mb-30"
                       // style={{ color: "#fff9" }}
                     >
-                      Evaluate gait, plantar pressure, and foot function with
-                      insole sensors that are reliable and durable enough to
-                      accurately capture data wherever activity takes place —
-                      and without compromising natural motion.
+                     The FlePS Mat is built with durable sensors capable of withstanding continuous use in both research and performance testing environments. Its user-friendly design enables quick setup with a simple USB connection, making it convenient and accessible.
                     </p>
                     <p
                       className="text-lg mt-40 lg-mt-30 mb-30"
                       // style={{ color: "#fff9" }}
                     >
-                      Evaluate gait, plantar pressure, and foot function with
-                      insole sensors that are reliable and durable enough to
-                      accurately capture data wherever activity takes place —
-                      and without compromising natural motion.
+                      No need to spend hours setting up—get started within minutes, maximizing valuable lab time for testing and research.
                     </p>
                   </div>
                   <div className="col-lg-6 col-md-8 m-auto wow fadeInLeft order-first order-md-last">
                     <div className="media-wrapper md-mt-60">
                       <Image
-                        src={mat}
+                        src={mat3}
                         alt="screen"
                         className="lazy-img"
                         layout="responsive"
@@ -307,34 +291,30 @@ const DiaspsMat = () => {
                     <div className="title-three mb-35 md-mb-20">
                       <div>
                         <div className="upper-title d-flex align-items-center">
-                          <div className="line-2"></div> SMART TECHNOLOGY
+                          <div className="line-2"></div>Plantar Pressure & Gait Analysis Software
                         </div>
                       </div>
-                      <h3>Intelligent Insoles | Pro</h3>
+                      <h3>Feature-Rich Software</h3>
                     </div>
                     <p
                       className="text-lg mt-40 lg-mt-30 mb-30"
                       // style={{ color: "#fff9" }}
                     >
-                      Evaluate gait, plantar pressure, and foot function with
-                      insole sensors that are reliable and durable enough to
-                      accurately capture data wherever activity takes place —
-                      and without compromising natural motion.
+                     The FlePS Mat comes with comprehensive software that allows users to visualize plantar pressure data with precision. With detailed visualizations, you can make confident, data-backed decisions. The software provides static and dynamic pressure measurement data for foot and gait analysis.
                     </p>
-                    <p
+                    {/* <p
                       className="text-lg mt-40 lg-mt-30 mb-30"
-                      // style={{ color: "#fff9" }}
                     >
                       Evaluate gait, plantar pressure, and foot function with
                       insole sensors that are reliable and durable enough to
                       accurately capture data wherever activity takes place —
                       and without compromising natural motion.
-                    </p>
+                    </p> */}
                   </div>
                   <div className="col-lg-6 col-md-8 m-auto wow fadeInLeft order-last order-md-first">
                     <div className="media-wrapper md-mt-60">
                       <Image
-                        src={mat}
+                        src={mat4}
                         alt="screen"
                         className="lazy-img"
                         layout="responsive"

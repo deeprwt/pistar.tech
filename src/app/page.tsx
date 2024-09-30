@@ -239,7 +239,7 @@ export default function HomePage() {
                       Our mission is to make affordable, precise, and
                       evidence-based foot scanning technology accessible to a
                       wider range of medical professionals, empowering them to
-                      provide better care. Whether you're looking to improve
+                      provide better care. Whether you&#39;re looking to improve
                       diagnosis accuracy, enhance patient trust through
                       cutting-edge technology, or monitor patient progress
                       post-surgery, PiStarTech has you covered.
