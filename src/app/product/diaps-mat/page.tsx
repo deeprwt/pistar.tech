@@ -169,15 +169,17 @@ const DiaspsMat = () => {
                       </div>
                       <h3>PiStarTech FlePS Mat</h3>
                     </div>
-                    <p
-                      className="text-lg mt-40 lg-mt-30 mb-30"
-                    >
-                      Evaluate plantar pressure, foot function, and gait with PiStarTech's FlePS Mat. This advanced mat is portable, flexible, and lightweight, designed to capture accurate data on foot pressure without compromising natural movement.
+                    <p className="text-lg mt-40 lg-mt-30 mb-30">
+                      Evaluate plantar pressure, foot function, and gait with
+                      PiStarTech&#39;s FlePS Mat. This advanced mat is portable,
+                      flexible, and lightweight, designed to capture accurate
+                      data on foot pressure without compromising natural
+                      movement.
                     </p>
-                    <p
-                      className="text-lg mt-40 lg-mt-30 mb-30"
-                    >
-                      Avoid lengthy setup and recalibration processes, ensuring smooth and reliable testing, whether in a clinical setting or in the field.
+                    <p className="text-lg mt-40 lg-mt-30 mb-30">
+                      Avoid lengthy setup and recalibration processes, ensuring
+                      smooth and reliable testing, whether in a clinical setting
+                      or in the field.
                     </p>
                   </div>
                   <div className="col-lg-6 col-md-8 m-auto wow fadeInLeft order-first order-md-last">
@@ -214,13 +216,20 @@ const DiaspsMat = () => {
                       className="text-lg mt-40 lg-mt-30 mb-30"
                       // style={{ color: "#fff9" }}
                     >
-                      The FlePS Mat enables in-depth plantar pressure analysis, helping to identify pressure points that could lead to ulcers, calluses, or other foot issues. It also identifies asymmetries between the left and right foot for more accurate diagnoses.
+                      The FlePS Mat enables in-depth plantar pressure analysis,
+                      helping to identify pressure points that could lead to
+                      ulcers, calluses, or other foot issues. It also identifies
+                      asymmetries between the left and right foot for more
+                      accurate diagnoses.
                     </p>
                     <p
                       className="text-lg mt-40 lg-mt-30 mb-30"
                       // style={{ color: "#fff9" }}
                     >
-                      Use the high-resolution sensor mat to analyze dynamic foot movement and reduce the risk of injury during athletic performance, helping athletes to improve through data-driven insights.
+                      Use the high-resolution sensor mat to analyze dynamic foot
+                      movement and reduce the risk of injury during athletic
+                      performance, helping athletes to improve through
+                      data-driven insights.
                     </p>
                   </div>
                   <div className="col-lg-6 col-md-8 m-auto wow fadeInLeft order-last order-md-first">
@@ -257,13 +266,19 @@ const DiaspsMat = () => {
                       className="text-lg mt-40 lg-mt-30 mb-30"
                       // style={{ color: "#fff9" }}
                     >
-                     The FlePS Mat is built with durable sensors capable of withstanding continuous use in both research and performance testing environments. Its user-friendly design enables quick setup with a simple USB connection, making it convenient and accessible.
+                      The FlePS Mat is built with durable sensors capable of
+                      withstanding continuous use in both research and
+                      performance testing environments. Its user-friendly design
+                      enables quick setup with a simple USB connection, making
+                      it convenient and accessible.
                     </p>
                     <p
                       className="text-lg mt-40 lg-mt-30 mb-30"
                       // style={{ color: "#fff9" }}
                     >
-                      No need to spend hours setting up—get started within minutes, maximizing valuable lab time for testing and research.
+                      No need to spend hours setting up—get started within
+                      minutes, maximizing valuable lab time for testing and
+                      research.
                     </p>
                   </div>
                   <div className="col-lg-6 col-md-8 m-auto wow fadeInLeft order-first order-md-last">
@@ -291,7 +306,8 @@ const DiaspsMat = () => {
                     <div className="title-three mb-35 md-mb-20">
                       <div>
                         <div className="upper-title d-flex align-items-center">
-                          <div className="line-2"></div>Plantar Pressure & Gait Analysis Software
+                          <div className="line-2"></div>Plantar Pressure & Gait
+                          Analysis Software
                         </div>
                       </div>
                       <h3>Feature-Rich Software</h3>
@@ -300,7 +316,12 @@ const DiaspsMat = () => {
                       className="text-lg mt-40 lg-mt-30 mb-30"
                       // style={{ color: "#fff9" }}
                     >
-                     The FlePS Mat comes with comprehensive software that allows users to visualize plantar pressure data with precision. With detailed visualizations, you can make confident, data-backed decisions. The software provides static and dynamic pressure measurement data for foot and gait analysis.
+                      The FlePS Mat comes with comprehensive software that
+                      allows users to visualize plantar pressure data with
+                      precision. With detailed visualizations, you can make
+                      confident, data-backed decisions. The software provides
+                      static and dynamic pressure measurement data for foot and
+                      gait analysis.
                     </p>
                     {/* <p
                       className="text-lg mt-40 lg-mt-30 mb-30"
