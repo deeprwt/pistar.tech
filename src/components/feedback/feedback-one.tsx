@@ -54,12 +54,14 @@ const FeedbackOne = ({ cls }: { cls?: string }) => {
                     <div className="col-md-7 ms-auto order-md-last">
                       <blockquote className="text-white">{item.desc}</blockquote>
                       <div className="d-flex align-items-center">
-                        <Image
+                        {/* <Image
                           src={item.user}
                           alt="user"
                           className="avatar rounded-circle"
-                        />
-                        <div className="ps-4">
+                        /> */}
+                        <div 
+                        // className="ps-4"
+                        >
                           <div className="name fw-bold paracolor">
                             {item.name}
                           </div>

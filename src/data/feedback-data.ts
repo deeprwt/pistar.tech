@@ -54,23 +54,23 @@ export const feedback_one = [
   {
     id:1,
     user:user_1,
-    name:'John Smith',
-    location:'CEO & Head of Sky Tech Inc.',
-    desc:`"Impressed by CGB Solutions' top-notch staffing solutions! They delivered skilled professionals who seamlessly integrated into our team, driving project success."`
+    name:'Dr. Kiran Malhotra',
+    location:'FootCare Clinic',
+    desc:`"PiStarTech's FlePS Mat has revolutionized how I diagnose foot issues. The detailed pressure data leads to better, faster treatment decisions."`
   },
   {
     id:2,
     user:user_1,
-    name:'Mark John',
-    location:'CEO & Head of Apple Tech Inc.',
-    desc:`"CGB Solutions' consulting services were a game-changer for us. Their expert guidance and insights helped us make strategic decisions that propelled our business forward."`
+    name:'Dr. Amit Verma',
+    location:'Gait & Mobility Center',
+    desc:`"The FlePS Mat is incredibly accurate and easy to use. It's become an essential tool in my practice for assessing foot function."`
   },
   {
     id:3,
     user:user_1,
-    name:'James Bond.',
-    location:'CEO & Head of Pixel Tech Inc.',
-    desc:`"Exceptional customer support from CGB Solutions! Their team was always responsive, addressing our concerns promptly and ensuring smooth operations."`
+    name:'Dr. Neha Kapoor',
+    location:'Peak Performance Clinic',
+    desc:`"With the FlePS Mat, I can quickly evaluate athletes' foot pressure patterns, helping to prevent injuries and optimize performance."`
   }
 ]
 // feedback one end

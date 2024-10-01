@@ -183,6 +183,10 @@
     color: $color-one;
 }
 
+.fontcolorimp{
+    color: $color-one !important;
+}
+
 .paracolor{
     color: #fff9;
 }
@@ -196,6 +200,15 @@
     width: 72px;
     height: 2px;
     margin-right: 2em;
+}
+
+.bg-td {
+    background: #f8f8f8 !important;
+}
+
+thead, tbody, tfoot, tr, td, th {
+    border: none;
+    padding: 0.9rem 0.5rem !important;
 }
 
 //-----Manish----

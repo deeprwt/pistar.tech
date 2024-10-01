@@ -3,6 +3,7 @@ import { Metadata } from "next";
 import Wrapper from "@/layout/wrapper";
 import HeaderTwo from "@/layout/header/Header";
 import BreadcrumbOne from "@/components/breadcrumb/breadcrumb-one";
+import Image, { StaticImageData } from "next/image";
 // import FooterThree from "@/layout/footer/footer-three";
 import FooterOne from "@/layout/footer/footer-one";
 import about_bg from "@/assets/images/banners/diaspmat.jpg";
@@ -24,7 +25,6 @@ import HowWeDo from "@/components/home-data/how-we-do";
 import logo_2 from "@/assets/images/logo/logome.png";
 import HeroVideoTwo from "@/components/hero-banner/hero-video-two";
 import FaqSolutionsThree from "@/components/faq/faq-section-three";
-import Image from "next/image";
 import mat from "@/assets/images/pistar/mat.png";
 import ContactForm from "@/components/forms/contact-form";
 import bg_image2 from "@/assets/images/background/counter_dark_pattern.png";
@@ -48,6 +48,52 @@ export const metadata: Metadata = {
     "Unlock financial growth with CGB Solutions experienced IT consulting & insightful solutions. Navigate your journey with us!",
   keywords: "IT consulting, financial growth, insightful solutions",
 };
+
+// card item
+function CardItem({
+  icon,
+  title,
+  subtitle,
+  li1,
+  li2,
+  li3,
+  li4,
+  li5,
+  li6,
+}: {
+  icon?: StaticImageData;
+  title: string;
+  subtitle?: string;
+  li1?: string;
+  li2?: string;
+  li3?: string;
+  li4?: string;
+  li5?: string;
+  li6?: string;
+}) {
+  return (
+    <div className="card-style-twelve w-100 mt-30">
+      <div className="d-flex">
+        {/* <div
+          className="icon tran3s d-flex align-items-center justify-content-center rounded-circle"
+          style={{ marginRight: "2rem" }}
+        >
+          <Image src={icon} alt="icon" className="lazy-img" />
+        </div> */}
+        <h4 className="fw-bold mt-15 mb-15">{title}</h4>
+      </div>
+      <p className="ps-xl-4 pe-xl-4">{subtitle}</p>
+      <ul className="style-none">
+        <li>{li1}</li>
+        <li>{li2}</li>
+        <li>{li3}</li>
+        <li>{li4}</li>
+        <li>{li5}</li>
+        <li>{li6}</li>
+      </ul>
+    </div>
+  );
+}
 
 const DiaspsMat = () => {
   return (
@@ -346,6 +392,91 @@ const DiaspsMat = () => {
               </div>
             </div>
           </div>
+          <div
+            className="fancy-banner-two text-feature-seven pt-80 lg-pt-80 pb-80 lg-pb-60 service-details"
+            style={{ background: "#f5f5f5" }}
+          >
+            <div className="container details-meta">
+              <div className="wow fadeInUp">
+                <div className="row">
+                  <div className="col-lg-6 wow fadeInRight ">
+                    <div className="title-three mb-35 md-mb-20">
+                      <div>
+                        <div className="upper-title d-flex align-items-center">
+                          <div className="line-2"></div>Specifications &
+                          Performance
+                        </div>
+                      </div>
+                      <h3>Lab-Quality Data in the Field</h3>
+                    </div>
+                    <p
+                      className="text-lg mt-40 lg-mt-30 mb-30"
+                      // style={{ color: "#fff9" }}
+                    >
+                      With a robust sensor design, the FlePS Mat delivers
+                      accurate, repeatable data. It provides high-speed,
+                      high-resolution pressure measurements for human
+                      performance testing. The system ensures reliable data
+                      collection, even during long-term testing.
+                    </p>
+                    {/* <p
+                      className="text-lg mt-40 lg-mt-30 mb-30"
+                    >
+                      Evaluate gait, plantar pressure, and foot function with
+                      insole sensors that are reliable and durable enough to
+                      accurately capture data wherever activity takes place —
+                      and without compromising natural motion.
+                    </p> */}
+                  </div>
+                  <div className="col-lg-6 col-md-8 m-auto wow fadeInLeft">
+                    <div className="media-wrapper md-mt-60 pe-xxl-5 pe-4 ps-xxl-5">
+                      <Image
+                        src={mat}
+                        alt="screen"
+                        className="lazy-img rounded"
+                        layout="responsive"
+                      />
+                    </div>
+                  </div>
+
+                  <div className="border-bottom mt-40 pb-50 sm-pb-30">
+                    <div className="row">
+                      <div className="col-lg-6 d-flex wow fadeInUp">
+                        <CardItem
+                          title="Key Features"
+                          li1="Portable, flexible, and lightweight pressure sensing mat for plantar pressure analysis."
+                          li2="Simple and easy to use with a slim convenient design."
+                          li3="Provides quantifiable pressure data."
+                          li4="Fast and easy setup with USB connection."
+                          li5="Most affordable and reliable."
+                          li6="Provides static and dynamic pressure measurement data for
+foot and gait analysis."
+                          // subtitle="0% charge for online money transfer from you wallet instant."
+                        />
+                      </div>
+                      <div
+                        className="col-lg-6 d-flex wow fadeInUp"
+                        data-wow-delay="0.1s"
+                      >
+                        <CardItem
+                          title="Applications"
+                          li1="Helps in identifying pathologies and making accurate diagnoses."
+                          li2="Reduce the incidence of pressure sores or ulcers on feet by
+analyzing high-pressure points."
+                          li3="Identify areas of potential ulcers and calluses."
+                          li4="Identify plantar pressure asymmetries between the left and
+right foot."
+                          li5="A screening device for complete plantar pressure analysis."
+                          li6="Suggest customized insoles according to the orthotics."
+                          // subtitle="Pay google & apple payment with your card without any hassle"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
           {/* block feature one area start */}
           {/* <BlockFeatureOne style_2={true} /> */}
@@ -363,11 +494,63 @@ const DiaspsMat = () => {
           {/* <FeedbackOne cls="top-border pt-80 pb-80" /> */}
           {/* feedback one end */}
 
-          <FaqSolutionsThree
-            title="Frequently Asked Questions"
-            para=""
-            page="companyfaq"
-          />
+          <div
+            className={`faq-section-one service-details pt-80 pb-80 bg-white  `}
+          >
+            <div className="container">
+              <div className="row">
+                <div className="col-lg-12 details-meta">
+                  <div className="title-one mb-40 lg-mb-20">
+                    <h3>Specifications</h3>
+                    <p className="text-lg mb-40 lg-mb-20">Need a mat with your own specifications? We will <b>customize</b> it for you!</p>
+                  </div>
+                  <table className="table table-bordered">
+                    <thead className="thead-dark">
+                      <tr>
+                        <th scope="col" className="fontcolorimp">Features</th>
+                        <th scope="col" className="fontcolorimp">FlePS Mat</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td className="bg-td">Overall Area</td>
+                        <td className="bg-td">50 cm x 50 cm</td>
+                      </tr>
+                      <tr>
+                        <td>Sensing Area</td>
+                        <td>42 cm x 42 cm</td>
+                      </tr>
+                      <tr>
+                        <td className="bg-td">Number of Sensors</td>
+                        <td className="bg-td">1024</td>
+                      </tr>
+                      <tr>
+                        <td>Matrix Topology</td>
+                        <td>32 x 32</td>
+                      </tr>
+                      <tr>
+                        <td className="bg-td">Max Weight Range</td>
+                        <td className="bg-td">40-120 kg</td>
+                      </tr>
+                      <tr>
+                        <td>Scan Rate</td>
+                        <td>20 Hz</td>
+                      </tr>
+                      <tr>
+                        <td className="bg-td">Connection</td>
+                        <td className="bg-td">USB Cable</td>
+                      </tr>
+                      <tr>
+                        <td>Operating Temp Range</td>
+                        <td>0°C to 50°C</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div
             className="contact-us-section pt-80 lg-pt-80"
             style={backImg2}
