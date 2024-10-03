@@ -33,8 +33,8 @@ function CardItem({
           <Image src={icon} alt="icon" layout="responsive" className="lazy-img" />
         </Link>
       </div>
-      <h4 className="fw-bold mt-35 lg-mt-30 mb-15">{title}</h4>
-      <p className="m0">{subtitle}</p>
+      {/* <h4 className="fw-bold mt-35 lg-mt-30 mb-15">{title}</h4> */}
+      {/* <p className="m0">{subtitle}</p> */}
     </div>
   );
 }

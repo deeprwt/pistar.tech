@@ -40,27 +40,27 @@ const FooterOne = () => {
                   Gachibowli, Hyderabad, Rangareddi, Telangana, India, 500032
                 </span>
               </h4>
-              <p className="text-white lh-sm mb-35 ">
+              {/* <p className="text-white lh-sm mb-35 ">
                 <Link
                   href="mailto:info@pistar.tech"
                   className="d-flex align-items-center"
                 >
-                  {/* <Image
+                  <Image
                     src={icon_1}
                     alt="icon"
                     className="lazy-img icon me-3"
-                  /> */}
+                  />
                   info@pistar.tech 
                 </Link> <br />
                 <Link href="tel:+919888912909" className="d-flex">
-                    {/* <Image
+                    <Image
                       src={icon_2}
                       alt="icon"
                       className="lazy-img icon me-3"
-                    /> */}
+                    />
                     +91 9888912909
                   </Link>
-              </p>
+              </p> */}
             </div>
             <div className="col-xl-2 col-md-2 col-sm-4 mb-20">
               <h5 className="footer-title">About</h5>
@@ -75,7 +75,7 @@ const FooterOne = () => {
                   <Link href="/contact">Contact Us</Link>
                 </li>
                 <li>
-                  <Link href="/blog">Blogs</Link>
+                  <Link href="/article">Article</Link>
                 </li>
                 {/* <li>
                   <Link href="/internship">Internship Program</Link>
@@ -86,24 +86,10 @@ const FooterOne = () => {
               <h5 className="footer-title">Tech Solutions</h5>
               <ul className="footer-nav-link style-none">
                 <li>
-                  <Link href="/">Demo</Link>
+                  <Link href="/product/diaps-mat">DiaPs Mat</Link>
                 </li>
                 <li>
-                  <Link href="/">Demo</Link>
-                </li>
-                <li>
-                  <Link href="/">Demo</Link>
-                </li>
-                <li>
-                  <Link href="/">Demo</Link>
-                </li>
-                <li>
-                  <Link href="/">Demo</Link>
-                </li>
-                <li>
-                  <Link href="/">
-                  Demo
-                  </Link>
+                  <Link href="/">Chair</Link>
                 </li>
               </ul>
             </div>
@@ -115,9 +101,6 @@ const FooterOne = () => {
                 </li>
                 <li>
                   <Link href="/leadership">Leadership</Link>
-                </li>
-                <li>
-                  <Link href="/parters">Partners</Link>
                 </li>
               </ul>
             </div>
@@ -144,11 +127,23 @@ const FooterOne = () => {
             <div className="col-lg-8 order-lg-first mb-15">
               <div className="d-xl-flex align-items-center justify-content-between">
                 <div className="copyright me-xl-4 lg-mt-10 order-lg-first">
-                  Copyright &#169; 2013 - {new Date().getFullYear()} Pistar
+                  Copyright &#169; 2023 - {new Date().getFullYear()} Pistar
                   Tech.
                 </div>
                 <ul className="style-none bottom-nav d-flex flex-wrap justify-content-center justify-content-lg-start order-lg-last">
                   <li>
+                  <Link
+                  href="mailto:info@pistar.tech"
+                >
+                  info@pistar.tech 
+                </Link>
+                  </li>
+                  <li>
+                  <Link href="tel:+919888912909">
+                    +91 9888912909
+                  </Link>
+                  </li>
+                  {/* <li>
                     <Link href="#">Privacy & Terms</Link>
                   </li>
                   <li>
@@ -156,7 +151,7 @@ const FooterOne = () => {
                   </li>
                   <li>
                     <Link href="#">Contact Us</Link>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>
