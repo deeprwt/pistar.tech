@@ -36,17 +36,39 @@ const BookDemoForm = () => {
     resolver: yupResolver(schema),
   });
 
+  // const onSubmit = async (data: FormData) => {
+  //   try {
+  //     if (typeof window !== "undefined") {
+  //       const contactRef = collection(db, "bookademo");
+  //       await addDoc(contactRef, data);
+  //       notifySuccess("Message sent successfully! Your slot is booked now.");
+  //       reset();
+  //     }
+  //   } catch (error) {
+  //     console.error("Error adding document: ", error);
+  //     notifyError("Error sending message, please try again.");
+  //   }
+  // };
+
   const onSubmit = async (data: FormData) => {
     try {
-      if (typeof window !== "undefined") {
-        const contactRef = collection(db, "bookademo");
-        await addDoc(contactRef, data);
-        notifySuccess("Message sent successfully! Your slot is booked now.");
-        reset();
+      const response = await fetch("/api/bookademo", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (response.ok) {
+        notifySuccess("Demo booked successfully! Email sent.");
+        reset(); // Clear the form
+      } else {
+        notifyError("Error booking demo, please try again.");
       }
     } catch (error) {
-      console.error("Error adding document: ", error);
-      notifyError("Error sending message, please try again.");
+      console.error("Error submitting form: ", error);
+      notifyError("Error submitting form, please try again.");
     }
   };
 

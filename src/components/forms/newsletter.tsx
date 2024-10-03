@@ -26,23 +26,53 @@ const Newsletter = () => {
     resolver: yupResolver(schema),
   });
 
-  const onSubmit = async (data: FormData) => {
+  // const onSubmit = async (data: FormData) => {
+  //   try {
+  //     if (typeof window !== "undefined") {
+  //       const { db } = await import("@/database/firebase");
+  //       const contactRef = collection(db, "newsletter");
+
+  //       await addDoc(contactRef, data);
+
+  //       notifySuccess("Successfully subscribed to the newsletter!");
+  //       reset();
+  //     }
+  //   } catch (error) {
+  //     console.error("Error adding document: ", error);
+  //     notifyError("Error sending message, please try again.");
+  //   }
+  // };
+
+    const onSubmit = async (data: FormData) => {
     try {
       if (typeof window !== "undefined") {
         // Firestore instance and reference setup
-        const { db } = await import("@/database/firebase");
         const contactRef = collection(db, "newsletter");
 
-        // Add data to the collection
-        await addDoc(contactRef, data);
+        // Add data to Firestore collection
+        await addDoc(contactRef, { email: data.email });
 
-        // Show success notification and reset form
-        notifySuccess("Successfully subscribed to the newsletter!");
-        reset();
+        // Send email using your Next.js API route
+        const emailResponse = await fetch("/api/newsletter", {
+          method: "POST", // Adjust based on your API route method
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
+        });
+
+        if (emailResponse.ok) {
+          notifySuccess("Successfully subscribed and email sent!");
+          reset();
+        } else {
+          const errorResponse = await emailResponse.json();
+          console.error("Error sending email: ", errorResponse);
+          notifyError("Error sending email, please try again.");
+        }
       }
     } catch (error) {
-      console.error("Error adding document: ", error);
-      notifyError("Error sending message, please try again.");
+      console.error("Error processing request: ", error);
+      notifyError("Error processing request, please try again.");
     }
   };
 
