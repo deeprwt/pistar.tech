@@ -182,7 +182,7 @@ export default function HomePage() {
           {/* <TeamThreeArea /> */}
 
           {/* feedback one start */}
-          {/* git login with pi star */}
+          {/* back to deepak accont */}
           {/* <FeedbackOne /> */}
           {/* feedback one end */}
 
