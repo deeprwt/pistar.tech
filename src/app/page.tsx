@@ -182,7 +182,7 @@ export default function HomePage() {
           {/* <TeamThreeArea /> */}
 
           {/* feedback one start */}
-          {/* feed back is commented now  */}
+          {/* git login with pi star */}
           {/* <FeedbackOne /> */}
           {/* feedback one end */}
 
