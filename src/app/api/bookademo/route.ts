@@ -24,7 +24,7 @@ export async function POST(req: Request) {
     // Compose email options
     const mailOptions = {
       from: process.env.EMAIL_USER,
-      to: "marketing.cgbindia@gmail.com", // Company email
+      to: ["marketing.cgbindia@gmail.com", "info.pistartech@gmail.com"], // Company email
       subject: "New Demo Booking Request",
       html: `
         <h3>New Demo Booking</h3>

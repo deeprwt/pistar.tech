@@ -182,7 +182,7 @@ export default function HomePage() {
           {/* <TeamThreeArea /> */}
 
           {/* feedback one start */}
-          <FeedbackOne />
+          {/* <FeedbackOne /> */}
           {/* feedback one end */}
 
           <TextFeatureSeven />

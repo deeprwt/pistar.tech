@@ -49,7 +49,7 @@ const AwardsSection = () => {
         <div className="row">
           <div className="col-xxl-12 col-lg-12">
             <div className="details-meta ps-xxl-5 ps-xl-3">
-              <h2>Our Awards</h2>
+              <h2>Patents and Joust </h2>
               <p>
                 We aspire to be the visionary of a future where the seamless
                 integration of unparalleled talent and cutting-edge technology
