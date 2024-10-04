@@ -6,6 +6,7 @@ import awardsimg from "@/assets/images/company/awards/talentlinkedin.svg";
 import awardsimg2 from "@/assets/images/company/awards/grat-work.jpg";
 import awardsimg3 from "@/assets/images/company/awards/indian-achive-logo.png";
 import cert1 from "@/assets/pdf/certificate_img1.jpg";
+import award from "@/assets/pdf/ihw_award.jpg";
 // import pdf from "@/assets/pdf/certificate.pdf";
 import icon_10 from "@/assets/images/icon/icon_81.svg";
 import icon_11 from "@/assets/images/icon/icon_82.svg";
@@ -29,7 +30,7 @@ function CardItem({
   return (
     <div className="card-style-sixteen text-center mt-40">
       <div className=" m-auto  d-flex align-items-center justify-content-center">
-        <Link href={'/pdf/certificate.pdf'} className="w-50" target="_blank"  rel="noopener noreferrer" locale={false}> 
+        <Link href={link} className="w-50" target="_blank"  rel="noopener noreferrer" locale={false}> 
           <Image src={icon} alt="icon" layout="responsive" className="lazy-img" />
         </Link>
       </div>
@@ -68,8 +69,8 @@ const AwardsSection = () => {
                   </div>
                   <div className="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
                     <CardItem
-                    link={'/pdf/certificate.pdf'}
-                      icon={cert1}
+                    link={'/pdf/ihw_award.pdf'}
+                      icon={award}
                       title="Check & Finalize"
                       subtitle="We check the documents & send for final approval"
                     />
