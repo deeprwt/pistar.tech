@@ -189,7 +189,7 @@ export default function HomePage() {
           <TextFeatureSeven />
 
           {/* number counter start  */}
-          <TextFeatureHome style_2={true} />
+          {/* <TextFeatureHome style_2={true} /> */}
           {/* number counter end */}
 
           {/* clints logo start  */}

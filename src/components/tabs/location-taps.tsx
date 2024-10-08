@@ -81,7 +81,7 @@ const LocationTabsData = () => {
                       icon={icon_2}
                       title="Call Us"
                       subtitle="Something important? We are just a call away! "
-                      para="+91 9888912909"
+                      para="+91 9908127810"
                     />
                   </div>
                   <div className="col-md-4 pt-30 wow fadeInUp">

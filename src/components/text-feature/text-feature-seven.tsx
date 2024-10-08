@@ -48,7 +48,7 @@ function CardItem({
 
 const TextFeatureSeven = () => {
   return (
-    <div className="text-feature-seven mt-80 mb-80 lg-mt-80 service-details">
+    <div className="text-feature-seven mt-80 lg-mt-80 service-details">
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-7 order-lg-last wow fadeInRight">

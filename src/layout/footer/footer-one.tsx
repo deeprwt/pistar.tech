@@ -58,7 +58,7 @@ const FooterOne = () => {
                       alt="icon"
                       className="lazy-img icon me-3"
                     />
-                    +91 9888912909
+                    +91 9908127810
                   </Link>
               </p> */}
             </div>
@@ -139,8 +139,8 @@ const FooterOne = () => {
                 </Link>
                   </li>
                   <li>
-                  <Link href="tel:+919888912909">
-                    +91 9888912909
+                  <Link href="tel:9908127810">
+                    +91 9908127810
                   </Link>
                   </li>
                   {/* <li>
