@@ -25,14 +25,15 @@ import HowWeDo from "@/components/home-data/how-we-do";
 import logo_2 from "@/assets/images/logo/logome.png";
 import HeroVideoTwo from "@/components/hero-banner/hero-video-two";
 import FaqSolutionsThree from "@/components/faq/faq-section-three";
-import mat from "@/assets/images/pistar/mat.png";
+import mat from "@/assets/images/pistar/1.png";
+import mat0 from "@/assets/images/pistar/2.png";
 import ContactForm from "@/components/forms/contact-form";
 import bg_image2 from "@/assets/images/background/counter_dark_pattern.png";
 import img4 from "@/assets/images/media/doctor.jpg";
 import mat1 from "@/assets/images/pistar/mat.jpg";
 import mat2 from "@/assets/images/pistar/mat1.jpg";
 import mat3 from "@/assets/images/pistar/mat2.jpg";
-import data from "@/assets/images/pistar/data.png";
+import data from "@/assets/images/pistar/data.jpg";
 
 const backImg2 = {
   backgroundImage: `url('${bg_image2.src}')`,
@@ -431,7 +432,7 @@ const DiaspsMat = () => {
                   <div className="col-lg-6 col-md-8 m-auto wow fadeInLeft">
                     <div className="media-wrapper md-mt-60 pe-xxl-5 pe-4 ps-xxl-5">
                       <Image
-                        src={mat}
+                        src={mat0}
                         alt="screen"
                         className="lazy-img rounded"
                         layout="responsive"
