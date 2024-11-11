@@ -25,10 +25,22 @@ import logo_2 from "@/assets/images/logo/logome.png";
 import HeroVideoTwo from "@/components/hero-banner/hero-video-two";
 import FaqSolutionsThree from "@/components/faq/faq-section-three";
 
-export const metadata: Metadata = {
-  title: "About Us",
-  description : "Unlock financial growth with CGB Solutions experienced IT consulting & insightful solutions. Navigate your journey with us!",
-  keywords : "IT consulting, financial growth, insightful solutions",
+export const metadata = {
+  title: "About PiStar | Foot Scan with High-Accuracy Sensors",
+  description:"Learn about PiStar's innovative Foot Scan Podiascan and high-accuracy pressure sensors, dedicated to providing precise podiatric insights for optimal foot health.",
+  keywords:"Foot Scan (Podiascan), high accuracy pressure sensor",
+  openGraph: {
+    title: "Advanced Foot Systems Podiatry | Diabetic Foot Care Solutions",
+    description: "Learn about PiStar's innovative Foot Scan Podiascan and high-accuracy pressure sensors, dedicated to providing precise podiatric insights for optimal foot health.",
+    images: [
+      {
+        url: "@/assets/images/logo/logo.png", // URL of the image
+        width: 1200, // Optional: specify the width of the image
+        height: 630, // Optional: specify the height of the image
+        alt: "Pistar logo Image", // Optional: alternative text for the image
+      },
+    ],
+  },
 };
 
 const AboutUsPage = () => {
