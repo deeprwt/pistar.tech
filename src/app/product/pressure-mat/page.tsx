@@ -96,7 +96,7 @@ function CardItem({
   );
 }
 
-const DiaspsMat = () => {
+const Pressuremat = () => {
   return (
     <Wrapper>
       <div className="main-page-wrapper">
@@ -108,7 +108,7 @@ const DiaspsMat = () => {
           {/* <HeroVideoTwo /> */}
           <BreadcrumbOne
             title="DiaPs Mat"
-            subtitle="DiaPS Mat: Precision Foot Health Monitoring"
+            subtitle="Navigating Your Financial Growth With Experience & Insightful Solutions."
             page="DiaPs Mat"
             maincls="bg-bottom"
             bg_img={about_bg}
@@ -623,4 +623,4 @@ right foot."
   );
 };
 
-export default DiaspsMat;
+export default Pressuremat;

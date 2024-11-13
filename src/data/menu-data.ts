@@ -18,7 +18,9 @@ const menu_data: IMenu[] = [
        dropdown:true,
     dropdown_menus:[
     {link:'/product/diaps-mat',title:'DiaPS Mat'},
-    {link:'/product/diapsmat',title:'Chair'},
+    // {link:'/product/smart-chair',title:'Smart Chair'},
+    // {link:'/product/footscan',title:'Foot Scan with Podiascan'},
+    // {link:'/product/pressure-mat',title:'Pressure Mat'},
     ]
   },
   {
