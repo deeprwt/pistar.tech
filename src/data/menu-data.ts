@@ -15,14 +15,32 @@ const menu_data: IMenu[] = [
     id: 3,
     link: "/",
     title: "Products",
-       dropdown:true,
-    dropdown_menus:[
-    {link:'/product/diaps-mat',title:'DiaPS Mat'},
-    // {link:'/product/smart-chair',title:'Smart Chair'},
-    // {link:'/product/footscan',title:'Foot Scan with Podiascan'},
-    // {link:'/product/pressure-mat',title:'Pressure Mat'},
-    ]
+    sub_dropdown: true,
+    dropdown_submenus: [
+      {link:'/product/diaps-mat',title:'DiaPS Mat'},
+      {link:'/coming-soon',title:'Smart Chair'},
+      {link:'/solutions/automation-anywhere',title:'FlexiRes',
+     sub_menus: [
+      {link:'/product/footscan',title:'Foot Scan with Podiascan'},
+      {link:'/product/pressure-mat',title:'Pressure Mat'},
+     ],
+    },
+      // { link: "/contract-staffing", title: "Workforce Solutions" },
+      // { link: "/solutions/digital-marketing", title: "Digital Services" },
+    ],
   },
+  // {
+  //   id: 3,
+  //   link: "/",
+  //   title: "Products",
+  //      dropdown:true,
+  //   dropdown_menus:[
+  //   {link:'/product/diaps-mat',title:'DiaPS Mat'},
+  //   {link:'/product/smart-chair',title:'Smart Chair'},
+  //   {link:'/product/footscan',title:'Foot Scan with Podiascan'},
+  //   {link:'/product/pressure-mat',title:'Pressure Mat'},
+  //   ]
+  // },
   {
     id: 4,
     link: "/our-company",

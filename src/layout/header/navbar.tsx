@@ -128,7 +128,7 @@ const Navbar = ({ logo_white = false }: { logo_white?: boolean }) => {
                         <a
                           className="nav-link dropdown-toggle"
                           style={{
-                            color: "#2B2B2B",
+                            color: "#fff",
                             fontWeight: "400",
                             margin: "0px",
                             padding: "8px 16px",

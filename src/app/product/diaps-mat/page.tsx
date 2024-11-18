@@ -34,6 +34,7 @@ import mat1 from "@/assets/images/pistar/mat.jpg";
 import mat2 from "@/assets/images/pistar/mat1.jpg";
 import mat3 from "@/assets/images/pistar/mat2.jpg";
 import data from "@/assets/images/pistar/data.jpg";
+import SolutionsSlider from "@/components/feedback/solutions-slider";
 
 const backImg2 = {
   backgroundImage: `url('${bg_image2.src}')`,
@@ -551,6 +552,8 @@ right foot."
               </div>
             </div>
           </div>
+
+          <SolutionsSlider />
 
           <div
             className="contact-us-section pt-80 lg-pt-80"
