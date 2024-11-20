@@ -17,7 +17,7 @@ const slider_setting = {
   slidesToScroll: 1,
   centerMode: true,
   autoplay: false,
-  autoplaySpeed: 3000,
+  autoplaySpeed: 2000,
   responsive: [
     {
       breakpoint: 768,
@@ -46,7 +46,7 @@ const SolutionsSlider = ({ spacing }: { spacing?: string }) => {
     >
       <div className="container">
         <div className="position-relative">
-          <div className="title-two">
+          <div className="newsletter-banner">
             <h2>Solutions</h2>
           </div>
           <p className="text-lg mt-30 lg-mt-20 mb-70 lg-mb-40 w-80">
@@ -91,7 +91,7 @@ const SolutionsSlider = ({ spacing }: { spacing?: string }) => {
                     className="lazy-img"
                     layout="responsive"
                   />
-                  <blockquote className="p-2">{item.desc}</blockquote>
+                  <blockquote className="p-4">{item.desc}</blockquote>
                   {/* <div className="d-flex align-items-center justify-content-between">
                     <div className="d-flex align-items-center">
                       <div className="name fw-500 text-dark">{item.name},</div>
