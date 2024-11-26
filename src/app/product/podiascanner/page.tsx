@@ -169,7 +169,7 @@ const Podiascanner = () => {
                       style={{ color: "#fff9" }}
                     >
                       With a commitment to <b>pressure sensor accuracy</b>,
-                      PiStarTech's sensors ensure that every reading is
+                      PiStarTech&apos;s sensors ensure that every reading is
                       reliable, even in challenging environments. Explore our
                       range of <b>pressure measuring devices</b> designed for
                       applications that require consistent and accurate{" "}
@@ -196,13 +196,13 @@ const Podiascanner = () => {
                           <div className="line-2"></div> SMART TECHNOLOGY
                         </div>
                       </div>
-                      <h3>Features of PiStarTech's Pressure Sensors</h3>
+                      <h3>Features of PiStarTech&apos;s Pressure Sensors</h3>
                     </div>
                     <div className="card-style-twelve w-100 mt-30">
                       <div className="d-flex"></div>
                       <ul className="style-none">
                         <li>
-                          <b>Advanced Wireless Connectivity :</b> PiStarTech's
+                          <b>Advanced Wireless Connectivity :</b> PiStarTech&apos;s
                           <b>wireless pressure sensor</b> solutions provide
                           real-time data transmission without the limitations of
                           wired setups, making them ideal for remote monitoring
