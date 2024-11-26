@@ -25,10 +25,10 @@ const menu_data: IMenu[] = [
       {link:'/product/pressure-mat',title:'Pressure Mat'},
      ],
     },
-      // { link: "/contract-staffing", title: "Workforce Solutions" },
+      { link: "/product/podiascanner", title: "Podia Scanner" },
       // { link: "/solutions/digital-marketing", title: "Digital Services" },
     ],
-  },
+  },                                                                                                                                                   
   // {
   //   id: 3,
   //   link: "/",

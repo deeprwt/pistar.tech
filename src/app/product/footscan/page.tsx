@@ -48,7 +48,7 @@ export const metadata: Metadata = {
   title: "Foot Scan Podiascan for Comprehensive Foot Health Insights",
   description:
     "PiStar's Foot Scan Podiascan provides detailed foot pressure analysis, supporting podiatry professionals in accurate diagnosis and patient care.",
-  keywords: "IT consulting, financial growth, insightful solutions",
+  keywords: "",
 };
 
 // card item
@@ -282,7 +282,7 @@ const Footscan = () => {
               </div>
             </div>
           </div>
-          <SolutionsSlider />
+          {/* <SolutionsSlider /> */}
 
           <div
             className="contact-us-section pt-80 lg-pt-80"

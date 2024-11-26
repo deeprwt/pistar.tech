@@ -553,7 +553,7 @@ right foot."
             </div>
           </div>
 
-          <SolutionsSlider />
+          {/* <SolutionsSlider /> */}
 
           <div
             className="contact-us-section pt-80 lg-pt-80"

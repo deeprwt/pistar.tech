@@ -97,7 +97,7 @@ function CardItem({
   );
 }
 
-const Pressuremat = () => {
+const Podiascanner = () => {
   return (
     <Wrapper>
       <div className="main-page-wrapper">
@@ -129,21 +129,28 @@ const Pressuremat = () => {
                     <div className="title-three mb-35 md-mb-20 details-meta">
                       {/* <div className="upper-title">management</div> */}
                       <h3 style={{ color: "white" }}>
-                        Pressure Mat: Advanced Pressure Mapping for Enhanced
-                        Foot Health
+                        Innovative podiascanner by PiStarTech
                       </h3>
                     </div>
                     <p
                       className="text-lg mt-40 lg-mt-30 mb-30"
                       style={{ color: "#fff9" }}
                     >
-                      The Pressure Mat is an innovative diagnostic tool designed
-                      to capture and analyze foot pressure distribution and gait
-                      patterns in real time. Ideal for healthcare professionals
-                      and biomechanics specialists, the Pressure Mat provides
-                      invaluable insights into foot function, helping to
-                      diagnose issues, improve mobility, and create personalized
-                      treatment plans.
+                      At PiStarTech, we specialize in advanced{" "}
+                      <b>wireless pressure sensor</b> solutions designed to meet
+                      the evolving needs of industries that demand precise,
+                      real-time data. Our cutting-edge{" "}
+                      <b>pressure sensor technology</b> offers high accuracy,
+                      reliability, and efficiency in various applications, from
+                      industrial automation to healthcare and biomechanics.{" "}
+                      <br />
+                      As one of the leading <b>pressure sensor manufacturers</b>
+                      , we focus on providing <b>pressure measuring devices</b>{" "}
+                      that deliver consistent and accurate readings. Our sensors
+                      stand out for their ability to measure and monitor{" "}
+                      <b>surface pressure </b>
+                      with remarkable precision, enabling informed
+                      decision-making across sectors.
                     </p>
                   </div>
                   <div className="col-lg-6 col-md-8 m-auto wow fadeInLeft">
@@ -155,6 +162,20 @@ const Pressuremat = () => {
                         layout="responsive"
                       />
                     </div>
+                  </div>
+                  <div className="col-lg-12 wow fadeInUp">
+                    <p
+                      className="text-lg mt-10 lg-mt-20 mb-30"
+                      style={{ color: "#fff9" }}
+                    >
+                      With a commitment to <b>pressure sensor accuracy</b>,
+                      PiStarTech's sensors ensure that every reading is
+                      reliable, even in challenging environments. Explore our
+                      range of <b>pressure measuring devices</b> designed for
+                      applications that require consistent and accurate{" "}
+                      <b>pressure sensor technology</b>. Experience the
+                      PiStarTech difference, where innovation meets precision.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -175,48 +196,53 @@ const Pressuremat = () => {
                           <div className="line-2"></div> SMART TECHNOLOGY
                         </div>
                       </div>
-                      <h3>Key Benefits of the Pressure Mat</h3>
+                      <h3>Features of PiStarTech's Pressure Sensors</h3>
                     </div>
                     <div className="card-style-twelve w-100 mt-30">
                       <div className="d-flex"></div>
                       <ul className="style-none">
                         <li>
-                          <b>Real-Time Pressure Analysis:</b> The Pressure Mat
-                          tracks foot pressure in real time, providing accurate
-                          data on load distribution, balance, and gait
-                          mechanics.
+                          <b>Advanced Wireless Connectivity :</b> PiStarTech's
+                          <b>wireless pressure sensor</b> solutions provide
+                          real-time data transmission without the limitations of
+                          wired setups, making them ideal for remote monitoring
+                          and flexible installations.
                         </li>
                         <li>
-                          <b>Gait and Pressure Mapping:</b> With high-resolution
-                          pressure mapping, Podiascan tracks your gait and
-                          pressure points, helping to identify areas of
-                          excessive load that can lead to pain or injury.
+                          <b>High Accuracy and Precision:</b> Engineered for
+                          <b>pressure sensor accuracy</b>, our devices offer
+                          precise measurements to meet the needs of critical
+                          applications, ensuring minimal error and consistent
+                          data integrity.
                         </li>
                         <li>
-                          <b>Detailed Gait Analysis:</b> By capturing data
-                          across multiple points, the Pressure Mat offers a
-                          comprehensive view of gait patterns, allowing
-                          professionals to pinpoint abnormalities that may lead
-                          to discomfort or injury.
+                          <b>Robust Pressure Sensor Technology:</b> Built with
+                          innovative <b>pressure sensor technology</b>, our
+                          sensors are reliable in various environmental
+                          conditions and are designed to withstand pressure
+                          fluctuations, delivering dependable performance.
                         </li>
                         <li>
-                          <b>Non-Invasive and Quick:</b> This easy-to-use mat
-                          provides instant feedback without invasive procedures,
-                          making it a comfortable and quick diagnostic solution
-                          for patients.
+                          <b>Compact and Surface-Friendly Design:</b> Our
+                          <b>surface pressure sensors</b> are designed to
+                          seamlessly fit on surfaces, making them suitable for a
+                          wide range of industrial, medical, and consumer
+                          applications. for patients.
                         </li>
                         <li>
-                          <b>Customized Treatment Plans:</b> Using the insights
-                          gathered, clinicians can create tailored treatment
-                          plans, from orthotics to physical therapy, targeting
-                          specific pressure points and foot mechanics.
+                          <b>Durability and Reliability:</b>As a trusted
+                          <b>pressure sensor manufacturer</b>, PiStarTech
+                          ensures that each sensor is crafted for longevity and
+                          is tested for durability in demanding environments,
+                          from high-pressure settings to harsh weather
+                          conditions.
                         </li>
                         <li>
-                          <b>Early Detection of Foot Conditions:</b> The
-                          Pressure Mat is especially useful for early detection
-                          of issues like plantar fasciitis, diabetic foot
-                          complications, and other conditions associated with
-                          irregular pressure distribution.
+                          <b>Easy Integration and Scalability:</b>Our
+                          <b>pressure measuring devices</b> are built to
+                          integrate smoothly into existing systems, with
+                          scalable options that grow with your operational
+                          requirements.
                         </li>
                       </ul>
                     </div>
@@ -249,37 +275,58 @@ const Pressuremat = () => {
                           <div className="line-2"></div> SPORTS PERFORMANCE
                         </div>
                       </div>
-                      <h3>Who Can Benefit from the Pressure Mat?</h3>
+                      <h3>Why Choose PiStarTech Pressure Sensor?</h3>
                     </div>
                     <div className="card-style-twelve w-100 mt-30">
                       <div className="d-flex"></div>
                       <ul className="style-none">
                         <li>
-                          <b>Diabetic Patients:</b>The Pressure Mat helps in
-                          monitoring and managing foot health by identifying
-                          high-pressure areas that could lead to ulcers or other
-                          complications.{" "}
+                          <b>Proven Expertise and Innovation :</b>PiStarTech has
+                          a track record of delivering reliable{" "}
+                          <b>pressure measuring devices</b> that incorporate the
+                          latest advancements in{" "}
+                          <b>pressure sensor technology</b>. Our team
+                          continuously innovates to provide sensors that meet
+                          the highest industry standards.
                         </li>
                         <li>
-                          <b>Athletes and Runners:</b> Athletes benefit from
-                          enhanced gait analysis to optimize performance and
-                          prevent injuries related to improper pressure
-                          distribution.{" "}
+                          <b>Unmatched Accuracy for Critical Applications:</b>
+                          Our focus on <b>pressure sensor accuracy</b> makes
+                          PiStarTech a preferred choice for industries where
+                          precision is crucial, such as healthcare, aerospace,
+                          and manufacturing.
                         </li>
                         <li>
-                          <b>Rehabilitation Patients:</b> Individuals undergoing
-                          physical therapy or rehabilitation gain valuable
-                          feedback, aiding in improved recovery and reduced
-                          discomfort.
+                          <b>Customized Solutions for Diverse Needs:</b> Whether
+                          you need <b>surface pressure sensors</b> for unique
+                          applications or <b>wireless pressure sensors</b> for
+                          remote monitoring, PiStarTech offers tailored
+                          solutions to suit specific use cases.
                         </li>
                         <li>
-                          <b>Podiatric and Orthopedic Care:</b> For patients
-                          with conditions like flat feet, high arches, or joint
-                          issues, the Pressure Mat provides essential data to
-                          guide effective treatment options.{" "}
+                          <b>Comprehensive Support and Maintenance:</b> As a top{" "}
+                          <b>pressure sensor manufacturer</b>, PiStarTech
+                          provides end-to-end support, from product selection to
+                          installation and maintenance, ensuring a seamless
+                          experience for our clients.
+                        </li>
+                        <li>
+                          <b>Sustainability and Efficiency</b>
+                          PiStarTech designs sensors that are energy-efficient
+                          and sustainable, minimizing environmental impact while
+                          maximizing operational efficiency.
                         </li>
                       </ul>
                     </div>
+                    <p
+                      className="text-lg mt-40 lg-mt-30 mb-30"
+                      style={{ color: "rgb(0 0 0 / 60%);" }}
+                    >
+                      Choose PiStarTech for unparalleled quality in{" "}
+                      <b>pressure sensor technology</b>—solutions that drive
+                      accuracy, reliability, and innovation in every
+                      application.
+                    </p>
                   </div>
                   <div className="col-lg-6 col-md-8 m-auto wow fadeInLeft order-last order-md-first">
                     <div className="media-wrapper md-mt-60 pe-xxl-5 pe-4 ps-xxl-5">
@@ -295,39 +342,7 @@ const Pressuremat = () => {
               </div>
             </div>
           </div>
-          <div
-            className="fancy-banner-two pt-80 lg-pt-80 pb-80 lg-pb-60 service-details"
-            style={{ background: "#f5f5f5" }}
-          >
-            <div className="container details-meta">
-              <div className="wow fadeInUp">
-                <div className="row">
-                  <div className="col-lg-12 wow fadeInRight order-last order-md-first">
-                    <div className="title-three mb-35 md-mb-20">
-                      <div>
-                        <div className="upper-title d-flex align-items-center">
-                          <div className="line-2"></div> Durable Hardware
-                        </div>
-                      </div>
-                      <h3>
-                        Take the First Step Toward Better Foot Health with Our
-                        Pressure Mat
-                      </h3>
-                    </div>
-                    <p
-                      className="text-lg mt-40 lg-mt-30 mb-30"
-                      // style={{ color: "#fff9" }}
-                    >
-                      Get a complete picture of your foot health with our
-                      advanced Pressure Mat technology. Contact us today to
-                      schedule your assessment and experience a new level of
-                      comfort and mobility.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+
           {/* <SolutionsSlider /> */}
 
           <div
@@ -383,4 +398,4 @@ const Pressuremat = () => {
   );
 };
 
-export default Pressuremat;
+export default Podiascanner;
