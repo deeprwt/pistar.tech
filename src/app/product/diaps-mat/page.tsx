@@ -504,13 +504,20 @@ right foot."
                 <div className="col-lg-12 details-meta">
                   <div className="title-one mb-40 lg-mb-20">
                     <h3>Specifications</h3>
-                    <p className="text-lg mb-40 lg-mb-20">Need a mat with your own specifications? We will <b>customize</b> it for you!</p>
+                    <p className="text-lg mb-40 lg-mb-20">
+                      Need a mat with your own specifications? We will{" "}
+                      <b>customize</b> it for you!
+                    </p>
                   </div>
                   <table className="table table-bordered">
                     <thead className="thead-dark">
                       <tr>
-                        <th scope="col" className="fontcolorimp">Features</th>
-                        <th scope="col" className="fontcolorimp">FlePS Mat</th>
+                        <th scope="col" className="fontcolorimp">
+                          Features
+                        </th>
+                        <th scope="col" className="fontcolorimp">
+                          FlePS Mat
+                        </th>
                       </tr>
                     </thead>
                     <tbody>

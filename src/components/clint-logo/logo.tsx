@@ -8,6 +8,7 @@ import Slider from "react-slick";
 import img1 from "@/assets/images/logo/clints/1.png"
 import img2 from "@/assets/images/logo/clints/2.png"
 import img3 from "@/assets/images/logo/clints/3.png"
+import img5 from "@/assets/images/logo/clints/hubdata.png"
 import img4 from "@/assets/images/logo/clints/4.png"
 
 
@@ -109,7 +110,7 @@ const slider_setting2 = {
   };
 
 // slider logos
-const slider_logos:StaticImageData[] = [img1, img2, img3, img1, img2, img3, img2];
+const slider_logos:StaticImageData[] = [img1, img2, img3, img5, img1, img2, img3, img2, img5,];
 // const slider_logos2:StaticImageData[] = [img12, img13, img14, img15, img16, img17, img18, img19, img20, img21, img22, img23,];
 
 const ClintLogo = () => {
