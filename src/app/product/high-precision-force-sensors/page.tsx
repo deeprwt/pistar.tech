@@ -139,7 +139,7 @@ const ForceSensor = () => {
                       At PiStarTech, we bring you advanced <b>force sensors</b>{" "}
                       and
                       <b>force plates</b> designed for accuracy, durability, and
-                      adaptability across multiple industries. Whether you're in
+                      adaptability across multiple industries. Whether you&apos;re in
                       biomechanics, sports science, or industrial automation,
                       our <b>force measurement devices</b> provide precise data
                       you can rely on.
@@ -175,7 +175,7 @@ const ForceSensor = () => {
                         </div>
                       </div>
                       <h3>
-                        Why Choose PiStarTech's Force Measurement Solutions?
+                        Why Choose PiStarTech&apos;s Force Measurement Solutions?
                       </h3>
                     </div>
                     <div className="card-style-twelve w-100 mt-30">
