@@ -45,9 +45,9 @@ const backImg2 = {
 };
 
 export const metadata: Metadata = {
-  title: "Foot Scan Podiascan for Comprehensive Foot Health Insights",
+  title: "High-Precision Force Sensors & Plates | PiStarTech Solutions",
   description:
-    "PiStar's Foot Scan Podiascan provides detailed foot pressure analysis, supporting podiatry professionals in accurate diagnosis and patient care.",
+    "Explore PiStarTech’s accurate force sensors and plates for biomechanics, sports science, and industrial applications. Get reliable force measurement with advanced technology.",
   keywords: "",
 };
 
@@ -109,8 +109,8 @@ const ForceSensor = () => {
           {/* <HeroVideoTwo /> */}
           <BreadcrumbOne
             title="Discover High-Precision Force Sensors by PiStarTech"
-            subtitle="Navigating Your Financial Growth With Experience & Insightful Solutions."
-            page="Discover High-Precision Force Sensors by PiStarTech"
+            subtitle=""
+            page="High-Precision Force Sensors"
             maincls="bg-bottom"
             bg_img={about_bg}
             style_2={true}

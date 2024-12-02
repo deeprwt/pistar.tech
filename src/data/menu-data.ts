@@ -26,6 +26,7 @@ const menu_data: IMenu[] = [
      ],
     },
       { link: "/product/podiascanner", title: "Podia Scanner" },
+      { link: "/product/high-precision-force-sensors", title: "High-Precision Force Sensors" },
       // { link: "/solutions/digital-marketing", title: "Digital Services" },
     ],
   },                                                                                                                                                   
