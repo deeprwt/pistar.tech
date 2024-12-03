@@ -250,7 +250,7 @@ const Piezoresistive = () => {
                         Our <b>pressure mapping sensors</b> allow for the
                         collection of high-resolution data, helping industries
                         make informed decisions and optimize their processes.
-                        Whether you're monitoring a production line or analyzing
+                        Whether you&apos;re monitoring a production line or analyzing
                         human movement, our sensors deliver precise data in
                         real-time.
                       </p>
@@ -300,7 +300,7 @@ const Piezoresistive = () => {
                         Our <b>pressure mapping sensors</b> allow for the
                         collection of high-resolution data, helping industries
                         make informed decisions and optimize their processes.
-                        Whether you're monitoring a production line or analyzing
+                        Whether you&apos;re monitoring a production line or analyzing
                         human movement, our sensors deliver precise data in
                         real-time.
                       </p>
@@ -320,7 +320,7 @@ const Piezoresistive = () => {
                         </li>
                       </ul>
                     </div>
-                    <p className="pt-4">Discover the future of pressure sensing with PiStarTech's <b>piezoresistive pressure sensors</b> and <b>pressure mapping sensors</b>. For more information, contact us today and explore how our technology can elevate your business.</p>
+                    <p className="pt-4">Discover the future of pressure sensing with PiStarTech&apos;s <b>piezoresistive pressure sensors</b> and <b>pressure mapping sensors</b>. For more information, contact us today and explore how our technology can elevate your business.</p>
                   </div>
                 </div>
               </div>

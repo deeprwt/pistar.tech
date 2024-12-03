@@ -281,7 +281,7 @@ const ForceSensingResistor = () => {
                           <div className="line-2"></div> SPORTS PERFORMANCE
                         </div> */}
                       </div>
-                      <h3>Why Choose PiStarTech's Force Sensing Solutions?</h3>
+                      <h3>Why Choose PiStarTech&apos;s Force Sensing Solutions?</h3>
                       <p>
                         PiStarTech also offers advanced{" "}
                         <b>pressure mapping sensors</b>
@@ -297,7 +297,7 @@ const ForceSensingResistor = () => {
                         Our <b>pressure mapping sensors</b> allow for the
                         collection of high-resolution data, helping industries
                         make informed decisions and optimize their processes.
-                        Whether you're monitoring a production line or analyzing
+                        Whether you&apos;re monitoring a production line or analyzing
                         human movement, our sensors deliver precise data in
                         real-time.
                       </p>
@@ -323,8 +323,8 @@ const ForceSensingResistor = () => {
                       </ul>
                     </div>
                     <p className="pt-4">
-                      Discover how PiStarTech's <b>force sensing resistors</b> and
-                      <b>pressure sensitive mats</b> can enhance your product's
+                      Discover how PiStarTech&apos;s <b>force sensing resistors</b> and
+                      <b>pressure sensitive mats</b> can enhance your product&apos;s
                       performance. Contact us today to learn more about our
                       innovative sensing solutions and how we can help you meet
                       your specific needs.
