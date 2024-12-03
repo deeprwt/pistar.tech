@@ -169,11 +169,11 @@ const FootPressureMapping = () => {
                 <div className="row">
                   <div className="col-lg-6 wow text-extra fadeInRight order-last order-md-first">
                     <div className="title-three mb-35 md-mb-20">
-                      <div>
+                      {/* <div>
                         <div className="upper-title d-flex align-items-center">
                           <div className="line-2"></div> SMART TECHNOLOGY
                         </div>
-                      </div>
+                      </div> */}
                       <h3>What is Foot Pressure Mapping? </h3>
                       <p>
                         <b>Foot pressure mapping</b> is a technology that uses
@@ -186,8 +186,12 @@ const FootPressureMapping = () => {
                         footwear.
                       </p>
                     </div>
-                    <div className="card-style-twelve w-100 mt-30">
-                      <h3 className="pb-4">Key Features:</h3>
+                    <div className="title-three card-style-twelve w-100 mt-30">
+                    <div>
+                        <div className="upper-title d-flex align-items-center">
+                          <div className="line-2"></div> Key Features :
+                        </div>
+                      </div>
                       <div className="d-flex"></div>
                       <ul className="style-none">
                         <li>

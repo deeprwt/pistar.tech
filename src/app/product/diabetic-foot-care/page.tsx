@@ -150,15 +150,15 @@ const Pressuremat = () => {
           >
             <div className="container details-meta">
               <div className="wow fadeInUp">
-                <h3 className="pb-4">Overview</h3>
+                {/* <h3 className="pb-4">Overview</h3> */}
                 <div className="row">
                   <div className="col-lg-6 wow text-extra fadeInRight order-last order-md-first">
                     <div className="title-three mb-35 md-mb-20">
-                      <div>
+                      {/* <div>
                         <div className="upper-title d-flex align-items-center">
                           <div className="line-2"></div> SMART TECHNOLOGY
                         </div>
-                      </div>
+                      </div> */}
                       <h3>Why Diabetic Foot Care is Critical</h3>
                       <p>
                         Diabetes can lead to reduced sensation in the feet,
@@ -171,9 +171,13 @@ const Pressuremat = () => {
                         support this proactive approach.
                       </p>
                     </div>
-                    <div className="card-style-twelve w-100 mt-30">
+                    <div className="title-three card-style-twelve w-100 mt-30">
                       <div className="d-flex"></div>
-                      <h3>Key Features:</h3>
+                      <div>
+                        <div className="upper-title d-flex align-items-center">
+                          <div className="line-2"></div> Key Features :
+                        </div>
+                      </div>
                       <ul className="style-none">
                         <li>
                           <b>Precise Pressure Measurement:</b> Our sensors
@@ -230,7 +234,6 @@ const Pressuremat = () => {
                     </div>
                     <p
                       className="text-lg mt-40 lg-mt-30 mb-30"
-                      style={{ color: "#fff9" }}
                     >
                       <b> Health care providers</b> play a crucial role in
                       managing diabetic foot health. With our{" "}
@@ -241,10 +244,9 @@ const Pressuremat = () => {
                       long-term foot health.
                     </p>
 
-                    <h3>Shaping the Future of Diabetic Foot Care</h3>
+                    <h3 className="mt-40 lg-mt-30">Shaping the Future of Diabetic Foot Care</h3>
                     <p
                       className="text-lg mt-40 lg-mt-30 mb-30"
-                      style={{ color: "#fff9" }}
                     >
                       PiStarTech is committed to the <b>future of health</b> by
                       integrating technology that empowers both patients and

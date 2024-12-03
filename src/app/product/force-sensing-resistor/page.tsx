@@ -168,11 +168,11 @@ const ForceSensingResistor = () => {
                 <div className="row">
                   <div className="col-lg-6 wow text-extra fadeInRight order-last order-md-first">
                     <div className="title-three mb-35 md-mb-20">
-                      <div>
+                      {/* <div>
                         <div className="upper-title d-flex align-items-center">
                           <div className="line-2"></div> SMART TECHNOLOGY
                         </div>
-                      </div>
+                      </div> */}
                       <h3>What is a Force Sensing Resistor?</h3>
                       <p>
                         A <b>force sensing resistor</b> is a type of sensor that
@@ -185,8 +185,12 @@ const ForceSensingResistor = () => {
                         systems.
                       </p>
                     </div>
-                    <div className="card-style-twelve w-100 mt-30">
-                      <h3 className="pb-4">Key Features:</h3>
+                    <div className=" title-three card-style-twelve w-100 mt-30">
+                      <div>
+                        <div className="upper-title d-flex align-items-center">
+                          <div className="line-2"></div> Key Features :
+                        </div>
+                      </div>
                       <div className="d-flex"></div>
                       <ul className="style-none">
                         <li>
@@ -281,7 +285,9 @@ const ForceSensingResistor = () => {
                           <div className="line-2"></div> SPORTS PERFORMANCE
                         </div> */}
                       </div>
-                      <h3>Why Choose PiStarTech&apos;s Force Sensing Solutions?</h3>
+                      <h3>
+                        Why Choose PiStarTech&apos;s Force Sensing Solutions?
+                      </h3>
                       <p>
                         PiStarTech also offers advanced{" "}
                         <b>pressure mapping sensors</b>
@@ -297,9 +303,9 @@ const ForceSensingResistor = () => {
                         Our <b>pressure mapping sensors</b> allow for the
                         collection of high-resolution data, helping industries
                         make informed decisions and optimize their processes.
-                        Whether you&apos;re monitoring a production line or analyzing
-                        human movement, our sensors deliver precise data in
-                        real-time.
+                        Whether you&apos;re monitoring a production line or
+                        analyzing human movement, our sensors deliver precise
+                        data in real-time.
                       </p>
                     </div>
                     <div className="card-style-twelve w-100 mt-30">
@@ -323,11 +329,12 @@ const ForceSensingResistor = () => {
                       </ul>
                     </div>
                     <p className="pt-4">
-                      Discover how PiStarTech&apos;s <b>force sensing resistors</b> and
-                      <b>pressure sensitive mats</b> can enhance your product&apos;s
-                      performance. Contact us today to learn more about our
-                      innovative sensing solutions and how we can help you meet
-                      your specific needs.
+                      Discover how PiStarTech&apos;s{" "}
+                      <b>force sensing resistors</b> and
+                      <b>pressure sensitive mats</b> can enhance your
+                      product&apos;s performance. Contact us today to learn more
+                      about our innovative sensing solutions and how we can help
+                      you meet your specific needs.
                     </p>
                   </div>
                 </div>

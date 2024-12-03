@@ -169,14 +169,19 @@ const Footscan = () => {
                 <div className="row">
                   <div className="col-lg-6 wow text-extra fadeInRight order-last order-md-first">
                     <div className="title-three mb-35 md-mb-20">
-                      <div>
+                      {/* <div>
                         <div className="upper-title d-flex align-items-center">
                           <div className="line-2"></div> SMART TECHNOLOGY
                         </div>
-                      </div>
+                      </div> */}
                       <h3>What Podiascan Offers</h3>
                     </div>
                     <div className="card-style-twelve w-100 mt-30">
+                    <div>
+                        <div className="upper-title d-flex align-items-center">
+                          <div className="line-2"></div> Key Features :
+                        </div>
+                      </div>
                       <div className="d-flex">
                       </div>
                       <ul className="style-none">
