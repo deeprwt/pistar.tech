@@ -30,7 +30,7 @@ const menu_data: IMenu[] = [
       { link: "/product/piezoresistive-pressure-sensor", title: "Piezoresistive Pressure Sensor" },
       { link: "/product/force-sensing-resistor", title: "Force Sensing Resistor" },
       { link: "/product/foot-pressure-mapping", title: "Foot Pressure Mapping" },
-      { link: "/product/foot-pressure-mapping", title: "Diabetic Foot Care" },
+      { link: "/product/diabetic-foot-care", title: "Diabetic Foot Care" },
       // { link: "/solutions/digital-marketing", title: "Digital Services" },
     ],
   },                                                                                                                                                   
