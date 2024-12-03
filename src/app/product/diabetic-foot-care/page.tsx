@@ -194,7 +194,7 @@ const Pressuremat = () => {
                         <li>
                           <b>User-Friendly:</b> Designed for ease of use, our
                           system allows health professionals to quickly assess a
-                          patient's condition and make informed decisions.
+                          patient&apos;s condition and make informed decisions.
                         </li>
                       </ul>
                     </div>
