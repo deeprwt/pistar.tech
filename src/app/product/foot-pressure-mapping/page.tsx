@@ -304,7 +304,7 @@ const FootPressureMapping = () => {
                         </div> */}
                       </div>
                       <h3>
-                        Why Choose PiStarTech's Foot Pressure Mapping Solutions?
+                        Why Choose PiStarTech&apos;s Foot Pressure Mapping Solutions?
                       </h3>
                     </div>
                     <div className="card-style-twelve w-100 mt-30">
@@ -329,7 +329,7 @@ const FootPressureMapping = () => {
                       </ul>
                     </div>
                     <p className="pt-4">
-                      Explore how PiStarTech's <b>foot pressure mapping technology</b>
+                      Explore how PiStarTech&apos;s <b>foot pressure mapping technology</b>
                       and <b>foot pressure mapping systems</b> can improve foot health,
                       comfort, and performance. Contact us today to learn more
                       about our innovative solutions!
