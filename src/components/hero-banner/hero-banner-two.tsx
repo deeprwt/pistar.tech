@@ -63,11 +63,13 @@ const HeroBannerTwo = () => {
       </Slider>
       <Slider {...settings}>
         <div>
-        <div className="container position-relative h-100 d-flex align-items-center justify-content-center">
+          <div className="container position-relative h-100 d-flex align-items-center justify-content-center">
             <div className="row">
               <div className="col-lg-10 m-auto text-center">
                 <h1 className="hero-heading fw-bold wow fadeInUp mt-10 text-white">
-                  Revolutionizing Foot Health with
+                  Advanced Foot Systems Podiatry Solutions for Better Mobility
+                  and Comfort
+                  {/* Revolutionizing Foot Health with
                   <span className="d-inline-block position-relative">
                     &nbsp; AI-Driven
                     <Image
@@ -77,7 +79,7 @@ const HeroBannerTwo = () => {
                       style={imageStyle}
                     />
                   </span>{" "}
-                  Diagnostics
+                  Diagnostics */}
                 </h1>
                 <p
                   className="text-xl pt-35 pb-35 wow fadeInUp text-white"
@@ -100,7 +102,8 @@ const HeroBannerTwo = () => {
             <div className="row">
               <div className="col-lg-10 m-auto text-center">
                 <h1 className="hero-heading fw-bold wow fadeInUp mt-10 text-white">
-                  Revolutionizing Foot Health with
+                Redefining Measurement with Flexible Pressure Sensor Solutions
+                  {/* Revolutionizing Foot Health with
                   <span className="d-inline-block position-relative">
                     &nbsp; AI-Driven
                     <Image
@@ -109,15 +112,14 @@ const HeroBannerTwo = () => {
                       className="lazy-img"
                       style={imageStyle}
                     />
-                  </span>{" "}
-                  Diagnostics
+                  </span>
+                  Diagnostics */}
                 </h1>
                 <p
                   className="text-xl pt-35 pb-35 wow fadeInUp text-white"
                   data-wow-delay="0.1s"
                 >
-                  Introducing the DiaPS Mat: Accurate, Affordable, and Portable
-                  Plantar Pressure Analysis.
+                  Enhance performance with PiStarTech&apos;s advanced flexible pressure sensors tailored for medical diagnostics
                 </p>
                 <div className="d-inline-flex flex-wrap align-items-center">
                   <Link href="/about-us" className="btn-four mt-15 me-4">

@@ -12,9 +12,7 @@ const imageStyle = {
 const HeroVideoTwo = () => {
   return (
     <>
-      <div
-        className="hero-banner-two light-bg pt-200 pb-85 position-relative"
-      >
+      <div className="hero-banner-two light-bg pt-200 pb-85 position-relative">
         {/* Background video */}
         <video
           autoPlay
@@ -52,8 +50,8 @@ const HeroVideoTwo = () => {
                 className="text-xl pt-35 pb-35 wow fadeInUp text-white"
                 data-wow-delay="0.1s"
               >
-                Introducing the DiaPS Mat: Accurate, Affordable, and Portable
-                Plantar Pressure Analysis.
+                Discover Pistar Tech Pioneers of FlexiRes Technology for
+                Advanced Foot Care.
               </p>
               {/* <div className="d-inline-flex flex-wrap align-items-center">
                 <Link href="/about-us" className="btn-four mt-15 me-4">

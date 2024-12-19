@@ -50,7 +50,7 @@ const StaffingSolutions = () => {
         <div className="row gx-lg-5 align-items-center">
           <div className="col-lg-12 m-auto">
             <div className="title-one details-meta">
-              <h3>Leveraging Familiar Techniques with the DiaPS Mat</h3>
+              <h2>Leveraging Familiar Techniques with the DiaPS Mat</h2>
             </div>
             <p className="text-lg mt-40 lg-mt-30 mb-50">
               PiStarTech Private Limited ensures that the DiaPS Mat integrates

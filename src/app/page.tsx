@@ -108,15 +108,15 @@ export default function HomePage() {
                   <div className="col-lg-6 wow fadeInRight">
                     <div className="title-three mb-35 md-mb-20 details-meta">
                       {/* <div className="upper-title">management</div> */}
-                      <h3 style={{ color: "white" }}>
+                      <h2 style={{ color: "white" }}>
                         Why is the DiaPS Mat so easy to adopt?
-                      </h3>
+                      </h2>
                     </div>
                     <p
                       className="text-lg mt-40 lg-mt-30 mb-30"
                       style={{ color: "#fff9" }}
                     >
-                      The DiaPS Mat from PiStarTech Private Limited is designed
+                      The <b>DiaPS Mat</b> from PiStarTech Private Limited is designed
                       for easy adoption into any clinical setting. Its portable,
                       flexible design allows it to seamlessly integrate into
                       existing medical workflows without the need for extensive
@@ -212,10 +212,9 @@ export default function HomePage() {
                 <div className="row">
                   <div className="col-lg-12 wow fadeInRight">
                     <div className="title-three mb-35 md-mb-20 details-meta">
-                      <h3>
-                        Welcome to PiStarTech Private Limited – Innovating
-                        Healthcare Technology
-                      </h3>
+                      <h2>
+                      Welcome to PiStarTech – Revolutionizing Healthcare with Cutting-Edge Pressure Measurement Sensors
+                      </h2>
                     </div>
                     <p
                       className="text-lg mt-40 lg-mt-30 mb-30"
@@ -224,7 +223,7 @@ export default function HomePage() {
                       At PiStarTech, we are committed to enhancing healthcare
                       with innovative solutions that bridge the gap between
                       technology and medical practice. Our flagship product, the
-                      Diabetic PodiaScan Mat (DiaPS Mat), is an advanced,
+                      <b>Diabetic PodiaScan Mat (DiaPS Mat)</b>, is an advanced,
                       research-backed foot pressure analysis system designed to
                       support medical professionals in diagnosing and treating
                       foot-related ailments, particularly for diabetic patients.
