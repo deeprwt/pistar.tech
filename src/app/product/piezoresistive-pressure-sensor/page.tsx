@@ -109,7 +109,7 @@ const Piezoresistive = () => {
           {/* <HeroVideoTwo /> */}
           <BreadcrumbOne
             title="Piezoresistive Pressure Sensor"
-            subtitle="Advanced Piezoresistive Pressure Sensors for Precise Measurement"
+            subtitle="Advanced Foot Scanning with Piezoresistive Pressure Sensor Technology"
             page="Piezoresistive Pressure Sensor"
             maincls="bg-bottom"
             bg_img={about_bg}

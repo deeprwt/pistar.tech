@@ -31,7 +31,7 @@ export default function OurCompany() {
           {/* breadcrumb start */}
           <BreadcrumbOne
             title="Our Company"
-            subtitle="Deliver Products and Services That Leave a Positive Impact"
+            subtitle="Experts in Force Sensing Resistor Development"
             page="Our Company"
             // // shape={shape}
             bg_img={service_bg}

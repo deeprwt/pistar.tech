@@ -27,7 +27,7 @@ const ArticlePage = () => {
           {/* breadcrumb start */}
           <BreadcrumbOne
             title="Our Article"
-            subtitle=""
+            subtitle="Innovative Flexible Pressure Sensors for Smart Solutions"
             page="Article"
             bg_img={blog_bg}
             style_2={true}

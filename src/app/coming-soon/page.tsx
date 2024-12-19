@@ -22,7 +22,7 @@ const NotFound = () => {
         <main>
           <div className="error-page text-center d-flex align-items-center justify-content-center flex-column light-bg position-relative">
             {/* <h1 className="font-magnita">404</h1> */}
-            <h2 className="fw-bold">Cooming Soon</h2>
+            <h2 className="fw-bold">Coming Soon</h2>
             <p className="text-lg mb-45">
             This page is in maintenance mode. Please visit again after some time.
             </p>

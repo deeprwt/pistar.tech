@@ -109,7 +109,7 @@ const FootPressureMapping = () => {
           {/* <HeroVideoTwo /> */}
           <BreadcrumbOne
             title="Foot Pressure Mapping"
-            subtitle="Advanced Foot Pressure Mapping for Precision and Comfort"
+            subtitle="Precision Insights with Foot Pressure Mapping Technology"
             page="Foot Pressure Mapping"
             maincls="bg-bottom"
             bg_img={about_bg}

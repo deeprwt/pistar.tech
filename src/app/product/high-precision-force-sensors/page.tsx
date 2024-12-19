@@ -108,8 +108,8 @@ const ForceSensor = () => {
           {/* breadcrumb start */}
           {/* <HeroVideoTwo /> */}
           <BreadcrumbOne
-            title="Discover High-Precision Force Sensors by PiStarTech"
-            subtitle=""
+            title="High Precision Force Sensors"
+            subtitle="Achieve Optimal Results with High Precision Force Sensors Pressure Sensor Accuracy"
             page="High-Precision Force Sensors"
             maincls="bg-bottom"
             bg_img={about_bg}

@@ -109,7 +109,7 @@ const Pressuremat = () => {
           {/* <HeroVideoTwo /> */}
           <BreadcrumbOne
             title="Pressure Mat"
-            subtitle="Navigating Your Financial Growth With Experience & Insightful Solutions."
+            subtitle="Foot Care with High-Performance Pressure Mat Solutions."
             page="Pressure Mat"
             maincls="bg-bottom"
             bg_img={about_bg}

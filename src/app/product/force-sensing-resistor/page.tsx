@@ -109,7 +109,7 @@ const ForceSensingResistor = () => {
           {/* <HeroVideoTwo /> */}
           <BreadcrumbOne
             title="Force Sensing Resistor"
-            subtitle="High-Performance Force Sensing Resistors for Accurate Measurement"
+            subtitle="Reliable and Accurate Force Sensors with Advanced Force Sensing Resistors."
             page="Force Sensing Resistor"
             maincls="bg-bottom"
             bg_img={about_bg}

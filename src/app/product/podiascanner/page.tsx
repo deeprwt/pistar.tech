@@ -108,9 +108,9 @@ const Podiascanner = () => {
           {/* breadcrumb start */}
           {/* <HeroVideoTwo /> */}
           <BreadcrumbOne
-            title="Pressure Mat"
-            subtitle="Navigating Your Financial Growth With Experience & Insightful Solutions."
-            page="Pressure Mat"
+            title="Podia Scanner "
+            subtitle="Foot Scan Podiascan: Precision Scanning with Pressure Sensors"
+            page="Podia Scanner "
             maincls="bg-bottom"
             bg_img={about_bg}
             style_2={true}

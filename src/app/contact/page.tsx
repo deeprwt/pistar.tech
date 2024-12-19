@@ -24,8 +24,8 @@ const ContactPage = () => {
           {/* breadcrumb start */}
           <BreadcrumbOne
             title="Get in Touch"
-            subtitle="Get our all info and also can message us directly from here"
-            page="Contact"
+            subtitle="Reach Out to PiStarTech for Innovative Foot Care Solutions"
+            page="Contact Us"
             // // shape={shape}
           />
           {/* breadcrumb end */}

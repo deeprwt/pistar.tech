@@ -109,7 +109,7 @@ const Footscan = () => {
           {/* <HeroVideoTwo /> */}
           <BreadcrumbOne
             title="Foot Scan with Podiascan"
-            subtitle="Navigating Your Financial Growth With Experience & Insightful Solutions."
+            subtitle="FootScan with Podiascan: Advanced Diabetic Foot Care Solutions"
             page="Foot Scan with Podiascan"
             maincls="bg-bottom"
             bg_img={about_bg}

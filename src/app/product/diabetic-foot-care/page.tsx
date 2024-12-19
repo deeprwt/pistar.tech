@@ -91,7 +91,7 @@ const Pressuremat = () => {
           {/* <HeroVideoTwo /> */}
           <BreadcrumbOne
             title="Diabetic Foot Care"
-            subtitle="Innovative Diabetic Foot Care with Advanced Pressure Measurement Sensors"
+            subtitle="Diabetic Foot Care Solutions Powered by Advanced Pressure Mapping Sensors"
             page="Diabetic Foot Care"
             maincls="bg-bottom"
             bg_img={about_bg}
