@@ -50,8 +50,7 @@ const HeroVideoTwo = () => {
                 className="text-xl pt-35 pb-35 wow fadeInUp text-white"
                 data-wow-delay="0.1s"
               >
-                Discover Pistar Tech Pioneers of FlexiRes Technology for
-                Advanced Foot Care.
+                Discover Pistar Tech Pioneers of <b>Plantar Pressure Analysis</b> Technology for Advanced Foot Care.
               </p>
               {/* <div className="d-inline-flex flex-wrap align-items-center">
                 <Link href="/about-us" className="btn-four mt-15 me-4">

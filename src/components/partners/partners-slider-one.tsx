@@ -5,14 +5,20 @@ import Slider from "react-slick";
 import img1 from "@/assets/images/logo/clints/1.png"
 import img2 from "@/assets/images/logo/clints/2.png"
 import img3 from "@/assets/images/logo/clints/3.png"
-import img4 from "@/assets/images/logo/clints/4.png"
+import img4 from "@/assets/images/logo/clints/hubdata.png"
+import img5 from "@/assets/images/logo/clints/vit.png"
+import img6 from "@/assets/images/logo/clints/DST.png"
+import img7 from "@/assets/images/logo/clints/ricard.png"
+import img8 from "@/assets/images/logo/clints/nidhiprayas.png"
+import img9 from "@/assets/images/logo/clints/Nidhiseed.png"
+import img10 from "@/assets/images/logo/clints/Dos.png"
 
 // slider setting
 const slider_setting = {
   dots: false,
   arrows: false,
   centerPadding: "0px",
-  slidesToShow: 6,
+  slidesToShow: 5,
   slidesToScroll: 1,
   autoplay: true,
   autoplaySpeed: 2000,
@@ -39,7 +45,7 @@ const slider_setting = {
 };
 
 // slider logos
-const slider_logos:StaticImageData[] = [img1, img2, img3, img1, img2, img3, img2];
+const slider_logos:StaticImageData[] = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10];
 
 const PartnersSliderOne = () => {
   return (

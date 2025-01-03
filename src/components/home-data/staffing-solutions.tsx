@@ -50,12 +50,12 @@ const StaffingSolutions = () => {
         <div className="row gx-lg-5 align-items-center">
           <div className="col-lg-12 m-auto">
             <div className="title-one details-meta">
-              <h2>Leveraging Familiar Techniques with the DiaPS Mat</h2>
+              <h2>Leveraging Familiar Techniques with the Podiascanner Mat</h2>
             </div>
             <p className="text-lg mt-40 lg-mt-30 mb-50">
-              PiStarTech Private Limited ensures that the DiaPS Mat integrates
+              PiStarTech Private Limited ensures that the Podiascanner Mat integrates
               smoothly into the medical professional&apos;s existing knowledge and
-              workflow. Much like familiar diagnostic tools, the DiaPS Mat
+              workflow. Much like familiar diagnostic tools, the Podiascanner Mat
               builds on well-known foot assessment methods while providing
               advanced digital insights. Its user-friendly interface allows
               clinicians to quickly gain proficiency, offering fast and accurate

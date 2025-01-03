@@ -344,19 +344,19 @@ const faq_data: IFaq[] = [
   {
     id: 52,
     title: "What is PiStarTech?",
-    desc: "PiStarTech is a leading provider of innovative diagnostic solutions focused on improving healthcare through advanced technology. Our flagship product, DiaPS Mat, is designed for diabetic foot care and biomechanical analysis, helping both patients and healthcare professionals achieve better outcomes.",
+    desc: "PiStarTech is a leading provider of innovative diagnostic solutions focused on improving healthcare through advanced technology. Our flagship product, Podiascanner Mat, is designed for diabetic foot care and biomechanical analysis, helping both patients and healthcare professionals achieve better outcomes.",
     page:'companyfaq'
   },
   {
     id: 53,
-    title: "How does DiaPS Mat work?",
-    desc: "DiaPS Mat utilizes cutting-edge sensors and data analytics to monitor foot pressure distribution and gait patterns. It provides real-time feedback to users and healthcare providers, allowing for early detection of potential issues and personalized treatment plans to prevent complications.",
+    title: "How does Podiascanner Mat work?",
+    desc: "Podiascanner Mat utilizes cutting-edge sensors and data analytics to monitor foot pressure distribution and gait patterns. It provides real-time feedback to users and healthcare providers, allowing for early detection of potential issues and personalized treatment plans to prevent complications.",
     page:'companyfaq'
   },
   {
     id: 54,
-    title: "Who can benefit from using DiaPS Mat?",
-    desc: "DiaPS Mat is particularly beneficial for individuals with diabetes who are at risk of developing foot ulcers or other related complications. It is also useful for healthcare providers who want to enhance their diagnostic capabilities and improve patient care through detailed biomechanical analysis.",
+    title: "Who can benefit from using Podiascanner Mat?",
+    desc: "Podiascanner Mat is particularly beneficial for individuals with diabetes who are at risk of developing foot ulcers or other related complications. It is also useful for healthcare providers who want to enhance their diagnostic capabilities and improve patient care through detailed biomechanical analysis.",
     page:'companyfaq'
   },
   {

@@ -109,14 +109,14 @@ export default function HomePage() {
                     <div className="title-three mb-35 md-mb-20 details-meta">
                       {/* <div className="upper-title">management</div> */}
                       <h2 style={{ color: "white" }}>
-                        Why is the DiaPS Mat so easy to adopt?
+                        Why is the Podiascanner Mat so easy to adopt?
                       </h2>
                     </div>
                     <p
                       className="text-lg mt-40 lg-mt-30 mb-30"
                       style={{ color: "#fff9" }}
                     >
-                      The <b>DiaPS Mat</b> from PiStarTech Private Limited is designed
+                      The <b>Podiascanner Mat</b> from PiStarTech Private Limited is designed
                       for easy adoption into any clinical setting. Its portable,
                       flexible design allows it to seamlessly integrate into
                       existing medical workflows without the need for extensive
@@ -125,7 +125,7 @@ export default function HomePage() {
                       clinics and hospitals of any size. <br /> <br />
                       Since it provides instant, digital plantar pressure
                       analysis in just 5 seconds, healthcare professionals can
-                      easily incorporate the DiaPS Mat into their patient
+                      easily incorporate the Podiascanner Mat into their patient
                       evaluation process, streamlining diagnosis and enhancing
                       accuracy without interrupting day-to-day operations. Its
                       affordability and ease of use make it accessible to a wide
@@ -146,14 +146,14 @@ export default function HomePage() {
                   {/* <div className="col-lg-10 m-auto">
                     <div className="title-one details-meta">
                       <h3 style={{ color: "white" }}>
-                        Why is the DiaPS Mat so easy to adopt?
+                        Why is the Podiascanner Mat so easy to adopt?
                       </h3>
                     </div>
                     <p
                       className="text-lg mt-40 lg-mt-30 mb-30"
                       style={{ color: "#fff9" }}
                     >
-                      The DiaPS Mat from PiStarTech Private Limited is designed
+                      The Podiascanner Mat from PiStarTech Private Limited is designed
                       for easy adoption into any clinical setting. Its portable,
                       flexible design allows it to seamlessly integrate into
                       existing medical workflows without the need for extensive
@@ -167,7 +167,7 @@ export default function HomePage() {
                     >
                       Since it provides instant, digital plantar pressure
                       analysis in just 5 seconds, healthcare professionals can
-                      easily incorporate the DiaPS Mat into their patient
+                      easily incorporate the Podiascanner Mat into their patient
                       evaluation process, streamlining diagnosis and enhancing
                       accuracy without interrupting day-to-day operations. Its
                       affordability and ease of use make it accessible to a wide
@@ -222,13 +222,13 @@ export default function HomePage() {
                     >
                       At PiStarTech, we are committed to enhancing healthcare
                       with innovative solutions that bridge the gap between
-                      technology and medical practice. Our flagship product, the
-                      <b>Diabetic PodiaScan Mat (DiaPS Mat)</b>, is an advanced,
+                      technology and medical practice. Our flagship product, the 
+                      <b> Diabetic PodiaScan Mat (Podiascanner Mat)</b>, is an advanced,
                       research-backed foot pressure analysis system designed to
                       support medical professionals in diagnosing and treating
                       foot-related ailments, particularly for diabetic patients.
                       <br />
-                      The DiaPS Mat is a portable and flexible pressure-sensing
+                      The Podiascanner Mat is a portable and flexible pressure-sensing
                       mat that provides both static and dynamic podiatric
                       pressure patterns (SPPP and DPPP). These insights help
                       doctors detect normal and abnormal foot posture, track

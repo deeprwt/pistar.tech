@@ -7,6 +7,7 @@ import awardsimg2 from "@/assets/images/company/awards/grat-work.jpg";
 import awardsimg3 from "@/assets/images/company/awards/indian-achive-logo.png";
 import cert1 from "@/assets/pdf/certificate_img1.jpg";
 import award from "@/assets/pdf/ihw_award.jpg";
+import iso from "@/assets/pdf/iso.jpg";
 // import pdf from "@/assets/pdf/certificate.pdf";
 import icon_10 from "@/assets/images/icon/icon_81.svg";
 import icon_11 from "@/assets/images/icon/icon_82.svg";
@@ -50,7 +51,7 @@ const AwardsSection = () => {
         <div className="row">
           <div className="col-xxl-12 col-lg-12">
             <div className="details-meta ps-xxl-5 ps-xl-3">
-              <h2>Patents and Joust </h2>
+              <h2>Acheivements!</h2>
               <p>
                 We aspire to be the visionary of a future where the seamless
                 integration of unparalleled talent and cutting-edge technology
@@ -77,8 +78,8 @@ const AwardsSection = () => {
                   </div>
                   <div className="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
                     <CardItem
-                    link={'/pdf/certificate.pdf'}
-                      icon={cert1}
+                    link={'/pdf/iso.pdf'}
+                      icon={iso}
                       title="Approved"
                       subtitle="After approve you ready to use your accounts"
                     />

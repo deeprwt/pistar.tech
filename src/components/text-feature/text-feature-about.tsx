@@ -153,7 +153,7 @@ const TextFeatureAbout = ({ style_2 = false }: { style_2?: boolean }) => {
                     (IIITH), graduating in June 2024. Dr. Fatema under the
                     guidance Ph.D. advisor Dr. Aftab M. Hussain spent four years
                     on the research and development and developed the complete
-                    make in India solution-DiaPS mat.
+                    make in India solution <b>Podiascanner mat</b>.
                   </p>
                   {/* <Link
                   href="/our-company"

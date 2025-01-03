@@ -48,7 +48,8 @@ export const metadata: Metadata = {
   title: "DiaPs Mat - Pistar Tech",
   description:
     "Unlock financial growth with CGB Solutions experienced IT consulting & insightful solutions. Navigate your journey with us!",
-  keywords: "IT consulting, financial growth, insightful solutions",
+  keywords:
+    "DiaPs Mat, FootCare Mat, Advanced Mat, Accurate Foot Pressure, High-resolution sensor mat",
 };
 
 // card item
@@ -129,28 +130,31 @@ const DiaspsMat = () => {
                     <div className="title-three mb-35 md-mb-20 details-meta">
                       {/* <div className="upper-title">management</div> */}
                       <h3 style={{ color: "white" }}>
-                        Why is the DiaPS Mat so easy to adopt?
+                        Why is the DiaPS Mat so Easy to Adopt?
                       </h3>
                     </div>
                     <p
                       className="text-lg mt-40 lg-mt-30 mb-30"
                       style={{ color: "#fff9" }}
                     >
-                      The DiaPS Mat from PiStarTech Private Limited is designed
-                      for easy adoption into any clinical setting. Its portable,
-                      flexible design allows it to seamlessly integrate into
-                      existing medical workflows without the need for extensive
-                      training or changes to the current setup. The device is
-                      user-friendly and highly adaptable, making it suitable for
-                      clinics and hospitals of any size. <br /> <br />
-                      Since it provides instant, digital plantar pressure
-                      analysis in just 5 seconds, healthcare professionals can
-                      easily incorporate the DiaPS Mat into their patient
-                      evaluation process, streamlining diagnosis and enhancing
-                      accuracy without interrupting day-to-day operations. Its
-                      affordability and ease of use make it accessible to a wide
-                      range of practitioners, ensuring they can upgrade to
-                      modern foot analysis technology with minimal effort.
+                      The <b>DiaPS Mat</b> from PiStarTech Private Limited is
+                      engineered for seamless integration into any clinical
+                      environment. With its <b>portable, flexible design, </b>{" "}
+                      the
+                      <b>FootCare Mat</b> fits effortlessly into existing
+                      medical workflows, requiring minimal training or
+                      adjustments to current setups. Its user-friendly nature
+                      and adaptability make it suitable for clinics and
+                      hospitals of all sizes.
+                      <br /> <br />
+                      Providing <b>accurate foot pressure</b> analysis within
+                      just 5 seconds, the <b>DiaPS Mat</b> simplifies patient
+                      evaluations for healthcare professionals. This{" "}
+                      <b>advanced mat</b> enhances diagnostic efficiency and
+                      precision without disrupting routine operations. Its
+                      affordability and ease of use make it an accessible
+                      upgrade to <b>high-resolution sensor mat</b>
+                      technology for a wide range of practitioners.
                     </p>
                   </div>
                   <div className="col-lg-6 col-md-8 m-auto wow fadeInLeft">
@@ -215,19 +219,17 @@ const DiaspsMat = () => {
                           <div className="line-2"></div> SMART TECHNOLOGY
                         </div>
                       </div>
-                      <h3>PiStarTech FlePS Mat</h3>
+                      <h2>PiStarTech FlePS Mat</h2>
                     </div>
                     <p className="text-lg mt-40 lg-mt-30 mb-30">
                       Evaluate plantar pressure, foot function, and gait with
-                      PiStarTech&#39;s FlePS Mat. This advanced mat is portable,
-                      flexible, and lightweight, designed to capture accurate
-                      data on foot pressure without compromising natural
+                      PiStarTech's <b>Advanced Mat</b>. This innovative mat is
+                      <b>portable</b>, flexible, and lightweight, offering precise data
+                      on <b>accurate foot pressure</b> without affecting natural
                       movement.
                     </p>
                     <p className="text-lg mt-40 lg-mt-30 mb-30">
-                      Avoid lengthy setup and recalibration processes, ensuring
-                      smooth and reliable testing, whether in a clinical setting
-                      or in the field.
+                    Avoid lengthy setup and recalibration, ensuring smooth and reliable testing in clinical environments or on the field.
                     </p>
                   </div>
                   <div className="col-lg-6 col-md-8 m-auto wow fadeInLeft order-first order-md-last">

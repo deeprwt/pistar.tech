@@ -91,6 +91,9 @@ const AboutUsPage = () => {
           {/* partner logo start */}
           <div className="partner-logo-one pt-80 lg-pt-40 pb-80 lg-pb-40">
             <div className="container">
+            <div className="title-one details-meta mb-40 lg-mb-10 wow fadeInUp">
+                <h3 className="text-white">Supported by: </h3>
+              </div>
               <PartnersSliderOne />
             </div>
           </div>
