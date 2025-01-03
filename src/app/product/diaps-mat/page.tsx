@@ -223,13 +223,13 @@ const DiaspsMat = () => {
                     </div>
                     <p className="text-lg mt-40 lg-mt-30 mb-30">
                       Evaluate plantar pressure, foot function, and gait with
-                      PiStarTech's <b>Advanced Mat</b>. This innovative mat is
+                      PiStarTech&apos;s <b>Advanced Mat</b>. This innovative mat is
                       <b>portable</b>, flexible, and lightweight, offering precise data
                       on <b>accurate foot pressure</b> without affecting natural
                       movement.
                     </p>
                     <p className="text-lg mt-40 lg-mt-30 mb-30">
-                    Avoid lengthy setup and recalibration, ensuring smooth and reliable testing in clinical environments or on the field.
+                    Avoid lengthy setup and recalibration, ensuring smooth and reliable testing in clinical environments or on the field. 
                     </p>
                   </div>
                   <div className="col-lg-6 col-md-8 m-auto wow fadeInLeft order-first order-md-last">
