@@ -45,10 +45,11 @@ const backImg2 = {
 };
 
 export const metadata: Metadata = {
-  title: "High-Quality Pressure Mats for Foot Health Assessment",
+  title: "Podiascanner Mat - Pistar Tech",
   description:
-    "PiStar offers pressure mats designed to capture accurate foot pressure data, enabling effective assessment and early detection of foot health issues.",
-  keywords: "IT consulting, financial growth, insightful solutions",
+    "Unlock financial growth with CGB Solutions experienced IT consulting & insightful solutions. Navigate your journey with us!",
+  keywords:
+    "Podiascanner Mat, FootCare Mat, Advanced Mat, Accurate Foot Pressure, High-resolution sensor mat",
 };
 
 // card item
@@ -64,7 +65,7 @@ function CardItem({
   li6,
 }: {
   icon?: StaticImageData;
-  title?: string;
+  title: string;
   subtitle?: string;
   li1?: string;
   li2?: string;
@@ -97,7 +98,7 @@ function CardItem({
   );
 }
 
-const Podiascanner = () => {
+const DiaspsMat = () => {
   return (
     <Wrapper>
       <div className="main-page-wrapper">
@@ -108,9 +109,9 @@ const Podiascanner = () => {
           {/* breadcrumb start */}
           {/* <HeroVideoTwo /> */}
           <BreadcrumbOne
-            title="Podia Scanner "
-            subtitle="Foot Scan Podiascan: Precision Scanning with Pressure Sensors"
-            page="Podia Scanner "
+            title="Podiascanner Mat"
+            subtitle="Podiascanner Mat: Precision Foot Health Monitoring"
+            page="Podiascanner Mat"
             maincls="bg-bottom"
             bg_img={about_bg}
             style_2={true}
@@ -129,28 +130,31 @@ const Podiascanner = () => {
                     <div className="title-three mb-35 md-mb-20 details-meta">
                       {/* <div className="upper-title">management</div> */}
                       <h3 style={{ color: "white" }}>
-                        Innovative podiascanner by PiStarTech
+                        Why is the Podiascanner Mat so Easy to Adopt?
                       </h3>
                     </div>
                     <p
                       className="text-lg mt-40 lg-mt-30 mb-30"
                       style={{ color: "#fff9" }}
                     >
-                      At PiStarTech, we specialize in advanced{" "}
-                      <b>wireless pressure sensor</b> solutions designed to meet
-                      the evolving needs of industries that demand precise,
-                      real-time data. Our cutting-edge{" "}
-                      <b>pressure sensor technology</b> offers high accuracy,
-                      reliability, and efficiency in various applications, from
-                      industrial automation to healthcare and biomechanics.{" "}
-                      <br />
-                      As one of the leading <b>pressure sensor manufacturers</b>
-                      , we focus on providing <b>pressure measuring devices</b>{" "}
-                      that deliver consistent and accurate readings. Our sensors
-                      stand out for their ability to measure and monitor{" "}
-                      <b>surface pressure </b>
-                      with remarkable precision, enabling informed
-                      decision-making across sectors.
+                      The <b>Podiascanner Mat</b> from PiStarTech Private Limited is
+                      engineered for seamless integration into any clinical
+                      environment. With its <b>portable, flexible design, </b>{" "}
+                      the
+                      <b>FootCare Mat</b> fits effortlessly into existing
+                      medical workflows, requiring minimal training or
+                      adjustments to current setups. Its user-friendly nature
+                      and adaptability make it suitable for clinics and
+                      hospitals of all sizes.
+                      <br /> <br />
+                      Providing <b>accurate foot pressure</b> analysis within
+                      just 5 seconds, the <b>Podiascanner Mat</b> simplifies patient
+                      evaluations for healthcare professionals. This{" "}
+                      <b>advanced mat</b> enhances diagnostic efficiency and
+                      precision without disrupting routine operations. Its
+                      affordability and ease of use make it an accessible
+                      upgrade to <b>high-resolution sensor mat</b>
+                      technology for a wide range of practitioners.
                     </p>
                   </div>
                   <div className="col-lg-6 col-md-8 m-auto wow fadeInLeft">
@@ -163,24 +167,43 @@ const Podiascanner = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-lg-12 wow fadeInUp">
+                  {/* <div className="col-lg-10 m-auto">
+                    <div className="title-one details-meta">
+                      <h3 style={{ color: "white" }}>
+                        Why is the Podiascanner Mat so easy to adopt?
+                      </h3>
+                    </div>
                     <p
-                      className="text-lg mt-10 lg-mt-20 mb-30"
+                      className="text-lg mt-40 lg-mt-30 mb-30"
                       style={{ color: "#fff9" }}
                     >
-                      With a commitment to <b>pressure sensor accuracy</b>,
-                      PiStarTech&apos;s sensors ensure that every reading is
-                      reliable, even in challenging environments. Explore our
-                      range of <b>pressure measuring devices</b> designed for
-                      applications that require consistent and accurate{" "}
-                      <b>pressure sensor technology</b>. Experience the
-                      PiStarTech difference, where innovation meets precision.
+                      The Podiascanner Mat from PiStarTech Private Limited is designed
+                      for easy adoption into any clinical setting. Its portable,
+                      flexible design allows it to seamlessly integrate into
+                      existing medical workflows without the need for extensive
+                      training or changes to the current setup. The device is
+                      user-friendly and highly adaptable, making it suitable for
+                      clinics and hospitals of any size.
                     </p>
-                  </div>
+                    <p
+                      className="text-lg mt-40 lg-mt-30 mb-30"
+                      style={{ color: "#fff9" }}
+                    >
+                      Since it provides instant, digital plantar pressure
+                      analysis in just 5 seconds, healthcare professionals can
+                      easily incorporate the Podiascanner Mat into their patient
+                      evaluation process, streamlining diagnosis and enhancing
+                      accuracy without interrupting day-to-day operations. Its
+                      affordability and ease of use make it accessible to a wide
+                      range of practitioners, ensuring they can upgrade to
+                      modern foot analysis technology with minimal effort.
+                    </p>
+                  </div> */}
                 </div>
               </div>
             </div>
           </div>
+
           <div
             className="fancy-banner-two pt-80 lg-pt-80 pb-80 lg-pb-60 service-details"
             style={{ background: "#f5f5f5" }}
@@ -189,63 +212,25 @@ const Podiascanner = () => {
               <div className="wow fadeInUp">
                 <h3 className="pb-4">Overview</h3>
                 <div className="row">
-                  <div className="col-lg-6 wow text-extra fadeInRight order-last order-md-first">
+                  <div className="col-lg-6 wow fadeInRight order-last order-md-first">
                     <div className="title-three mb-35 md-mb-20">
                       <div>
                         <div className="upper-title d-flex align-items-center">
                           <div className="line-2"></div> SMART TECHNOLOGY
                         </div>
                       </div>
-                      <h3>Features of PiStarTech&apos;s Pressure Sensors</h3>
+                      <h2>PiStarTech FlePS Mat</h2>
                     </div>
-                    <div className="card-style-twelve w-100 mt-30">
-                      <div className="d-flex"></div>
-                      <ul className="style-none">
-                        <li>
-                          <b>Advanced Wireless Connectivity :</b> PiStarTech&apos;s
-                          <b>wireless pressure sensor</b> solutions provide
-                          real-time data transmission without the limitations of
-                          wired setups, making them ideal for remote monitoring
-                          and flexible installations.
-                        </li>
-                        <li>
-                          <b>High Accuracy and Precision:</b> Engineered for
-                          <b>pressure sensor accuracy</b>, our devices offer
-                          precise measurements to meet the needs of critical
-                          applications, ensuring minimal error and consistent
-                          data integrity.
-                        </li>
-                        <li>
-                          <b>Robust Pressure Sensor Technology:</b> Built with
-                          innovative <b>pressure sensor technology</b>, our
-                          sensors are reliable in various environmental
-                          conditions and are designed to withstand pressure
-                          fluctuations, delivering dependable performance.
-                        </li>
-                        <li>
-                          <b>Compact and Surface-Friendly Design:</b> Our
-                          <b>surface pressure sensors</b> are designed to
-                          seamlessly fit on surfaces, making them suitable for a
-                          wide range of industrial, medical, and consumer
-                          applications. for patients.
-                        </li>
-                        <li>
-                          <b>Durability and Reliability:</b>As a trusted
-                          <b>pressure sensor manufacturer</b>, PiStarTech
-                          ensures that each sensor is crafted for longevity and
-                          is tested for durability in demanding environments,
-                          from high-pressure settings to harsh weather
-                          conditions.
-                        </li>
-                        <li>
-                          <b>Easy Integration and Scalability:</b>Our
-                          <b>pressure measuring devices</b> are built to
-                          integrate smoothly into existing systems, with
-                          scalable options that grow with your operational
-                          requirements.
-                        </li>
-                      </ul>
-                    </div>
+                    <p className="text-lg mt-40 lg-mt-30 mb-30">
+                      Evaluate plantar pressure, foot function, and gait with
+                      PiStarTech&apos;s <b>Advanced Mat</b>. This innovative mat is
+                      <b>portable</b>, flexible, and lightweight, offering precise data
+                      on <b>accurate foot pressure</b> without affecting natural
+                      movement.
+                    </p>
+                    <p className="text-lg mt-40 lg-mt-30 mb-30">
+                    Avoid lengthy setup and recalibration, ensuring smooth and reliable testing in clinical environments or on the field. 
+                    </p>
                   </div>
                   <div className="col-lg-6 col-md-8 m-auto wow fadeInLeft order-first order-md-last">
                     <div className="media-wrapper md-mt-60 pe-xxl-5 pe-4 ps-xxl-5">
@@ -268,64 +253,33 @@ const Podiascanner = () => {
             <div className="container details-meta">
               <div className="wow fadeInUp">
                 <div className="row">
-                  <div className="col-lg-6 text-extra wow fadeInRight order-first order-md-last">
+                  <div className="col-lg-6 wow fadeInRight order-first order-md-last">
                     <div className="title-three mb-35 md-mb-20">
                       <div>
                         <div className="upper-title d-flex align-items-center">
                           <div className="line-2"></div> SPORTS PERFORMANCE
                         </div>
                       </div>
-                      <h3>Why Choose PiStarTech Pressure Sensor?</h3>
-                    </div>
-                    <div className="card-style-twelve w-100 mt-30">
-                      <div className="d-flex"></div>
-                      <ul className="style-none">
-                        <li>
-                          <b>Proven Expertise and Innovation :</b>PiStarTech has
-                          a track record of delivering reliable{" "}
-                          <b>pressure measuring devices</b> that incorporate the
-                          latest advancements in{" "}
-                          <b>pressure sensor technology</b>. Our team
-                          continuously innovates to provide sensors that meet
-                          the highest industry standards.
-                        </li>
-                        <li>
-                          <b>Unmatched Accuracy for Critical Applications:</b>
-                          Our focus on <b>pressure sensor accuracy</b> makes
-                          PiStarTech a preferred choice for industries where
-                          precision is crucial, such as healthcare, aerospace,
-                          and manufacturing.
-                        </li>
-                        <li>
-                          <b>Customized Solutions for Diverse Needs:</b> Whether
-                          you need <b>surface pressure sensors</b> for unique
-                          applications or <b>wireless pressure sensors</b> for
-                          remote monitoring, PiStarTech offers tailored
-                          solutions to suit specific use cases.
-                        </li>
-                        <li>
-                          <b>Comprehensive Support and Maintenance:</b> As a top{" "}
-                          <b>pressure sensor manufacturer</b>, PiStarTech
-                          provides end-to-end support, from product selection to
-                          installation and maintenance, ensuring a seamless
-                          experience for our clients.
-                        </li>
-                        <li>
-                          <b>Sustainability and Efficiency</b>
-                          PiStarTech designs sensors that are energy-efficient
-                          and sustainable, minimizing environmental impact while
-                          maximizing operational efficiency.
-                        </li>
-                      </ul>
+                      <h3>Enhance Foot Health & Performance</h3>
                     </div>
                     <p
                       className="text-lg mt-40 lg-mt-30 mb-30"
-                      style={{ color: "rgb(0 0 0 / 60%);" }}
+                      // style={{ color: "#fff9" }}
                     >
-                      Choose PiStarTech for unparalleled quality in{" "}
-                      <b>pressure sensor technology</b>—solutions that drive
-                      accuracy, reliability, and innovation in every
-                      application.
+                      The FlePS Mat enables in-depth plantar pressure analysis,
+                      helping to identify pressure points that could lead to
+                      ulcers, calluses, or other foot issues. It also identifies
+                      asymmetries between the left and right foot for more
+                      accurate diagnoses.
+                    </p>
+                    <p
+                      className="text-lg mt-40 lg-mt-30 mb-30"
+                      // style={{ color: "#fff9" }}
+                    >
+                      Use the high-resolution sensor mat to analyze dynamic foot
+                      movement and reduce the risk of injury during athletic
+                      performance, helping athletes to improve through
+                      data-driven insights.
                     </p>
                   </div>
                   <div className="col-lg-6 col-md-8 m-auto wow fadeInLeft order-last order-md-first">
@@ -338,6 +292,271 @@ const Podiascanner = () => {
                       />
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="fancy-banner-two pt-80 lg-pt-80 pb-80 lg-pb-60 service-details"
+            style={{ background: "#f5f5f5" }}
+          >
+            <div className="container details-meta">
+              <div className="wow fadeInUp">
+                <div className="row">
+                  <div className="col-lg-6 wow fadeInRight order-last order-md-first">
+                    <div className="title-three mb-35 md-mb-20">
+                      <div>
+                        <div className="upper-title d-flex align-items-center">
+                          <div className="line-2"></div> Durable Hardware
+                        </div>
+                      </div>
+                      <h3>Designed for Long-Term Use</h3>
+                    </div>
+                    <p
+                      className="text-lg mt-40 lg-mt-30 mb-30"
+                      // style={{ color: "#fff9" }}
+                    >
+                      The FlePS Mat is built with durable sensors capable of
+                      withstanding continuous use in both research and
+                      performance testing environments. Its user-friendly design
+                      enables quick setup with a simple USB connection, making
+                      it convenient and accessible.
+                    </p>
+                    <p
+                      className="text-lg mt-40 lg-mt-30 mb-30"
+                      // style={{ color: "#fff9" }}
+                    >
+                      No need to spend hours setting up—get started within
+                      minutes, maximizing valuable lab time for testing and
+                      research.
+                    </p>
+                  </div>
+                  <div className="col-lg-6 col-md-8 m-auto wow fadeInLeft order-first order-md-last">
+                    <div className="media-wrapper md-mt-60 pe-xxl-5 pe-4 ps-xxl-5">
+                      <Image
+                        src={mat3}
+                        alt="screen"
+                        className="lazy-img rounded"
+                        layout="responsive"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="fancy-banner-two pt-80 lg-pt-80 pb-80 lg-pb-60 service-details"
+            style={{ background: "#f5f5f5" }}
+          >
+            <div className="container details-meta">
+              <div className="wow fadeInUp">
+                <div className="row">
+                  <div className="col-lg-6 wow fadeInRight order-first order-md-last">
+                    <div className="title-three mb-35 md-mb-20">
+                      <div>
+                        <div className="upper-title d-flex align-items-center">
+                          <div className="line-2"></div>Plantar Pressure & Gait
+                          Analysis Software
+                        </div>
+                      </div>
+                      <h3>Feature-Rich Software</h3>
+                    </div>
+                    <p
+                      className="text-lg mt-40 lg-mt-30 mb-30"
+                      // style={{ color: "#fff9" }}
+                    >
+                      The FlePS Mat comes with comprehensive software that
+                      allows users to visualize plantar pressure data with
+                      precision. With detailed visualizations, you can make
+                      confident, data-backed decisions. The software provides
+                      static and dynamic pressure measurement data for foot and
+                      gait analysis.
+                    </p>
+                    {/* <p
+                      className="text-lg mt-40 lg-mt-30 mb-30"
+                    >
+                      Evaluate gait, plantar pressure, and foot function with
+                      insole sensors that are reliable and durable enough to
+                      accurately capture data wherever activity takes place —
+                      and without compromising natural motion.
+                    </p> */}
+                  </div>
+                  <div className="col-lg-6 col-md-8 m-auto wow fadeInLeft order-last order-md-first">
+                    <div className="media-wrapper md-mt-60 pe-xxl-5 pe-4 ps-xxl-5">
+                      <Image
+                        src={data}
+                        alt="screen"
+                        className="lazy-img rounded"
+                        layout="responsive"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="fancy-banner-two text-feature-seven pt-80 lg-pt-80 pb-80 lg-pb-60 service-details"
+            style={{ background: "#f5f5f5" }}
+          >
+            <div className="container details-meta">
+              <div className="wow fadeInUp">
+                <div className="row">
+                  <div className="col-lg-6 wow fadeInRight ">
+                    <div className="title-three mb-35 md-mb-20">
+                      <div>
+                        <div className="upper-title d-flex align-items-center">
+                          <div className="line-2"></div>Specifications &
+                          Performance
+                        </div>
+                      </div>
+                      <h3>Lab-Quality Data in the Field</h3>
+                    </div>
+                    <p
+                      className="text-lg mt-40 lg-mt-30 mb-30"
+                      // style={{ color: "#fff9" }}
+                    >
+                      With a robust sensor design, the FlePS Mat delivers
+                      accurate, repeatable data. It provides high-speed,
+                      high-resolution pressure measurements for human
+                      performance testing. The system ensures reliable data
+                      collection, even during long-term testing.
+                    </p>
+                    {/* <p
+                      className="text-lg mt-40 lg-mt-30 mb-30"
+                    >
+                      Evaluate gait, plantar pressure, and foot function with
+                      insole sensors that are reliable and durable enough to
+                      accurately capture data wherever activity takes place —
+                      and without compromising natural motion.
+                    </p> */}
+                  </div>
+                  <div className="col-lg-6 col-md-8 m-auto wow fadeInLeft">
+                    <div className="media-wrapper md-mt-60 pe-xxl-5 pe-4 ps-xxl-5">
+                      <Image
+                        src={mat0}
+                        alt="screen"
+                        className="lazy-img rounded"
+                        layout="responsive"
+                      />
+                    </div>
+                  </div>
+
+                  <div className="border-bottom mt-40 pb-50 sm-pb-30">
+                    <div className="row">
+                      <div className="col-lg-6 d-flex wow fadeInUp">
+                        <CardItem
+                          title="Key Features"
+                          li1="Portable, flexible, and lightweight pressure sensing mat for plantar pressure analysis."
+                          li2="Simple and easy to use with a slim convenient design."
+                          li3="Provides quantifiable pressure data."
+                          li4="Fast and easy setup with USB connection."
+                          li5="Most affordable and reliable."
+                          li6="Provides static and dynamic pressure measurement data for
+foot and gait analysis."
+                          // subtitle="0% charge for online money transfer from you wallet instant."
+                        />
+                      </div>
+                      <div
+                        className="col-lg-6 d-flex wow fadeInUp"
+                        data-wow-delay="0.1s"
+                      >
+                        <CardItem
+                          title="Applications"
+                          li1="Helps in identifying pathologies and making accurate diagnoses."
+                          li2="Reduce the incidence of pressure sores or ulcers on feet by
+analyzing high-pressure points."
+                          li3="Identify areas of potential ulcers and calluses."
+                          li4="Identify plantar pressure asymmetries between the left and
+right foot."
+                          li5="A screening device for complete plantar pressure analysis."
+                          li6="Suggest customized insoles according to the orthotics."
+                          // subtitle="Pay google & apple payment with your card without any hassle"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* block feature one area start */}
+          {/* <BlockFeatureOne style_2={true} /> */}
+          {/* block feature one area end */}
+
+          {/* text feature one area start */}
+          {/* <TextFeatureThree style_2={true} /> */}
+          {/* text feature one area end */}
+
+          {/* <BlockFeatureAbout style_2={true} /> */}
+
+          {/* <HowWeDo /> */}
+
+          {/* feedback one start */}
+          {/* <FeedbackOne cls="top-border pt-80 pb-80" /> */}
+          {/* feedback one end */}
+
+          <div
+            className={`faq-section-one service-details pt-80 pb-80 bg-white  `}
+          >
+            <div className="container">
+              <div className="row">
+                <div className="col-lg-12 details-meta">
+                  <div className="title-one mb-40 lg-mb-20">
+                    <h3>Specifications</h3>
+                    <p className="text-lg mb-40 lg-mb-20">
+                      Need a mat with your own specifications? We will{" "}
+                      <b>customize</b> it for you!
+                    </p>
+                  </div>
+                  <table className="table table-bordered">
+                    <thead className="thead-dark">
+                      <tr>
+                        <th scope="col" className="fontcolorimp">
+                          Features
+                        </th>
+                        <th scope="col" className="fontcolorimp">
+                          FlePS Mat
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td className="bg-td">Overall Area</td>
+                        <td className="bg-td">50 cm x 50 cm</td>
+                      </tr>
+                      <tr>
+                        <td>Sensing Area</td>
+                        <td>42 cm x 42 cm</td>
+                      </tr>
+                      <tr>
+                        <td className="bg-td">Number of Sensors</td>
+                        <td className="bg-td">1024</td>
+                      </tr>
+                      <tr>
+                        <td>Matrix Topology</td>
+                        <td>32 x 32</td>
+                      </tr>
+                      <tr>
+                        <td className="bg-td">Max Weight Range</td>
+                        <td className="bg-td">40-120 kg</td>
+                      </tr>
+                      <tr>
+                        <td>Scan Rate</td>
+                        <td>20 Hz</td>
+                      </tr>
+                      <tr>
+                        <td className="bg-td">Connection</td>
+                        <td className="bg-td">USB Cable</td>
+                      </tr>
+                      <tr>
+                        <td>Operating Temp Range</td>
+                        <td>0°C to 50°C</td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
             </div>
@@ -387,6 +606,24 @@ const Podiascanner = () => {
               </div>
             </div>
           </div>
+
+          {/* <div className="partner-logo-one pt-80 lg-pt-40 pb-80 lg-pb-40">
+            <div className="container">
+              <DottedMap />
+            </div>
+          </div> */}
+
+          {/* blogs start */}
+          {/* <HomeFourBlogs cls="mt-180 lg-mt-80 mb-180 lg-mb-80" /> */}
+          {/* blogs end */}
+
+          {/* fancy banner three start */}
+          {/* <FancyBannerThree /> */}
+          {/* fancy banner three end */}
+
+          {/* news letter start */}
+          {/* <NewsletterBanner /> */}
+          {/* news letter end */}
         </main>
 
         {/* footer start */}
@@ -398,4 +635,4 @@ const Podiascanner = () => {
   );
 };
 
-export default Podiascanner;
+export default DiaspsMat;

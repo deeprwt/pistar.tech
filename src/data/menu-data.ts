@@ -17,7 +17,7 @@ const menu_data: IMenu[] = [
     title: "Products",
     sub_dropdown: true,
     dropdown_submenus: [
-      {link:'/product/diaps-mat',title:'DiaPS Mat'},
+      { link: "/product/podiascanner", title: "Podiascanner" },
       {link:'/coming-soon',title:'Smart Chair'},
       {link:'/solutions/automation-anywhere',title:'FlexiRes',
      sub_menus: [
@@ -25,10 +25,10 @@ const menu_data: IMenu[] = [
       {link:'/product/pressure-mat',title:'Pressure Mat'},
      ],
     },
-      { link: "/product/podiascanner", title: "Podia Scanner" },
-      { link: "/product/high-precision-force-sensors", title: "High-Precision Force Sensors" },
-      { link: "/product/piezoresistive-pressure-sensor", title: "Piezoresistive Pressure Sensor" },
-      { link: "/product/force-sensing-resistor", title: "Force Sensing Resistor" },
+      // { link: "/product/podiascanner", title: "Podia Scanner" },
+      // { link: "/product/high-precision-force-sensors", title: "High-Precision Force Sensors" },
+      // { link: "/product/piezoresistive-pressure-sensor", title: "Piezoresistive Pressure Sensor" },
+      // { link: "/product/force-sensing-resistor", title: "Force Sensing Resistor" },
       { link: "/product/foot-pressure-mapping", title: "Foot Pressure Mapping" },
       { link: "/product/diabetic-foot-care", title: "Diabetic Foot Care" },
       // { link: "/solutions/digital-marketing", title: "Digital Services" },
