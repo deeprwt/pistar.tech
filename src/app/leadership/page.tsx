@@ -38,7 +38,7 @@ const Leadership = () => {
           
 
           {/* team v2 area start */}
-          <TeamTwoArea />
+          {/* <TeamTwoArea /> */}
           {/* team v2 area end */}
 
         </main>
