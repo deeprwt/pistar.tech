@@ -19,12 +19,15 @@ const menu_data: IMenu[] = [
     dropdown_submenus: [
       { link: "/product/podiascanner", title: "Podiascanner" },
       {link:'/coming-soon',title:'Smart Chair'},
-      {link:'/solutions/automation-anywhere',title:'FlexiRes',
-     sub_menus: [
       {link:'/product/footscan',title:'Foot Scan with Podiascan'},
       {link:'/product/pressure-mat',title:'Pressure Mat'},
-     ],
-    },
+    //   {link:'/solutions/automation-anywhere',title:'FlexiRes',
+        
+    //  sub_menus: [
+    //   {link:'/product/footscan',title:'Foot Scan with Podiascan'},
+    //   {link:'/product/pressure-mat',title:'Pressure Mat'},
+    //  ],
+    // },
       // { link: "/product/podiascanner", title: "Podia Scanner" },
       // { link: "/product/high-precision-force-sensors", title: "High-Precision Force Sensors" },
       // { link: "/product/piezoresistive-pressure-sensor", title: "Piezoresistive Pressure Sensor" },
