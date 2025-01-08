@@ -86,10 +86,22 @@ const FooterOne = () => {
               <h5 className="footer-title">Tech Solutions</h5>
               <ul className="footer-nav-link style-none">
                 <li>
-                  <Link href="/product/diaps-mat">DiaPs Mat</Link>
+                  <Link href="/">Foot Systems Podiatry</Link>
                 </li>
                 <li>
-                  <Link href="/">Chair</Link>
+                  <Link href="/product/podiascanner">Podiascanner Mat</Link>
+                </li>
+                <li>
+                  <Link href="/product/footscan">Foot Scan With Podiascan</Link>
+                </li>
+                <li>
+                  <Link href="/product/pressure-mat">Pressure Mat</Link>
+                </li>
+                <li>
+                  <Link href="/product/foot-pressure-mapping">Foot Pressure Mapping</Link>
+                </li>
+                <li>
+                  <Link href="/product/diabetic-foot-care">Diabetic Foot Care</Link>
                 </li>
               </ul>
             </div>
