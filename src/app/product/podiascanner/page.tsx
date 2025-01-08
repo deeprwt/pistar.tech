@@ -47,7 +47,7 @@ const backImg2 = {
 export const metadata: Metadata = {
   title: "Podiascanner Mat - Pistar Tech",
   description:
-    "Unlock financial growth with CGB Solutions experienced IT consulting & insightful solutions. Navigate your journey with us!",
+    "Discover the Podiascanner Mat for precise diabetic foot care and biomechanical analysis. Enhance foot health with cutting-edge technology for early detection.",
   keywords:
     "Podiascanner Mat, FootCare Mat, Advanced Mat, Accurate Foot Pressure, High-resolution sensor mat",
 };
@@ -137,10 +137,10 @@ const DiaspsMat = () => {
                       className="text-lg mt-40 lg-mt-30 mb-30"
                       style={{ color: "#fff9" }}
                     >
-                      The <b>Podiascanner Mat</b> from PiStarTech Private Limited is
-                      engineered for seamless integration into any clinical
-                      environment. With its <b>portable, flexible design, </b>{" "}
-                      the
+                      The <b>Podiascanner Mat</b> from PiStarTech Private
+                      Limited is engineered for seamless integration into any
+                      clinical environment. With its{" "}
+                      <b>portable, flexible design, </b> the
                       <b>FootCare Mat</b> fits effortlessly into existing
                       medical workflows, requiring minimal training or
                       adjustments to current setups. Its user-friendly nature
@@ -148,8 +148,8 @@ const DiaspsMat = () => {
                       hospitals of all sizes.
                       <br /> <br />
                       Providing <b>accurate foot pressure</b> analysis within
-                      just 5 seconds, the <b>Podiascanner Mat</b> simplifies patient
-                      evaluations for healthcare professionals. This{" "}
+                      just 5 seconds, the <b>Podiascanner Mat</b> simplifies
+                      patient evaluations for healthcare professionals. This{" "}
                       <b>advanced mat</b> enhances diagnostic efficiency and
                       precision without disrupting routine operations. Its
                       affordability and ease of use make it an accessible
@@ -223,13 +223,14 @@ const DiaspsMat = () => {
                     </div>
                     <p className="text-lg mt-40 lg-mt-30 mb-30">
                       Evaluate plantar pressure, foot function, and gait with
-                      PiStarTech&apos;s <b>Advanced Mat</b>. This innovative mat is
-                      <b>portable</b>, flexible, and lightweight, offering precise data
-                      on <b>accurate foot pressure</b> without affecting natural
-                      movement.
+                      PiStarTech&apos;s <b>Advanced Mat</b>. This innovative mat
+                      is <b> portable </b>, flexible, and lightweight, offering
+                      precise data on <b>accurate foot pressure</b> without
+                      affecting natural movement.
                     </p>
                     <p className="text-lg mt-40 lg-mt-30 mb-30">
-                    Avoid lengthy setup and recalibration, ensuring smooth and reliable testing in clinical environments or on the field. 
+                      Avoid lengthy setup and recalibration, ensuring smooth and
+                      reliable testing in clinical environments or on the field.
                     </p>
                   </div>
                   <div className="col-lg-6 col-md-8 m-auto wow fadeInLeft order-first order-md-last">
