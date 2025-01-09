@@ -62,27 +62,7 @@ const FooterOne = () => {
                   </Link>
               </p> */}
             </div>
-            <div className="col-xl-2 col-md-2 col-sm-4 mb-20">
-              <h5 className="footer-title">About</h5>
-              <ul className="footer-nav-link style-none">
-                <li>
-                  <Link href="/">Home</Link>
-                </li>
-                <li>
-                  <Link href="/about-us">About Us</Link>
-                </li>
-                <li>
-                  <Link href="/contact">Contact Us</Link>
-                </li>
-                <li>
-                  <Link href="/article">Article</Link>
-                </li>
-                {/* <li>
-                  <Link href="/internship">Internship Program</Link>
-                </li> */}
-              </ul>
-            </div>
-            <div className="col-xl-2 col-md-2 col-sm-4 mb-20">
+            <div className="col-xl-3 col-md-3 col-sm-4 mb-20">
               <h5 className="footer-title">Tech Solutions</h5>
               <ul className="footer-nav-link style-none">
                 <li>
@@ -103,6 +83,26 @@ const FooterOne = () => {
                 <li>
                   <Link href="/product/diabetic-foot-care">Diabetic Foot Care</Link>
                 </li>
+              </ul>
+            </div>
+            <div className="col-xl-2 col-md-2 col-sm-4 mb-20">
+              <h5 className="footer-title">About</h5>
+              <ul className="footer-nav-link style-none">
+                <li>
+                  <Link href="/">Home</Link>
+                </li>
+                <li>
+                  <Link href="/about-us">About Us</Link>
+                </li>
+                <li>
+                  <Link href="/contact">Contact Us</Link>
+                </li>
+                <li>
+                  <Link href="/article">Article</Link>
+                </li>
+                {/* <li>
+                  <Link href="/internship">Internship Program</Link>
+                </li> */}
               </ul>
             </div>
             <div className="col-xl-2 col-md-2 col-sm-4 mb-20">
