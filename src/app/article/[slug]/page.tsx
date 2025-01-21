@@ -1,6 +1,7 @@
 import { collection, getDocs, query, where } from "firebase/firestore";
 import { db } from "@/database/firebase";
 import ArticlePageClient from "@/components/dynamic/articledesigndata/articlepageclient";
+import type { Metadata } from "next";
 
 type Article = {
   id?: string;
@@ -11,6 +12,7 @@ type Article = {
   author: string;
   post_info: string;
   category: string;
+  metaTitle: string;
   metaKeywords: string;
   metaDescription: string;
   link: string;
