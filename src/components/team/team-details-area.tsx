@@ -47,7 +47,7 @@ const TeamDetailsArea = () => {
                   <div className="post pb-5">CEO, PiStar Tech</div>
                   {/* <h6 className="fw-bold">About Me</h6> */}
                   <p className="m-0">
-                    Dr. Anis Fatema's journey as the Founder and CEO of
+                    Dr. Anis Fatema&apos;s journey as the Founder and CEO of
                     PiStarTech began during her Ph.D. in Electronics and
                     Communication Engineering at the prestigious International
                     Institute of Information Technology (IIIT), Hyderabad. While
@@ -141,7 +141,7 @@ const TeamDetailsArea = () => {
               Aftab is currently an associate professor at IIIT Hyderabad, where
               he continually pushes the boundaries of research in flexible
               electronics and innovative technologies. He is renowned for
-              authoring the world's first single-author textbook on Introduction
+              authoring the world&apos;s first single-author textbook on Introduction
               to Flexible Electronics, solidifying his status as a pioneer in
               the field. His work at IIIT Hyderabad blends academia with
               practical innovation, inspiring future technologists to explore
@@ -150,7 +150,7 @@ const TeamDetailsArea = () => {
             <p>
               The inception of PiStarTech was born out of Aftab&apos;s
               commitment to transforming cutting-edge research into practical
-              solutions. Together with co-founder Dr. Anis Fatema, Aftab's
+              solutions. Together with co-founder Dr. Anis Fatema, Aftab&apos;s
               expertise has been instrumental in shaping the vision and
               technological foundation of the company. His passion for
               innovation and hands-on approach has driven PiStarTech&apos;s
@@ -158,7 +158,7 @@ const TeamDetailsArea = () => {
               on diabetic foot care.
             </p>
             <p>
-              Known as an "electronics freak," Aftab thrives on challenging
+              Known as an &quot;electronics freak,&quot; Aftab thrives on challenging
               conventional approaches and developing solutions that address
               real-world issues. His relentless pursuit of excellence and
               dedication to bridging the gap between research and industry has
