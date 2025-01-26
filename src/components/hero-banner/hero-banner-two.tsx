@@ -12,13 +12,14 @@ const imageStyle = {
 // internal images
 import bg_1 from "@/assets/images/banners/foot_1.png";
 import bg_2 from "@/assets/images/banners/foot_2.png";
+import bg_3 from "@/assets/images/banners/smart_chair.jpg";
 // import bg_1 from "@/assets/images/media/img_01.jpg";
 // import bg_2 from "@/assets/images/media/img_02.jpg";
 // import bg_3 from "@/assets/images/media/img_03.jpg";
 import icon from "@/assets/images/icon/icon_02.svg";
 
 // slider bg
-const slider_bg = [bg_1, bg_2];
+const slider_bg = [bg_1, bg_2, bg_3];
 // slider setting
 const slider_setting = {
   dots: false,
@@ -120,6 +121,39 @@ const HeroBannerTwo = () => {
                   data-wow-delay="0.1s"
                 >
                   Enhance performance with PiStarTech&apos;s advanced flexible pressure sensors tailored for medical diagnostics
+                </p>
+                <div className="d-inline-flex flex-wrap align-items-center">
+                  <Link href="/about-us" className="btn-four mt-15 me-4">
+                    Explore Our Technology
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div className="container position-relative h-100 d-flex align-items-center justify-content-center">
+            <div className="row">
+              <div className="col-lg-10 m-auto text-center">
+                <h1 className="hero-heading fw-bold wow fadeInUp mt-10 text-white">
+                AI-Powered Healthtech for Smart Posture Solutions
+                  {/* Revolutionizing Foot Health with
+                  <span className="d-inline-block position-relative">
+                    &nbsp; AI-Driven
+                    <Image
+                      src={shape}
+                      alt="shape"
+                      className="lazy-img"
+                      style={imageStyle}
+                    />
+                  </span>
+                  Diagnostics */}
+                </h1>
+                <p
+                  className="text-xl pt-35 pb-35 wow fadeInUp text-white"
+                  data-wow-delay="0.1s"
+                >
+                 Innovating healthtech with artificial intelligence for smart sensor-integrated solutions to ensure correct seating and standing postures.
                 </p>
                 <div className="d-inline-flex flex-wrap align-items-center">
                   <Link href="/about-us" className="btn-four mt-15 me-4">

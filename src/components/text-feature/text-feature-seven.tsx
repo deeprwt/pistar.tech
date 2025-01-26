@@ -48,7 +48,7 @@ function CardItem({
 
 const TextFeatureSeven = () => {
   return (
-    <div className="text-feature-seven mt-80 lg-mt-80 service-details">
+    <div className="text-feature-seven pt-80 lg-pt-80 service-details" style={{backgroundColor:"rgb(245, 245, 245)"}}>
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-7 order-lg-last wow fadeInRight">

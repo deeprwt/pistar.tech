@@ -35,6 +35,10 @@ import mat2 from "@/assets/images/pistar/mat1.jpg";
 import mat3 from "@/assets/images/pistar/mat2.jpg";
 import data from "@/assets/images/pistar/data.jpg";
 import SolutionsSlider from "@/components/feedback/solutions-slider";
+import TextFeatureSeven from "@/components/text-feature/text-feature-seven";
+import TextFeatureTen from "@/components/text-feature/text-freature-ten";
+import BlockFeatureSeven from "@/components/block-feature/block-feature-seven";
+import Link from "next/link";
 
 const backImg2 = {
   backgroundImage: `url('${bg_image2.src}')`,
@@ -105,7 +109,9 @@ const DiaspsMat = () => {
         {/* header start */}
         <HeaderTwo />
         {/* header end */}
-        <main className="bgcolor2">
+        <main
+        //  className="bgcolor2"
+        >
           {/* breadcrumb start */}
           {/* <HeroVideoTwo /> */}
           <BreadcrumbOne
@@ -118,9 +124,9 @@ const DiaspsMat = () => {
           />
           {/* breadcrumb end */}
 
-          <div
+          {/* <div
             className="fancy-banner-two pt-80 lg-pt-80 pb-80 lg-pb-60 service-details"
-            // style={backImg1}
+
             style={{ background: "#292e31" }}
           >
             <div className="container">
@@ -128,7 +134,6 @@ const DiaspsMat = () => {
                 <div className="row">
                   <div className="col-lg-6 wow fadeInRight">
                     <div className="title-three mb-35 md-mb-20 details-meta">
-                      {/* <div className="upper-title">management</div> */}
                       <h3 style={{ color: "white" }}>
                         Why is the Podiascanner Mat so Easy to Adopt?
                       </h3>
@@ -167,38 +172,76 @@ const DiaspsMat = () => {
                       />
                     </div>
                   </div>
-                  {/* <div className="col-lg-10 m-auto">
-                    <div className="title-one details-meta">
-                      <h3 style={{ color: "white" }}>
-                        Why is the Podiascanner Mat so easy to adopt?
-                      </h3>
-                    </div>
-                    <p
-                      className="text-lg mt-40 lg-mt-30 mb-30"
-                      style={{ color: "#fff9" }}
-                    >
-                      The Podiascanner Mat from PiStarTech Private Limited is designed
-                      for easy adoption into any clinical setting. Its portable,
-                      flexible design allows it to seamlessly integrate into
-                      existing medical workflows without the need for extensive
-                      training or changes to the current setup. The device is
-                      user-friendly and highly adaptable, making it suitable for
-                      clinics and hospitals of any size.
+                 
+                </div>
+              </div>
+            </div>
+          </div> */}
+
+<div
+            className={`faq-section-one service-details pt-80 pb-80 bg-white  `}
+          >
+            <div className="container">
+              <div className="row">
+                <div className="col-lg-12 details-meta">
+                  <div className="title-one mb-40 lg-mb-20">
+                    <h3>Specifications</h3>
+                    <p className="text-lg mb-40 lg-mb-20">
+                      Need a mat with your own specifications? We will{" "}
+                      <b>customize</b> it for you!
                     </p>
-                    <p
-                      className="text-lg mt-40 lg-mt-30 mb-30"
-                      style={{ color: "#fff9" }}
-                    >
-                      Since it provides instant, digital plantar pressure
-                      analysis in just 5 seconds, healthcare professionals can
-                      easily incorporate the Podiascanner Mat into their patient
-                      evaluation process, streamlining diagnosis and enhancing
-                      accuracy without interrupting day-to-day operations. Its
-                      affordability and ease of use make it accessible to a wide
-                      range of practitioners, ensuring they can upgrade to
-                      modern foot analysis technology with minimal effort.
-                    </p>
-                  </div> */}
+                  </div>
+                  <table className="table table-bordered">
+                    <thead className="thead-dark">
+                      <tr>
+                        <th scope="col" className="fontcolorimp">
+                          Features
+                        </th>
+                        <th scope="col" className="fontcolorimp">
+                          FlePS Mat
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td className="bg-td">Overall Area</td>
+                        <td className="bg-td">50 cm x 50 cm</td>
+                      </tr>
+                      <tr>
+                        <td>Sensing Area</td>
+                        <td>42 cm x 42 cm</td>
+                      </tr>
+                      <tr>
+                        <td className="bg-td">Number of Sensors</td>
+                        <td className="bg-td">1024</td>
+                      </tr>
+                      <tr>
+                        <td>Matrix Topology</td>
+                        <td>32 x 32</td>
+                      </tr>
+                      <tr>
+                        <td className="bg-td">Max Weight Range</td>
+                        <td className="bg-td">40-120 kg</td>
+                      </tr>
+                      <tr>
+                        <td>Scan Rate</td>
+                        <td>20 Hz</td>
+                      </tr>
+                      <tr>
+                        <td className="bg-td">Connection</td>
+                        <td className="bg-td">USB Cable</td>
+                      </tr>
+                      <tr>
+                        <td>Operating Temp Range</td>
+                        <td>0°C to 50°C</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div className="d-inline-flex flex-wrap align-items-center">
+                  <Link href="/contact" className="btn-four mt-15 me-4">
+                  Request for Quotation
+                  </Link>
+                </div>
                 </div>
               </div>
             </div>
@@ -499,71 +542,13 @@ right foot."
           {/* <FeedbackOne cls="top-border pt-80 pb-80" /> */}
           {/* feedback one end */}
 
-          <div
-            className={`faq-section-one service-details pt-80 pb-80 bg-white  `}
-          >
-            <div className="container">
-              <div className="row">
-                <div className="col-lg-12 details-meta">
-                  <div className="title-one mb-40 lg-mb-20">
-                    <h3>Specifications</h3>
-                    <p className="text-lg mb-40 lg-mb-20">
-                      Need a mat with your own specifications? We will{" "}
-                      <b>customize</b> it for you!
-                    </p>
-                  </div>
-                  <table className="table table-bordered">
-                    <thead className="thead-dark">
-                      <tr>
-                        <th scope="col" className="fontcolorimp">
-                          Features
-                        </th>
-                        <th scope="col" className="fontcolorimp">
-                          FlePS Mat
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td className="bg-td">Overall Area</td>
-                        <td className="bg-td">50 cm x 50 cm</td>
-                      </tr>
-                      <tr>
-                        <td>Sensing Area</td>
-                        <td>42 cm x 42 cm</td>
-                      </tr>
-                      <tr>
-                        <td className="bg-td">Number of Sensors</td>
-                        <td className="bg-td">1024</td>
-                      </tr>
-                      <tr>
-                        <td>Matrix Topology</td>
-                        <td>32 x 32</td>
-                      </tr>
-                      <tr>
-                        <td className="bg-td">Max Weight Range</td>
-                        <td className="bg-td">40-120 kg</td>
-                      </tr>
-                      <tr>
-                        <td>Scan Rate</td>
-                        <td>20 Hz</td>
-                      </tr>
-                      <tr>
-                        <td className="bg-td">Connection</td>
-                        <td className="bg-td">USB Cable</td>
-                      </tr>
-                      <tr>
-                        <td>Operating Temp Range</td>
-                        <td>0°C to 50°C</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
-          </div>
 
           {/* <SolutionsSlider /> */}
+
+          
+          <BlockFeatureSeven />
+          <TextFeatureSeven />
+          <TextFeatureTen />
 
           <div
             className="contact-us-section pt-80 lg-pt-80"

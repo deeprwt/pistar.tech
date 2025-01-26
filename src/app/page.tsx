@@ -40,6 +40,7 @@ import bg_image2 from "@/assets/images/background/counter_dark_pattern.png";
 import bg_image1 from "@/assets/images/background/background-explore.jpg";
 import img4 from "@/assets/images/media/doctor.jpg";
 import mat from "@/assets/images/pistar/1.png";
+import smartchair1 from "@/assets/images/pistar/smartchair.png";
 import AwardsSection from "@/components/company/awards-section";
 import TeamTwoArea from "@/components/team/team-v2-area";
 import TeamOneArea from "@/components/team/team-v1-area";
@@ -67,11 +68,14 @@ const backImg2 = {
 
 export const metadata = {
   title: "Advanced Foot Systems Podiatry | Diabetic Foot Care Solutions",
-  description:"Discover PiStarTech flexible pressure sensor technology designed for diabetic foot care, providing accurate podiatry insights to enhance foot health and prevent complications.",
-  keywords:"foot systems podiatry, flexible pressure sensor, Diabetic Foot Care ",
+  description:
+    "Discover PiStarTech flexible pressure sensor technology designed for diabetic foot care, providing accurate podiatry insights to enhance foot health and prevent complications.",
+  keywords:
+    "foot systems podiatry, flexible pressure sensor, Diabetic Foot Care ",
   openGraph: {
     title: "Advanced Foot Systems Podiatry | Diabetic Foot Care Solutions",
-    description: "Discover PiStarTech flexible pressure sensor technology designed for diabetic foot care, providing accurate podiatry insights to enhance foot health and prevent complications.",
+    description:
+      "Discover PiStarTech flexible pressure sensor technology designed for diabetic foot care, providing accurate podiatry insights to enhance foot health and prevent complications.",
     images: [
       {
         url: "@/assets/images/logo/logo.png", // URL of the image
@@ -97,6 +101,49 @@ export default function HomePage() {
 
           {/* hero banner end */}
 
+          <div className="fancy-banner-two pt-80 lg-pt-80 pb-80 lg-pb-60 service-details">
+            <div className="container">
+              <div className="wow fadeInUp">
+                <div className="row">
+                  <div className="col-lg-4 col-md-6 m-auto wow fadeInLeft  order-last order-md-first">
+                    <div className="media-wrapper md-mt-60">
+                      <Image
+                        src={smartchair1}
+                        alt="screen"
+                        className="lazy-img"
+                        layout="responsive"
+                      />
+                    </div>
+                  </div>
+                  <div className="col-lg-8 wow fadeInRight">
+                    <div className="title-three mb-35 md-mb-20 details-meta">
+                      {/* <div className="upper-title">management</div> */}
+                      <h2>Why Smart Chair?</h2>
+                    </div>
+                    <p className="text-lg mt-40 lg-mt-30 mb-30">
+                      In today&apos;s sedentary lifestyle, a person spends a
+                      substantial amount of time in a sitting position. Having a
+                      poor sitting posture can put more stress on specific
+                      muscles and joints, forcing them to be overworked and
+                      causing them to fatigue which results in back pains. This
+                      is already leading to widespread chronic back pain and
+                      other related health issues, particularly in young adults.
+                      <br /> <br />
+                      According to the estimates, 60% of the Indian population
+                      experiences back pain at some time in their lives. It is
+                      the third most common reason for a doctor&apos;s visit,
+                      and as we all know that “Prevention is better than cure”,
+                      We present to you, a patented smart seating solution
+                      called- smart chair which is the best preventive measure
+                      for all types of pains that may occur to incorrect seating
+                      postures.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div
             className="fancy-banner-two pt-80 lg-pt-80 pb-80 lg-pb-60 service-details"
             // style={backImg1}
@@ -116,13 +163,14 @@ export default function HomePage() {
                       className="text-lg mt-40 lg-mt-30 mb-30"
                       style={{ color: "#fff9" }}
                     >
-                      The <b>Podiascanner Mat</b> from PiStarTech Private Limited is designed
-                      for easy adoption into any clinical setting. Its portable,
-                      flexible design allows it to seamlessly integrate into
-                      existing medical workflows without the need for extensive
-                      training or changes to the current setup. The device is
-                      user-friendly and highly adaptable, making it suitable for
-                      clinics and hospitals of any size. <br /> <br />
+                      The <b>Podiascanner Mat</b> from PiStarTech Private
+                      Limited is designed for easy adoption into any clinical
+                      setting. Its portable, flexible design allows it to
+                      seamlessly integrate into existing medical workflows
+                      without the need for extensive training or changes to the
+                      current setup. The device is user-friendly and highly
+                      adaptable, making it suitable for clinics and hospitals of
+                      any size. <br /> <br />
                       Since it provides instant, digital plantar pressure
                       analysis in just 5 seconds, healthcare professionals can
                       easily incorporate the Podiascanner Mat into their patient
@@ -143,38 +191,56 @@ export default function HomePage() {
                       />
                     </div>
                   </div>
-                  {/* <div className="col-lg-10 m-auto">
-                    <div className="title-one details-meta">
-                      <h3 style={{ color: "white" }}>
-                        Why is the Podiascanner Mat so easy to adopt?
-                      </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="fancy-banner-two pt-80 lg-pt-80 pb-80 lg-pb-60 service-details">
+            <div className="container">
+              <div className="wow fadeInUp">
+                <div className="row">
+                  <div className="col-lg-4 col-md-6 m-auto wow fadeInLeft">
+                    <div className="media-wrapper md-mt-60">
+                      <Image
+                        src={smartchair1}
+                        alt="screen"
+                        className="lazy-img"
+                        layout="responsive"
+                      />
                     </div>
-                    <p
-                      className="text-lg mt-40 lg-mt-30 mb-30"
-                      style={{ color: "#fff9" }}
-                    >
-                      The Podiascanner Mat from PiStarTech Private Limited is designed
-                      for easy adoption into any clinical setting. Its portable,
-                      flexible design allows it to seamlessly integrate into
-                      existing medical workflows without the need for extensive
-                      training or changes to the current setup. The device is
-                      user-friendly and highly adaptable, making it suitable for
-                      clinics and hospitals of any size.
+                  </div>
+                  <div className="col-lg-8 wow fadeInRight">
+                    <div className="title-three mb-35 md-mb-20 details-meta">
+                      {/* <div className="upper-title">management</div> */}
+                      <h2>Ensuring proper sitting posture with smart chair</h2>
+                    </div>
+                    <p className="text-lg mt-40 lg-mt-30 mb-30">
+                      Incorrect posture puts pressure on muscles, joints, and
+                      ligaments leading to many health problems like back, neck,
+                      and shoulder aches. “Health is Wealth” and when we are
+                      talking about a healthy body, posture is as important as
+                      eating in the right way and regular exercising. Correct
+                      posture means the bones are properly aligned, and the
+                      weight of the body is well distributed so that the muscles
+                      and joints can work in a more efficient, energetic, and
+                      less stressful way. Hence, it is very important for us to
+                      sit in a correct posture.
+                      <br /> <br />
+                      To solve the above-mentioned problem, we present a
+                      flexible pressure-sensor-array-based smart chair that
+                      analyses sitting posture in real-time using artificial
+                      intelligence algorithms. The proposed smart chair will
+                      monitor the sitting posture of the user and suggest
+                      corrective action. It will identify the posture of the
+                      person and tell us if the user is sitting in the right way
+                      or not, by mapping the body pressure at the seat and at
+                      the backrest. This will be done by training an artificial
+                      intelligence-based software to detect the baseline
+                      pressure distribution for an individual and then determine
+                      the variations.
                     </p>
-                    <p
-                      className="text-lg mt-40 lg-mt-30 mb-30"
-                      style={{ color: "#fff9" }}
-                    >
-                      Since it provides instant, digital plantar pressure
-                      analysis in just 5 seconds, healthcare professionals can
-                      easily incorporate the Podiascanner Mat into their patient
-                      evaluation process, streamlining diagnosis and enhancing
-                      accuracy without interrupting day-to-day operations. Its
-                      affordability and ease of use make it accessible to a wide
-                      range of practitioners, ensuring they can upgrade to
-                      modern foot analysis technology with minimal effort.
-                    </p>
-                  </div> */}
+                  </div>
                 </div>
               </div>
             </div>
@@ -188,7 +254,7 @@ export default function HomePage() {
           {/* <FeedbackOne /> */}
           {/* feedback one end */}
 
-          <TextFeatureSeven />
+          {/* <TextFeatureSeven /> */}
 
           {/* number counter start  */}
           {/* <TextFeatureHome style_2={true} /> */}
@@ -202,10 +268,8 @@ export default function HomePage() {
           <PartnersLogos />
           {/* partner logos end  */}
 
-          <div
+          {/* <div
             className="fancy-banner-two pt-80 lg-pt-80 pb-80 lg-pb-60 service-details"
-            // style={backImg1}
-            // style={{ background: "#292e31" }}
           >
             <div className="container">
               <div className="wow fadeInUp">
@@ -213,30 +277,31 @@ export default function HomePage() {
                   <div className="col-lg-12 wow fadeInRight">
                     <div className="title-three mb-35 md-mb-20 details-meta">
                       <h2>
-                      Welcome to PiStarTech – Revolutionizing Healthcare with Cutting-Edge Pressure Measurement Sensors
+                        Welcome to PiStarTech – Revolutionizing Healthcare with
+                        Cutting-Edge Pressure Measurement Sensors
                       </h2>
                     </div>
                     <p
                       className="text-lg mt-40 lg-mt-30 mb-30"
-                      // style={{ color: "#fff9" }}
                     >
                       At PiStarTech, we are committed to enhancing healthcare
                       with innovative solutions that bridge the gap between
-                      technology and medical practice. Our flagship product, the 
-                      <b> Diabetic PodiaScan Mat (Podiascanner Mat)</b>, is an advanced,
-                      research-backed foot pressure analysis system designed to
-                      support medical professionals in diagnosing and treating
-                      foot-related ailments, particularly for diabetic patients.
+                      technology and medical practice. Our flagship product, the
+                      <b> Diabetic PodiaScan Mat (Podiascanner Mat)</b>, is an
+                      advanced, research-backed foot pressure analysis system
+                      designed to support medical professionals in diagnosing
+                      and treating foot-related ailments, particularly for
+                      diabetic patients.
                       <br />
-                      The Podiascanner Mat is a portable and flexible pressure-sensing
-                      mat that provides both static and dynamic podiatric
-                      pressure patterns (SPPP and DPPP). These insights help
-                      doctors detect normal and abnormal foot posture, track
-                      patient recovery post-injury or surgery, and authenticate
-                      clinical findings with accurate, quantifiable data. With
-                      just a 5-second scan, healthcare professionals can
-                      prescribe customized treatments, recommend proper
-                      footwear, and monitor progress over time.
+                      The Podiascanner Mat is a portable and flexible
+                      pressure-sensing mat that provides both static and dynamic
+                      podiatric pressure patterns (SPPP and DPPP). These
+                      insights help doctors detect normal and abnormal foot
+                      posture, track patient recovery post-injury or surgery,
+                      and authenticate clinical findings with accurate,
+                      quantifiable data. With just a 5-second scan, healthcare
+                      professionals can prescribe customized treatments,
+                      recommend proper footwear, and monitor progress over time.
                       <br />
                       Our mission is to make affordable, precise, and
                       evidence-based foot scanning technology accessible to a
@@ -247,24 +312,14 @@ export default function HomePage() {
                       post-surgery, PiStarTech has you covered.
                     </p>
                   </div>
-                  {/* <div className="col-lg-6 col-md-8 m-auto wow fadeInLeft">
-                    <div className="media-wrapper md-mt-60">
-                      <Image
-                        src={mat}
-                        alt="screen"
-                        className="lazy-img"
-                        layout="responsive"
-                      />
-                    </div>
-                  </div> */}
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
-          <TextFeatureTen />
+          {/* <TextFeatureTen /> */}
 
-          <BlockFeatureSeven />
+          {/* <BlockFeatureSeven /> */}
           <PortfolioTwo />
           {/* blog item end */}
           <AwardsSection />

@@ -22,7 +22,7 @@ export async function POST(request: Request) {
     let mailOptions = {
       from: `"Newsletter" <${emailUser}>`,
     //   to: email, // Send to the user's submitted email
-    to: ["marketing.cgbindia@gmail.com", "info.pistartech@gmail.com"],// Send to the user's submitted email
+    to: [`marketing.cgbindia@gmail.com`, `info.pistartech@gmail.com`, `${email}`],// Send to the user's submitted email
       subject: "Thank you for subscribing!",
       text: `You've successfully subscribed to our newsletter using ${email}.`, // Plain text version
       html: `<p>You've successfully subscribed to our <strong>newsletter</strong> using ${email}!</p>`, // HTML version with the user's email

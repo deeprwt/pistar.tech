@@ -47,22 +47,44 @@ const TeamDetailsArea = () => {
                   <div className="post pb-5">CEO, PiStar Tech</div>
                   {/* <h6 className="fw-bold">About Me</h6> */}
                   <p className="m-0">
-                    I have 5 years of hands-on experience and expertise in the
-                    design and fabrication of flexible pressure sensors. My
-                    research mainly focuses on designing flexible sensors for
-                    various applications in the consumer electronics segment,
-                    particularly smart chairs. I have also synthesized a
-                    conductive polymer for flexible pressure-sensing
-                    applications. I have designed a specialized IC for
-                    resistance/capacitance measurement and got it taped out. I
-                    have also worked on microfabrication (in a Class 100
-                    cleanroom), liquid crystal elastomers, IoT devices, and
-                    designing 3D-printed shape-changing polymers and strain
-                    sensors.
+                    Dr. Anis Fatema's journey as the Founder and CEO of
+                    PiStarTech began during her Ph.D. in Electronics and
+                    Communication Engineering at the prestigious International
+                    Institute of Information Technology (IIIT), Hyderabad. While
+                    conducting cutting-edge research on flexible pressure sensor
+                    systems, Anis&apos;s work garnered attention, even making
+                    headlines in the Times of India. This exposure led to a wave
+                    of interest from potential buyers intrigued by her
+                    prototype&apos;s innovative capabilities.
                   </p>
                 </div>
               </div>
             </div>
+          </div>
+          <div className="mb-3 bg-white p-3" style={{ borderRadius: "30px" }}>
+            <p>
+              The demand and excitement around her research sparked Anis&apos;s
+              entrepreneurial spirit. With her unwavering passion for technology
+              and a desire to make a real-world impact, she co-founded
+              PiStarTech. Alongside her mentor,Dr. Aftab M. Hussain, she
+              envisioned a company that would leverage advanced technology to
+              create solutions that are not only innovative but also
+              user-friendly and accessible.
+            </p>
+            <p>
+              Anis&apos;s leadership at PiStarTech is driven by her dedication
+              to transforming groundbreaking research into practical,
+              life-changing applications. Under her guidance, the company is at
+              the forefront of diabetic foot care solutions and also
+              revolutionizing ergonomics with pressure-sensing technology to
+              improve the quality of care for people worldwide.
+            </p>
+            <p>
+              Anis&apos;s journey from academia to entrepreneurship stands as a
+              testament to her visionary mindset, combining research excellence
+              with a strong commitment to improving everyday experiences through
+              technology.
+            </p>
           </div>
         </div>
       </div>
@@ -104,19 +126,45 @@ const TeamDetailsArea = () => {
                   <div className="post pb-5">Technical Advisor</div>
                   {/* <h6 className="fw-bold">About Me</h6> */}
                   <p className="m-0">
-                    With over 10 years of hands-on experience, I have developed
-                    expertise in high voltage electronic systems,
-                    cloud-connected IoT devices and their applications, and
-                    micro-fabrication, particularly in processing within a
-                    Class-100 cleanroom. Additionally, I am proficient in the
-                    physical characterization of thin films using techniques
-                    such as SEM, AFM, XRD, and Raman Spectroscopy. My experience
-                    also extends to the electrical characterization of
-                    semiconductor devices and material thin films
+                    A visionary in the field of flexible electronics, Dr. Aftab
+                    M. Hussain is the Co-Founder and Chief Technology Officer of
+                    PiStarTech. His journey into the world of electronics is
+                    deeply rooted in his academic pursuits, combined with an
+                    innate passion for solving real-world problems.
                   </p>
                 </div>
               </div>
             </div>
+          </div>
+          <div className="mb-3 bg-white p-3" style={{ borderRadius: "30px" }}>
+            <p>
+              Aftab is currently an associate professor at IIIT Hyderabad, where
+              he continually pushes the boundaries of research in flexible
+              electronics and innovative technologies. He is renowned for
+              authoring the world's first single-author textbook on Introduction
+              to Flexible Electronics, solidifying his status as a pioneer in
+              the field. His work at IIIT Hyderabad blends academia with
+              practical innovation, inspiring future technologists to explore
+              beyond traditional electronic systems.
+            </p>
+            <p>
+              The inception of PiStarTech was born out of Aftab&apos;s
+              commitment to transforming cutting-edge research into practical
+              solutions. Together with co-founder Dr. Anis Fatema, Aftab's
+              expertise has been instrumental in shaping the vision and
+              technological foundation of the company. His passion for
+              innovation and hands-on approach has driven PiStarTech&apos;s
+              mission to create advanced diagnostic tools, particularly focused
+              on diabetic foot care.
+            </p>
+            <p>
+              Known as an "electronics freak," Aftab thrives on challenging
+              conventional approaches and developing solutions that address
+              real-world issues. His relentless pursuit of excellence and
+              dedication to bridging the gap between research and industry has
+              propelled PiStarTech to the forefront of the medical diagnostics
+              landscape.
+            </p>
           </div>
         </div>
       </div>

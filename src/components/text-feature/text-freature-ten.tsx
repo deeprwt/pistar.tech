@@ -80,7 +80,7 @@ const TextFeatureTen = () => {
           <div className="col-lg-6 ms-auto wow fadeInRight details-meta">
             <div className="title-one mt-20">
               {/* <div className="upper-title">Why Choose Us</div> */}
-              <h3 className="color-deep">Why Choose the DiaPS Mat?</h3>
+              <h3 className="color-deep">Why Choose the Podiascanner Mat?</h3>
             </div>
             <div
               className="accordion accordion-style-three md-mt-40"
