@@ -34,6 +34,7 @@ import mat1 from "@/assets/images/pistar/mat.jpg";
 import mat2 from "@/assets/images/pistar/mat1.jpg";
 import mat3 from "@/assets/images/pistar/mat2.jpg";
 import data from "@/assets/images/pistar/data.jpg";
+import seating from "@/assets/images/pistar/seating.png";
 
 const backImg2 = {
   backgroundImage: `url('${bg_image2.src}')`,
@@ -44,9 +45,10 @@ const backImg2 = {
 };
 
 export const metadata: Metadata = {
-  title: "DiaPs Mat - Pistar Tech",
+  title:
+    "Posture-Perfect Smart Chair by PiStarTech | Elevate Comfort & Wellness",
   description:
-    "Unlock financial growth with CGB Solutions experienced IT consulting & insightful solutions. Navigate your journey with us!",
+    "Experience the future of sitting with PiStarTech's Posture-Perfect Smart Chair. Featuring advanced AI, real-time posture analysis, and ergonomic design, it promotes health and productivity. Energy-efficient, privacy-focused, and perfect for homes and offices—sit smarter today!",
   keywords: "IT consulting, financial growth, insightful solutions",
 };
 
@@ -75,22 +77,21 @@ function CardItem({
   return (
     <div className="card-style-twelve w-100 mt-30">
       <div className="d-flex">
-        {/* <div
-          className="icon tran3s d-flex align-items-center justify-content-center rounded-circle"
-          style={{ marginRight: "2rem" }}
-        >
-          <Image src={icon} alt="icon" className="lazy-img" />
-        </div> */}
         <h4 className="fw-bold mt-15 mb-15">{title}</h4>
       </div>
       <p className="ps-xl-4 pe-xl-4">{subtitle}</p>
       <ul className="style-none">
-        <li>{li1}</li>
-        <li>{li2}</li>
-        <li>{li3}</li>
-        <li>{li4}</li>
-        <li>{li5}</li>
-        <li>{li6}</li>
+        {li1 && <li>{li1}</li>}
+
+        {li2 && <li>{li2}</li>}
+
+        {li3 && <li>{li3}</li>}
+
+        {li4 && <li>{li4}</li>}
+
+        {li5 && <li>{li5}</li>}
+
+        {li6 && <li>{li6}</li>}
       </ul>
     </div>
   );
@@ -107,9 +108,9 @@ const Chair = () => {
           {/* breadcrumb start */}
           {/* <HeroVideoTwo /> */}
           <BreadcrumbOne
-            title="DiaPs Mat"
+            title="Smart Chair "
             subtitle="Navigating Your Financial Growth With Experience & Insightful Solutions."
-            page="DiaPs Mat"
+            page="Smart Chair "
             maincls="bg-bottom"
             bg_img={about_bg}
             style_2={true}
@@ -124,35 +125,26 @@ const Chair = () => {
             <div className="container">
               <div className="wow fadeInUp">
                 <div className="row">
-                  <div className="col-lg-6 wow fadeInRight">
+                  <div className="col-lg-12 wow fadeInRight">
                     <div className="title-three mb-35 md-mb-20 details-meta">
                       {/* <div className="upper-title">management</div> */}
                       <h3 style={{ color: "white" }}>
-                        Why is the DiaPS Mat so easy to adopt?
+                        Introducing the Posture-perfect Smart Chair – Elevating
+                        Health and Comfort
                       </h3>
                     </div>
                     <p
                       className="text-lg mt-40 lg-mt-30 mb-30"
                       style={{ color: "#fff9" }}
                     >
-                      The DiaPS Mat from PiStarTech Private Limited is designed
-                      for easy adoption into any clinical setting. Its portable,
-                      flexible design allows it to seamlessly integrate into
-                      existing medical workflows without the need for extensive
-                      training or changes to the current setup. The device is
-                      user-friendly and highly adaptable, making it suitable for
-                      clinics and hospitals of any size. <br /> <br />
-                      Since it provides instant, digital plantar pressure
-                      analysis in just 5 seconds, healthcare professionals can
-                      easily incorporate the DiaPS Mat into their patient
-                      evaluation process, streamlining diagnosis and enhancing
-                      accuracy without interrupting day-to-day operations. Its
-                      affordability and ease of use make it accessible to a wide
-                      range of practitioners, ensuring they can upgrade to
-                      modern foot analysis technology with minimal effort.
+                      Sitting may be a part of our everyday lives, but bad
+                      posture doesn&apos;t have to be. At PiStarTech, we present
+                      the revolutionary Posture-perfect Smart Chair, an
+                      intelligent solution to ensure your sitting habits are as
+                      healthy as they are comfortable.
                     </p>
                   </div>
-                  <div className="col-lg-6 col-md-8 m-auto wow fadeInLeft">
+                  {/* <div className="col-lg-6 col-md-8 m-auto wow fadeInLeft">
                     <div className="media-wrapper md-mt-60 pe-xxl-5 pe-4 ps-xxl-5">
                       <Image
                         src={mat}
@@ -161,7 +153,7 @@ const Chair = () => {
                         layout="responsive"
                       />
                     </div>
-                  </div>
+                  </div> */}
                   {/* <div className="col-lg-10 m-auto">
                     <div className="title-one details-meta">
                       <h3 style={{ color: "white" }}>
@@ -205,16 +197,16 @@ const Chair = () => {
           >
             <div className="container details-meta">
               <div className="wow fadeInUp">
-                <h3 className="pb-4">Overview</h3>
+                {/* <h3 className="pb-4">Overview</h3> */}
                 <div className="row">
-                  <div className="col-lg-6 wow fadeInRight order-last order-md-first">
+                  <div className="col-lg-12 wow fadeInRight order-last order-md-first">
                     <div className="title-three mb-35 md-mb-20">
                       <div>
                         <div className="upper-title d-flex align-items-center">
                           <div className="line-2"></div> SMART TECHNOLOGY
                         </div>
                       </div>
-                      <h3>PiStarTech FlePS Mat</h3>
+                      <h3>Why Choose the Posture-perfect Smart Chair?</h3>
                     </div>
                     <p className="text-lg mt-40 lg-mt-30 mb-30">
                       Evaluate plantar pressure, foot function, and gait with
@@ -228,8 +220,56 @@ const Chair = () => {
                       smooth and reliable testing, whether in a clinical setting
                       or in the field.
                     </p>
+                    <div className="card-style-twelve w-100 mt-30 text-feature-seven">
+                      <div className="d-flex">
+                        {/* <div
+          className="icon tran3s d-flex align-items-center justify-content-center rounded-circle"
+          style={{ marginRight: "2rem" }}
+        >
+          <Image src={icon} alt="icon" className="lazy-img" />
+        </div> */}
+                      </div>
+                      <ul className="style-none font-bold-none">
+                        <li>
+                          <b>Advanced Posture Recognition</b> <br />
+                          Equipped with state-of-the-art patented pressure
+                          sensing technology and Artificial Intelligence, the
+                          Posture-perfect Smart Chair identifies and classifies
+                          seven common sitting postures with remarkable
+                          accuracy. Whether you're sitting straight, leaning
+                          back, or crossing your legs, our chair has you
+                          covered.
+                        </li>
+                        <li>
+                          <b>Promotes Health & Well-being</b> <br />
+                          Designed to reduce the risks associated with poor
+                          posture, such as back pain, muscle strain, and
+                          metabolic disorders. By encouraging proper alignment,
+                          the SMART CHAIR safeguards your long-term health.
+                        </li>
+                        <li>
+                          <b>Cutting-Edge Technology</b> <br />
+                          Utilizing artificial intelligence and real-time data
+                          analysis, the chair offers unparalleled performance
+                          with a remarkable accuracy. It's a smart choice for
+                          homes, offices, and healthcare environments.
+                        </li>
+                        <li>
+                          <b>Energy-Efficient Design</b> <br />
+                          With minimal power consumption, the SMART CHAIR
+                          operates efficiently, ensuring sustained performance
+                          without frequent charging or maintenance.
+                        </li>
+                        <li>
+                          <b>Privacy & Comfort Assured</b> <br />
+                          Unlike vision-based solutions, the SMART CHAIR
+                          respects your privacy, offering a seamless,
+                          non-intrusive monitoring experience.
+                        </li>
+                      </ul>
+                    </div>
                   </div>
-                  <div className="col-lg-6 col-md-8 m-auto wow fadeInLeft order-first order-md-last">
+                  {/* <div className="col-lg-6 col-md-8 m-auto wow fadeInLeft order-first order-md-last">
                     <div className="media-wrapper md-mt-60 pe-xxl-5 pe-4 ps-xxl-5">
                       <Image
                         src={mat1}
@@ -238,7 +278,7 @@ const Chair = () => {
                         layout="responsive"
                       />
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
@@ -254,29 +294,29 @@ const Chair = () => {
                     <div className="title-three mb-35 md-mb-20">
                       <div>
                         <div className="upper-title d-flex align-items-center">
-                          <div className="line-2"></div> SPORTS PERFORMANCE
+                          <div className="line-2"></div> POSTURE-PERFECT SMART
+                          CHAIR
                         </div>
                       </div>
-                      <h3>Enhance Foot Health & Performance</h3>
+                      <h3>The Future of Sitting Starts Here</h3>
                     </div>
                     <p
                       className="text-lg mt-40 lg-mt-30 mb-30"
                       // style={{ color: "#fff9" }}
                     >
-                      The FlePS Mat enables in-depth plantar pressure analysis,
-                      helping to identify pressure points that could lead to
-                      ulcers, calluses, or other foot issues. It also identifies
-                      asymmetries between the left and right foot for more
-                      accurate diagnoses.
+                      Reimagine comfort with technology designed to support your
+                      health. Say goodbye to slouching and discomfort and step
+                      into a new era of <b>smart sitting</b> with the{" "}
+                      <b>Posture-perfect Smart Chair.</b>
                     </p>
                     <p
                       className="text-lg mt-40 lg-mt-30 mb-30"
                       // style={{ color: "#fff9" }}
                     >
-                      Use the high-resolution sensor mat to analyze dynamic foot
-                      movement and reduce the risk of injury during athletic
-                      performance, helping athletes to improve through
-                      data-driven insights.
+                      <b>Discover More</b> or <b>Contact Us</b> to learn how you
+                      can make your workplace or home smarter, healthier, and
+                      more productive with the{" "}
+                      <b>Posture-perfect Smart Chair</b> by PiStarTech.
                     </p>
                   </div>
                   <div className="col-lg-6 col-md-8 m-auto wow fadeInLeft order-last order-md-first">
@@ -304,28 +344,31 @@ const Chair = () => {
                     <div className="title-three mb-35 md-mb-20">
                       <div>
                         <div className="upper-title d-flex align-items-center">
-                          <div className="line-2"></div> Durable Hardware
+                          <div className="line-2"></div>Innovative. Reliable.
+                          Transformative.
                         </div>
                       </div>
-                      <h3>Designed for Long-Term Use</h3>
+                      <h3>Why SMART CHAIR?</h3>
                     </div>
                     <p
                       className="text-lg mt-40 lg-mt-30 mb-30"
                       // style={{ color: "#fff9" }}
                     >
-                      The FlePS Mat is built with durable sensors capable of
-                      withstanding continuous use in both research and
-                      performance testing environments. Its user-friendly design
-                      enables quick setup with a simple USB connection, making
-                      it convenient and accessible.
+                      Whether you&apos;re working long hours at the office or
+                      enjoying leisure time at home, the <b>SMART CHAIR</b>{" "}
+                      adapts to your needs, giving you the comfort and health
+                      benefits you deserve.
                     </p>
                     <p
                       className="text-lg mt-40 lg-mt-30 mb-30"
                       // style={{ color: "#fff9" }}
                     >
-                      No need to spend hours setting up—get started within
-                      minutes, maximizing valuable lab time for testing and
-                      research.
+                      With built-in features like posture correction, dynamic
+                      lumbar support, and pressure redistribution, it ensures
+                      that your body is supported in all the right places.
+                      Advanced sensors monitor your sitting habits, providing
+                      insights and reminders to encourage better posture and
+                      healthier sitting practices.
                     </p>
                   </div>
                   <div className="col-lg-6 col-md-8 m-auto wow fadeInLeft order-first order-md-last">
@@ -353,36 +396,32 @@ const Chair = () => {
                     <div className="title-three mb-35 md-mb-20">
                       <div>
                         <div className="upper-title d-flex align-items-center">
-                          <div className="line-2"></div>Plantar Pressure & Gait
-                          Analysis Software
+                          <div className="line-2"></div>Get in Touch
                         </div>
                       </div>
-                      <h3>Feature-Rich Software</h3>
+                      <h3>Step into the Future of Sitting</h3>
                     </div>
                     <p
                       className="text-lg mt-40 lg-mt-30 mb-30"
                       // style={{ color: "#fff9" }}
                     >
-                      The FlePS Mat comes with comprehensive software that
-                      allows users to visualize plantar pressure data with
-                      precision. With detailed visualizations, you can make
-                      confident, data-backed decisions. The software provides
-                      static and dynamic pressure measurement data for foot and
-                      gait analysis.
+                      The Posture-perfect Smart Chair is more than
+                      furniture—it&apos;s your personal wellness coach,
+                      engineered to support your body and enhance your
+                      productivity. With PiStarTech&apos;s legacy of innovation,
+                      you&apos;re not just sitting; you&apos;re making a
+                      statement about health, technology, and progress.
                     </p>
-                    {/* <p
-                      className="text-lg mt-40 lg-mt-30 mb-30"
-                    >
-                      Evaluate gait, plantar pressure, and foot function with
-                      insole sensors that are reliable and durable enough to
-                      accurately capture data wherever activity takes place —
-                      and without compromising natural motion.
-                    </p> */}
+                    <p className="text-lg mt-40 lg-mt-30 mb-30">
+                      Get in Touch to bring the Posture-perfect Smart Chair into
+                      your life today. Together, let&apos;s elevate the way you
+                      sit.
+                    </p>
                   </div>
                   <div className="col-lg-6 col-md-8 m-auto wow fadeInLeft order-last order-md-first">
                     <div className="media-wrapper md-mt-60 pe-xxl-5 pe-4 ps-xxl-5">
                       <Image
-                        src={data}
+                        src={seating}
                         alt="screen"
                         className="lazy-img rounded"
                         layout="responsive"
@@ -400,7 +439,7 @@ const Chair = () => {
             <div className="container details-meta">
               <div className="wow fadeInUp">
                 <div className="row">
-                  <div className="col-lg-6 wow fadeInRight ">
+                  {/* <div className="col-lg-6 wow fadeInRight ">
                     <div className="title-three mb-35 md-mb-20">
                       <div>
                         <div className="upper-title d-flex align-items-center">
@@ -412,7 +451,7 @@ const Chair = () => {
                     </div>
                     <p
                       className="text-lg mt-40 lg-mt-30 mb-30"
-                      // style={{ color: "#fff9" }}
+
                     >
                       With a robust sensor design, the FlePS Mat delivers
                       accurate, repeatable data. It provides high-speed,
@@ -420,14 +459,6 @@ const Chair = () => {
                       performance testing. The system ensures reliable data
                       collection, even during long-term testing.
                     </p>
-                    {/* <p
-                      className="text-lg mt-40 lg-mt-30 mb-30"
-                    >
-                      Evaluate gait, plantar pressure, and foot function with
-                      insole sensors that are reliable and durable enough to
-                      accurately capture data wherever activity takes place —
-                      and without compromising natural motion.
-                    </p> */}
                   </div>
                   <div className="col-lg-6 col-md-8 m-auto wow fadeInLeft">
                     <div className="media-wrapper md-mt-60 pe-xxl-5 pe-4 ps-xxl-5">
@@ -438,20 +469,18 @@ const Chair = () => {
                         layout="responsive"
                       />
                     </div>
-                  </div>
+                  </div> */}
 
                   <div className="border-bottom mt-40 pb-50 sm-pb-30">
                     <div className="row">
                       <div className="col-lg-6 d-flex wow fadeInUp">
                         <CardItem
                           title="Key Features"
-                          li1="Portable, flexible, and lightweight pressure sensing mat for plantar pressure analysis."
-                          li2="Simple and easy to use with a slim convenient design."
-                          li3="Provides quantifiable pressure data."
-                          li4="Fast and easy setup with USB connection."
-                          li5="Most affordable and reliable."
-                          li6="Provides static and dynamic pressure measurement data for
-foot and gait analysis."
+                          li1="Real-time posture analysis and feedback"
+                          li2="Durable and ergonomically designed for extended use"
+                          li3="Easy-to-integrate with health tracking systems"
+                          li4="Powered by innovative flex sensor technology"
+                          li5="Portable and lightweight for enhanced mobility"
                           // subtitle="0% charge for online money transfer from you wallet instant."
                         />
                       </div>
@@ -469,7 +498,6 @@ analyzing high-pressure points."
 right foot."
                           li5="A screening device for complete plantar pressure analysis."
                           li6="Suggest customized insoles according to the orthotics."
-                          // subtitle="Pay google & apple payment with your card without any hassle"
                         />
                       </div>
                     </div>
@@ -503,13 +531,20 @@ right foot."
                 <div className="col-lg-12 details-meta">
                   <div className="title-one mb-40 lg-mb-20">
                     <h3>Specifications</h3>
-                    <p className="text-lg mb-40 lg-mb-20">Need a mat with your own specifications? We will <b>customize</b> it for you!</p>
+                    <p className="text-lg mb-40 lg-mb-20">
+                      Need a mat with your own specifications? We will{" "}
+                      <b>customize</b> it for you!
+                    </p>
                   </div>
                   <table className="table table-bordered">
                     <thead className="thead-dark">
                       <tr>
-                        <th scope="col" className="fontcolorimp">Features</th>
-                        <th scope="col" className="fontcolorimp">FlePS Mat</th>
+                        <th scope="col" className="fontcolorimp">
+                          Features
+                        </th>
+                        <th scope="col" className="fontcolorimp">
+                          FlePS Mat
+                        </th>
                       </tr>
                     </thead>
                     <tbody>

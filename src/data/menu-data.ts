@@ -18,7 +18,7 @@ const menu_data: IMenu[] = [
     sub_dropdown: true,
     dropdown_submenus: [
       { link: "/product/podiascanner", title: "Podiascanner" },
-      {link:'/coming-soon',title:'Smart Chair'},
+      {link:'/product/smart-chair',title:'Smart Chair'},
       // {link:'/product/footscan',title:'Foot Scan with Podiascan'},
       // {link:'/product/pressure-mat',title:'Pressure Mat'},
     //   {link:'/solutions/automation-anywhere',title:'FlexiRes',

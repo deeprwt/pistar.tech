@@ -42,11 +42,63 @@ const imgStyle = {
 };
 const OurCompanySection = () => {
   const [isVideoOpen, setIsVideoOpen] = useState<boolean>(false);
+  const [isVideoOpenAnis, setIsVideoOpenAnis] = useState<boolean>(false);
   return (
     <>
+      {/* <FaqSectionTwo /> */}
+      <FaqSectionFour />
 
-    {/* <FaqSectionTwo /> */}
-    <FaqSectionFour />
+      <div className="fancy-banner-five position-relative pt-80 md-pt-60 pb-80 md-pb-60" style={{background:"#ebf3ee"}}> 
+        {/* Dark overlay */}
+        <div className="position-absolute top-0 left-0 w-100 h-100" />
+
+        <div className="container position-relative h-100 d-flex align-items-center justify-content-center">
+          <div className="position-relative">
+            {/* <p className="text-white text-xl pt-30 md-pt-10 pb-45 lg-pb-30">
+        Watch our intro video to get the idea about our services & many more
+      </p> */}
+
+            {/* Main image */}
+            {/* <Image
+              src={ramarao}
+              alt="service_img"
+              className="lazy-img w-100 rounded-4"
+              style={imgStyle}
+            /> */}
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/B79hS3RE9N4?si=LJftefrrR7bx95FX"
+              title="YouTube video player"
+              // frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              // referrerpolicy="strict-origin-when-cross-origin"
+              // allowfullscreen
+            ></iframe>
+
+            {/* Video play button */}
+            {/* <a
+              className="fancybox rounded-circle video-icon tran5s text-center d-flex align-items-center justify-content-center cursor-pointer"
+              onClick={() => setIsVideoOpenAnis(true)}
+              style={{
+                position: "absolute",
+                top: "50%",
+                left: "50%",
+                transform: "translate(-50%, -50%)",
+                zIndex: 1, // Ensure it is above the image
+              }}
+            >
+              <Image
+                src={sticker}
+                alt="sticker"
+                className="lazy-img"
+                style={imgStyle}
+              />
+            </a> */}
+          </div>
+        </div>
+      </div>
+
       <div className="fancy-banner-five position-relative pt-80 md-pt-60 pb-80 md-pb-60">
         {/* Dark overlay */}
         <div className="position-absolute top-0 left-0 w-100 h-100" />
@@ -98,6 +150,11 @@ const OurCompanySection = () => {
         isVideoOpen={isVideoOpen}
         setIsVideoOpen={setIsVideoOpen}
         url={"/assets/videos/file.mp4"}
+      />
+      <VideoPopup
+        isVideoOpen={isVideoOpenAnis}
+        setIsVideoOpen={setIsVideoOpenAnis}
+        videoId={"B79hS3RE9N4"}
       />
       {/* Video modal end */}
       {/* <ImgGallery /> */}
