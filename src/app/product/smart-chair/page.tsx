@@ -63,6 +63,7 @@ function CardItem({
   li4,
   li5,
   li6,
+  li7,
 }: {
   icon?: StaticImageData;
   title: string;
@@ -73,6 +74,7 @@ function CardItem({
   li4?: string;
   li5?: string;
   li6?: string;
+  li7?: string;
 }) {
   return (
     <div className="card-style-twelve w-100 mt-30">
@@ -92,6 +94,7 @@ function CardItem({
         {li5 && <li>{li5}</li>}
 
         {li6 && <li>{li6}</li>}
+        {li7 && <li>{li7}</li>}
       </ul>
     </div>
   );
@@ -236,7 +239,7 @@ const Chair = () => {
                           sensing technology and Artificial Intelligence, the
                           Posture-perfect Smart Chair identifies and classifies
                           seven common sitting postures with remarkable
-                          accuracy. Whether you're sitting straight, leaning
+                          accuracy. Whether you&apos;re sitting straight, leaning
                           back, or crossing your legs, our chair has you
                           covered.
                         </li>
@@ -251,7 +254,7 @@ const Chair = () => {
                           <b>Cutting-Edge Technology</b> <br />
                           Utilizing artificial intelligence and real-time data
                           analysis, the chair offers unparalleled performance
-                          with a remarkable accuracy. It's a smart choice for
+                          with a remarkable accuracy. It&apos;s a smart choice for
                           homes, offices, and healthcare environments.
                         </li>
                         <li>
@@ -489,15 +492,14 @@ const Chair = () => {
                         data-wow-delay="0.1s"
                       >
                         <CardItem
-                          title="Applications"
-                          li1="Helps in identifying pathologies and making accurate diagnoses."
-                          li2="Reduce the incidence of pressure sores or ulcers on feet by
-analyzing high-pressure points."
-                          li3="Identify areas of potential ulcers and calluses."
-                          li4="Identify plantar pressure asymmetries between the left and
-right foot."
-                          li5="A screening device for complete plantar pressure analysis."
-                          li6="Suggest customized insoles according to the orthotics."
+                          title="The SMART CHAIR: Where Technology Meets Wellness"
+                          li1="Sitting straight"
+                          li2="Left recline"
+                          li3="Right recline"
+                          li4="Slouching"
+                          li5="Leaning backward"
+                          li6="Crossing the left leg"
+                          li7="Crossing the right leg"
                         />
                       </div>
                     </div>
@@ -531,54 +533,50 @@ right foot."
                 <div className="col-lg-12 details-meta">
                   <div className="title-one mb-40 lg-mb-20">
                     <h3>Specifications</h3>
-                    <p className="text-lg mb-40 lg-mb-20">
-                      Need a mat with your own specifications? We will{" "}
-                      <b>customize</b> it for you!
-                    </p>
                   </div>
                   <table className="table table-bordered">
                     <thead className="thead-dark">
                       <tr>
                         <th scope="col" className="fontcolorimp">
-                          Features
+                          Technology
                         </th>
                         <th scope="col" className="fontcolorimp">
-                          FlePS Mat
+                          Piezoresistive
                         </th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <td className="bg-td">Overall Area</td>
-                        <td className="bg-td">50 cm x 50 cm</td>
+                        <td className="bg-td">Number of sensing pixels on seat</td>
+                        <td className="bg-td">512</td>
                       </tr>
                       <tr>
-                        <td>Sensing Area</td>
-                        <td>42 cm x 42 cm</td>
+                        <td>Number of sensing pixels on backrest</td>
+                        <td>512</td>
                       </tr>
                       <tr>
-                        <td className="bg-td">Number of Sensors</td>
-                        <td className="bg-td">1024</td>
+                        <td className="bg-td">Sensors area on seat</td>
+                        <td className="bg-td">48 cm x 48 cm</td>
                       </tr>
                       <tr>
-                        <td>Matrix Topology</td>
-                        <td>32 x 32</td>
+                        <td>Sensor area on backrest</td>
+                        <td>46 cm x 48 cm</td>
                       </tr>
                       <tr>
-                        <td className="bg-td">Max Weight Range</td>
-                        <td className="bg-td">40-120 kg</td>
+                        <td className="bg-td">Thickness</td>
+                        <td className="bg-td">0.4 mm</td>
                       </tr>
                       <tr>
-                        <td>Scan Rate</td>
-                        <td>20 Hz</td>
+                        <td>Material </td>
+                        <td>PVC</td>
                       </tr>
                       <tr>
-                        <td className="bg-td">Connection</td>
-                        <td className="bg-td">USB Cable</td>
+                        <td className="bg-td">Connectivity</td>
+                        <td className="bg-td">Bluetooth</td>
                       </tr>
                       <tr>
-                        <td>Operating Temp Range</td>
-                        <td>0°C to 50°C</td>
+                        <td>Weight range</td>
+                        <td>10 kg - 120 kg </td>
                       </tr>
                     </tbody>
                   </table>
