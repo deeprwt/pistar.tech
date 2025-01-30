@@ -239,8 +239,8 @@ const Chair = () => {
                           sensing technology and Artificial Intelligence, the
                           Posture-perfect Smart Chair identifies and classifies
                           seven common sitting postures with remarkable
-                          accuracy. Whether you&apos;re sitting straight, leaning
-                          back, or crossing your legs, our chair has you
+                          accuracy. Whether you&apos;re sitting straight,
+                          leaning back, or crossing your legs, our chair has you
                           covered.
                         </li>
                         <li>
@@ -254,8 +254,8 @@ const Chair = () => {
                           <b>Cutting-Edge Technology</b> <br />
                           Utilizing artificial intelligence and real-time data
                           analysis, the chair offers unparalleled performance
-                          with a remarkable accuracy. It&apos;s a smart choice for
-                          homes, offices, and healthcare environments.
+                          with a remarkable accuracy. It&apos;s a smart choice
+                          for homes, offices, and healthcare environments.
                         </li>
                         <li>
                           <b>Energy-Efficient Design</b> <br />
@@ -436,6 +436,57 @@ const Chair = () => {
             </div>
           </div>
           <div
+            className="fancy-banner-two pt-80 lg-pt-80 pb-80 lg-pb-60 service-details"
+            style={{ background: "#f5f5f5" }}
+          >
+            <div className="container details-meta">
+              <div className="wow fadeInUp">
+                <div className="row">
+                  <div className="col-lg-6 wow text-extra fadeInRight order-last order-md-first">
+                    <div className="title-three mb-35 md-mb-20">
+                      <h3>Features of a Smart Chair</h3>
+                    </div>
+                    <div className="card-style-twelve w-100 mt-30">
+                      <div className="d-flex"></div>
+                      <ul className="style-none">
+                        <li>
+                          <b>Posture Monitoring Sensors:</b> Smart chairs are
+                          embedded with sensors that analyze your sitting
+                          posture and detect misalignment.
+                        </li>
+                        <li>
+                          <b>Real-Time Alerts: </b> These chairs notify users
+                          through app notifications when they slouch or sit
+                          incorrectly.
+                        </li>
+                        <li>
+                          <b>Ergonomic Design:</b>They come with adjustable
+                          lumbar support, armrests, and headrests, ensuring
+                          comfort and correct posture.
+                        </li>
+                        <li>
+                          <b>App Integration:</b> Smart
+                          chairs are connected with mobile apps, providing
+                          personalized posture analytics and improvement tips.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="col-lg-6 col-md-8 m-auto wow fadeInLeft order-first order-md-last">
+                    <div className="media-wrapper md-mt-60 pe-xxl-5 pe-4 ps-xxl-5">
+                      <Image
+                        src={mat1}
+                        alt="screen"
+                        className="lazy-img rounded"
+                        layout="responsive"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
             className="fancy-banner-two text-feature-seven pt-80 lg-pt-80 pb-80 lg-pb-60 service-details"
             style={{ background: "#f5f5f5" }}
           >
@@ -478,7 +529,7 @@ const Chair = () => {
                     <div className="row">
                       <div className="col-lg-6 d-flex wow fadeInUp">
                         <CardItem
-                          title="Key Features"
+                          title="Key Features at a Glance"
                           li1="Real-time posture analysis and feedback"
                           li2="Durable and ergonomically designed for extended use"
                           li3="Easy-to-integrate with health tracking systems"
@@ -547,7 +598,9 @@ const Chair = () => {
                     </thead>
                     <tbody>
                       <tr>
-                        <td className="bg-td">Number of sensing pixels on seat</td>
+                        <td className="bg-td">
+                          Number of sensing pixels on seat
+                        </td>
                         <td className="bg-td">512</td>
                       </tr>
                       <tr>

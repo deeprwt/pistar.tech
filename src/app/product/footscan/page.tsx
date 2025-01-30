@@ -177,19 +177,43 @@ const Footscan = () => {
                       <h3>What Podiascan Offers</h3>
                     </div>
                     <div className="card-style-twelve w-100 mt-30">
-                    <div>
+                      <div>
                         <div className="upper-title d-flex align-items-center">
                           <div className="line-2"></div> Key Features :
                         </div>
                       </div>
-                      <div className="d-flex">
-                      </div>
+                      <div className="d-flex"></div>
                       <ul className="style-none">
-                        <li><b>Comprehensive Foot Analysis:</b> Podiascan captures detailed 2D and 3D images of the foot, offering insights into structural abnormalities and alignment issues.</li>
-                        <li><b>Gait and Pressure Mapping:</b> With high-resolution pressure mapping, Podiascan tracks your gait and pressure points, helping to identify areas of excessive load that can lead to pain or injury.</li>
-                        <li><b>Early Detection of Issues:</b> Podiascan enables early detection of potential foot problems, allowing for preventive care and reducing the risk of serious complications.</li>
-                        <li><b>Customized Orthotics Recommendations:</b> Using the data gathered from the scan, Podiascan helps in designing custom orthotics tailored to each patient’s unique foot profile.</li>
-                        <li><b>Accurate Biomechanical Assessment:</b> The technology provides a thorough biomechanical evaluation, assisting clinicians in creating targeted treatment plans to enhance mobility and comfort.</li>
+                        <li>
+                          <b>Comprehensive Foot Analysis:</b> Podiascan captures
+                          detailed 2D and 3D images of the foot, offering
+                          insights into structural abnormalities and alignment
+                          issues.
+                        </li>
+                        <li>
+                          <b>Gait and Pressure Mapping:</b> With high-resolution
+                          pressure mapping, Podiascan tracks your gait and
+                          pressure points, helping to identify areas of
+                          excessive load that can lead to pain or injury.
+                        </li>
+                        <li>
+                          <b>Early Detection of Issues:</b> Podiascan enables
+                          early detection of potential foot problems, allowing
+                          for preventive care and reducing the risk of serious
+                          complications.
+                        </li>
+                        <li>
+                          <b>Customized Orthotics Recommendations:</b> Using the
+                          data gathered from the scan, Podiascan helps in
+                          designing custom orthotics tailored to each patient’s
+                          unique foot profile.
+                        </li>
+                        <li>
+                          <b>Accurate Biomechanical Assessment:</b> The
+                          technology provides a thorough biomechanical
+                          evaluation, assisting clinicians in creating targeted
+                          treatment plans to enhance mobility and comfort.
+                        </li>
                       </ul>
                     </div>
                   </div>
@@ -224,13 +248,29 @@ const Footscan = () => {
                       <h3>Who Can Benefit from Podiascan?</h3>
                     </div>
                     <div className="card-style-twelve w-100 mt-30">
-                      <div className="d-flex">
-                      </div>
+                      <div className="d-flex"></div>
                       <ul className="style-none">
-                        <li><b>Diabetic Patients:</b> With specialized features for assessing diabetic foot health, Podiascan helps in monitoring and preventing complications due to high-pressure areas.</li>
-                        <li><b>Athletes:</b> Athletes gain valuable insights into their gait and posture, allowing them to optimize performance and reduce injury risk.</li>
-                        <li><b>Elderly Patients:</b> Older adults benefit from assessments that help in preventing falls and managing mobility issues.</li>
-                        <li><b>General Foot Care:</b> From flat feet to high arches, Podiascan provides valuable data for anyone seeking comprehensive foot care and pain management.</li>
+                        <li>
+                          <b>Diabetic Patients:</b> With specialized features
+                          for assessing diabetic foot health, Podiascan helps in
+                          monitoring and preventing complications due to
+                          high-pressure areas.
+                        </li>
+                        <li>
+                          <b>Athletes:</b> Athletes gain valuable insights into
+                          their gait and posture, allowing them to optimize
+                          performance and reduce injury risk.
+                        </li>
+                        <li>
+                          <b>Elderly Patients:</b> Older adults benefit from
+                          assessments that help in preventing falls and managing
+                          mobility issues.
+                        </li>
+                        <li>
+                          <b>General Foot Care:</b> From flat feet to high
+                          arches, Podiascan provides valuable data for anyone
+                          seeking comprehensive foot care and pain management.
+                        </li>
                       </ul>
                     </div>
                   </div>
