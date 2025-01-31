@@ -38,7 +38,7 @@ const ArticleDetailsArea: React.FC<{ article: Article }> = ({ article }) => {
               <div className="post-data">
                 <div className="post-info">{article.category}</div>
                 <div className="blog-title">
-                  <h4>{article.title}</h4>
+                  <h1>{article.title}</h1>
                 </div>
                 <div className="post-details-meta">
                   <div dangerouslySetInnerHTML={{ __html: article.post_info }} />
