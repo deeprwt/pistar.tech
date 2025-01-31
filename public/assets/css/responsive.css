@@ -146,7 +146,7 @@
   .accordion-style-two .accordion-item .accordion-button:after {width: 30px; height: 30px; line-height: 30px; font-size: 25px;}
   .accordion-style-two .accordion-item .accordion-button:not(.collapsed):after {line-height: 22px;}
   .blog-meta-two .post-img {height: 250px; padding: 15px;}
-  .blog-meta-two .post-data .blog-title h4 {font-size: 24px;}
+  .blog-meta-two .post-data .blog-title h1, h4 {font-size: 24px;}
   .blog-meta-two .post-data .post-info {margin-top: 15px; padding-top: 10px;}
   .blog-meta-two .post-data .round-btn {width: 40px; height: 40px; font-size: 22px;}
   .fancy-banner-three .quote-btn {width: 120px; height: 120px;}
