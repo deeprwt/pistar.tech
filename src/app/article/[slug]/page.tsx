@@ -59,7 +59,7 @@ export async function generateMetadata({ params }: ArticlePageProps) {
           url: article.imageUrl || article.image,
         },
       ],
-      url: `https://yourwebsite.com/articles/${article.link}`,
+      url: `https://www.pistar.tech/articles/${article.link}`,
     },
   };
 }
