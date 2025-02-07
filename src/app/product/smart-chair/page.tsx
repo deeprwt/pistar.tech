@@ -112,7 +112,7 @@ const Chair = () => {
           {/* <HeroVideoTwo /> */}
           <BreadcrumbOne
             title="Smart Chair "
-            subtitle="Navigating Your Financial Growth With Experience & Insightful Solutions."
+            subtitle="Smart Chair by PiStarTech - Advanced Seating for Posture & Health Monitoring"
             page="Smart Chair "
             maincls="bg-bottom"
             bg_img={about_bg}
@@ -128,7 +128,7 @@ const Chair = () => {
             <div className="container">
               <div className="wow fadeInUp">
                 <div className="row">
-                  <div className="col-lg-12 wow fadeInRight">
+                  <div className="col-lg-6 wow fadeInRight">
                     <div className="title-three mb-35 md-mb-20 details-meta">
                       {/* <div className="upper-title">management</div> */}
                       <h3 style={{ color: "white" }}>
@@ -147,16 +147,20 @@ const Chair = () => {
                       healthy as they are comfortable.
                     </p>
                   </div>
-                  {/* <div className="col-lg-6 col-md-8 m-auto wow fadeInLeft">
+                  <div className="col-lg-6 col-md-8 m-auto wow fadeInLeft">
                     <div className="media-wrapper md-mt-60 pe-xxl-5 pe-4 ps-xxl-5">
-                      <Image
-                        src={mat}
-                        alt="screen"
-                        className="lazy-img rounded"
-                        layout="responsive"
-                      />
+                      <iframe
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/GjmX4fUCaDk?si=Vj0Cktp9E55MyHWL"
+                        title="YouTube video player"
+                        // frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        // referrerpolicy="strict-origin-when-cross-origin"
+                        // allowfullscreen
+                      ></iframe>
                     </div>
-                  </div> */}
+                  </div>
                   {/* <div className="col-lg-10 m-auto">
                     <div className="title-one details-meta">
                       <h3 style={{ color: "white" }}>
@@ -189,6 +193,68 @@ const Chair = () => {
                       modern foot analysis technology with minimal effort.
                     </p>
                   </div> */}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            className={`faq-section-one service-details pt-80 pb-80 bg-white  `}
+          >
+            <div className="container">
+              <div className="row">
+                <div className="col-lg-12 details-meta">
+                  <div className="title-one mb-40 lg-mb-20">
+                    <h3>Specifications</h3>
+                  </div>
+                  <table className="table table-bordered">
+                    <thead className="thead-dark">
+                      <tr>
+                        <th scope="col" className="fontcolorimp">
+                          Technology
+                        </th>
+                        <th scope="col" className="fontcolorimp">
+                          Piezoresistive
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td className="bg-td">
+                          Number of sensing pixels on seat
+                        </td>
+                        <td className="bg-td">512</td>
+                      </tr>
+                      <tr>
+                        <td>Number of sensing pixels on backrest</td>
+                        <td>512</td>
+                      </tr>
+                      <tr>
+                        <td className="bg-td">Sensors area on seat</td>
+                        <td className="bg-td">48 cm x 48 cm</td>
+                      </tr>
+                      <tr>
+                        <td>Sensor area on backrest</td>
+                        <td>46 cm x 48 cm</td>
+                      </tr>
+                      <tr>
+                        <td className="bg-td">Thickness</td>
+                        <td className="bg-td">0.4 mm</td>
+                      </tr>
+                      <tr>
+                        <td>Material </td>
+                        <td>PVC</td>
+                      </tr>
+                      <tr>
+                        <td className="bg-td">Connectivity</td>
+                        <td className="bg-td">Bluetooth</td>
+                      </tr>
+                      <tr>
+                        <td>Weight range</td>
+                        <td>10 kg - 120 kg </td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
             </div>
@@ -465,9 +531,9 @@ const Chair = () => {
                           comfort and correct posture.
                         </li>
                         <li>
-                          <b>App Integration:</b> Smart
-                          chairs are connected with mobile apps, providing
-                          personalized posture analytics and improvement tips.
+                          <b>App Integration:</b> Smart chairs are connected
+                          with mobile apps, providing personalized posture
+                          analytics and improvement tips.
                         </li>
                       </ul>
                     </div>
@@ -575,68 +641,6 @@ const Chair = () => {
           {/* feedback one start */}
           {/* <FeedbackOne cls="top-border pt-80 pb-80" /> */}
           {/* feedback one end */}
-
-          <div
-            className={`faq-section-one service-details pt-80 pb-80 bg-white  `}
-          >
-            <div className="container">
-              <div className="row">
-                <div className="col-lg-12 details-meta">
-                  <div className="title-one mb-40 lg-mb-20">
-                    <h3>Specifications</h3>
-                  </div>
-                  <table className="table table-bordered">
-                    <thead className="thead-dark">
-                      <tr>
-                        <th scope="col" className="fontcolorimp">
-                          Technology
-                        </th>
-                        <th scope="col" className="fontcolorimp">
-                          Piezoresistive
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td className="bg-td">
-                          Number of sensing pixels on seat
-                        </td>
-                        <td className="bg-td">512</td>
-                      </tr>
-                      <tr>
-                        <td>Number of sensing pixels on backrest</td>
-                        <td>512</td>
-                      </tr>
-                      <tr>
-                        <td className="bg-td">Sensors area on seat</td>
-                        <td className="bg-td">48 cm x 48 cm</td>
-                      </tr>
-                      <tr>
-                        <td>Sensor area on backrest</td>
-                        <td>46 cm x 48 cm</td>
-                      </tr>
-                      <tr>
-                        <td className="bg-td">Thickness</td>
-                        <td className="bg-td">0.4 mm</td>
-                      </tr>
-                      <tr>
-                        <td>Material </td>
-                        <td>PVC</td>
-                      </tr>
-                      <tr>
-                        <td className="bg-td">Connectivity</td>
-                        <td className="bg-td">Bluetooth</td>
-                      </tr>
-                      <tr>
-                        <td>Weight range</td>
-                        <td>10 kg - 120 kg </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
-          </div>
 
           <div
             className="contact-us-section pt-80 lg-pt-80"
