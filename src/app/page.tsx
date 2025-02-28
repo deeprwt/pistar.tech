@@ -40,7 +40,7 @@ import bg_image2 from "@/assets/images/background/counter_dark_pattern.png";
 import bg_image1 from "@/assets/images/background/background-explore.jpg";
 import img4 from "@/assets/images/media/doctor.jpg";
 import mat from "@/assets/images/pistar/1.png";
-import smartchair1 from "@/assets/images/pistar/smartchair.png";
+import smartchair1 from "@/assets/images/pistar/chair.png";
 import AwardsSection from "@/components/company/awards-section";
 import TeamTwoArea from "@/components/team/team-v2-area";
 import TeamOneArea from "@/components/team/team-v1-area";

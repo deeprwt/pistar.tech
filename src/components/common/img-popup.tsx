@@ -10,31 +10,16 @@ const ImgPopUp = () => {
   useEffect(() => {
     // Check if the user has opted to never show the popup again
     const noShow = localStorage.getItem("noShowPopup");
-    const lastVisit = localStorage.getItem("lastVisit");
-    const hasSubmitted = localStorage.getItem("formSubmitted");
 
-    // Only show the popup if the user hasn't opted out and hasn't submitted the form
-    if (!noShow && !hasSubmitted) {
-      const now = new Date();
-      const lastVisitDate = new Date(lastVisit || 0);
-
-      // Show the popup only if it's a new day
-      if (!lastVisit || now.getDate() !== lastVisitDate.getDate()) {
-        setTimeout(() => {
-          setShowModal(true);
-        }, 3000); // Delay the popup by 6 seconds
-      }
-
-      localStorage.setItem("lastVisit", now.toString());
+    // Only show the popup if the user hasn't opted out
+    if (!noShow) {
+      setTimeout(() => {
+        setShowModal(true);
+      }, 3000);
     }
   }, []);
 
   const handleClose = () => {
-    setShowModal(false);
-  };
-
-  const handleFormSubmit = () => {
-    localStorage.setItem("formSubmitted", "true");
     setShowModal(false);
   };
 
@@ -55,19 +40,17 @@ const ImgPopUp = () => {
           <div className="modal-dialog modal-fullscreen modal-dialog-centered mb-10 mt-10">
             <div className="container d-flex align-items-center justify-content-center">
               <div
-                className="user-data-form modal-content p-5"
+                className="user-data-form modal-content"
                 style={{
                   boxShadow: "2px 5px 20px rgba(0, 0, 0, 0.1)",
-                  background: "linear-gradient(#313638,#313638)",
                   maxWidth: "fit-content",
                 }}
               >
                 <div className="main-wrapper bottom-border">
                   <div
-                    className="row footer-one"
+                    className="row"
                     style={{
-                      padding: "0px",
-                      background: "linear-gradient(#313638,#313638)",
+                      padding: "0px", 
                     }}
                   >
                     <div className="col-12">
@@ -77,10 +60,8 @@ const ImgPopUp = () => {
                         width={500}
                         height={500}
                         className="rounded"
-                        // layout="responsive"
                       ></Image>
                     </div>
-
                   </div>
                 </div>
                 <button
@@ -89,12 +70,12 @@ const ImgPopUp = () => {
                   aria-label="Close"
                   onClick={handleClose}
                 ></button>
-                {/* <button
-                  className="mt-3"
+                <button
+                  className="mt-3 btn btn-secondary"
                   onClick={handleDontShowAgain}
                 >
                   Don't show this again
-                </button> */}
+                </button>
               </div>
             </div>
           </div>
