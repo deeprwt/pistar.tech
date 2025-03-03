@@ -74,7 +74,7 @@ const ImgPopUp = () => {
                   className="mt-3 btn btn-secondary"
                   onClick={handleDontShowAgain}
                 >
-                  Don't show this again
+                  Don&apos;t show this again
                 </button>
               </div>
             </div>
