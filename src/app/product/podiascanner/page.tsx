@@ -7,25 +7,6 @@ import Image, { StaticImageData } from "next/image";
 // import FooterThree from "@/layout/footer/footer-three";
 import FooterOne from "@/layout/footer/footer-one";
 import about_bg from "@/assets/images/banners/diaspmat.jpg";
-import FancyBannerThree from "@/components/fancy-banner/fancy-banner-three";
-import shape from "@/assets/images/shape/shape_25.svg";
-import TextFeatureOne from "@/components/text-feature/text-feature-one";
-import BlockFeatureOne from "@/components/block-feature/block-feature-one";
-import TextFeatureThree from "@/components/text-feature/text-feature-three";
-import FeedbackOne from "@/components/feedback/feedback-one";
-import PartnersSliderOne from "@/components/partners/partners-slider-one";
-import TeamSectionThree from "@/components/team/team-section-three";
-import HomeFourBlogs from "@/components/blogs/home-4-blogs";
-import NewsletterBanner from "@/components/newsletter/newsletter-banner";
-import TextFeatureHome from "@/components/text-feature/text-feature-home";
-import TextFeatureAbout from "@/components/text-feature/text-feature-about";
-import BlockFeatureAbout from "@/components/block-feature/block-feature-about";
-import DottedMap from "@/components/map/maps";
-import HowWeDo from "@/components/home-data/how-we-do";
-import logo_2 from "@/assets/images/logo/logome.png";
-import HeroVideoTwo from "@/components/hero-banner/hero-video-two";
-import FaqSolutionsThree from "@/components/faq/faq-section-three";
-import mat from "@/assets/images/pistar/1.png";
 import mat0 from "@/assets/images/pistar/2.png";
 import ContactForm from "@/components/forms/contact-form";
 import bg_image2 from "@/assets/images/background/counter_dark_pattern.png";
@@ -39,6 +20,11 @@ import TextFeatureSeven from "@/components/text-feature/text-feature-seven";
 import TextFeatureTen from "@/components/text-feature/text-freature-ten";
 import BlockFeatureSeven from "@/components/block-feature/block-feature-seven";
 import Link from "next/link";
+import PodiascannerDetailsArea from "@/components/shop/product-details/podiascanner-product-details";
+import ShopArea from "@/components/shop/shop-area";
+import ProductDetailsArea from "@/components/shop/product-details/product-details-area";
+import product_data from "@/data/product-data";
+
 
 const backImg2 = {
   backgroundImage: `url('${bg_image2.src}')`,
@@ -103,6 +89,7 @@ function CardItem({
 }
 
 const DiaspsMat = () => {
+  const product = product_data[0]
   return (
     <Wrapper>
       <div className="main-page-wrapper">
@@ -124,61 +111,11 @@ const DiaspsMat = () => {
           />
           {/* breadcrumb end */}
 
-          {/* <div
-            className="fancy-banner-two pt-80 lg-pt-80 pb-80 lg-pb-60 service-details"
+          <ProductDetailsArea product={product} />
 
-            style={{ background: "#292e31" }}
-          >
-            <div className="container">
-              <div className="wow fadeInUp">
-                <div className="row">
-                  <div className="col-lg-6 wow fadeInRight">
-                    <div className="title-three mb-35 md-mb-20 details-meta">
-                      <h3 style={{ color: "white" }}>
-                        Why is the Podiascanner Mat so Easy to Adopt?
-                      </h3>
-                    </div>
-                    <p
-                      className="text-lg mt-40 lg-mt-30 mb-30"
-                      style={{ color: "#fff9" }}
-                    >
-                      The <b>Podiascanner Mat</b> from PiStarTech Private
-                      Limited is engineered for seamless integration into any
-                      clinical environment. With its{" "}
-                      <b>portable, flexible design, </b> the
-                      <b>FootCare Mat</b> fits effortlessly into existing
-                      medical workflows, requiring minimal training or
-                      adjustments to current setups. Its user-friendly nature
-                      and adaptability make it suitable for clinics and
-                      hospitals of all sizes.
-                      <br /> <br />
-                      Providing <b>accurate foot pressure</b> analysis within
-                      just 5 seconds, the <b>Podiascanner Mat</b> simplifies
-                      patient evaluations for healthcare professionals. This{" "}
-                      <b>advanced mat</b> enhances diagnostic efficiency and
-                      precision without disrupting routine operations. Its
-                      affordability and ease of use make it an accessible
-                      upgrade to <b>high-resolution sensor mat</b>
-                      technology for a wide range of practitioners.
-                    </p>
-                  </div>
-                  <div className="col-lg-6 col-md-8 m-auto wow fadeInLeft">
-                    <div className="media-wrapper md-mt-60 pe-xxl-5 pe-4 ps-xxl-5">
-                      <Image
-                        src={mat}
-                        alt="screen"
-                        className="lazy-img rounded"
-                        layout="responsive"
-                      />
-                    </div>
-                  </div>
-                 
-                </div>
-              </div>
-            </div>
-          </div> */}
+          {/* <ShopArea productId="1" /> */}
 
-<div
+          <div
             className={`faq-section-one service-details pt-80 pb-80 bg-white  `}
           >
             <div className="container">
@@ -238,10 +175,10 @@ const DiaspsMat = () => {
                     </tbody>
                   </table>
                   <div className="d-inline-flex flex-wrap align-items-center">
-                  <Link href="/contact" className="btn-four mt-15 me-4">
-                  Request for Quotation
-                  </Link>
-                </div>
+                    <Link href="/contact" className="btn-four mt-15 me-4">
+                      Request for Quotation
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
@@ -417,14 +354,6 @@ const DiaspsMat = () => {
                       static and dynamic pressure measurement data for foot and
                       gait analysis.
                     </p>
-                    {/* <p
-                      className="text-lg mt-40 lg-mt-30 mb-30"
-                    >
-                      Evaluate gait, plantar pressure, and foot function with
-                      insole sensors that are reliable and durable enough to
-                      accurately capture data wherever activity takes place —
-                      and without compromising natural motion.
-                    </p> */}
                   </div>
                   <div className="col-lg-6 col-md-8 m-auto wow fadeInLeft order-last order-md-first">
                     <div className="media-wrapper md-mt-60 pe-xxl-5 pe-4 ps-xxl-5">
@@ -467,14 +396,6 @@ const DiaspsMat = () => {
                       performance testing. The system ensures reliable data
                       collection, even during long-term testing.
                     </p>
-                    {/* <p
-                      className="text-lg mt-40 lg-mt-30 mb-30"
-                    >
-                      Evaluate gait, plantar pressure, and foot function with
-                      insole sensors that are reliable and durable enough to
-                      accurately capture data wherever activity takes place —
-                      and without compromising natural motion.
-                    </p> */}
                   </div>
                   <div className="col-lg-6 col-md-8 m-auto wow fadeInLeft">
                     <div className="media-wrapper md-mt-60 pe-xxl-5 pe-4 ps-xxl-5">
@@ -526,26 +447,8 @@ right foot."
             </div>
           </div>
 
-          {/* block feature one area start */}
-          {/* <BlockFeatureOne style_2={true} /> */}
-          {/* block feature one area end */}
-
-          {/* text feature one area start */}
-          {/* <TextFeatureThree style_2={true} /> */}
-          {/* text feature one area end */}
-
-          {/* <BlockFeatureAbout style_2={true} /> */}
-
-          {/* <HowWeDo /> */}
-
-          {/* feedback one start */}
-          {/* <FeedbackOne cls="top-border pt-80 pb-80" /> */}
-          {/* feedback one end */}
-
-
           {/* <SolutionsSlider /> */}
 
-          
           <BlockFeatureSeven />
           <TextFeatureSeven />
           <TextFeatureTen />
@@ -592,20 +495,6 @@ right foot."
               </div>
             </div>
           </div>
-
-          {/* <div className="partner-logo-one pt-80 lg-pt-40 pb-80 lg-pb-40">
-            <div className="container">
-              <DottedMap />
-            </div>
-          </div> */}
-
-          {/* blogs start */}
-          {/* <HomeFourBlogs cls="mt-180 lg-mt-80 mb-180 lg-mb-80" /> */}
-          {/* blogs end */}
-
-          {/* fancy banner three start */}
-          {/* <FancyBannerThree /> */}
-          {/* fancy banner three end */}
 
           {/* news letter start */}
           {/* <NewsletterBanner /> */}

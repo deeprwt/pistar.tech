@@ -10,6 +10,7 @@ import shape from "@/assets/images/shape/shape_26.svg";
 import ProductDetailsArea from "@/components/shop/product-details/product-details-area";
 import product_data from "@/data/product-data";
 import NewsletterBanner from "@/components/newsletter/newsletter-banner";
+import FooterOne from "@/layout/footer/footer-one";
 
 export const metadata: Metadata = {
   title: "Shop Details Page",
@@ -46,18 +47,9 @@ const ShopDetailsPage = ({ params }: { params: { id: string } }) => {
           )}
           {/* shop details area end */}
 
-          {/* fancy banner three start */}
-          <FancyBannerThree />
-          {/* fancy banner three end */}
 
-          {/* news letter start */}
-          <NewsletterBanner />
-          {/* news letter end */}
         </main>
-
-        {/* footer start */}
-        <FooterThree style_2={true} />
-        {/* footer end */}
+              <FooterOne />
       </div>
     </Wrapper>
   );

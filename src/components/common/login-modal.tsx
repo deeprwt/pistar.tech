@@ -6,6 +6,8 @@ import google from '@/assets/images/icon/google.png';
 import facebook from '@/assets/images/icon/facebook.png';
 import RegisterForm from "../forms/register-form";
 import LoginForm from "../forms/login-form";
+import AuthLogin from "../forms/auth-login";
+import AuthSignup from "../forms/auth-signup";
 
 const LoginModal = () => {
   return (
@@ -60,7 +62,8 @@ const LoginModal = () => {
                     </p>
                   </div>
                   {/* login form start */}
-                  <LoginForm />
+                  {/* <LoginForm /> */}
+                  <AuthLogin />
                   {/* login form end */}
                 </div>
                 <div className="tab-pane" role="tabpanel" id="fc2">
@@ -71,7 +74,8 @@ const LoginModal = () => {
                     </p>
                   </div>
                   {/* register form start */}
-                  <RegisterForm />
+                  {/* <RegisterForm /> */}
+                  <AuthSignup />
                   {/* register form end */}
                 </div>
               </div>

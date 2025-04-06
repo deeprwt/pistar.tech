@@ -2,13 +2,13 @@
 import React, { useEffect, useState } from "react";
 import { doc, getDoc, setDoc } from "firebase/firestore";
 import { db, auth } from "@/database/firebase"; // Adjust the path as necessary
-import withAuth from "@/components/hoc/withAuth";
+import withUserAuth from "@/components/hoc/withUserAuth";
 import Wrapper from "@/layout/wrapper";
 import FooterOne from "@/layout/footer/footer-one";
-import Sidebar from "@/layout/admin/sidebar";
-import { useRouter } from "next/navigation"; // Import useRouter
-import { notifySuccess, notifyError } from "@/utils/toast"; // Import notification functions
-import { signOut } from "firebase/auth"; // Import signOut function
+import { useRouter } from "next/navigation";
+import { notifySuccess, notifyError } from "@/utils/toast";
+import { signOut } from "firebase/auth";
+import HeaderTwo from "@/layout/header/Header";
 
 // Define the UserData type
 type UserData = {
@@ -16,10 +16,9 @@ type UserData = {
   name?: string;
   profileImage?: string;
   phoneNumber?: string;
-  role?: string; // Added role field
 };
 
-const Dashboard = () => {
+const UserDashboard = () => {
   const [userData, setUserData] = useState<UserData | null>(null);
   const [loading, setLoading] = useState(true);
   const [name, setName] = useState("");
@@ -31,39 +30,37 @@ const Dashboard = () => {
     const fetchUserData = async () => {
       try {
         const user = auth.currentUser;
-        if (!user) {
-          router.push("/login"); // Redirect if no user
-          return;
-        }
-
-        const docRef = doc(db, "users", user.uid);
-        const docSnap = await getDoc(docRef);
-
-        if (docSnap.exists()) {
-          const data = docSnap.data() as UserData;
-
-          // ✅ Check if the user is an admin
-          if (data.role !== "admin") {
-            notifyError("Access Denied: Admins Only");
-            router.push("/"); // Redirect to home or another page
-            return;
+        if (user) {
+          const docRef = doc(db, "users", user.uid);
+          const docSnap = await getDoc(docRef);
+          if (docSnap.exists()) {
+            const data = docSnap.data() as UserData;
+            setUserData(data);
+            setName(data.name || "");
+            setProfileImage(data.profileImage || "");
+            setPhoneNumber(data.phoneNumber || "");
           }
-
-          setUserData(data);
-          setName(data.name || "");
-          setProfileImage(data.profileImage || "");
-          setPhoneNumber(data.phoneNumber || "");
+          setLoading(false);
         } else {
-          router.push("/login"); // Redirect if user data not found
+          console.log("No authenticated user found");
+          router.push("/login");
         }
       } catch (error) {
         console.error("Error fetching user data:", error);
-      } finally {
         setLoading(false);
       }
     };
 
     fetchUserData();
+
+    // Listen for auth state changes
+    const unsubscribe = auth.onAuthStateChanged((user) => {
+      if (!user) {
+        router.push("/login");
+      }
+    });
+
+    return () => unsubscribe();
   }, [router]);
 
   const handleSubmit = async (event: React.FormEvent) => {
@@ -78,11 +75,11 @@ const Dashboard = () => {
           profileImage,
           phoneNumber,
         });
-        notifySuccess("User data updated successfully!");
+        notifySuccess("Profile updated successfully!");
       }
     } catch (error) {
       console.error("Error updating user data:", error);
-      notifyError("Failed to update user data");
+      notifyError("Failed to update profile");
     }
   };
 
@@ -104,7 +101,7 @@ const Dashboard = () => {
   return (
     <Wrapper>
       <div className="main-page-wrapper">
-        <Sidebar />
+      <HeaderTwo cls="fixed" />
         <main>
           <div className="team-details light-bg border-top pt-120 lg-pt-80 pb-120 lg-pb-80">
             <div className="container">
@@ -112,7 +109,10 @@ const Dashboard = () => {
                 <div className="row">
                   <div className="col-lg-12 col-md-12">
                     <div className="pt-45 pb-45 ps-xl-4 ps-lg-0 ps-3 pe-xl-4 pe-lg-3 pe-3 border-right h-100">
-                      <h2 className="name fw-bold m-0">User Email: {userData?.email}</h2>
+                      <h2 className="name fw-bold m-0">
+                        Welcome, {userData?.name || "User"}!
+                      </h2>
+                      <p>Email: {userData?.email}</p>
                       <form onSubmit={handleSubmit}>
                         <div className="mb-3">
                           <label htmlFor="name" className="form-label">Name</label>
@@ -160,4 +160,4 @@ const Dashboard = () => {
   );
 };
 
-export default withAuth(Dashboard);
+export default withUserAuth(UserDashboard);

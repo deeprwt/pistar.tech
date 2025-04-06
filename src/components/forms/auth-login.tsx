@@ -10,7 +10,8 @@ import {
   signInWithEmailAndPassword,
   sendPasswordResetEmail,
 } from "firebase/auth";
-import { auth } from "@/database/firebase";
+import { auth, db } from "@/database/firebase";
+import { doc, getDoc } from "firebase/firestore";
 import icon from "@/assets/images/icon/icon_13.svg";
 import ErrorMsg from "../common/error-msg";
 import { notifySuccess, notifyError } from "@/utils/toast";
@@ -21,15 +22,22 @@ type FormData = {
 };
 
 const schema = yup.object().shape({
-  email: yup.string().required().email().label("Email"),
-  password: yup.string().required().min(6).label("Password"),
+  email: yup
+    .string()
+    .required("Email is required")
+    .email("Invalid email format"),
+  password: yup
+    .string()
+    .required("Password is required")
+    .min(6, "Password must be at least 6 characters"),
 });
 
 const AuthLogin = () => {
-  const [showPass, setShowPass] = useState<boolean>(false);
-  const [resetEmailSent, setResetEmailSent] = useState<boolean>(false);
-  const [resetEmail, setResetEmail] = useState<string>("");
+  const [showPass, setShowPass] = useState(false);
+  const [resetEmailSent, setResetEmailSent] = useState(false);
+  const [resetEmail, setResetEmail] = useState("");
   const [resetError, setResetError] = useState<string | null>(null);
+  const router = useRouter();
 
   const {
     register,
@@ -40,32 +48,50 @@ const AuthLogin = () => {
     resolver: yupResolver(schema),
   });
 
-  const router = useRouter();
-
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((user) => {
-      if (user) {
-        console.log("User logged in");
-      } else {
-        console.log("No user logged in");
+      if (user) console.log("User logged in");
+      
+      else console.log("No user logged in");
+      // 1. Close the Bootstrap modal via JS
+      const modalEl = document.getElementById("loginModal");
+      if (modalEl) {
+        const modalInstance = (window as any).bootstrap?.Modal.getInstance(
+          modalEl
+        );
+        modalInstance?.hide();
+      }
+
+      // 2. Cleanup leftover backdrop (fallback)
+      document.body.classList.remove("modal-open");
+      const backdrops = document.getElementsByClassName("modal-backdrop");
+      while (backdrops.length > 0) {
+        backdrops[0].parentNode?.removeChild(backdrops[0]);
       }
     });
-
     return () => unsubscribe();
   }, []);
 
   const submitForm = async (values: FormData) => {
     try {
-      await signInWithEmailAndPassword(auth, values.email, values.password);
+      const userCredential = await signInWithEmailAndPassword(
+        auth,
+        values.email,
+        values.password
+      );
+      const user = userCredential.user;
+      const userDoc = await getDoc(doc(db, "users", user.uid));
+      const userData = userDoc.data();
+
+      router.push(
+        userData?.role === "admin" ? "/dashboard" : "/user-dashboard"
+      );
       notifySuccess("User logged in successfully!");
       reset();
-      router.push("/dashboard");
-    } catch (e) {
-      // Type assertion for Firebase error
-      const error = e as { message: string };
-      console.error("Firebase Error:", error.message);
-      reset();
-      notifyError(error.message);
+    } catch (error) {
+      const errorMessage = (error as Error).message;
+      console.error("Firebase Error:", errorMessage);
+      notifyError(errorMessage);
     }
   };
 
@@ -74,10 +100,7 @@ const AuthLogin = () => {
       await sendPasswordResetEmail(auth, resetEmail);
       setResetEmailSent(true);
       setResetError(null);
-    } catch (e) {
-      // Type assertion for Firebase error
-      const error = e as { message: string };
-      console.error("Error sending password reset email:", error.message);
+    } catch (error) {
       setResetError("Failed to send password reset email. Please try again.");
     }
   };
@@ -92,21 +115,18 @@ const AuthLogin = () => {
               <input
                 type="email"
                 {...register("email")}
-                id="email"
                 placeholder="Youremail@gmail.com"
               />
-              <ErrorMsg msg={errors.email?.message!} />
+              {errors.email && <ErrorMsg msg={errors.email?.message || ""} />}
             </div>
           </div>
           <div className="col-12">
             <div className="input-group-meta position-relative mb-20">
               <label>Password*</label>
               <input
-                type={`${showPass ? "text" : "password"}`}
+                type={showPass ? "text" : "password"}
                 {...register("password")}
-                id="password"
                 placeholder="Enter Password"
-                className="pass_log_id"
               />
               <span
                 className="placeholder_icon"
@@ -116,24 +136,19 @@ const AuthLogin = () => {
                   <Image src={icon} alt="pass-icon" />
                 </span>
               </span>
-              <ErrorMsg msg={errors.password?.message!} />
+              {errors.password && (
+                <ErrorMsg msg={errors.password?.message || ""} />
+              )}
             </div>
           </div>
-          <div className="col-12">
-            <div className="agreement-checkbox d-flex justify-content-between align-items-center">
-              <div>
-                <input type="checkbox" id="remember" />
-                <label htmlFor="remember">Keep me logged in</label>
-              </div>
-              <Link
-                href="#"
-                data-bs-toggle="modal"
-                data-bs-target="#ForgotModal"
-                className=""
-              >
-                Forgot Password?
-              </Link>
+          <div className="col-12 d-flex justify-content-between align-items-center">
+            <div>
+              <input type="checkbox" id="remember" />
+              <label htmlFor="remember">Keep me logged in</label>
             </div>
+            <Link href="#" data-bs-toggle="modal" data-bs-target="#ForgotModal">
+              Forgot Password?
+            </Link>
           </div>
           <div className="col-12">
             <button
@@ -152,19 +167,17 @@ const AuthLogin = () => {
         tabIndex={-1}
         aria-hidden="true"
       >
-        <div className="modal-dialog modal-fullscreen modal-dialog-centered mb-10 mt-10">
+        <div className="modal-dialog modal-fullscreen modal-dialog-centered">
           <div className="container d-flex align-items-center justify-content-center">
-            <div
-              className="user-data-form modal-content p-5"
-              style={{ boxShadow: "2px 5px 20px rgba(0, 0, 0, 0.1)" }}
-            >
-              <h3 className=" text-center">Forgot Password?</h3>
-              <p className=" text-center">Please enter your email address to reset your password.</p>
+            <div className="user-data-form modal-content p-5">
+              <h3 className="text-center">Forgot Password?</h3>
+              <p className="text-center">
+                Enter your email to reset your password.
+              </p>
               <button
                 type="button"
                 className="btn-close"
                 data-bs-dismiss="modal"
-                aria-label="Close"
               ></button>
               <div className="modal-body">
                 <form
@@ -174,24 +187,24 @@ const AuthLogin = () => {
                   }}
                 >
                   <div className="input-group-meta position-relative mb-20">
-                    <label htmlFor="resetEmail" className="form-label">
-                      Email Address
-                    </label>
+                    <label>Email Address</label>
                     <input
                       type="email"
-                      id="resetEmail"
                       className="form-control"
                       value={resetEmail}
                       onChange={(e) => setResetEmail(e.target.value)}
-                      placeholder="Your email address"
+                      placeholder="Your email"
                     />
                   </div>
-                  <button type="submit" className="btn-four w-100 tran3s d-block mt-20">
+                  <button
+                    type="submit"
+                    className="btn-four w-100 tran3s d-block mt-20"
+                  >
                     Send Reset Link
                   </button>
                   {resetEmailSent && (
                     <p className="text-success mt-3">
-                      Password reset email sent! Please check your inbox.
+                      Check your inbox for reset instructions.
                     </p>
                   )}
                   {resetError && (

@@ -198,7 +198,7 @@ const Navbar = ({ logo_white = false }: { logo_white?: boolean }) => {
               href="#"
               data-bs-toggle="modal"
               data-bs-target="#BookDemo"
-              //  className="signup-btn-one icon-link w-100 mt-20"
+              
               className="btn-two tran3s w-100"
             >
               Book a Demo

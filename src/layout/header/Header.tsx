@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -10,17 +10,31 @@ import icon from "@/assets/images/icon/icon_94.svg";
 import useSticky from "@/hooks/use-sticky";
 import LoginModal from "@/components/common/login-modal";
 import BookADemo from "@/components/forms/book-a-demo";
+import { auth } from "@/database/firebase"; // Import Firebase auth
 
-const HeaderTwo = () => {
+interface HeaderTwoProps {
+  cls?: string; // Optional class name
+}
+
+const HeaderTwo: React.FC<HeaderTwoProps> = ({ cls = "" }) => {
   const { sticky } = useSticky();
   // Access the current page URL
   const pathrouter = usePathname();
+  const [isUserLoggedIn, setIsUserLoggedIn] = useState(false);
+
+  useEffect(() => {
+    // Check if user is logged in
+    const unsubscribe = auth.onAuthStateChanged((user) => {
+      setIsUserLoggedIn(!!user);
+    });
+  });
+
   return (
     <>
       <header
         className={`${
           pathrouter === "/solutions/digital-marketing" ? "header-change " : ""
-        } theme-main-menu menu-overlay menu-style-one white-vr sticky-menu ${
+        }  ${cls} theme-main-menu menu-overlay menu-style-one white-vr sticky-menu ${
           sticky ? "fixed" : ""
         }`}
       >
@@ -38,6 +52,23 @@ const HeaderTwo = () => {
 
               <div className="right-widget ms-auto ms-lg-0 me-3 me-lg-0 order-lg-3">
                 <ul className="d-flex align-items-center style-none">
+                  <li className="ps-2 pe-2 text-center">
+                    <a
+                      href={isUserLoggedIn ? "/user-dashboard" : "#"}
+                      {...(!isUserLoggedIn && {
+                        "data-bs-toggle": "modal",
+                        "data-bs-target": "#loginModal",
+                      })}
+                      className="signup-btn-one icon-link w-100"
+                    >
+                      <span
+                        className="flex-fill text-center"
+                        style={{ padding: "0px 15px" }}
+                      >
+                        <i className="bi bi-person-circle"></i>
+                      </span>
+                    </a>
+                  </li>
                   <li className="d-none d-md-block">
                     <a
                       href="#"

@@ -7,6 +7,8 @@ import FooterThree from "@/layout/footer/footer-three";
 import FancyBannerThree from "@/components/fancy-banner/fancy-banner-three";
 import NewsletterBanner from "@/components/newsletter/newsletter-banner";
 import CartArea from "@/components/cart/cart-area";
+import HeaderTwo from "@/layout/header/Header";
+import FooterOne from "@/layout/footer/footer-one";
 
 
 export const metadata: Metadata = {
@@ -18,24 +20,18 @@ const CartPage = () => {
     <Wrapper>
       <div className="main-page-wrapper">
         {/* header start */}
-        <HeaderOne />
+        {/* <HeaderOne /> */}
+        <HeaderTwo cls="fixed" />
         {/* header end */}
         <main>
           {/* cart area start */}
           <CartArea />
           {/* cart area end */}
-
-          {/* fancy banner three start */}
-          <FancyBannerThree />
-          {/* fancy banner three end */}
-
-          {/* news letter start */}
-          <NewsletterBanner />
-          {/* news letter end */}
         </main>
 
         {/* footer start */}
-        <FooterThree style_2={true} />
+        <FooterOne />
+        {/* <FooterThree style_2={true} /> */}
         {/* footer end */}
       </div>
     </Wrapper>
