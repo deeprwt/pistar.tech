@@ -6,9 +6,9 @@ import "./globals.scss";
 import { Providers } from "@/redux/provider";
 
 export const metadata: Metadata = {
-  title: "CGB Solutions",
+  title: "Advanced Foot Systems Podiatry | Diabetic Foot Care Solutions",
   description:
-    "Empower your business with CGB Solutions' IT expertise. Strategic consulting & managed services for peak performance. Contact us.",
+    "Discover PiStarTech flexible pressure sensor technology designed for diabetic foot care, providing accurate podiatry insights to enhance foot health and prevent complications.",
 };
 
 export default function RootLayout({
