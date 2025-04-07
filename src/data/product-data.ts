@@ -52,12 +52,12 @@ const product_data:IProduct[] = [
   {
     id: 2,
     img: img_2,
-    title: "The Great Gatsby",
-    price: 12.49,
-    discount: 0.15,
+    title: "Smart Chair",
+    price: 50000,
+    discount: 0,
     category:'visiting-card',
     quantity: 25,
-    old_price: 14.99,
+    old_price: 70000,
     related_images:[img_2,img_3,img_4],
     sm_desc:
       "Reality doesn’t always give us the life that we desire, but we can always find what we desire between the pages of books.",

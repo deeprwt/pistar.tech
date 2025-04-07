@@ -101,7 +101,7 @@ const CheckoutOrderReview = ({ onFinalAmountCalculated }: CheckoutOrderReviewPro
                     <span>{item.title}</span>
                   </th>
                   <td>
-                    <span>${item.price}</span>
+                    <span>₹{item.price}</span>
                   </td>
                 </tr>
               ))}
@@ -110,7 +110,7 @@ const CheckoutOrderReview = ({ onFinalAmountCalculated }: CheckoutOrderReviewPro
                   <span>Subtotal</span>
                 </th>
                 <td>
-                  <span>${total.toFixed(2)}</span>
+                  <span>₹{total.toFixed(2)}</span>
                 </td>
               </tr>
               <tr>
@@ -118,7 +118,7 @@ const CheckoutOrderReview = ({ onFinalAmountCalculated }: CheckoutOrderReviewPro
                   <span>Shipping</span>
                 </th>
                 <td>
-                  <span>${ship_cost.toFixed(2)}</span>
+                  <span>₹{ship_cost.toFixed(2)}</span>
                 </td>
               </tr>
             </tbody>
@@ -128,7 +128,7 @@ const CheckoutOrderReview = ({ onFinalAmountCalculated }: CheckoutOrderReviewPro
                   <span>Total</span>
                 </th>
                 <td>
-                  <span>${finalAmount}</span>
+                  <span>₹{finalAmount}</span>
                 </td>
               </tr>
             </tfoot>

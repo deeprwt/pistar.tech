@@ -11,7 +11,7 @@ const CartArea = () => {
   const { cart_products } = useAppSelector((state) => state.cart);
   const { total } = useCartInfo();
   const dispatch = useAppDispatch();
-  const ship_cost = 13.0;
+  const ship_cost = 0;
 
   useEffect(() => {
     if (typeof window !== "undefined" && window.localStorage) {
@@ -71,15 +71,15 @@ const CartArea = () => {
               <tbody>
                 <tr>
                   <th>Subtotal</th>
-                  <td>${total.toFixed(2)}</td>
+                  <td>₹{total.toFixed(2)}</td>
                 </tr>
                 <tr>
                   <th>Shipping Cost</th>
-                  <td>${ship_cost.toFixed(2)}</td>
+                  <td>₹{ship_cost.toFixed(2)}</td>
                 </tr>
                 <tr>
                   <th>Total</th>
-                  <td>${(total + ship_cost).toFixed(2)}</td>
+                  <td>₹{(total + ship_cost).toFixed(2)}</td>
                 </tr>
               </tbody>
             </table>

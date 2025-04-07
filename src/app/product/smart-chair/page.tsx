@@ -35,6 +35,9 @@ import mat2 from "@/assets/images/pistar/chair2.jpeg";
 import mat3 from "@/assets/images/pistar/chair3.jpeg";
 import data from "@/assets/images/pistar/data.jpg";
 import seating from "@/assets/images/pistar/seating.png";
+import ProductDetailsArea from "@/components/shop/product-details/product-details-area";
+import product_data from "@/data/product-data";
+
 
 const backImg2 = {
   backgroundImage: `url('${bg_image2.src}')`,
@@ -101,13 +104,14 @@ function CardItem({
 }
 
 const Chair = () => {
+    const product = product_data[1]
   return (
     <Wrapper>
       <div className="main-page-wrapper">
         {/* header start */}
         <HeaderTwo />
         {/* header end */}
-        <main className="bgcolor2">
+        <main className="">
           {/* breadcrumb start */}
           {/* <HeroVideoTwo /> */}
           <BreadcrumbOne
@@ -119,6 +123,8 @@ const Chair = () => {
             style_2={true}
           />
           {/* breadcrumb end */}
+
+          <ProductDetailsArea product={product} />
 
           <div
             className="fancy-banner-two pt-80 lg-pt-80 pb-80 lg-pb-60 service-details"

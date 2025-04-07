@@ -77,6 +77,7 @@ const ProductDetailsArea = ({ product }: { product: IProduct }) => {
                     src={activeImg}
                     alt="product-img"
                     className="lazy-img"
+                    layout="responsive"
                   />
                 </a>
               </div>
@@ -98,6 +99,7 @@ const ProductDetailsArea = ({ product }: { product: IProduct }) => {
                       className="m-auto lazy-img"
                       width={58}
                       height={76}
+                      layout="responsive"
                       style={{ objectFit: "cover" }}
                     />
                   </button>
@@ -110,7 +112,7 @@ const ProductDetailsArea = ({ product }: { product: IProduct }) => {
               <div className="stock-tag">In Stock</div>
               <h2 className="product-name">{title}</h2>
               <div className="price">
-                {old_price && <del>${old_price}</del>} ${price}
+                {old_price && <del>₹{old_price}</del>} ₹{price}
               </div>
               <p className="availability">{quantity} Piece Available </p>
               <p className="description-text">{sm_desc}</p>
@@ -157,14 +159,14 @@ const ProductDetailsArea = ({ product }: { product: IProduct }) => {
                     <button
                       onClick={() => handleAddCart(product)}
                       type="button"
-                      className="cart-button btn-four mt-15 me-sm-4 d-block"
+                      className="cart-button btn-four mt-15 me-sm-4 d-block signup-btn-one icon-link w-100"
                     >
                       Add to Cart
                     </button>
                   ) : (
                     <Link
                       href="/cart"
-                      className="cart-button btn-four mt-15 me-sm-4 d-block active"
+                      className="cart-button btn-four mt-15 me-sm-4 d-block active signup-btn-one icon-link w-100 "
                     >
                       View Cart
                     </Link>
