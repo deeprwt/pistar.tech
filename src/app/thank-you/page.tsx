@@ -7,10 +7,6 @@ import Wrapper from "@/layout/wrapper";
 import HeaderTwo from "@/layout/header/Header";
 import FooterOne from "@/layout/footer/footer-one";
 
-export const metadata: Metadata = {
-  title: "Thankyou page ",
-};
-
 export default function ThankYouPage() {
   const searchParams = useSearchParams();
 
