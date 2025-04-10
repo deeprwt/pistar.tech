@@ -24,7 +24,7 @@ export default function ThankYouPage() {
             <h1>🎉 Thank You for Your Order!</h1>
             <p>Hi {name || "Customer"}, your payment was successful.</p>
             <p>Payment ID: {paymentId || "N/A"}</p>
-            <p>We've received your order and will process it soon.</p>
+            <p>We&apos;ve received your order and will process it soon.</p>
           </div>
         </main>
 
