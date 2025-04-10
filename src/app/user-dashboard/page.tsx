@@ -9,6 +9,8 @@ import { useRouter } from "next/navigation";
 import { notifySuccess, notifyError } from "@/utils/toast";
 import { signOut } from "firebase/auth";
 import HeaderTwo from "@/layout/header/Header";
+import UserOrders from "@/components/orders/UserOrders";
+import SpecificUserOrders from "@/components/orders/SpecificUserOrders";
 
 // Define the UserData type
 type UserData = {
@@ -148,6 +150,10 @@ const UserDashboard = () => {
                       </form>
                       <button onClick={handleLogout} className="btn btn-secondary mt-3">Logout</button>
                     </div>
+                  </div>
+                  <div className="col-12">
+                  {/* <UserOrders /> */}
+                  <SpecificUserOrders />
                   </div>
                 </div>
               </div>

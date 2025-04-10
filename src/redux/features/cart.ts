@@ -95,6 +95,10 @@ export const cartSlice = createSlice({
     },
     getCartProducts:(state) => {
       state.cart_products = getLocalStorage('cart_products');
+    },
+    forceClearCart: (state) => {
+      state.cart_products = [];
+      setLocalStorage("cart_products", state.cart_products);
     }
   },
 });
@@ -108,6 +112,7 @@ export const {
   initialOrderQuantity,
   clearCart,
   getCartProducts,
+  forceClearCart, // ✅ add this
 } = cartSlice.actions;
 
 export default cartSlice.reducer;

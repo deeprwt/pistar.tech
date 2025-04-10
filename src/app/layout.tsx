@@ -18,6 +18,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+     <head>
+      {/* Add Google site verification meta tag */}
+      <meta name="google-site-verification" content="nxv83caf4R0Z7y98gEt4aqgmwX1i3A01FqmGStM1WVg" />
+     </head>
       <body>
         <Providers>{children}</Providers>
       </body>
