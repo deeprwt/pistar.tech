@@ -1,9 +1,9 @@
 import { IProduct } from "@/types/product-d-t";
 // images
-import img_1 from "@/assets/images/shop/img_01.jpg";
-import img_2 from "@/assets/images/shop/img_02.jpg";
-import img_3 from "@/assets/images/shop/img_03.jpg";
-import img_4 from "@/assets/images/shop/img_04.jpg";
+import img_1 from "@/assets/images/pistar/1.png";
+import img_2 from "@/assets/images/pistar/2.png";
+import img_3 from "@/assets/images/pistar/3.png";
+import img_4 from "@/assets/images/pistar/4.png";
 // user
 import user_1 from "@/assets/images/blog/avatar_01.jpg";
 import user_2 from "@/assets/images/blog/avatar_02.jpg";
@@ -19,15 +19,15 @@ const product_data:IProduct[] = [
     quantity: 38,
     old_price: 100000,
     sm_desc:
-      "Reality doesn't always give us the life that we desire, but we can always find what we desire between the pages of books.",
-    related_images:[img_1,img_2,img_3],
+      "Podiascanner Mat is a portable plantar pressure analysis system that helps assess foot pressure and gait with high accuracy. Ideal for clinics, sports centers, and orthotic labs.",
+    related_images:[img_1,img_2,img_3,img_4],
     details: {
       specifications:
         "One touch of a red-hot stove is usually all we need to avoid that . The same is true as we experience in emotional sensation of stress from our first instances of social rejection ridicule.",
       main_features: [
-        "We quickly learn to fear and automatically avoid potentially",
-        "Lorem ipsum best lightweight bra cool rejection avoid text",
-        "Lightweight bras cool rejection quickly quis.",
+        "High-resolution mat with 1024 sensors for precise foot mapping",
+        "Lightweight, USB-powered, and easy to set up",
+        "Real-time pressure and gait analysis with intuitive software",
       ],
     },
     reviews: [

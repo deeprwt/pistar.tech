@@ -117,8 +117,8 @@ const ProductDetailsArea = ({ product }: { product: IProduct }) => {
               <p className="availability">{quantity} Piece Available </p>
               <p className="description-text">{sm_desc}</p>
               <ul className="product-feature style-none">
-                <li>Free delivery available</li>
-                <li>Use promo-code and save up to 25%</li>
+                {/* <li>Free delivery available</li>
+                <li>Use promo-code and save up to 25%</li> */}
               </ul>
               <div className="customize-order">
                 <div className="quantity d-flex align-items-center mt-40">
