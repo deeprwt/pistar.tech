@@ -4,6 +4,8 @@ import img_1 from "@/assets/images/pistar/1.png";
 import img_2 from "@/assets/images/pistar/2.png";
 import img_3 from "@/assets/images/pistar/3.png";
 import img_4 from "@/assets/images/pistar/4.png";
+import img_5 from "@/assets/images/pistar/4.png";
+import chair from "@/assets/images/pistar/chair.png";
 // user
 import user_1 from "@/assets/images/blog/avatar_01.jpg";
 import user_2 from "@/assets/images/blog/avatar_02.jpg";
@@ -20,7 +22,7 @@ const product_data:IProduct[] = [
     old_price: 100000,
     sm_desc:
       "Podiascanner Mat is a portable plantar pressure analysis system that helps assess foot pressure and gait with high accuracy. Ideal for clinics, sports centers, and orthotic labs.",
-    related_images:[img_1,img_2,img_3,img_4],
+    related_images:[img_1,img_2,img_3,img_4,img_5],
     details: {
       specifications:
         "One touch of a red-hot stove is usually all we need to avoid that . The same is true as we experience in emotional sensation of stress from our first instances of social rejection ridicule.",
@@ -58,9 +60,9 @@ const product_data:IProduct[] = [
     category:'visiting-card',
     quantity: 25,
     old_price: 70000,
-    related_images:[img_2,img_3,img_4],
+    related_images:[chair],
     sm_desc:
-      "Reality doesn’t always give us the life that we desire, but we can always find what we desire between the pages of books.",
+      "​The Smart Chair by PiStarTech is an AI-powered seating solution designed to monitor and improve posture in real-time. Ideal for home, office, and healthcare settings, it helps prevent back pain and promotes healthier sitting habits.",
     details: {
       specifications:
         "One touch of a red-hot stove is usually all we need to avoid that . The same is true as we experience in emotional sensation of stress from our first instances of social rejection ridicule.",
