@@ -4,7 +4,7 @@ import img_1 from "@/assets/images/pistar/1.png";
 import img_2 from "@/assets/images/pistar/2.png";
 import img_3 from "@/assets/images/pistar/3.png";
 import img_4 from "@/assets/images/pistar/4.png";
-import img_5 from "@/assets/images/pistar/4.png";
+import img_5 from "@/assets/images/pistar/5.png";
 import chair from "@/assets/images/pistar/chair.png";
 // user
 import user_1 from "@/assets/images/blog/avatar_01.jpg";
